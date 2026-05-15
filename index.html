@@ -2,9 +2,23 @@
 
 <h1>PDF Dashboard</h1>
 
-<input type="text" id="searchInput" placeholder="Search title...">
+<div class="search-box">
 
-<br><br>
+    <input
+        type="text"
+        id="searchTitle"
+        placeholder="Search Title..."
+    >
+
+    <input
+        type="text"
+        id="searchCategory"
+        placeholder="Search Category..."
+    >
+
+</div>
+
+<br>
 
 <table id="pdfTable">
 
@@ -22,8 +36,25 @@
 
 <style>
 
-#searchInput{
-    width:100%;
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    flex:1;
+    min-width:250px;
     padding:12px;
     font-size:16px;
     border-radius:6px;
@@ -60,6 +91,10 @@ button{
     padding:8px 12px;
     border-radius:5px;
     cursor:pointer;
+}
+
+button:hover{
+    background:#005ea2;
 }
 
 </style>
@@ -104,24 +139,37 @@ function renderTable(data){
 
 }
 
-document.getElementById('searchInput')
-.addEventListener('keyup', function(){
+document.getElementById('searchTitle')
+.addEventListener('keyup', filterData);
 
-    const keyword = this.value.toLowerCase();
+document.getElementById('searchCategory')
+.addEventListener('keyup', filterData);
+
+function filterData(){
+
+    const titleKeyword =
+        document.getElementById('searchTitle')
+        .value
+        .toLowerCase();
+
+    const categoryKeyword =
+        document.getElementById('searchCategory')
+        .value
+        .toLowerCase();
 
     const filtered = allData.filter(item =>
 
-    item.title.toLowerCase().includes(keyword)
+        item.title.toLowerCase().includes(titleKeyword)
 
-    ||
+        &&
 
-    item.category.toLowerCase().includes(keyword)
+        item.category.toLowerCase().includes(categoryKeyword)
 
-);
+    );
 
     renderTable(filtered);
 
-});
+}
 
 function openPDF(link){
     window.location.href = link;
