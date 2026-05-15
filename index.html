@@ -110,8 +110,14 @@ document.getElementById('searchInput')
     const keyword = this.value.toLowerCase();
 
     const filtered = allData.filter(item =>
-        item.title.toLowerCase().includes(keyword)
-    );
+
+    item.title.toLowerCase().includes(keyword)
+
+    ||
+
+    item.category.toLowerCase().includes(keyword)
+
+);
 
     renderTable(filtered);
 
