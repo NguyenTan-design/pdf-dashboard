@@ -1,81 +1,119 @@
-<!DOCTYPE html>
-<html lang="vi">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PDF Dashboard</title>
-
-<style>
-
-body{
-    font-family:Arial;
-    background:#f4f4f4;
-    padding:20px;
-}
-
-h1{
-    text-align:center;
-}
-
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
-
-button{
-    width:100%;
-    background:#0078d4;
-    color:white;
-    border:none;
-    padding:12px;
-    border-radius:6px;
-    cursor:pointer;
-}
-
-</style>
-</head>
-
 <body>
 
 <h1>PDF Dashboard</h1>
 
-<div class="container" id="pdfContainer"></div>
+<input type="text" id="searchInput" placeholder="Search title...">
+
+<br><br>
+
+<table id="pdfTable">
+
+    <thead>
+        <tr>
+            <th>TITLE</th>
+            <th>CATEGORY</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+
+    <tbody id="pdfBody"></tbody>
+
+</table>
+
+<style>
+
+#searchInput{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#0078d4;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f1f1;
+}
+
+button{
+    background:#0078d4;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+</style>
 
 <script>
+
+let allData = [];
 
 fetch('data.json')
 .then(response => response.json())
 .then(data => {
 
-    const container = document.getElementById('pdfContainer');
+    allData = data;
+
+    renderTable(data);
+
+});
+
+function renderTable(data){
+
+    const body = document.getElementById('pdfBody');
+
+    body.innerHTML = '';
 
     data.forEach(item => {
 
-        const card = document.createElement('div');
-        card.className = 'card';
+        const row = document.createElement('tr');
 
-        card.innerHTML = `
-            <h3>${item.title}</h3>
-            <p>${item.category}</p>
-
-            <button onclick="openPDF('${item.link}')">
-                Open PDF
-            </button>
+        row.innerHTML = `
+            <td>${item.title}</td>
+            <td>${item.category}</td>
+            <td>
+                <button onclick="openPDF('${item.link}')">
+                    Open
+                </button>
+            </td>
         `;
 
-        container.appendChild(card);
+        body.appendChild(row);
 
     });
+
+}
+
+document.getElementById('searchInput')
+.addEventListener('keyup', function(){
+
+    const keyword = this.value.toLowerCase();
+
+    const filtered = allData.filter(item =>
+        item.title.toLowerCase().includes(keyword)
+    );
+
+    renderTable(filtered);
 
 });
 
@@ -86,4 +124,3 @@ function openPDF(link){
 </script>
 
 </body>
-</html>
