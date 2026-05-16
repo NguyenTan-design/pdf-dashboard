@@ -4,18 +4,29 @@
 
 <div class="search-box">
 
+    <!-- TITLE -->
     <input
         type="text"
         id="searchTitle"
         placeholder="Search Title..."
     >
 
+    <!-- CATEGORY -->
     <input
+        list="categoryList"
         type="text"
         id="searchCategory"
         placeholder="Search Category..."
     >
 
+    <datalist id="categoryList">
+
+        <option value="NXTR">
+        <option value="NXTIII">
+
+    </datalist>
+
+    <!-- TYPE -->
     <input
         type="text"
         id="searchType"
@@ -133,8 +144,11 @@ function renderTable(data){
 
         row.innerHTML = `
             <td>${item["Title"]}</td>
+
             <td>${item["Category"]}</td>
+
             <td>${item["TYPE"]}</td>
+
             <td>${item["Release date"]}</td>
 
             <td>
@@ -178,15 +192,21 @@ function filterData(){
 
     const filtered = allData.filter(item =>
 
-        item["Title"].toLowerCase().includes(titleKeyword)
+        item["Title"]
+        .toLowerCase()
+        .includes(titleKeyword)
 
         &&
 
-        item["Category"].toLowerCase().includes(categoryKeyword)
+        item["Category"]
+        .toLowerCase()
+        .includes(categoryKeyword)
 
         &&
 
-        item["TYPE"].toLowerCase().includes(typeKeyword)
+        item["TYPE"]
+        .toLowerCase()
+        .includes(typeKeyword)
 
     );
 
@@ -195,7 +215,9 @@ function filterData(){
 }
 
 function openPDF(link){
+
     window.location.href = link;
+
 }
 
 </script>
