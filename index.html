@@ -35,7 +35,7 @@
         <option value="E-1.Parts List">
         <option value="D-2.Operation Manuals">
         <option value="A-5.FSF, SECS/GEM Technical Materials">
- 
+
     </datalist>
 
     <!-- TYPE -->
@@ -46,6 +46,9 @@
     >
 
 </div>
+
+<!-- AUTO BUTTONS -->
+<div class="quick-filter" id="categoryButtons"></div>
 
 <br>
 
@@ -93,6 +96,27 @@ h1{
     box-sizing:border-box;
 }
 
+.quick-filter{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.quick-filter button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.quick-filter button:hover{
+    background:#1f7a33;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
@@ -115,7 +139,7 @@ tr:hover{
     background:#f1f1f1;
 }
 
-button{
+.action-btn{
     background:#0078d4;
     color:white;
     border:none;
@@ -124,7 +148,7 @@ button{
     cursor:pointer;
 }
 
-button:hover{
+.action-btn:hover{
     background:#005ea2;
 }
 
@@ -141,6 +165,8 @@ fetch('data.json')
     allData = data;
 
     renderTable(data);
+
+    generateCategoryButtons();
 
 });
 
@@ -164,7 +190,10 @@ function renderTable(data){
             <td>${item["Release date"]}</td>
 
             <td>
-                <button onclick="openPDF('${item["LINK"]}')">
+                <button
+                    class="action-btn"
+                    onclick="openPDF('${item["LINK"]}')"
+                >
                     Open
                 </button>
             </td>
@@ -223,6 +252,66 @@ function filterData(){
     );
 
     renderTable(filtered);
+
+}
+
+function generateCategoryButtons(){
+
+    const container =
+        document.getElementById('categoryButtons');
+
+    const options =
+        document.querySelectorAll('#categoryList option');
+
+    options.forEach(option => {
+
+        const value = option.value;
+
+        const btn = document.createElement('button');
+
+        btn.innerText = value;
+
+        btn.onclick = function(){
+
+            document.getElementById(
+                'searchCategory'
+            ).value = value;
+
+            filterData();
+
+        };
+
+        container.appendChild(btn);
+
+    });
+
+    // CLEAR BUTTON
+
+    const clearBtn = document.createElement('button');
+
+    clearBtn.innerText = 'CLEAR';
+
+    clearBtn.style.background = '#dc3545';
+
+    clearBtn.onclick = function(){
+
+        document.getElementById(
+            'searchTitle'
+        ).value = '';
+
+        document.getElementById(
+            'searchCategory'
+        ).value = '';
+
+        document.getElementById(
+            'searchType'
+        ).value = '';
+
+        filterData();
+
+    };
+
+    container.appendChild(clearBtn);
 
 }
 
