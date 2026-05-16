@@ -16,6 +16,12 @@
         placeholder="Search Category..."
     >
 
+    <input
+        type="text"
+        id="searchType"
+        placeholder="Search Type..."
+    >
+
 </div>
 
 <br>
@@ -26,6 +32,8 @@
         <tr>
             <th>TITLE</th>
             <th>CATEGORY</th>
+            <th>TYPE</th>
+            <th>RELEASE DATE</th>
             <th>ACTION</th>
         </tr>
     </thead>
@@ -54,7 +62,7 @@ h1{
 
 .search-box input{
     flex:1;
-    min-width:250px;
+    min-width:220px;
     padding:12px;
     font-size:16px;
     border-radius:6px;
@@ -124,10 +132,13 @@ function renderTable(data){
         const row = document.createElement('tr');
 
         row.innerHTML = `
-            <td>${item.title}</td>
-            <td>${item.category}</td>
+            <td>${item["Title"]}</td>
+            <td>${item["Category"]}</td>
+            <td>${item["TYPE"]}</td>
+            <td>${item["Release date"]}</td>
+
             <td>
-                <button onclick="openPDF('${item.link}')">
+                <button onclick="openPDF('${item["LINK"]}')">
                     Open
                 </button>
             </td>
@@ -145,6 +156,9 @@ document.getElementById('searchTitle')
 document.getElementById('searchCategory')
 .addEventListener('keyup', filterData);
 
+document.getElementById('searchType')
+.addEventListener('keyup', filterData);
+
 function filterData(){
 
     const titleKeyword =
@@ -157,13 +171,22 @@ function filterData(){
         .value
         .toLowerCase();
 
+    const typeKeyword =
+        document.getElementById('searchType')
+        .value
+        .toLowerCase();
+
     const filtered = allData.filter(item =>
 
-        item.title.toLowerCase().includes(titleKeyword)
+        item["Title"].toLowerCase().includes(titleKeyword)
 
         &&
 
-        item.category.toLowerCase().includes(categoryKeyword)
+        item["Category"].toLowerCase().includes(categoryKeyword)
+
+        &&
+
+        item["TYPE"].toLowerCase().includes(typeKeyword)
 
     );
 
