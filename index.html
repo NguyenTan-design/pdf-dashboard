@@ -40,6 +40,7 @@ h1{
 /* TOOLBAR */
 
 .top-toolbar{
+
     position:sticky;
     top:0;
     z-index:9999;
@@ -47,9 +48,10 @@ h1{
     background:#f4f6f9;
 
     padding-bottom:15px;
+
 }
 
-/* SEARCH AREA */
+/* SEARCH */
 
 .search-box{
 
@@ -141,7 +143,7 @@ h1{
 
 }
 
-/* TABLE */
+/* TABLE WRAPPER */
 
 .table-wrapper{
 
@@ -166,11 +168,15 @@ table{
 
     width:100%;
 
-    border-collapse:collapse;
+    border-collapse:separate;
+
+    border-spacing:0;
 
     table-layout:fixed;
 
     background:white;
+
+    border:1px solid #dbe2ea;
 
 }
 
@@ -198,7 +204,8 @@ th{
 
     padding:14px;
 
-    border:1px solid #dbe2ea;
+    border-right:1px solid #dbe2ea;
+    border-bottom:1px solid #dbe2ea;
 
     font-size:15px;
 
@@ -214,13 +221,14 @@ th{
 
 td{
 
-    border:1px solid #edf1f5;
-
     padding:14px;
 
     vertical-align:top;
 
     font-size:14px;
+
+    border-right:1px solid #dbe2ea;
+    border-bottom:1px solid #dbe2ea;
 
 }
 
@@ -248,8 +256,6 @@ td:nth-child(1){
 
 }
 
-/* TITLE WRAP */
-
 td:nth-child(1){
 
     white-space:normal;
@@ -262,17 +268,63 @@ td:nth-child(1){
 
 }
 
-/* OTHER CELLS */
+/* CATEGORY COLUMN */
 
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4){
+th:nth-child(2),
+td:nth-child(2){
+
+    width:260px;
+    min-width:260px;
+
+}
+
+td:nth-child(2){
+
+    white-space:normal;
+
+    word-break:break-word;
+
+    line-height:1.5;
+
+}
+
+/* TYPE COLUMN */
+
+th:nth-child(3),
+td:nth-child(3){
+
+    width:180px;
+    min-width:180px;
 
     white-space:nowrap;
 
 }
 
-/* ACTION BUTTON */
+/* DATE COLUMN */
+
+th:nth-child(4),
+td:nth-child(4){
+
+    width:160px;
+    min-width:160px;
+
+    white-space:nowrap;
+
+}
+
+/* ACTION COLUMN */
+
+th:nth-child(5),
+td:nth-child(5){
+
+    width:140px;
+    min-width:140px;
+
+    white-space:nowrap;
+
+}
+
+/* OPEN BUTTON */
 
 .action-btn{
 
