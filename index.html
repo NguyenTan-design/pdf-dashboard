@@ -150,9 +150,7 @@ h1{
 
     width:100%;
 
-    overflow:auto;
-
-    height:calc(100vh - 260px);
+    overflow-x:auto;
 
     border-radius:12px;
 
@@ -185,9 +183,9 @@ thead th{
 
     position:sticky;
 
-    top:0;
+    top:185px;
 
-    z-index:100;
+    z-index:1000;
 
     background:#0078d4;
 
@@ -413,6 +411,14 @@ td:nth-child(5){
 
     }
 
+    /* STICKY MOBILE */
+
+    thead th{
+
+        top:220px;
+
+    }
+
     /* TITLE */
 
     th:nth-child(1),
@@ -485,14 +491,6 @@ td:nth-child(5){
         font-size:8px;
 
         border-radius:5px;
-
-    }
-
-    .table-wrapper{
-
-        overflow-x:hidden;
-
-        height:calc(100vh - 300px);
 
     }
 
