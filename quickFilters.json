@@ -1,0 +1,38 @@
+[
+    {
+        "name":"NXTIII",
+
+        "TYPE":[
+            "AIMEX III",
+            "AIMEX IIIc",
+            "NXT III",
+            "NXT IIIc",
+            "NXT-H"
+        ]
+    },
+
+    {
+        "name":"NXTR",
+
+        "TYPE":[
+            "NXTR"
+        ]
+    },
+
+    {
+        "name":"Software Notice",
+
+        "Category":[
+            "C-3.Software Notice"
+        ]
+    },
+
+    {
+        "name":"Manuals",
+
+        "Category":[
+            "D-1.Manuals",
+            "D-2.Operation Manuals"
+        ]
+    }
+]
