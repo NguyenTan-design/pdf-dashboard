@@ -131,15 +131,17 @@ tr:hover{
     background:#f1f1f1;
 }
 
-/* BUTTON */
+/* OPEN LINK */
 
 .action-btn{
     background:#0078d4;
     color:white;
-    border:none;
     padding:8px 12px;
     border-radius:5px;
     cursor:pointer;
+
+    display:inline-block;
+    text-decoration:none;
 }
 
 .action-btn:hover{
@@ -393,14 +395,16 @@ function renderTable(data){
 
             <td>
 
-                <button
+                <a
                     class="action-btn"
-                    onclick="openPDF('${item["LINK"]}')"
+                    href="${item["LINK"]}"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
 
                     Open
 
-                </button>
+                </a>
 
             </td>
 
@@ -527,14 +531,6 @@ function clearFilter(){
     ).value = '';
 
     renderTable(allData);
-
-}
-
-/* OPEN PDF */
-
-function openPDF(link){
-
-    window.open(link, '_blank');
 
 }
 
