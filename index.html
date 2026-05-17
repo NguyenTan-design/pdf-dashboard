@@ -5,25 +5,36 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
 <title>Document Management</title>
 
 <style>
 
+/* GLOBAL */
+
+*{
+    box-sizing:border-box;
+}
+
 body{
-    font-family:Arial;
-    background:#f4f4f4;
     margin:0;
     padding:20px;
+    background:#f4f6f9;
+    font-family:Arial, sans-serif;
+    color:#333;
 }
 
 /* TITLE */
 
 h1{
+    margin:0 0 20px;
     text-align:center;
-    margin-top:10px;
+    font-size:38px;
+    color:#111;
 }
 
 /* TOOLBAR */
@@ -31,129 +42,284 @@ h1{
 .top-toolbar{
     position:sticky;
     top:0;
-    z-index:1000;
-    background:#f4f4f4;
+    z-index:9999;
+
+    background:#f4f6f9;
+
     padding-bottom:15px;
 }
 
-/* SEARCH */
+/* SEARCH AREA */
 
 .search-box{
+
     display:flex;
-    gap:10px;
     flex-wrap:wrap;
+    gap:12px;
+
+    margin-bottom:15px;
+
 }
 
 .search-box input{
+
     flex:1;
     min-width:220px;
-    padding:12px;
-    font-size:16px;
-    border-radius:6px;
-    border:1px solid #ccc;
-    box-sizing:border-box;
+
+    padding:14px;
+
+    border-radius:10px;
+    border:1px solid #d0d7de;
+
+    font-size:15px;
+
+    background:white;
+
+    transition:0.2s;
+
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    border-color:#0078d4;
+
+    box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+
 }
 
 /* BUTTONS */
 
 .quick-filter{
+
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-top:15px;
+
 }
 
 .quick-filter button{
+
     background:#28a745;
     color:white;
+
     border:none;
-    padding:8px 14px;
-    border-radius:6px;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
     cursor:pointer;
+
     font-size:14px;
+    font-weight:bold;
+
+    transition:0.2s;
+
 }
 
 .quick-filter button:hover{
+
+    transform:translateY(-2px);
+
     background:#1f7a33;
+
+}
+
+/* CLEAR BUTTON */
+
+.clear-btn{
+
+    background:#dc3545 !important;
+
+}
+
+.clear-btn:hover{
+
+    background:#b52b38 !important;
+
 }
 
 /* TABLE */
 
 .table-wrapper{
-    overflow:auto;
+
     width:100%;
+
+    overflow:auto;
+
     max-height:80vh;
-    position:relative;
+
+    border-radius:14px;
+
+    background:white;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
 }
 
+/* TABLE */
+
 table{
+
     width:100%;
+
     border-collapse:collapse;
-    background:white;
+
     table-layout:fixed;
+
+    background:white;
+
 }
 
 /* STICKY HEADER */
 
 thead th{
+
     position:sticky;
+
     top:0;
+
     z-index:999;
+
     background:#0078d4;
+
 }
 
 /* HEADER */
 
 th{
+
     color:white;
-    padding:12px;
+
     text-align:left;
-    border:1px solid #ccc;
+
+    padding:14px;
+
+    border:1px solid #dbe2ea;
+
+    font-size:15px;
 
     resize:horizontal;
+
     overflow:auto;
+
     min-width:180px;
+
 }
 
-/* CELL */
+/* CELLS */
 
 td{
-    border:1px solid #ccc;
-    padding:12px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+
+    border:1px solid #edf1f5;
+
+    padding:14px;
+
+    vertical-align:top;
+
+    font-size:14px;
+
 }
 
 /* ROW */
 
-tr:hover{
-    background:#f1f1f1;
+tbody tr:nth-child(even){
+
+    background:#fafbfc;
+
 }
 
-/* OPEN LINK */
+tbody tr:hover{
+
+    background:#eef6ff;
+
+}
+
+/* TITLE COLUMN */
+
+th:nth-child(1),
+td:nth-child(1){
+
+    width:520px;
+    min-width:520px;
+
+}
+
+/* TITLE WRAP */
+
+td:nth-child(1){
+
+    white-space:normal;
+
+    word-break:break-word;
+
+    line-height:1.6;
+
+    font-weight:500;
+
+}
+
+/* OTHER CELLS */
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4){
+
+    white-space:nowrap;
+
+}
+
+/* ACTION BUTTON */
 
 .action-btn{
-    background:#0078d4;
-    color:white;
-    padding:8px 12px;
-    border-radius:5px;
-    cursor:pointer;
 
     display:inline-block;
+
+    background:#0078d4;
+
+    color:white;
+
     text-decoration:none;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.2s;
+
 }
 
 .action-btn:hover{
+
     background:#005ea2;
+
+    transform:translateY(-2px);
+
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
+    body{
+        padding:10px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
     .search-box{
         flex-direction:column;
+    }
+
+    .search-box input{
+        width:100%;
     }
 
     table{
@@ -161,7 +327,15 @@ tr:hover{
     }
 
     th, td{
-        padding:8px;
+        padding:10px;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1){
+
+        width:320px;
+        min-width:320px;
+
     }
 
 }
@@ -182,43 +356,17 @@ tr:hover{
 
     <div class="search-box">
 
-        <!-- TITLE -->
-
         <input
             type="text"
             id="searchTitle"
             placeholder="Search Title..."
         >
 
-        <!-- CATEGORY -->
-
         <input
-            list="categoryList"
             type="text"
             id="searchCategory"
             placeholder="Search Category..."
         >
-
-        <datalist id="categoryList">
-
-            <option value="C-1.Upgrade Reports">
-            <option value="C-2.Version History">
-            <option value="F-2.Specifications">
-            <option value="A-1.Tech Reports">
-            <option value="C-3.Software Notice">
-            <option value="TRAINING TEXT">
-            <option value="E-7.Field Engineer's Documents">
-            <option value="A-2.Rep News">
-            <option value="D-1.Manuals">
-            <option value="E-6.Troubleshooting">
-            <option value="E-4.Electrical Schematics">
-            <option value="E-1.Parts List">
-            <option value="D-2.Operation Manuals">
-            <option value="A-5.FSF, SECS/GEM Technical Materials">
-
-        </datalist>
-
-        <!-- TYPE -->
 
         <input
             type="text"
@@ -228,7 +376,7 @@ tr:hover{
 
     </div>
 
-    <!-- CATEGORY BUTTONS -->
+    <!-- QUICK FILTER -->
 
     <div class="quick-filter">
 
@@ -256,7 +404,7 @@ tr:hover{
             Training
         </button>
 
-        <button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
+        <button onclick="setCategoryFilter('E-7.Field Engineer\\'s Documents')">
             FE Documents
         </button>
 
@@ -273,7 +421,7 @@ tr:hover{
         </button>
 
         <button onclick="setCategoryFilter('E-4.Electrical Schematics')">
-            Electrical Schematics
+            Electrical
         </button>
 
         <button onclick="setCategoryFilter('E-1.Parts List')">
@@ -281,30 +429,22 @@ tr:hover{
         </button>
 
         <button onclick="setCategoryFilter('D-2.Operation Manuals')">
-            Operation Manuals
+            Operation
         </button>
 
         <button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
-            FSF / SECS-GEM
+            FSF / GEM
         </button>
-
-        <!-- NXTIII -->
 
         <button onclick="filterNXTIII()">
-
             NXTIII
-
         </button>
 
-        <!-- CLEAR -->
-
         <button
+            class="clear-btn"
             onclick="clearFilter()"
-            style="background:#dc3545;"
         >
-
             CLEAR
-
         </button>
 
     </div>
@@ -345,6 +485,8 @@ tr:hover{
 
 <script>
 
+/* DATA */
+
 let allData = [];
 
 /* LOAD JSON */
@@ -361,7 +503,7 @@ fetch('data.json')
 
 });
 
-/* RENDER TABLE */
+/* RENDER */
 
 function renderTable(data){
 
@@ -372,36 +514,32 @@ function renderTable(data){
 
     data.forEach(item => {
 
-/*console.log(
-        '[' + item["Category"] + ']'
-    );*/
-
         const row =
             document.createElement('tr');
 
         row.innerHTML = `
 
-            <td title="${item["Title"]}">
-                ${item["Title"]}
+            <td title="${item["Title"] || ''}">
+                ${item["Title"] || ''}
             </td>
 
-            <td title="${item["Category"]}">
-                ${item["Category"]}
+            <td title="${item["Category"] || ''}">
+                ${item["Category"] || ''}
             </td>
 
-            <td title="${item["TYPE"]}">
-                ${item["TYPE"]}
+            <td title="${item["TYPE"] || ''}">
+                ${item["TYPE"] || ''}
             </td>
 
             <td>
-                ${item["Release date"]}
+                ${item["Release date"] || ''}
             </td>
 
             <td>
 
                 <a
                     class="action-btn"
-                    href="${item["LINK"]}"
+                    href="${item["LINK"] || '#'}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -420,7 +558,7 @@ function renderTable(data){
 
 }
 
-/* SEARCH EVENTS */
+/* EVENTS */
 
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
@@ -440,6 +578,7 @@ function filterData(){
             'searchTitle'
         )
         .value
+        .trim()
         .toLowerCase();
 
     const categoryKeyword =
@@ -447,6 +586,7 @@ function filterData(){
             'searchCategory'
         )
         .value
+        .trim()
         .toLowerCase();
 
     const typeKeyword =
@@ -454,25 +594,26 @@ function filterData(){
             'searchType'
         )
         .value
+        .trim()
         .toLowerCase();
 
     const filtered = allData.filter(item =>
 
         String(item["Title"] || '')
-	.toLowerCase()
-	.includes(titleKeyword)
+        .toLowerCase()
+        .includes(titleKeyword)
 
         &&
 
-	String(item["Category"] || '')
-	.toLowerCase()
-	.includes(categoryKeyword)
+        String(item["Category"] || '')
+        .toLowerCase()
+        .includes(categoryKeyword)
 
         &&
 
-	String(item["TYPE"] || '')
-	.toLowerCase()
-	.includes(typeKeyword)
+        String(item["TYPE"] || '')
+        .toLowerCase()
+        .includes(typeKeyword)
 
     );
 
@@ -480,7 +621,7 @@ function filterData(){
 
 }
 
-/* CATEGORY BUTTON */
+/* CATEGORY FILTER */
 
 function setCategoryFilter(value){
 
@@ -522,8 +663,6 @@ function filterNXTIII(){
 
 function clearFilter(){
 
-    /* CLEAR INPUT */
-
     document.getElementById(
         'searchTitle'
     ).value = '';
@@ -536,16 +675,10 @@ function clearFilter(){
         'searchType'
     ).value = '';
 
-    /* SHOW ALL DATA */
-
-    const body =
-        document.getElementById('pdfBody');
-
-    body.innerHTML = '';
-
     renderTable(allData);
 
 }
+
 </script>
 
 </body>
