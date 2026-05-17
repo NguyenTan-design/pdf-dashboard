@@ -712,8 +712,20 @@ function renderTable(data){
 
 /* SEARCH EVENTS */
 
+let debounceTimer;
+
 document.getElementById('searchTitle')
-.addEventListener('keyup', filterData);
+.addEventListener('keyup', function(){
+
+    clearTimeout(debounceTimer);
+
+    debounceTimer = setTimeout(() => {
+
+        filterData();
+
+    }, 300);
+
+});
 
 /*
 document.getElementById('searchCategory')
