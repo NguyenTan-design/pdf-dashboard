@@ -55,7 +55,7 @@ h1{
     box-sizing:border-box;
 }
 
-/* QUICK FILTER */
+/* BUTTONS */
 
 .quick-filter{
     display:flex;
@@ -92,6 +92,8 @@ table{
     table-layout:fixed;
 }
 
+/* HEADER */
+
 th{
     background:#0078d4;
     color:white;
@@ -99,6 +101,8 @@ th{
     text-align:left;
     border:1px solid #ccc;
 }
+
+/* CELL */
 
 td{
     border:1px solid #ccc;
@@ -108,11 +112,13 @@ td{
     white-space:nowrap;
 }
 
+/* ROW */
+
 tr:hover{
     background:#f1f1f1;
 }
 
-/* BUTTON */
+/* OPEN BUTTON */
 
 .action-btn{
     background:#0078d4;
@@ -172,10 +178,30 @@ tr:hover{
         <!-- CATEGORY -->
 
         <input
+            list="categoryList"
             type="text"
             id="searchCategory"
             placeholder="Search Category..."
         >
+
+        <datalist id="categoryList">
+
+            <option value="C-1.Upgrade Reports">
+            <option value="C-2.Version History">
+            <option value="F-2.Specifications">
+            <option value="A-1.Tech Reports">
+            <option value="C-3.Software Notice">
+            <option value="TRAINING TEXT">
+            <option value="E-7.Field Engineer's Documents">
+            <option value="A-2.Rep News">
+            <option value="D-1.Manuals">
+            <option value="E-6.Troubleshooting">
+            <option value="E-4.Electrical Schematics">
+            <option value="E-1.Parts List">
+            <option value="D-2.Operation Manuals">
+            <option value="A-5.FSF, SECS/GEM Technical Materials">
+
+        </datalist>
 
         <!-- TYPE -->
 
@@ -187,10 +213,68 @@ tr:hover{
 
     </div>
 
-    <!-- QUICK FILTER BUTTON -->
+    <!-- QUICK FILTER -->
 
-    <div class="quick-filter"
-         id="quickFilterContainer">
+    <div class="quick-filter">
+
+        <button onclick="setCategoryFilter('C-1.Upgrade Reports')">
+            Upgrade Reports
+        </button>
+
+        <button onclick="setCategoryFilter('C-2.Version History')">
+            Version History
+        </button>
+
+        <button onclick="setCategoryFilter('F-2.Specifications')">
+            Specifications
+        </button>
+
+        <button onclick="setCategoryFilter('A-1.Tech Reports')">
+            Tech Reports
+        </button>
+
+        <button onclick="setCategoryFilter('C-3.Software Notice')">
+            Software Notice
+        </button>
+
+        <button onclick="setCategoryFilter('TRAINING TEXT')">
+            Training
+        </button>
+
+        <button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
+            FE Documents
+        </button>
+
+        <button onclick="setCategoryFilter('A-2.Rep News')">
+            Rep News
+        </button>
+
+        <button onclick="setCategoryFilter('D-1.Manuals')">
+            Manuals
+        </button>
+
+        <button onclick="setCategoryFilter('E-6.Troubleshooting')">
+            Troubleshooting
+        </button>
+
+        <!-- NXTIII BUTTON -->
+
+        <button onclick="filterNXTIII()">
+
+            NXTIII
+
+        </button>
+
+        <!-- CLEAR -->
+
+        <button
+            onclick="clearFilter()"
+            style="background:#dc3545;"
+        >
+
+            CLEAR
+
+        </button>
 
     </div>
 
@@ -232,33 +316,21 @@ tr:hover{
 
 let allData = [];
 
-let quickFilters = [];
+/* LOAD JSON */
 
-/* LOAD DATA */
+fetch('data.json')
 
-Promise.all([
+.then(response => response.json())
 
-    fetch('data.json')
-    .then(res => res.json()),
-
-    fetch('quickFilters.json')
-    .then(res => res.json())
-
-])
-
-.then(([data, filters]) => {
+.then(data => {
 
     allData = data;
 
-    quickFilters = filters;
-
     renderTable(data);
-
-    generateQuickButtons();
 
 });
 
-/* TABLE */
+/* RENDER TABLE */
 
 function renderTable(data){
 
@@ -311,7 +383,7 @@ function renderTable(data){
 
 }
 
-/* SEARCH EVENT */
+/* SEARCH EVENTS */
 
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
@@ -371,86 +443,41 @@ function filterData(){
 
 }
 
-/* QUICK FILTER ENGINE */
+/* CATEGORY BUTTON */
 
-function quickFilter(filters){
+function setCategoryFilter(value){
 
-    const filtered = allData.filter(item => {
+    document.getElementById(
+        'searchCategory'
+    ).value = value;
 
-        /* TYPE */
-
-        if(filters.TYPE){
-
-            if(
-                !filters.TYPE.includes(
-                    item["TYPE"]
-                )
-            ){
-                return false;
-            }
-
-        }
-
-        /* CATEGORY */
-
-        if(filters.Category){
-
-            if(
-                !filters.Category.includes(
-                    item["Category"]
-                )
-            ){
-                return false;
-            }
-
-        }
-
-        return true;
-
-    });
-
-    renderTable(filtered);
+    filterData();
 
 }
 
-/* GENERATE BUTTON */
+/* NXTIII FILTER */
 
-function generateQuickButtons(){
+function filterNXTIII(){
 
-    const container =
-        document.getElementById(
-            'quickFilterContainer'
-        );
+    const targetTypes = [
 
-    quickFilters.forEach(filter => {
+        "AIMEX III",
+        "AIMEX IIIc",
+        "NXT III",
+        "NXT IIIc",
+        "NXT-H"
 
-        const btn =
-            document.createElement('button');
+    ];
 
-        btn.innerText = filter.name;
+    const filtered = allData.filter(item =>
 
-        btn.onclick = function(){
+        targetTypes.includes(
+            item["TYPE"]
+        )
 
-            quickFilter(filter);
+    );
 
-        };
-
-        container.appendChild(btn);
-
-    });
-
-    /* CLEAR BUTTON */
-
-    const clearBtn =
-        document.createElement('button');
-
-    clearBtn.innerText = 'CLEAR';
-
-    clearBtn.style.background = '#dc3545';
-
-    clearBtn.onclick = clearFilter;
-
-    container.appendChild(clearBtn);
+    renderTable(filtered);
 
 }
 
