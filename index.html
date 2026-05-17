@@ -26,15 +26,14 @@ h1{
     margin-top:10px;
 }
 
-/* STICKY TOOLBAR */
+/* TOOLBAR */
 
 .top-toolbar{
     position:sticky;
     top:0;
     z-index:1000;
     background:#f4f4f4;
-    padding:15px;
-    border-bottom:2px solid #ddd;
+    padding-bottom:15px;
 }
 
 /* SEARCH */
@@ -84,9 +83,8 @@ h1{
     overflow:auto;
     width:100%;
     max-height:80vh;
+    position:relative;
 }
-
-/* TABLE */
 
 table{
     width:100%;
@@ -99,23 +97,22 @@ table{
 
 thead th{
     position:sticky;
-    top:170px;
+    top:0;
     z-index:999;
+    background:#0078d4;
 }
 
 /* HEADER */
 
 th{
-    background:#0078d4;
     color:white;
     padding:12px;
     text-align:left;
     border:1px solid #ccc;
 
-    /* RESIZE COLUMN */
     resize:horizontal;
     overflow:auto;
-    min-width:150px;
+    min-width:180px;
 }
 
 /* CELL */
@@ -134,7 +131,7 @@ tr:hover{
     background:#f1f1f1;
 }
 
-/* OPEN BUTTON */
+/* BUTTON */
 
 .action-btn{
     background:#0078d4;
@@ -163,10 +160,6 @@ tr:hover{
 
     th, td{
         padding:8px;
-    }
-
-    thead th{
-        top:230px;
     }
 
 }
@@ -233,7 +226,7 @@ tr:hover{
 
     </div>
 
-    <!-- QUICK FILTER -->
+    <!-- CATEGORY BUTTONS -->
 
     <div class="quick-filter">
 
@@ -275,6 +268,22 @@ tr:hover{
 
         <button onclick="setCategoryFilter('E-6.Troubleshooting')">
             Troubleshooting
+        </button>
+
+        <button onclick="setCategoryFilter('E-4.Electrical Schematics')">
+            Electrical Schematics
+        </button>
+
+        <button onclick="setCategoryFilter('E-1.Parts List')">
+            Parts List
+        </button>
+
+        <button onclick="setCategoryFilter('D-2.Operation Manuals')">
+            Operation Manuals
+        </button>
+
+        <button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
+            FSF / SECS-GEM
         </button>
 
         <!-- NXTIII -->
@@ -414,7 +423,7 @@ document.getElementById('searchCategory')
 document.getElementById('searchType')
 .addEventListener('keyup', filterData);
 
-/* NORMAL FILTER */
+/* FILTER */
 
 function filterData(){
 
