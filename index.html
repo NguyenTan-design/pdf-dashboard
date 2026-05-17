@@ -458,21 +458,21 @@ function filterData(){
 
     const filtered = allData.filter(item =>
 
-        item["Title"]
-        .toLowerCase()
-        .includes(titleKeyword)
+        String(item["Title"] || '')
+	.toLowerCase()
+	.includes(titleKeyword)
 
         &&
 
-        item["Category"]
-        .toLowerCase()
-        .includes(categoryKeyword)
+	String(item["Category"] || '')
+	.toLowerCase()
+	.includes(categoryKeyword)
 
         &&
 
-        item["TYPE"]
-        .toLowerCase()
-        .includes(typeKeyword)
+	String(item["TYPE"] || '')
+	.toLowerCase()
+	.includes(typeKeyword)
 
     );
 
