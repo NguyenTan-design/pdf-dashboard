@@ -637,11 +637,25 @@ td:nth-child(5){
 
 <script>
 
-/* DATA */
+/* =========================
+   GLOBAL DATA
+========================= */
 
 let allData = [];
 
-/* LOAD JSON */
+/* =========================
+   CACHE DOM
+========================= */
+
+const pdfBody =
+    document.getElementById('pdfBody');
+
+const searchTitle =
+    document.getElementById('searchTitle');
+
+/* =========================
+   LOAD JSON
+========================= */
 
 fetch('data.json')
 
@@ -651,47 +665,97 @@ fetch('data.json')
 
     allData = data;
 
-    renderTable(data);
+    renderTable(allData);
+
+})
+
+.catch(error => {
+
+    console.error(
+        'JSON Load Error:',
+        error
+    );
 
 });
 
-/* RENDER TABLE */
+/* =========================
+   ESCAPE HTML
+========================= */
+
+function escapeHTML(text){
+
+    return String(text)
+
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+}
+
+/* =========================
+   RENDER TABLE
+========================= */
 
 function renderTable(data){
 
-    const body =
-        document.getElementById('pdfBody');
+    /* CLEAR OLD ROWS */
 
-    body.innerHTML = '';
+    pdfBody.innerHTML = '';
 
-    data.forEach(item => {
+    /* MEMORY FRAGMENT */
 
-          const row =
+    const fragment =
+        document.createDocumentFragment();
+
+    /* BUILD ROWS */
+
+    for(let i = 0; i < data.length; i++){
+
+        const item = data[i];
+
+        const title =
+            escapeHTML(item["Title"] || '');
+
+        const category =
+            escapeHTML(item["Category"] || '');
+
+        const type =
+            escapeHTML(item["TYPE"] || '');
+
+        const releaseDate =
+            escapeHTML(item["Release date"] || '');
+
+        const link =
+            item["LINK"] || '#';
+
+        const row =
             document.createElement('tr');
 
         row.innerHTML = `
 
-            <td title="${item["Title"] || ''}">
-                ${item["Title"] || ''}
+            <td title="${title}">
+                ${title}
             </td>
 
-            <td title="${item["Category"] || ''}">
-                ${item["Category"] || ''}
+            <td title="${category}">
+                ${category}
             </td>
 
-            <td title="${item["TYPE"] || ''}">
-                ${item["TYPE"] || ''}
+            <td title="${type}">
+                ${type}
             </td>
 
             <td>
-                ${item["Release date"] || ''}
+                ${releaseDate}
             </td>
 
             <td>
 
                 <a
                     class="action-btn"
-                    href="${item["LINK"] || '#'}"
+                    href="${link}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -704,18 +768,59 @@ function renderTable(data){
 
         `;
 
-        body.appendChild(row);
+        fragment.appendChild(row);
 
-    });
+    }
+
+    /* APPEND 1 LẦN */
+
+    pdfBody.appendChild(fragment);
 
 }
 
-/* SEARCH EVENTS */
+/* =========================
+   FILTER
+========================= */
+
+function filterData(){
+
+    const keyword =
+        searchTitle.value
+        .trim()
+        .toLowerCase();
+
+    /* EMPTY SEARCH */
+
+    if(keyword === ''){
+
+        renderTable(allData);
+
+        return;
+
+    }
+
+    /* FILTER DATA */
+
+    const filtered =
+        allData.filter(item =>
+
+            String(item["Title"] || '')
+            .toLowerCase()
+            .includes(keyword)
+
+        );
+
+    renderTable(filtered);
+
+}
+
+/* =========================
+   DEBOUNCE SEARCH
+========================= */
 
 let debounceTimer;
 
-document.getElementById('searchTitle')
-.addEventListener('keyup', function(){
+searchTitle.addEventListener('input', () => {
 
     clearTimeout(debounceTimer);
 
@@ -727,87 +832,28 @@ document.getElementById('searchTitle')
 
 });
 
-/*
-document.getElementById('searchCategory')
-.addEventListener('keyup', filterData);
-
-document.getElementById('searchType')
-.addEventListener('keyup', filterData);
-*/
-
-/* FILTER */
-
-function filterData(){
-
-    const titleKeyword =
-        document.getElementById(
-            'searchTitle'
-        )
-        .value
-        .trim()
-        .toLowerCase();
-
-    /*
-        const categoryKeyword =
-        document.getElementById(
-            'searchCategory'
-        )
-        .value
-        .trim()
-        .toLowerCase();
-
-    const typeKeyword =
-        document.getElementById(
-            'searchType'
-        )
-        .value
-        .trim()
-        .toLowerCase();
-    */
-
-    const filtered = allData.filter(item =>
-
-        String(item["Title"] || '')
-        .toLowerCase()
-        .includes(titleKeyword)
-
-       /*
-        &&
-
-        String(item["Category"] || '')
-        .toLowerCase()
-        .includes(categoryKeyword)
-
-        &&
-
-        String(item["TYPE"] || '')
-        .toLowerCase()
-        .includes(typeKeyword)
-
-        */
-    );
-
-    renderTable(filtered);
-
-}
-
-/* CATEGORY FILTER */
+/* =========================
+   CATEGORY FILTER
+========================= */
 
 function setCategoryFilter(value){
 
-    const filtered = allData.filter(item =>
+    const filtered =
+        allData.filter(item =>
 
-        String(item["Category"] || '')
-        .toLowerCase()
-        .includes(value.toLowerCase())
+            String(item["Category"] || '')
+            .toLowerCase()
+            .includes(value.toLowerCase())
 
-    );
+        );
 
     renderTable(filtered);
 
 }
 
-/* NXTIII FILTER */
+/* =========================
+   NXTIII FILTER
+========================= */
 
 function filterNXTIII(){
 
@@ -821,42 +867,32 @@ function filterNXTIII(){
 
     ];
 
-    const filtered = allData.filter(item =>
+    const filtered =
+        allData.filter(item =>
 
-        targetTypes.includes(
-            item["TYPE"]
-        )
+            targetTypes.includes(
+                item["TYPE"]
+            )
 
-    );
+        );
 
     renderTable(filtered);
 
 }
 
-/* CLEAR */
+/* =========================
+   CLEAR FILTER
+========================= */
 
 function clearFilter(){
 
-    document.getElementById(
-        'searchTitle'
-    ).value = '';
+    searchTitle.value = '';
 
-    /*
-    document.getElementById(
-        'searchCategory'
-    ).value = '';
-
-    document.getElementById(
-        'searchType'
-    ).value = '';
-
-    */
     renderTable(allData);
 
 }
 
 </script>
-
 </body>
 
 </html>
