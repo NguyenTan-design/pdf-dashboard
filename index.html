@@ -43,6 +43,7 @@ h1{
 
     position:sticky;
     top:0;
+
     z-index:9999;
 
     background:#f4f6f9;
@@ -173,25 +174,26 @@ table{
     table-layout:fixed;
 
     background:white;
-	overflow:hidden;
+
+    overflow:hidden;
 
 }
 
-/* HEADER */
+/* STICKY HEADER */
 
 thead th{
 
     position:sticky;
 
-    top:0;
+    top:170px;
 
-    z-index:999;
+    z-index:500;
 
     background:#0078d4;
 
 }
 
-/* HEADER CELL */
+/* HEADER */
 
 th{
 
@@ -211,7 +213,7 @@ th{
 
 }
 
-/* DATA CELL */
+/* CELLS */
 
 td{
 
@@ -287,7 +289,9 @@ td:nth-child(3){
     width:10%;
 
     white-space:nowrap;
-	overflow:hidden;
+
+    overflow:hidden;
+
     text-overflow:ellipsis;
 
 }
@@ -409,6 +413,12 @@ td:nth-child(5){
 
     }
 
+    thead th{
+
+        top:165px;
+
+    }
+
     /* TITLE */
 
     th:nth-child(1),
@@ -444,11 +454,11 @@ td:nth-child(5){
 
         font-size:8px;
 
-	white-space:nowrap;
+        white-space:nowrap;
 
-    overflow:hidden;
+        overflow:hidden;
 
-    text-overflow:ellipsis;
+        text-overflow:ellipsis;
 
     }
 
@@ -498,8 +508,6 @@ td:nth-child(5){
 
 <body>
 
-<!-- TOOLBAR -->
-
 <div class="top-toolbar">
 
     <h1>Document Management</h1>
@@ -528,7 +536,7 @@ td:nth-child(5){
 
     </div>
 
-    <!-- QUICK FILTER -->
+    <!-- BUTTONS -->
 
     <div class="quick-filter">
 
