@@ -1,90 +1,22 @@
-<body>
+<!DOCTYPE html>
+<html lang="vi">
 
-<h1>PDF Dashboard</h1>
+<head>
 
-<!-- STICKY TOOLBAR -->
-<div class="top-toolbar">
+<meta charset="UTF-8">
 
-    <div class="search-box">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-        <!-- TITLE -->
-        <input
-            type="text"
-            id="searchTitle"
-            placeholder="Search Title..."
-        >
-
-        <!-- CATEGORY -->
-        <input
-            list="categoryList"
-            type="text"
-            id="searchCategory"
-            placeholder="Search Category..."
-        >
-
-        <datalist id="categoryList">
-
-            <option value="C-1.Upgrade Reports">
-            <option value="C-2.Version History">
-            <option value="F-2.Specifications">
-            <option value="A-1.Tech Reports">
-            <option value="C-3.Software Notice">
-            <option value="TRAINING TEXT">
-            <option value="E-7.Field Engineer's Documents">
-            <option value="A-2.Rep News">
-            <option value="D-1.Manuals">
-            <option value="E-6.Troubleshooting">
-            <option value="E-4.Electrical Schematics">
-            <option value="E-1.Parts List">
-            <option value="D-2.Operation Manuals">
-            <option value="A-5.FSF, SECS/GEM Technical Materials">
-
-        </datalist>
-
-        <!-- TYPE -->
-        <input
-            type="text"
-            id="searchType"
-            placeholder="Search Type..."
-        >
-
-    </div>
-
-    <!-- AUTO BUTTONS -->
-    <div class="quick-filter" id="categoryButtons"></div>
-
-</div>
-
-<br>
-
-<!-- TABLE WRAPPER -->
-<div class="table-wrapper">
-
-    <table id="pdfTable">
-
-        <thead>
-            <tr>
-                <th>TITLE</th>
-                <th>CATEGORY</th>
-                <th>TYPE</th>
-                <th>RELEASE DATE</th>
-                <th>ACTION</th>
-            </tr>
-        </thead>
-
-        <tbody id="pdfBody"></tbody>
-
-    </table>
-
-</div>
+<title>PDF Dashboard</title>
 
 <style>
 
 body{
     font-family:Arial;
     background:#f4f4f4;
-    padding:20px;
     margin:0;
+    padding:20px;
 }
 
 /* TITLE */
@@ -123,7 +55,7 @@ h1{
     box-sizing:border-box;
 }
 
-/* BUTTONS */
+/* QUICK FILTER */
 
 .quick-filter{
     display:flex;
@@ -160,19 +92,13 @@ table{
     table-layout:fixed;
 }
 
-/* HEADER */
-
 th{
     background:#0078d4;
     color:white;
     padding:12px;
     text-align:left;
     border:1px solid #ccc;
-    resize:horizontal;
-    overflow:auto;
 }
-
-/* CELLS */
 
 td{
     border:1px solid #ccc;
@@ -182,13 +108,11 @@ td{
     white-space:nowrap;
 }
 
-/* ROW HOVER */
-
 tr:hover{
     background:#f1f1f1;
 }
 
-/* OPEN BUTTON */
+/* BUTTON */
 
 .action-btn{
     background:#0078d4;
@@ -223,31 +147,130 @@ tr:hover{
 
 </style>
 
+</head>
+
+<body>
+
+<h1>PDF Dashboard</h1>
+
+<!-- TOOLBAR -->
+
+<div class="top-toolbar">
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <!-- TITLE -->
+
+        <input
+            type="text"
+            id="searchTitle"
+            placeholder="Search Title..."
+        >
+
+        <!-- CATEGORY -->
+
+        <input
+            type="text"
+            id="searchCategory"
+            placeholder="Search Category..."
+        >
+
+        <!-- TYPE -->
+
+        <input
+            type="text"
+            id="searchType"
+            placeholder="Search Type..."
+        >
+
+    </div>
+
+    <!-- QUICK FILTER BUTTON -->
+
+    <div class="quick-filter"
+         id="quickFilterContainer">
+
+    </div>
+
+</div>
+
+<br>
+
+<!-- TABLE -->
+
+<div class="table-wrapper">
+
+    <table id="pdfTable">
+
+        <thead>
+
+            <tr>
+
+                <th>TITLE</th>
+
+                <th>CATEGORY</th>
+
+                <th>TYPE</th>
+
+                <th>RELEASE DATE</th>
+
+                <th>ACTION</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="pdfBody"></tbody>
+
+    </table>
+
+</div>
+
 <script>
 
 let allData = [];
 
-fetch('data.json')
-.then(response => response.json())
-.then(data => {
+let quickFilters = [];
+
+/* LOAD DATA */
+
+Promise.all([
+
+    fetch('data.json')
+    .then(res => res.json()),
+
+    fetch('quickFilters.json')
+    .then(res => res.json())
+
+])
+
+.then(([data, filters]) => {
 
     allData = data;
 
+    quickFilters = filters;
+
     renderTable(data);
 
-    generateCategoryButtons();
+    generateQuickButtons();
 
 });
 
+/* TABLE */
+
 function renderTable(data){
 
-    const body = document.getElementById('pdfBody');
+    const body =
+        document.getElementById('pdfBody');
 
     body.innerHTML = '';
 
     data.forEach(item => {
 
-        const row = document.createElement('tr');
+        const row =
+            document.createElement('tr');
 
         row.innerHTML = `
 
@@ -268,12 +291,16 @@ function renderTable(data){
             </td>
 
             <td>
+
                 <button
                     class="action-btn"
                     onclick="openPDF('${item["LINK"]}')"
                 >
+
                     Open
+
                 </button>
+
             </td>
 
         `;
@@ -284,7 +311,7 @@ function renderTable(data){
 
 }
 
-/* EVENTS */
+/* SEARCH EVENT */
 
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
@@ -295,22 +322,28 @@ document.getElementById('searchCategory')
 document.getElementById('searchType')
 .addEventListener('keyup', filterData);
 
-/* FILTER */
+/* NORMAL FILTER */
 
 function filterData(){
 
     const titleKeyword =
-        document.getElementById('searchTitle')
+        document.getElementById(
+            'searchTitle'
+        )
         .value
         .toLowerCase();
 
     const categoryKeyword =
-        document.getElementById('searchCategory')
+        document.getElementById(
+            'searchCategory'
+        )
         .value
         .toLowerCase();
 
     const typeKeyword =
-        document.getElementById('searchType')
+        document.getElementById(
+            'searchType'
+        )
         .value
         .toLowerCase();
 
@@ -338,31 +371,67 @@ function filterData(){
 
 }
 
-/* AUTO BUTTONS */
+/* QUICK FILTER ENGINE */
 
-function generateCategoryButtons(){
+function quickFilter(filters){
+
+    const filtered = allData.filter(item => {
+
+        /* TYPE */
+
+        if(filters.TYPE){
+
+            if(
+                !filters.TYPE.includes(
+                    item["TYPE"]
+                )
+            ){
+                return false;
+            }
+
+        }
+
+        /* CATEGORY */
+
+        if(filters.Category){
+
+            if(
+                !filters.Category.includes(
+                    item["Category"]
+                )
+            ){
+                return false;
+            }
+
+        }
+
+        return true;
+
+    });
+
+    renderTable(filtered);
+
+}
+
+/* GENERATE BUTTON */
+
+function generateQuickButtons(){
 
     const container =
-        document.getElementById('categoryButtons');
+        document.getElementById(
+            'quickFilterContainer'
+        );
 
-    const options =
-        document.querySelectorAll('#categoryList option');
+    quickFilters.forEach(filter => {
 
-    options.forEach(option => {
+        const btn =
+            document.createElement('button');
 
-        const value = option.value;
-
-        const btn = document.createElement('button');
-
-        btn.innerText = value;
+        btn.innerText = filter.name;
 
         btn.onclick = function(){
 
-            document.getElementById(
-                'searchCategory'
-            ).value = value;
-
-            filterData();
+            quickFilter(filter);
 
         };
 
@@ -379,25 +448,29 @@ function generateCategoryButtons(){
 
     clearBtn.style.background = '#dc3545';
 
-    clearBtn.onclick = function(){
-
-        document.getElementById(
-            'searchTitle'
-        ).value = '';
-
-        document.getElementById(
-            'searchCategory'
-        ).value = '';
-
-        document.getElementById(
-            'searchType'
-        ).value = '';
-
-        filterData();
-
-    };
+    clearBtn.onclick = clearFilter;
 
     container.appendChild(clearBtn);
+
+}
+
+/* CLEAR */
+
+function clearFilter(){
+
+    document.getElementById(
+        'searchTitle'
+    ).value = '';
+
+    document.getElementById(
+        'searchCategory'
+    ).value = '';
+
+    document.getElementById(
+        'searchType'
+    ).value = '';
+
+    renderTable(allData);
 
 }
 
@@ -412,3 +485,5 @@ function openPDF(link){
 </script>
 
 </body>
+
+</html>
