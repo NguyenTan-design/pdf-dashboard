@@ -518,6 +518,8 @@ function filterNXTIII(){
 
 function clearFilter(){
 
+    /* CLEAR INPUT */
+
     document.getElementById(
         'searchTitle'
     ).value = '';
@@ -530,10 +532,16 @@ function clearFilter(){
         'searchType'
     ).value = '';
 
+    /* SHOW ALL DATA */
+
+    const body =
+        document.getElementById('pdfBody');
+
+    body.innerHTML = '';
+
     renderTable(allData);
 
 }
-
 </script>
 
 </body>
