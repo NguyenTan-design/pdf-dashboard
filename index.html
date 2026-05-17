@@ -637,6 +637,18 @@ td:nth-child(5){
 
 <script>
 
+let targetTypes = [];
+
+fetch('quickFilters.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+    targetTypes = data;
+
+});
+
 /* =========================
    GLOBAL DATA
 ========================= */
@@ -856,16 +868,6 @@ function setCategoryFilter(value){
 ========================= */
 
 function filterNXTIII(){
-
-    const targetTypes = [
-
-        "AIMEX III",
-        "AIMEX IIIc",
-        "NXT III",
-        "NXT IIIc",
-        "NXT-H"
-
-    ];
 
     const filtered =
         allData.filter(item =>
