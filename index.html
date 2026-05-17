@@ -152,7 +152,7 @@ h1{
 
     overflow:auto;
 
-    max-height:82vh;
+    height:calc(100vh - 260px);
 
     border-radius:12px;
 
@@ -185,9 +185,9 @@ thead th{
 
     position:sticky;
 
-    top:170px;
+    top:0;
 
-    z-index:500;
+    z-index:100;
 
     background:#0078d4;
 
@@ -318,7 +318,7 @@ td:nth-child(5){
 
 }
 
-/* BUTTON */
+/* OPEN BUTTON */
 
 .action-btn{
 
@@ -413,12 +413,6 @@ td:nth-child(5){
 
     }
 
-    thead th{
-
-        top:165px;
-
-    }
-
     /* TITLE */
 
     th:nth-child(1),
@@ -498,6 +492,8 @@ td:nth-child(5){
 
         overflow-x:hidden;
 
+        height:calc(100vh - 300px);
+
     }
 
 }
@@ -536,7 +532,7 @@ td:nth-child(5){
 
     </div>
 
-    <!-- BUTTONS -->
+    <!-- FILTER BUTTONS -->
 
     <div class="quick-filter">
 
@@ -661,7 +657,7 @@ fetch('data.json')
 
 });
 
-/* RENDER */
+/* RENDER TABLE */
 
 function renderTable(data){
 
@@ -716,7 +712,7 @@ function renderTable(data){
 
 }
 
-/* EVENTS */
+/* SEARCH EVENTS */
 
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
