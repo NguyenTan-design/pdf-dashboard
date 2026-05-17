@@ -2,71 +2,81 @@
 
 <h1>PDF Dashboard</h1>
 
-<div class="search-box">
+<!-- STICKY TOOLBAR -->
+<div class="top-toolbar">
 
-    <!-- TITLE -->
-    <input
-        type="text"
-        id="searchTitle"
-        placeholder="Search Title..."
-    >
+    <div class="search-box">
 
-    <!-- CATEGORY -->
-    <input
-        list="categoryList"
-        type="text"
-        id="searchCategory"
-        placeholder="Search Category..."
-    >
+        <!-- TITLE -->
+        <input
+            type="text"
+            id="searchTitle"
+            placeholder="Search Title..."
+        >
 
-    <datalist id="categoryList">
+        <!-- CATEGORY -->
+        <input
+            list="categoryList"
+            type="text"
+            id="searchCategory"
+            placeholder="Search Category..."
+        >
 
-        <option value="C-1.Upgrade Reports">
-        <option value="C-2.Version History">
-        <option value="F-2.Specifications">
-        <option value="A-1.Tech Reports">
-        <option value="C-3.Software Notice">
-        <option value="TRAINING TEXT">
-        <option value="E-7.Field Engineer's Documents">
-        <option value="A-2.Rep News">
-        <option value="D-1.Manuals">
-        <option value="E-6.Troubleshooting">
-        <option value="E-4.Electrical Schematics">
-        <option value="E-1.Parts List">
-        <option value="D-2.Operation Manuals">
-        <option value="A-5.FSF, SECS/GEM Technical Materials">
+        <datalist id="categoryList">
 
-    </datalist>
+            <option value="C-1.Upgrade Reports">
+            <option value="C-2.Version History">
+            <option value="F-2.Specifications">
+            <option value="A-1.Tech Reports">
+            <option value="C-3.Software Notice">
+            <option value="TRAINING TEXT">
+            <option value="E-7.Field Engineer's Documents">
+            <option value="A-2.Rep News">
+            <option value="D-1.Manuals">
+            <option value="E-6.Troubleshooting">
+            <option value="E-4.Electrical Schematics">
+            <option value="E-1.Parts List">
+            <option value="D-2.Operation Manuals">
+            <option value="A-5.FSF, SECS/GEM Technical Materials">
 
-    <!-- TYPE -->
-    <input
-        type="text"
-        id="searchType"
-        placeholder="Search Type..."
-    >
+        </datalist>
+
+        <!-- TYPE -->
+        <input
+            type="text"
+            id="searchType"
+            placeholder="Search Type..."
+        >
+
+    </div>
+
+    <!-- AUTO BUTTONS -->
+    <div class="quick-filter" id="categoryButtons"></div>
 
 </div>
 
-<!-- AUTO BUTTONS -->
-<div class="quick-filter" id="categoryButtons"></div>
-
 <br>
 
-<table id="pdfTable">
+<!-- TABLE WRAPPER -->
+<div class="table-wrapper">
 
-    <thead>
-        <tr>
-            <th>TITLE</th>
-            <th>CATEGORY</th>
-            <th>TYPE</th>
-            <th>RELEASE DATE</th>
-            <th>ACTION</th>
-        </tr>
-    </thead>
+    <table id="pdfTable">
 
-    <tbody id="pdfBody"></tbody>
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>CATEGORY</th>
+                <th>TYPE</th>
+                <th>RELEASE DATE</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
 
-</table>
+        <tbody id="pdfBody"></tbody>
+
+    </table>
+
+</div>
 
 <style>
 
@@ -74,11 +84,28 @@ body{
     font-family:Arial;
     background:#f4f4f4;
     padding:20px;
+    margin:0;
 }
+
+/* TITLE */
 
 h1{
     text-align:center;
+    margin-top:10px;
 }
+
+/* STICKY TOOLBAR */
+
+.top-toolbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#f4f4f4;
+    padding:15px;
+    border-bottom:2px solid #ddd;
+}
+
+/* SEARCH */
 
 .search-box{
     display:flex;
@@ -95,6 +122,8 @@ h1{
     border:1px solid #ccc;
     box-sizing:border-box;
 }
+
+/* BUTTONS */
 
 .quick-filter{
     display:flex;
@@ -117,27 +146,49 @@ h1{
     background:#1f7a33;
 }
 
+/* TABLE */
+
+.table-wrapper{
+    overflow:auto;
+    width:100%;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
+    table-layout:fixed;
 }
+
+/* HEADER */
 
 th{
     background:#0078d4;
     color:white;
     padding:12px;
     text-align:left;
+    border:1px solid #ccc;
+    resize:horizontal;
+    overflow:auto;
 }
 
+/* CELLS */
+
 td{
+    border:1px solid #ccc;
     padding:12px;
-    border-bottom:1px solid #ddd;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
+
+/* ROW HOVER */
 
 tr:hover{
     background:#f1f1f1;
 }
+
+/* OPEN BUTTON */
 
 .action-btn{
     background:#0078d4;
@@ -150,6 +201,24 @@ tr:hover{
 
 .action-btn:hover{
     background:#005ea2;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    table{
+        font-size:12px;
+    }
+
+    th, td{
+        padding:8px;
+    }
+
 }
 
 </style>
@@ -181,13 +250,22 @@ function renderTable(data){
         const row = document.createElement('tr');
 
         row.innerHTML = `
-            <td>${item["Title"]}</td>
 
-            <td>${item["Category"]}</td>
+            <td title="${item["Title"]}">
+                ${item["Title"]}
+            </td>
 
-            <td>${item["TYPE"]}</td>
+            <td title="${item["Category"]}">
+                ${item["Category"]}
+            </td>
 
-            <td>${item["Release date"]}</td>
+            <td title="${item["TYPE"]}">
+                ${item["TYPE"]}
+            </td>
+
+            <td>
+                ${item["Release date"]}
+            </td>
 
             <td>
                 <button
@@ -197,6 +275,7 @@ function renderTable(data){
                     Open
                 </button>
             </td>
+
         `;
 
         body.appendChild(row);
@@ -204,6 +283,8 @@ function renderTable(data){
     });
 
 }
+
+/* EVENTS */
 
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
@@ -213,6 +294,8 @@ document.getElementById('searchCategory')
 
 document.getElementById('searchType')
 .addEventListener('keyup', filterData);
+
+/* FILTER */
 
 function filterData(){
 
@@ -255,6 +338,8 @@ function filterData(){
 
 }
 
+/* AUTO BUTTONS */
+
 function generateCategoryButtons(){
 
     const container =
@@ -285,9 +370,10 @@ function generateCategoryButtons(){
 
     });
 
-    // CLEAR BUTTON
+    /* CLEAR BUTTON */
 
-    const clearBtn = document.createElement('button');
+    const clearBtn =
+        document.createElement('button');
 
     clearBtn.innerText = 'CLEAR';
 
@@ -314,6 +400,8 @@ function generateCategoryButtons(){
     container.appendChild(clearBtn);
 
 }
+
+/* OPEN PDF */
 
 function openPDF(link){
 
