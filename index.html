@@ -515,7 +515,7 @@ td:nth-child(5){
             id="searchTitle"
             placeholder="Search Title..."
         >
-
+<!--
         <input
             type="text"
             id="searchCategory"
@@ -527,7 +527,7 @@ td:nth-child(5){
             id="searchType"
             placeholder="Search Type..."
         >
-
+-->
     </div>
 
     <!-- FILTER BUTTONS -->
@@ -666,10 +666,7 @@ function renderTable(data){
 
     data.forEach(item => {
 
-    console.log(
-        '[' + item["Category"] + ']'
-    );
-        const row =
+          const row =
             document.createElement('tr');
 
         row.innerHTML = `
@@ -718,11 +715,13 @@ function renderTable(data){
 document.getElementById('searchTitle')
 .addEventListener('keyup', filterData);
 
+/*
 document.getElementById('searchCategory')
 .addEventListener('keyup', filterData);
 
 document.getElementById('searchType')
 .addEventListener('keyup', filterData);
+*/
 
 /* FILTER */
 
@@ -736,7 +735,8 @@ function filterData(){
         .trim()
         .toLowerCase();
 
-    const categoryKeyword =
+    /*
+        const categoryKeyword =
         document.getElementById(
             'searchCategory'
         )
@@ -751,6 +751,7 @@ function filterData(){
         .value
         .trim()
         .toLowerCase();
+    */
 
     const filtered = allData.filter(item =>
 
@@ -780,11 +781,15 @@ function filterData(){
 
 function setCategoryFilter(value){
 
-    document.getElementById(
-        'searchCategory'
-    ).value = value;
+    const filtered = allData.filter(item =>
 
-    filterData();
+        String(item["Category"] || '')
+        .toLowerCase()
+        .includes(value.toLowerCase())
+
+    );
+
+    renderTable(filtered);
 
 }
 
@@ -822,6 +827,7 @@ function clearFilter(){
         'searchTitle'
     ).value = '';
 
+    /*
     document.getElementById(
         'searchCategory'
     ).value = '';
@@ -830,6 +836,7 @@ function clearFilter(){
         'searchType'
     ).value = '';
 
+    */
     renderTable(allData);
 
 }
