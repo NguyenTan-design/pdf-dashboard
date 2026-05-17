@@ -150,7 +150,9 @@ h1{
 
     width:100%;
 
-    overflow-x:auto;
+    overflow:auto;
+
+    height:calc(100vh - 260px);
 
     border-radius:12px;
 
@@ -173,8 +175,6 @@ table{
 
     background:white;
 
-    overflow:hidden;
-
 }
 
 /* STICKY HEADER */
@@ -183,9 +183,9 @@ thead th{
 
     position:sticky;
 
-    top:185px;
+    top:0;
 
-    z-index:1000;
+    z-index:999;
 
     background:#0078d4;
 
@@ -411,14 +411,6 @@ td:nth-child(5){
 
     }
 
-    /* STICKY MOBILE */
-
-    thead th{
-
-        top:220px;
-
-    }
-
     /* TITLE */
 
     th:nth-child(1),
@@ -491,6 +483,14 @@ td:nth-child(5){
         font-size:8px;
 
         border-radius:5px;
+
+    }
+
+    .table-wrapper{
+
+        overflow:auto;
+
+        height:calc(100vh - 300px);
 
     }
 
