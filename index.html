@@ -8,7 +8,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>PDF Dashboard</title>
+<title>Document Management</title>
 
 <style>
 
@@ -31,7 +31,7 @@ h1{
 .top-toolbar{
     position:sticky;
     top:0;
-    z-index:999;
+    z-index:1000;
     background:#f4f4f4;
     padding:15px;
     border-bottom:2px solid #ddd;
@@ -83,13 +83,24 @@ h1{
 .table-wrapper{
     overflow:auto;
     width:100%;
+    max-height:80vh;
 }
+
+/* TABLE */
 
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
     table-layout:fixed;
+}
+
+/* STICKY HEADER */
+
+thead th{
+    position:sticky;
+    top:170px;
+    z-index:999;
 }
 
 /* HEADER */
@@ -100,6 +111,11 @@ th{
     padding:12px;
     text-align:left;
     border:1px solid #ccc;
+
+    /* RESIZE COLUMN */
+    resize:horizontal;
+    overflow:auto;
+    min-width:150px;
 }
 
 /* CELL */
@@ -149,6 +165,10 @@ tr:hover{
         padding:8px;
     }
 
+    thead th{
+        top:230px;
+    }
+
 }
 
 </style>
@@ -157,11 +177,11 @@ tr:hover{
 
 <body>
 
-<h1>PDF Dashboard</h1>
-
 <!-- TOOLBAR -->
 
 <div class="top-toolbar">
+
+    <h1>Document Management</h1>
 
     <!-- SEARCH -->
 
@@ -257,7 +277,7 @@ tr:hover{
             Troubleshooting
         </button>
 
-        <!-- NXTIII BUTTON -->
+        <!-- NXTIII -->
 
         <button onclick="filterNXTIII()">
 
