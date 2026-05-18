@@ -847,6 +847,10 @@ let typeData = [];
 
 let currentData = [];
 
+let selectedCategory = '';
+
+let selectedType = '';
+
 /* =========================
    CACHE DOM
 ========================= */
@@ -887,6 +891,51 @@ fetch('data.json')
     );
 
 });
+
+function applyFilters(){
+
+    let filtered = allData;
+
+    /* CATEGORY FILTER */
+
+    if(selectedCategory !== ''){
+
+        filtered =
+            filtered.filter(item =>
+
+                String(item["Category"] || '')
+                .toLowerCase()
+                .includes(
+                    selectedCategory.toLowerCase()
+                )
+
+            );
+
+    }
+
+    /* TYPE FILTER */
+
+    if(selectedType !== ''){
+
+        const targetTypes =
+            quickFilters[selectedType] || [];
+
+        filtered =
+            filtered.filter(item =>
+
+                targetTypes.includes(
+                    String(item["TYPE"] || '').trim()
+                )
+
+            );
+
+    }
+
+    currentData = filtered;
+
+    renderTable(currentData);
+
+}
 
 /* =========================
    ESCAPE HTML
@@ -1045,7 +1094,14 @@ searchTitle.addEventListener('input', () => {
 /* =========================
    CATEGORY FILTER
 ========================= */
+function setCategoryFilter(value){
 
+    selectedCategory = value;
+
+    applyFilters();
+
+}
+/* OLD
 function setCategoryFilter(value){
 
     categoryData =
@@ -1062,6 +1118,8 @@ function setCategoryFilter(value){
     renderTable(currentData);
 
 }
+*/
+
 /* old
 function setCategoryFilter(value){
 
@@ -1086,6 +1144,14 @@ function setCategoryFilter(value){
 
 function applyQuickFilter(filterName){
 
+    selectedType = filterName;
+
+    applyFilters();
+
+}
+/* OLD
+function applyQuickFilter(filterName){
+
     const targetTypes =
         quickFilters[filterName] || [];
 
@@ -1103,6 +1169,8 @@ function applyQuickFilter(filterName){
     renderTable(currentData);
 
 }
+*/
+
 /*
 function applyQuickFilter(filterName){
 
@@ -1131,6 +1199,20 @@ function clearFilter(){
 
     searchTitle.value = '';
 
+    selectedCategory = '';
+
+    selectedType = '';
+
+    currentData = allData;
+
+    renderTable(allData);
+
+}
+/* OLD
+function clearFilter(){
+
+    searchTitle.value = '';
+
     categoryData = allData;
 
     typeData = allData;
@@ -1140,6 +1222,7 @@ function clearFilter(){
     renderTable(allData);
 
 }
+*/
 /* old
 function clearFilter(){
 
