@@ -752,6 +752,8 @@ td:nth-child(5){
 
 <script>
 
+
+
 /* =========================
    QUICK FILTER DATA
 ========================= */
@@ -849,6 +851,13 @@ let currentData = [];
 let selectedCategory = '';
 
 let selectedType = '';
+/* VIRTUAL SCROLLING */
+
+const ROW_HEIGHT = 58;
+
+let visibleStart = 0;
+
+let visibleEnd = 50;
 
 /* =========================
    CACHE DOM
@@ -859,6 +868,9 @@ const pdfBody =
 
 const searchTitle =
     document.getElementById('searchTitle');
+
+const tableWrapper =
+    document.querySelector('.table-wrapper');
 
 /* =========================
    LOAD JSON
@@ -932,6 +944,12 @@ function applyFilters(){
 
     currentData = filtered;
 
+    visibleStart = 0;
+
+    visibleEnd = 50;
+
+    tableWrapper.scrollTop = 0;
+
     renderTable(currentData);
 
 }
@@ -954,22 +972,50 @@ function escapeHTML(text){
 
 /* =========================
    RENDER TABLE
-========================= */
 
+========================= */
 function renderTable(data){
 
-    /* CLEAR OLD ROWS */
-
     pdfBody.innerHTML = '';
-
-    /* MEMORY FRAGMENT */
 
     const fragment =
         document.createDocumentFragment();
 
-    /* BUILD ROWS */
+    const start = visibleStart;
 
-    for(let i = 0; i < data.length; i++){
+    const end =
+        Math.min(
+            visibleEnd,
+            data.length
+        );
+
+    /* TOP SPACER */
+
+    if(start > 0){
+
+        const topSpacer =
+            document.createElement('tr');
+
+        topSpacer.innerHTML = `
+
+            <td
+                colspan="5"
+                style="
+                    height:${start * ROW_HEIGHT}px;
+                    padding:0;
+                    border:none;
+                "
+            ></td>
+
+        `;
+
+        fragment.appendChild(topSpacer);
+
+    }
+
+    /* VISIBLE ROWS */
+
+    for(let i = start; i < end; i++){
 
         const item = data[i];
 
@@ -990,6 +1036,9 @@ function renderTable(data){
 
         const row =
             document.createElement('tr');
+
+        row.style.height =
+            ROW_HEIGHT + 'px';
 
         row.innerHTML = `
 
@@ -1030,11 +1079,37 @@ function renderTable(data){
 
     }
 
-    /* APPEND 1 LẦN */
+    /* BOTTOM SPACER */
+
+    const remain =
+        data.length - end;
+
+    if(remain > 0){
+
+        const bottomSpacer =
+            document.createElement('tr');
+
+        bottomSpacer.innerHTML = `
+
+            <td
+                colspan="5"
+                style="
+                    height:${remain * ROW_HEIGHT}px;
+                    padding:0;
+                    border:none;
+                "
+            ></td>
+
+        `;
+
+        fragment.appendChild(bottomSpacer);
+
+    }
 
     pdfBody.appendChild(fragment);
 
 }
+
 
 /* =========================
    FILTER
@@ -1067,6 +1142,10 @@ function filterData(){
             .includes(keyword)
 
         );
+
+    visibleStart = 0;
+
+    visibleEnd = 50;
 
     renderTable(filtered);
 
@@ -1231,6 +1310,31 @@ function clearFilter(){
 
 }
 */
+
+/* =========================
+   VIRTUAL SCROLL EVENT
+========================= */
+
+tableWrapper.addEventListener(
+    'scroll',
+    () => {
+
+        const scrollTop =
+            tableWrapper.scrollTop;
+
+        visibleStart =
+            Math.floor(
+                scrollTop / ROW_HEIGHT
+            );
+
+        visibleEnd =
+            visibleStart + 50;
+
+        renderTable(currentData);
+
+    }
+);
+
 </script>
 </body>
 
