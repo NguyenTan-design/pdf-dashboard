@@ -853,7 +853,17 @@ let selectedCategory = '';
 let selectedType = '';
 /* VIRTUAL SCROLLING */
 
-const ROW_HEIGHT = 58;
+function getRowHeight(){
+
+    if(window.innerWidth <= 768){
+
+        return 38;
+
+    }
+
+    return 58;
+
+}
 
 let visibleStart = 0;
 
@@ -1001,7 +1011,7 @@ function renderTable(data){
             <td
                 colspan="5"
                 style="
-                    height:${start * ROW_HEIGHT}px;
+                    height:${start * getRowHeight()}px;
                     padding:0;
                     border:none;
                 "
@@ -1038,7 +1048,7 @@ function renderTable(data){
             document.createElement('tr');
 
         row.style.height =
-            ROW_HEIGHT + 'px';
+            getRowHeight() + 'px';
 
         row.innerHTML = `
 
@@ -1094,7 +1104,7 @@ function renderTable(data){
             <td
                 colspan="5"
                 style="
-                    height:${remain * ROW_HEIGHT}px;
+                    height:${remain * getRowHeight()}px;
                     padding:0;
                     border:none;
                 "
@@ -1324,11 +1334,11 @@ tableWrapper.addEventListener(
 
         visibleStart =
             Math.floor(
-                scrollTop / ROW_HEIGHT
+                scrollTop / getRowHeight()
             );
 
         visibleEnd =
-            visibleStart + 50;
+            visibleStart + 80;
 
         renderTable(currentData);
 
