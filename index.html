@@ -12,8 +12,8 @@
 >
 
 <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+name="viewport"
+content="width=device-width, initial-scale=1.0"
 >
 
 <title>Document Management</title>
@@ -23,38 +23,38 @@
 /* GLOBAL */
 
 *{
-    box-sizing:border-box;
+box-sizing:border-box;
 }
 
 body{
-    margin:0;
-    padding:12px;
-    background:#f4f6f9;
-    font-family:Arial, sans-serif;
-    color:#333;
+margin:0;
+padding:12px;
+background:#f4f6f9;
+font-family:Arial, sans-serif;
+color:#333;
 }
 
 /* TITLE */
 
 h1{
-    margin:0 0 16px;
-    text-align:center;
-    font-size:34px;
-    color:#111;
+margin:0 0 16px;
+text-align:center;
+font-size:34px;
+color:#111;
 }
 
 /* TOOLBAR */
 
 .top-toolbar{
 
-    position:sticky;
-    top:0;
+position:sticky;
+top:0;
 
-    z-index:9999;
+z-index:9999;
 
-    background:#f4f6f9;
+background:#f4f6f9;
 
-    padding-bottom:12px;
+padding-bottom:12px;
 
 }
 
@@ -62,39 +62,39 @@ h1{
 
 .search-box{
 
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
 
-    margin-bottom:12px;
+margin-bottom:12px;
 
 }
 
 .search-box input{
 
-    flex:1;
-    min-width:220px;
+flex:1;
+min-width:220px;
 
-    padding:12px;
+padding:12px;
 
-    border-radius:10px;
-    border:1px solid #d0d7de;
+border-radius:10px;
+border:1px solid #d0d7de;
 
-    font-size:14px;
+font-size:14px;
 
-    background:white;
+background:white;
 
-    transition:0.2s;
+transition:0.2s;
 
 }
 
 .search-box input:focus{
 
-    outline:none;
+outline:none;
 
-    border-color:#0078d4;
+border-color:#0078d4;
 
-    box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+box-shadow:0 0 0 3px rgba(0,120,212,0.15);
 
 }
 
@@ -102,37 +102,37 @@ h1{
 
 .quick-filter{
 
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
+display:flex;
+flex-wrap:wrap;
+gap:8px;
 
 }
 
 .quick-filter button{
 
-    background:#28a745;
-    color:white;
+background:#28a745;
+color:white;
 
-    border:none;
+border:none;
 
-    padding:8px 12px;
+padding:8px 12px;
 
-    border-radius:8px;
+border-radius:8px;
 
-    cursor:pointer;
+cursor:pointer;
 
-    font-size:13px;
-    font-weight:bold;
+font-size:13px;
+font-weight:bold;
 
-    transition:0.2s;
+transition:0.2s;
 
 }
 
 .quick-filter button:hover{
 
-    transform:translateY(-1px);
+transform:translateY(-1px);
 
-    background:#1f7a33;
+background:#1f7a33;
 
 }
 
@@ -140,13 +140,13 @@ h1{
 
 .quick-filter button.black-btn{
 
-    background:#111 !important;
+background:#111 !important;
 
 }
 
 .quick-filter button.black-btn:hover{
 
-    background:#000 !important;
+background:#000 !important;
 
 }
 
@@ -154,13 +154,13 @@ h1{
 
 .clear-btn{
 
-    background:#dc3545 !important;
+background:#dc3545 !important;
 
 }
 
 .clear-btn:hover{
 
-    background:#b52b38 !important;
+background:#b52b38 !important;
 
 }
 
@@ -168,18 +168,18 @@ h1{
 
 .table-wrapper{
 
-    width:100%;
+width:100%;
 
-    overflow:auto;
+overflow:auto;
 
-    height:calc(100vh - 260px);
+height:calc(100vh - 260px);
 
-    border-radius:12px;
+border-radius:12px;
 
-    background:white;
+background:white;
 
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.08);
+box-shadow:
+0 4px 12px rgba(0,0,0,0.08);
 
 }
 
@@ -187,13 +187,13 @@ h1{
 
 table{
 
-    width:100%;
+width:100%;
 
-    border-collapse:collapse;
+border-collapse:collapse;
 
-    table-layout:fixed;
+table-layout:fixed;
 
-    background:white;
+background:white;
 
 }
 
@@ -201,13 +201,13 @@ table{
 
 thead th{
 
-    position:sticky;
+position:sticky;
 
-    top:0;
+top:0;
 
-    z-index:999;
+z-index:999;
 
-    background:#0078d4;
+background:#0078d4;
 
 }
 
@@ -215,19 +215,19 @@ thead th{
 
 th{
 
-    color:white;
+color:white;
 
-    text-align:left;
+text-align:left;
 
-    padding:12px;
+padding:12px;
 
-    font-size:14px;
+font-size:14px;
 
-    border:1px solid #dbe2ea;
+border:1px solid #dbe2ea;
 
-    resize:horizontal;
+resize:horizontal;
 
-    overflow:auto;
+overflow:auto;
 
 }
 
@@ -235,13 +235,13 @@ th{
 
 td{
 
-    padding:12px;
+padding:12px;
 
-    vertical-align:top;
+vertical-align:top;
 
-    font-size:14px;
+font-size:14px;
 
-    border:1px solid #dbe2ea;
+border:1px solid #dbe2ea;
 
 }
 
@@ -249,13 +249,13 @@ td{
 
 tbody tr:nth-child(even){
 
-    background:#fafbfc;
+background:#fafbfc;
 
 }
 
 tbody tr:hover{
 
-    background:#eef6ff;
+background:#eef6ff;
 
 }
 
@@ -264,19 +264,19 @@ tbody tr:hover{
 th:nth-child(1),
 td:nth-child(1){
 
-    width:58%;
+width:58%;
 
 }
 
 td:nth-child(1){
 
-    white-space:normal;
+white-space:normal;
 
-    word-break:break-word;
+word-break:break-word;
 
-    line-height:1.6;
+line-height:1.6;
 
-    font-weight:500;
+font-weight:500;
 
 }
 
@@ -285,17 +285,17 @@ td:nth-child(1){
 th:nth-child(2),
 td:nth-child(2){
 
-    width:12%;
+width:12%;
 
 }
 
 td:nth-child(2){
 
-    white-space:normal;
+white-space:normal;
 
-    word-break:break-word;
+word-break:break-word;
 
-    line-height:1.5;
+line-height:1.5;
 
 }
 
@@ -304,13 +304,13 @@ td:nth-child(2){
 th:nth-child(3),
 td:nth-child(3){
 
-    width:10%;
+width:10%;
 
-    white-space:nowrap;
+white-space:nowrap;
 
-    overflow:hidden;
+overflow:hidden;
 
-    text-overflow:ellipsis;
+text-overflow:ellipsis;
 
 }
 
@@ -319,9 +319,9 @@ td:nth-child(3){
 th:nth-child(4),
 td:nth-child(4){
 
-    width:10%;
+width:10%;
 
-    white-space:nowrap;
+white-space:nowrap;
 
 }
 
@@ -330,9 +330,9 @@ td:nth-child(4){
 th:nth-child(5),
 td:nth-child(5){
 
-    width:10%;
+width:10%;
 
-    white-space:nowrap;
+white-space:nowrap;
 
 }
 
@@ -340,29 +340,29 @@ td:nth-child(5){
 
 .action-btn{
 
-    display:inline-block;
+display:inline-block;
 
-    background:#0078d4;
+background:#0078d4;
 
-    color:white;
+color:white;
 
-    text-decoration:none;
+text-decoration:none;
 
-    padding:8px 12px;
+padding:8px 12px;
 
-    border-radius:8px;
+border-radius:8px;
 
-    font-weight:bold;
+font-weight:bold;
 
-    transition:0.2s;
+transition:0.2s;
 
 }
 
 .action-btn:hover{
 
-    background:#005ea2;
+background:#005ea2;
 
-    transform:translateY(-1px);
+transform:translateY(-1px);
 
 }
 
@@ -370,149 +370,149 @@ td:nth-child(5){
 
 @media(max-width:768px){
 
-    body{
-        padding:4px;
-    }
+body{
+padding:4px;
+}
 
-    h1{
-        font-size:22px;
-        margin-bottom:10px;
-    }
+h1{
+font-size:22px;
+margin-bottom:10px;
+}
 
-    .top-toolbar{
-        padding-bottom:8px;
-    }
+.top-toolbar{
+padding-bottom:8px;
+}
 
-    .search-box{
-        flex-direction:column;
-        gap:6px;
-    }
+.search-box{
+flex-direction:column;
+gap:6px;
+}
 
-    .search-box input{
+.search-box input{
 
-        width:100%;
+width:100%;
 
-        padding:9px;
+padding:9px;
 
-        font-size:12px;
+font-size:12px;
 
-    }
+}
 
-    .quick-filter{
+.quick-filter{
 
-        gap:5px;
+gap:5px;
 
-    }
+}
 
-    .quick-filter button{
+.quick-filter button{
 
-        padding:5px 7px;
+padding:5px 7px;
 
-        font-size:10px;
+font-size:10px;
 
-        border-radius:6px;
+border-radius:6px;
 
-    }
+}
 
-    table{
+table{
 
-        width:100%;
+width:100%;
 
-        table-layout:fixed;
+table-layout:fixed;
 
-    }
+}
 
-    th,
-    td{
+th,
+td{
 
-        padding:5px;
+padding:5px;
 
-        font-size:9px;
+font-size:9px;
 
-    }
+}
 
-    /* TITLE */
+/* TITLE */
 
-    th:nth-child(1),
-    td:nth-child(1){
+th:nth-child(1),
+td:nth-child(1){
 
-        width:48%;
+width:48%;
 
-        font-size:9px;
+font-size:9px;
 
-        line-height:1.4;
+line-height:1.4;
 
-    }
+}
 
-    /* CATEGORY */
+/* CATEGORY */
 
-    th:nth-child(2),
-    td:nth-child(2){
+th:nth-child(2),
+td:nth-child(2){
 
-        width:18%;
+width:18%;
 
-        font-size:8px;
+font-size:8px;
 
-        line-height:1.3;
+line-height:1.3;
 
-    }
+}
 
-    /* TYPE */
+/* TYPE */
 
-    th:nth-child(3),
-    td:nth-child(3){
+th:nth-child(3),
+td:nth-child(3){
 
-        width:10%;
+width:10%;
 
-        font-size:8px;
+font-size:8px;
 
-        white-space:nowrap;
+white-space:nowrap;
 
-        overflow:hidden;
+overflow:hidden;
 
-        text-overflow:ellipsis;
+text-overflow:ellipsis;
 
-    }
+}
 
-    /* DATE */
+/* DATE */
 
-    th:nth-child(4),
-    td:nth-child(4){
+th:nth-child(4),
+td:nth-child(4){
 
-        width:12%;
+width:12%;
 
-        font-size:8px;
+font-size:8px;
 
-    }
+}
 
-    /* ACTION */
+/* ACTION */
 
-    th:nth-child(5),
-    td:nth-child(5){
+th:nth-child(5),
+td:nth-child(5){
 
-        width:12%;
+width:12%;
 
-        text-align:center;
+text-align:center;
 
-    }
+}
 
-    .action-btn{
+.action-btn{
 
-        padding:4px 5px;
+padding:4px 5px;
 
-        font-size:8px;
+font-size:8px;
 
-        border-radius:5px;
+border-radius:5px;
 
-    }
+}
 
-    .table-wrapper{
+.table-wrapper{
 
-        overflow:auto;
+overflow:auto;
 
-        height:calc(100vh - 300px);
+height:calc(100vh - 300px);
 
-    }
+}
 
 }
 
@@ -524,199 +524,199 @@ td:nth-child(5){
 
 <div class="top-toolbar">
 
-    <h1>Document Management</h1>
+<h1>Document Management</h1>
 
-    <!-- SEARCH -->
+<!-- SEARCH -->
 
-    <div class="search-box">
+<div class="search-box">
 
-        <input
-            type="text"
-            id="searchTitle"
-            placeholder="Search Title..."
-        >
+<input
+type="text"
+id="searchTitle"
+placeholder="Search Title..."
+>
 <!--
-        <input
-            type="text"
-            id="searchCategory"
-            placeholder="Search Category..."
-        >
+       <input
+           type="text"
+           id="searchCategory"
+           placeholder="Search Category..."
+       >
 
-        <input
-            type="text"
-            id="searchType"
-            placeholder="Search Type..."
-        >
+       <input
+           type="text"
+           id="searchType"
+           placeholder="Search Type..."
+       >
 -->
-    </div>
+</div>
 
-    <!-- FILTER BUTTONS -->
+<!-- FILTER BUTTONS -->
 
-    <div class="quick-filter">
+<div class="quick-filter">
 
-        <button onclick="setCategoryFilter('C-1.Upgrade Reports')">
-            Upgrade Reports
-        </button>
+<button onclick="setCategoryFilter('C-1.Upgrade Reports')">
+Upgrade Reports
+</button>
 
-        <button onclick="setCategoryFilter('C-2.Version History')">
-            Version History
-        </button>
+<button onclick="setCategoryFilter('C-2.Version History')">
+Version History
+</button>
 
-        <button onclick="setCategoryFilter('F-2.Specifications')">
-            Specifications
-        </button>
+<button onclick="setCategoryFilter('F-2.Specifications')">
+Specifications
+</button>
 
-        <button onclick="setCategoryFilter('A-1.Tech Reports')">
-            Tech Reports
-        </button>
+<button onclick="setCategoryFilter('A-1.Tech Reports')">
+Tech Reports
+</button>
 
-        <button onclick="setCategoryFilter('C-3.Software Notice')">
-            Software Notice
-        </button>
+<button onclick="setCategoryFilter('C-3.Software Notice')">
+Software Notice
+</button>
 
-        <button onclick="setCategoryFilter('TRAINING TEXT')">
-            Training
-        </button>
+<button onclick="setCategoryFilter('TRAINING TEXT')">
+Training
+</button>
 
-        <button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
-            FE Documents
-        </button>
+<button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
+FE Documents
+</button>
 
-        <button onclick="setCategoryFilter('A-2.Rep News')">
-            Rep News
-        </button>
+<button onclick="setCategoryFilter('A-2.Rep News')">
+Rep News
+</button>
 
-        <button onclick="setCategoryFilter('D-1.Manuals')">
-            Manuals
-        </button>
+<button onclick="setCategoryFilter('D-1.Manuals')">
+Manuals
+</button>
 
-        <button onclick="setCategoryFilter('E-6.Troubleshooting')">
-            Troubleshooting
-        </button>
+<button onclick="setCategoryFilter('E-6.Troubleshooting')">
+Troubleshooting
+</button>
 
-        <button onclick="setCategoryFilter('E-4.Electrical Schematics')">
-            Electrical
-        </button>
+<button onclick="setCategoryFilter('E-4.Electrical Schematics')">
+Electrical
+</button>
 
-        <button onclick="setCategoryFilter('E-1.Parts List')">
-            Parts List
-        </button>
+<button onclick="setCategoryFilter('E-1.Parts List')">
+Parts List
+</button>
 
-        <button onclick="setCategoryFilter('D-2.Operation Manuals')">
-            Operation
-        </button>
+<button onclick="setCategoryFilter('D-2.Operation Manuals')">
+Operation
+</button>
 
-        <button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
-            FSF / GEM
-        </button>
+<button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
+FSF / GEM
+</button>
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('AIMEXIII')"
-        >
-            AIMEXIII
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('AIMEXIII')"
+>
+AIMEXIII
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('NXTR')"
-        >
-            NXTR
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXTR')"
+>
+NXTR
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('GPX')"
-        >
-            GPX
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX')"
+>
+GPX
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('Flexa')"
-        >
-            Flexa
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('Flexa')"
+>
+Flexa
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('Fujitrax')"
-        >
-            Fujitrax
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('Fujitrax')"
+>
+Fujitrax
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('Feeder')"
-        >
-            Feeder
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('Feeder')"
+>
+Feeder
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('Nexim')"
-        >
-            Nexim
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('Nexim')"
+>
+Nexim
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('Unit')"
-        >
-            Unit
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('Unit')"
+>
+Unit
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('NXTIII')"
-        >
-            NXTIII
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXTIII')"
+>
+NXTIII
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('GPX-CS')"
-        >
-            GPX-CS
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CS')"
+>
+GPX-CS
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('GPX-CSII')"
-        >
-            GPX-CSII
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CSII')"
+>
+GPX-CSII
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('GPX-CL')"
-        >
-            GPX-CL
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CL')"
+>
+GPX-CL
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('GPX-CII')"
-        >
-            GPX-CII
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CII')"
+>
+GPX-CII
+</button>        
 
-        <button
-        class="black-btn"
-        onclick="applyQuickFilter('NXT II')"
-        >
-            NXTII
-        </button>        
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXT II')"
+>
+NXTII
+</button>        
 
-         
-        <button
-            class="clear-btn"
-            onclick="clearFilter()"
-        >
-            CLEAR
-        </button>
 
-    </div>
+<button
+class="clear-btn"
+onclick="clearFilter()"
+>
+CLEAR
+</button>
+
+</div>
 
 </div>
 
@@ -724,38 +724,36 @@ td:nth-child(5){
 
 <div class="table-wrapper">
 
-    <table id="pdfTable">
+<table id="pdfTable">
 
-        <thead>
+<thead>
 
-            <tr>
+<tr>
 
-                <th>TITLE</th>
+<th>TITLE</th>
 
-                <th>CATEGORY</th>
+<th>CATEGORY</th>
 
-                <th>TYPE</th>
+<th>TYPE</th>
 
-                <th>DATE</th>
+<th>DATE</th>
 
-                <th>ACTION</th>
+<th>ACTION</th>
 
-            </tr>
+</tr>
 
-        </thead>
+</thead>
 
-        <tbody id="pdfBody"></tbody>
+<tbody id="pdfBody"></tbody>
 
-    </table>
+</table>
 
 </div>
 
 <script>
 
-
-
 /* =========================
-   QUICK FILTER DATA
+  QUICK FILTER DATA
 ========================= */
 
 let quickFilters = {};
@@ -764,74 +762,74 @@ let quickFilters = {};
 
 Promise.all([
 
-    fetch('AIMEXIII.json').then(r => r.json()),
-    fetch('NXTR.json').then(r => r.json()),
-    fetch('NXTIII.json').then(r => r.json()),
-    fetch('GPX.json').then(r => r.json()),
-    fetch('Flexa.json').then(r => r.json()),
-    fetch('Fujitrax.json').then(r => r.json()),
-    fetch('Feeder.json').then(r => r.json()),
-    fetch('Nexim.json').then(r => r.json()),
-    fetch('Unit.json').then(r => r.json()),
-    fetch('GPX-CS.json').then(r => r.json()),
-    fetch('GPX-CSII.json').then(r => r.json()),
-    fetch('GPX-CL.json').then(r => r.json()),
-    fetch('GPX-CII.json').then(r => r.json()),
-    fetch('NXT II.json').then(r => r.json())
+fetch('AIMEXIII.json').then(r => r.json()),
+fetch('NXTR.json').then(r => r.json()),
+fetch('NXTIII.json').then(r => r.json()),
+fetch('GPX.json').then(r => r.json()),
+fetch('Flexa.json').then(r => r.json()),
+fetch('Fujitrax.json').then(r => r.json()),
+fetch('Feeder.json').then(r => r.json()),
+fetch('Nexim.json').then(r => r.json()),
+fetch('Unit.json').then(r => r.json()),
+fetch('GPX-CS.json').then(r => r.json()),
+fetch('GPX-CSII.json').then(r => r.json()),
+fetch('GPX-CL.json').then(r => r.json()),
+fetch('GPX-CII.json').then(r => r.json()),
+fetch('NXT II.json').then(r => r.json())
 
 ])
 
 .then(([
 
-    aimex3,
-    nxtr,
-    nxt3,
-    gpx,
-    flexa,
-    fujitrax,
-    feeder,
-    nexim,
-    unit,
-    gpxcs,
-    gpxcs2,
-    gpxcl,
-    gpxc2,
-    nxt2
+aimex3,
+nxtr,
+nxt3,
+gpx,
+flexa,
+fujitrax,
+feeder,
+nexim,
+unit,
+gpxcs,
+gpxcs2,
+gpxcl,
+gpxc2,
+nxt2
 
 ]) => {
 
-    quickFilters = {
+quickFilters = {
 
-        AIMEXIII : aimex3,
-        NXTR : nxtr,
-        NXTIII : nxt3,
-        GPX : gpx,
-        Flexa : flexa,
-        Fujitrax : fujitrax,
-        Feeder : feeder,
-        Nexim : nexim,
-        Unit : unit,
-        "GPX-CS" : gpxcs,
-        "GPX-CSII" : gpxcs2,
-        "GPX-CL" : gpxcl,
-        "GPX-CII" : gpxc2,
-        "NXT II" : nxt2
+AIMEXIII : aimex3,
+NXTR : nxtr,
+NXTIII : nxt3,
+GPX : gpx,
+Flexa : flexa,
+Fujitrax : fujitrax,
+Feeder : feeder,
+Nexim : nexim,
+Unit : unit,
+"GPX-CS" : gpxcs,
+"GPX-CSII" : gpxcs2,
+"GPX-CL" : gpxcl,
+"GPX-CII" : gpxc2,
+"NXT II" : nxt2
 
-    };
+};
 
 })
 
 .catch(error => {
 
-    console.error(
-        'Quick Filter Load Error:',
-        error
-    );
+console.error(
+'Quick Filter Load Error:',
+error
+);
 
 });
 
 /* =========================
-   GLOBAL DATA
+  GLOBAL DATA
 ========================= */
 
 let allData = [];
@@ -851,39 +849,19 @@ let currentData = [];
 let selectedCategory = '';
 
 let selectedType = '';
-/* VIRTUAL SCROLLING */
-
-function getRowHeight(){
-
-    if(window.innerWidth <= 768){
-
-        return 38;
-
-    }
-
-    return 58;
-
-}
-
-let visibleStart = 0;
-
-let visibleEnd = 50;
 
 /* =========================
-   CACHE DOM
+  CACHE DOM
 ========================= */
 
 const pdfBody =
-    document.getElementById('pdfBody');
+document.getElementById('pdfBody');
 
 const searchTitle =
-    document.getElementById('searchTitle');
-
-const tableWrapper =
-    document.querySelector('.table-wrapper');
+document.getElementById('searchTitle');
 
 /* =========================
-   LOAD JSON
+  LOAD JSON
 ========================= */
 
 fetch('data.json')
@@ -892,318 +870,251 @@ fetch('data.json')
 
 .then(data => {
 
-    allData = data;
+allData = data;
 
-    categoryData = data;
+categoryData = data;
 
-    typeData = data;
+typeData = data;
 
-    currentData = data;
+currentData = data;
 
-    renderTable(allData);
+renderTable(allData);
 
 })
 
 .catch(error => {
 
-    console.error(
-        'JSON Load Error:',
-        error
-    );
+console.error(
+'JSON Load Error:',
+error
+);
 
 });
 
 function applyFilters(){
 
-    let filtered = allData;
+let filtered = allData;
 
-    /* CATEGORY FILTER */
+/* CATEGORY FILTER */
 
-    if(selectedCategory !== ''){
+if(selectedCategory !== ''){
 
-        filtered =
-            filtered.filter(item =>
+filtered =
+filtered.filter(item =>
 
-                String(item["Category"] || '')
-                .toLowerCase()
-                .includes(
-                    selectedCategory.toLowerCase()
-                )
+String(item["Category"] || '')
+.toLowerCase()
+.includes(
+selectedCategory.toLowerCase()
+)
 
-            );
+);
 
-    }
+}
 
-    /* TYPE FILTER */
+/* TYPE FILTER */
 
-    if(selectedType !== ''){
+if(selectedType !== ''){
 
-        const targetTypes =
-            quickFilters[selectedType] || [];
+const targetTypes =
+quickFilters[selectedType] || [];
 
-        filtered =
-            filtered.filter(item =>
+filtered =
+filtered.filter(item =>
 
-                targetTypes.includes(
-                    String(item["TYPE"] || '').trim()
-                )
+targetTypes.includes(
+String(item["TYPE"] || '').trim()
+)
 
-            );
+);
 
-    }
+}
 
-    currentData = filtered;
+currentData = filtered;
 
-    visibleStart = 0;
-
-    visibleEnd = 50;
-
-    tableWrapper.scrollTop = 0;
-
-    renderTable(currentData);
+renderTable(currentData);
 
 }
 
 /* =========================
-   ESCAPE HTML
+  ESCAPE HTML
 ========================= */
 
 function escapeHTML(text){
 
-    return String(text)
+return String(text)
 
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/>/g, '&gt;')
+.replace(/"/g, '&quot;')
+.replace(/'/g, '&#039;');
 
 }
 
 /* =========================
-   RENDER TABLE
-
+  RENDER TABLE
 ========================= */
+
 function renderTable(data){
 
-    pdfBody.innerHTML = '';
+/* CLEAR OLD ROWS */
 
-    const fragment =
-        document.createDocumentFragment();
+pdfBody.innerHTML = '';
 
-    const start = visibleStart;
+/* MEMORY FRAGMENT */
 
-    const end =
-        Math.min(
-            visibleEnd,
-            data.length
-        );
+const fragment =
+document.createDocumentFragment();
 
-    /* TOP SPACER */
+/* BUILD ROWS */
 
-    if(start > 0){
+for(let i = 0; i < data.length; i++){
 
-        const topSpacer =
-            document.createElement('tr');
+const item = data[i];
 
-        topSpacer.innerHTML = `
+const title =
+escapeHTML(item["Title"] || '');
 
-            <td
-                colspan="5"
-                style="
-                    height:${start * getRowHeight()}px;
-                    padding:0;
-                    border:none;
-                "
-            ></td>
+const category =
+escapeHTML(item["Category"] || '');
 
-        `;
+const type =
+escapeHTML(item["TYPE"] || '');
 
-        fragment.appendChild(topSpacer);
+const releaseDate =
+escapeHTML(item["Release date"] || '');
 
-    }
+const link =
+item["LINK"] || '#';
 
-    /* VISIBLE ROWS */
+const row =
+document.createElement('tr');
 
-    for(let i = start; i < end; i++){
+row.innerHTML = `
 
-        const item = data[i];
+           <td title="${title}">
+               ${title}
+           </td>
 
-        const title =
-            escapeHTML(item["Title"] || '');
+           <td title="${category}">
+               ${category}
+           </td>
 
-        const category =
-            escapeHTML(item["Category"] || '');
+           <td title="${type}">
+               ${type}
+           </td>
 
-        const type =
-            escapeHTML(item["TYPE"] || '');
+           <td>
+               ${releaseDate}
+           </td>
 
-        const releaseDate =
-            escapeHTML(item["Release date"] || '');
+           <td>
 
-        const link =
-            item["LINK"] || '#';
+               <a
+                   class="action-btn"
+                   href="${link}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+               >
 
-        const row =
-            document.createElement('tr');
+                   Open
 
-        row.style.height =
-            getRowHeight() + 'px';
+               </a>
 
-        row.innerHTML = `
+           </td>
 
-            <td title="${title}">
-                ${title}
-            </td>
+       `;
 
-            <td title="${category}">
-                ${category}
-            </td>
-
-            <td title="${type}">
-                ${type}
-            </td>
-
-            <td>
-                ${releaseDate}
-            </td>
-
-            <td>
-
-                <a
-                    class="action-btn"
-                    href="${link}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    Open
-
-                </a>
-
-            </td>
-
-        `;
-
-        fragment.appendChild(row);
-
-    }
-
-    /* BOTTOM SPACER */
-
-    const remain =
-        data.length - end;
-
-    if(remain > 0){
-
-        const bottomSpacer =
-            document.createElement('tr');
-
-        bottomSpacer.innerHTML = `
-
-            <td
-                colspan="5"
-                style="
-                    height:${remain * getRowHeight()}px;
-                    padding:0;
-                    border:none;
-                "
-            ></td>
-
-        `;
-
-        fragment.appendChild(bottomSpacer);
-
-    }
-
-    pdfBody.appendChild(fragment);
+fragment.appendChild(row);
 
 }
 
+/* APPEND 1 LẦN */
+
+pdfBody.appendChild(fragment);
+
+}
 
 /* =========================
-   FILTER
+  FILTER
 ========================= */
 
 function filterData(){
 
-    const keyword =
-        searchTitle.value
-        .trim()
-        .toLowerCase();
+const keyword =
+searchTitle.value
+.trim()
+.toLowerCase();
 
-    /* EMPTY SEARCH */
+/* EMPTY SEARCH */
 
-    if(keyword === ''){
+if(keyword === ''){
 
-        renderTable(allData);
+renderTable(allData);
 
-        return;
+return;
 
-    }
+}
 
-    /* FILTER DATA */
+/* FILTER DATA */
 
-    const filtered =
-        currentData.filter(item =>
+const filtered =
+currentData.filter(item =>
 
-            String(item["Title"] || '')
-            .toLowerCase()
-            .includes(keyword)
+String(item["Title"] || '')
+.toLowerCase()
+.includes(keyword)
 
-        );
+);
 
-    visibleStart = 0;
-
-    visibleEnd = 50;
-
-    renderTable(filtered);
+renderTable(filtered);
 
 }
 
 /* =========================
-   DEBOUNCE SEARCH
+  DEBOUNCE SEARCH
 ========================= */
 
 let debounceTimer;
 
 searchTitle.addEventListener('input', () => {
 
-    clearTimeout(debounceTimer);
+clearTimeout(debounceTimer);
 
-    debounceTimer = setTimeout(() => {
+debounceTimer = setTimeout(() => {
 
-        filterData();
+filterData();
 
-    }, 300);
+}, 300);
 
 });
 
 /* =========================
-   CATEGORY FILTER
+  CATEGORY FILTER
 ========================= */
 function setCategoryFilter(value){
 
-    selectedCategory = value;
+selectedCategory = value;
 
-    applyFilters();
+applyFilters();
 
 }
 /* OLD
 function setCategoryFilter(value){
 
-    categoryData =
-        typeData.filter(item =>
+   categoryData =
+       typeData.filter(item =>
 
-            String(item["Category"] || '')
-            .toLowerCase()
-            .includes(value.toLowerCase())
+           String(item["Category"] || '')
+           .toLowerCase()
+           .includes(value.toLowerCase())
 
-        );
+       );
 
-    currentData = categoryData;
+   currentData = categoryData;
 
-    renderTable(currentData);
+   renderTable(currentData);
 
 }
 */
@@ -1211,50 +1122,50 @@ function setCategoryFilter(value){
 /* old
 function setCategoryFilter(value){
 
-    const filtered =
-        allData.filter(item =>
+   const filtered =
+       allData.filter(item =>
 
-            String(item["Category"] || '')
-            .toLowerCase()
-            .includes(value.toLowerCase())
+           String(item["Category"] || '')
+           .toLowerCase()
+           .includes(value.toLowerCase())
 
-        );
+       );
 
-    renderTable(filtered);
+   renderTable(filtered);
 
 }
-    */
+   */
 
 
 /* =========================
-   COMMON QUICK FILTER
+  COMMON QUICK FILTER
 ========================= */
 
 function applyQuickFilter(filterName){
 
-    selectedType = filterName;
+selectedType = filterName;
 
-    applyFilters();
+applyFilters();
 
 }
 /* OLD
 function applyQuickFilter(filterName){
 
-    const targetTypes =
-        quickFilters[filterName] || [];
+   const targetTypes =
+       quickFilters[filterName] || [];
 
-    typeData =
-        categoryData.filter(item =>
+   typeData =
+       categoryData.filter(item =>
 
-            targetTypes.includes(
-                String(item["TYPE"] || '').trim()
-            )
+           targetTypes.includes(
+               String(item["TYPE"] || '').trim()
+           )
 
-        );
+       );
 
-    currentData = typeData;
+   currentData = typeData;
 
-    renderTable(currentData);
+   renderTable(currentData);
 
 }
 */
@@ -1262,90 +1173,63 @@ function applyQuickFilter(filterName){
 /*
 function applyQuickFilter(filterName){
 
-    const targetTypes =
-        quickFilters[filterName] || [];
+   const targetTypes =
+       quickFilters[filterName] || [];
 
-    const filtered =
-        allData.filter(item =>
+   const filtered =
+       allData.filter(item =>
 
-            targetTypes.includes(
-                String(item["TYPE"] || '').trim()
-            )
+           targetTypes.includes(
+               String(item["TYPE"] || '').trim()
+           )
 
-        );
+       );
 
-    renderTable(filtered);
+   renderTable(filtered);
 
 }
 */
 
 /* =========================
-   CLEAR FILTER
+  CLEAR FILTER
 ========================= */
 
 function clearFilter(){
 
-    searchTitle.value = '';
+searchTitle.value = '';
 
-    selectedCategory = '';
+selectedCategory = '';
 
-    selectedType = '';
+selectedType = '';
 
-    currentData = allData;
+currentData = allData;
 
-    renderTable(allData);
+renderTable(allData);
 
 }
 /* OLD
 function clearFilter(){
 
-    searchTitle.value = '';
+   searchTitle.value = '';
 
-    categoryData = allData;
+   categoryData = allData;
 
-    typeData = allData;
+   typeData = allData;
 
-    currentData = allData;
+   currentData = allData;
 
-    renderTable(allData);
+   renderTable(allData);
 
 }
 */
 /* old
 function clearFilter(){
 
-    searchTitle.value = '';
+   searchTitle.value = '';
 
-    renderTable(allData);
+   renderTable(allData);
 
 }
 */
-
-/* =========================
-   VIRTUAL SCROLL EVENT
-========================= */
-
-tableWrapper.addEventListener(
-    'scroll',
-    () => {
-
-        const scrollTop =
-            tableWrapper.scrollTop;
-
-        visibleStart =
-            Math.floor(
-                scrollTop / getRowHeight()
-            );
-
-        visibleEnd =
-            visibleStart + 80;
-
-        renderTable(currentData);
-
-    }
-);
-
 </script>
 </body>
-
-</html>
