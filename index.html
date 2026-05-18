@@ -835,6 +835,18 @@ Promise.all([
 
 let allData = [];
 
+/* CATEGORY RESULT */
+
+let categoryData = [];
+
+/* TYPE RESULT */
+
+let typeData = [];
+
+/* FINAL RESULT */
+
+let currentData = [];
+
 /* =========================
    CACHE DOM
 ========================= */
@@ -856,6 +868,12 @@ fetch('data.json')
 .then(data => {
 
     allData = data;
+
+    categoryData = data;
+
+    typeData = data;
+
+    currentData = data;
 
     renderTable(allData);
 
@@ -994,7 +1012,7 @@ function filterData(){
     /* FILTER DATA */
 
     const filtered =
-        allData.filter(item =>
+        currentData.filter(item =>
 
             String(item["Title"] || '')
             .toLowerCase()
@@ -1030,6 +1048,23 @@ searchTitle.addEventListener('input', () => {
 
 function setCategoryFilter(value){
 
+    categoryData =
+        typeData.filter(item =>
+
+            String(item["Category"] || '')
+            .toLowerCase()
+            .includes(value.toLowerCase())
+
+        );
+
+    currentData = categoryData;
+
+    renderTable(currentData);
+
+}
+/* old
+function setCategoryFilter(value){
+
     const filtered =
         allData.filter(item =>
 
@@ -1042,12 +1077,33 @@ function setCategoryFilter(value){
     renderTable(filtered);
 
 }
+    */
 
 
 /* =========================
    COMMON QUICK FILTER
 ========================= */
 
+function applyQuickFilter(filterName){
+
+    const targetTypes =
+        quickFilters[filterName] || [];
+
+    typeData =
+        categoryData.filter(item =>
+
+            targetTypes.includes(
+                String(item["TYPE"] || '').trim()
+            )
+
+        );
+
+    currentData = typeData;
+
+    renderTable(currentData);
+
+}
+/*
 function applyQuickFilter(filterName){
 
     const targetTypes =
@@ -1065,6 +1121,7 @@ function applyQuickFilter(filterName){
     renderTable(filtered);
 
 }
+*/
 
 /* =========================
    CLEAR FILTER
@@ -1074,10 +1131,24 @@ function clearFilter(){
 
     searchTitle.value = '';
 
+    categoryData = allData;
+
+    typeData = allData;
+
+    currentData = allData;
+
     renderTable(allData);
 
 }
+/* old
+function clearFilter(){
 
+    searchTitle.value = '';
+
+    renderTable(allData);
+
+}
+*/
 </script>
 </body>
 
