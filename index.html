@@ -130,6 +130,20 @@ h1{
 
 }
 
+/* BLACK BUTTON */
+
+.quick-filter button.black-btn{
+
+    background:#111 !important;
+
+}
+
+.quick-filter button.black-btn:hover{
+
+    background:#000 !important;
+
+}
+
 /* CLEAR BUTTON */
 
 .clear-btn{
@@ -590,10 +604,112 @@ td:nth-child(5){
             FSF / GEM
         </button>
 
-        <button onclick="filterNXTIII()">
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('NXTIII')"
+        >
             NXTIII
         </button>
 
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('AIMEXIII')"
+        >
+            AIMEXIII
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('NXTR')"
+        >
+            NXTR
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('GPX')"
+        >
+            GPX
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('Flexa')"
+        >
+            Flexa
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('Fujitrax')"
+        >
+            Fujitrax
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('Feeder')"
+        >
+            Feeder
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('Nexim')"
+        >
+            Nexim
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('Unit')"
+        >
+            Unit
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('NXTIII')"
+        >
+            NXTIII
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('GPX-CS')"
+        >
+            GPX-CS
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('GPX-CSII')"
+        >
+            GPX-CSII
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('GPX-CL')"
+        >
+            GPX-CL
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('GPX-CII')"
+        >
+            GPX-CII
+        </button>        
+
+        <button
+        class="black-btn"
+        onclick="applyQuickFilter('NXTII')"
+        >
+            NXTII
+        </button>        
+
+         
         <button
             class="clear-btn"
             onclick="clearFilter()"
@@ -637,15 +753,79 @@ td:nth-child(5){
 
 <script>
 
-let targetTypes = [];
+/* =========================
+   QUICK FILTER DATA
+========================= */
 
-fetch('quickFilters.json')
+let quickFilters = {};
 
-.then(response => response.json())
+/* LOAD ALL JSON */
 
-.then(data => {
+Promise.all([
 
-    targetTypes = data;
+    fetch('AIMEXIII.json').then(r => r.json()),
+    fetch('NXTR.json').then(r => r.json()),
+    fetch('NXTIII.json').then(r => r.json()),
+    fetch('GPX.json').then(r => r.json()),
+    fetch('Flexa.json').then(r => r.json()),
+    fetch('Fujitrax.json').then(r => r.json()),
+    fetch('Feeder.json').then(r => r.json()),
+    fetch('Nexim.json').then(r => r.json()),
+    fetch('Unit.json').then(r => r.json()),
+    fetch('GPX-CS.json').then(r => r.json()),
+    fetch('GPX-CSII.json').then(r => r.json()),
+    fetch('GPX-CL.json').then(r => r.json()),
+    fetch('GPX-CII.json').then(r => r.json()),
+    fetch('NXTII.json').then(r => r.json())
+
+])
+
+.then(([
+
+    aimex3,
+    nxtr,
+    nxt3,
+    gpx,
+    flexa,
+    fujitrax,
+    feeder,
+    nexim,
+    unit,
+    gpxcs,
+    gpxcs2,
+    gpxcl,
+    gpxc2,
+    nxt2
+
+]) => {
+
+    quickFilters = {
+
+        AIMEXIII : aimex3,
+        NXTR : nxtr,
+        NXTIII : nxt3,
+        GPX : gpx,
+        Flexa : flexa,
+        Fujitrax : fujitrax,
+        Feeder : feeder,
+        Nexim : nexim,
+        Unit : unit,
+        "GPX-CS" : gpxcs,
+        "GPX-CSII" : gpxcs2,
+        "GPX-CL" : gpxcl,
+        "GPX-CII" : gpxc2,
+        NXTII : nxt2
+
+    };
+
+})
+
+.catch(error => {
+
+    console.error(
+        'Quick Filter Load Error:',
+        error
+    );
 
 });
 
@@ -863,17 +1043,21 @@ function setCategoryFilter(value){
 
 }
 
+
 /* =========================
-   NXTIII FILTER
+   COMMON QUICK FILTER
 ========================= */
 
-function filterNXTIII(){
+function applyQuickFilter(filterName){
+
+    const targetTypes =
+        quickFilters[filterName] || [];
 
     const filtered =
         allData.filter(item =>
 
             targetTypes.includes(
-                item["TYPE"]
+                String(item["TYPE"] || '').trim()
             )
 
         );
