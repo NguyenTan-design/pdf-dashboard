@@ -57,7 +57,7 @@
     },
     {
         "Category": "C-1.Upgrade Reports",
-        "TYPE": "NXTR",
+        "TYPE": "GPX CL",
         "Release date": "05-12-2026",
         "Title": "Fuji Software Upgrade Report (GPX-CL V2.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBpRpstalxmSqPEFDd9sUxNAU75vwPHcoSAcSShM4PEcnk"
@@ -666,15 +666,15 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "Nexim",
-        "Release date": "02-04-2026",
+        "TYPE": "NXTR",
+        "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATUbYnwxdhQtW0Ge0lLmuKg"
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "Nexim",
-        "Release date": "02-04-2026",
+        "TYPE": "NXTR",
+        "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAApGg1A61YSZ-7U6DgFc3YAcJoV2GuyyL5Q6nrwAGygfA"
     },
@@ -2317,31 +2317,31 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EQF4kwBjf4ZAjMWj984PA8cBMry-aaDqHN3TAOIu0N2zkA"
     },
     {
-        "Category": "C-2.Version History",
-        "TYPE": "Nexim",
-        "Release date": "10-03-2025",
-        "Title": "Fuji Software Upgrade history (Nexim V3.1.100)",
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "AIMEXR",
+        "Release date": "10-27-2025",
+        "Title": "Fuji Software Upgrade Report (AIMEXR V1.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EXrv4tAvfqpNrMAJcfdyQMsBaiQUyG8orW2-or9S5Wx23A"
     },
     {
-        "Category": "C-2.Version History",
-        "TYPE": "Nexim",
-        "Release date": "10-03-2025",
-        "Title": "Fuji Software Upgrade history (Nexim V3.1.100)",
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "AIMEXR",
+        "Release date": "10-27-2025",
+        "Title": "Fuji Software Upgrade Report (AIMEXR V1.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EdiWFkvBKHROsV7WaeGh7bQBc5IiAburKrhtwzlxuKP4AA"
     },
     {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "10-03-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.100)",
+        "Category": "C-2.Version History",
+        "TYPE": "AIMEXR",
+        "Release date": "10-27-2025",
+        "Title": "Version History (AIMEXR V1.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EbT3GnHxKG5KhysPOjGkdaIBgL9zoiLmp2QzbryHSEZaCw"
     },
     {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "10-03-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.100)",
+        "Category": "C-2.Version History",
+        "TYPE": "AIMEXR",
+        "Release date": "10-27-2025",
+        "Title": "Version History (AIMEXR V1.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EXeUa7wmUepIgntN-puAbOkBoGY1aDvg8fbhalDwVV_1xw"
     },
     {
@@ -2515,14 +2515,14 @@
     {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
-        "Release date": "09-10-2025",
+        "Release date": "11-26-2025",
         "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/EWVPaJn2LmdOiuEeKj0WoFgBUm4YKwsh_sSaiS0SWkj_kA"
     },
     {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
-        "Release date": "09-10-2025",
+        "Release date": "11-26-2025",
         "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/EafuLNeZUjJAs-sXVd4bsDcBiBpJkQWBf-CU4r-cN9vJcg"
     },
@@ -3577,10 +3577,10 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EZEZ2OaPyJBGq2MVSY8ujPMB0y9l0XpHFDSWdWW2RnUcnw"
     },
     {
-        "Category": "NOTE",
+        "Category": "C-3.Software Notice",
         "TYPE": "NXTR",
-        "Release date": "05-26-2025",
-        "Title": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10(Patch vá lỗi k check được visition 18 khi on-machine edit)",
+        "Release date": "09-03-2025",
+        "Title": "Errors sometimes occur when vision processing tests are performed in on-machine editing, even when the vision processing results during production were normal.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/EQmzG4ziqgJDmcBpAzDw1YkBnOjtvRtpAeNWpNdEYgKClw"
     },
     {
@@ -10088,23 +10088,23 @@
     },
     {
         "Category": "C-1.Upgrade Reports",
-        "TYPE": "Fuji Flexa",
-        "Release date": "07-22-2022",
-        "Title": "Fuji Software Upgrade Report(Fuji Flexa V6.29.0)",
+        "TYPE": "Nexim",
+        "Release date": "07-09-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/Ea64WMrmFlFKhx37oXaa3-4BTFxSRHB80MthplRkME_Q1A"
     },
     {
         "Category": "C-1.Upgrade Reports",
-        "TYPE": "Fuji Flexa",
-        "Release date": "07-22-2022",
-        "Title": "Fuji Software Upgrade Report(Fuji Flexa V6.29.0)",
+        "TYPE": "Nexim",
+        "Release date": "07-09-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EZ1dguhysCRJljuO1QtyGacBoNpSe4duZLqSoFk2pBExzQ"
     },
     {
         "Category": "C-1.Upgrade Reports",
-        "TYPE": "Fuji Flexa",
-        "Release date": "07-22-2022",
-        "Title": "Fuji Software Upgrade Report(Fuji Flexa V6.29.0)",
+        "TYPE": "Nexim",
+        "Release date": "07-09-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EamtDlh8d1FMtAJFSwdkzKoBkbDnwPIU1CYPotiWrqDK0w"
     },
     {
@@ -10481,15 +10481,15 @@
     {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "DATABASE",
-        "Release date": "05-18-2022",
-        "Title": "Nexim Database Structure_for Traceability DB",
+        "Release date": "08-23-2023",
+        "Title": "NeximDatabaseStructure_V2.5.0_forTraceabilityDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EbTsedmBqkJDhvySD6jajtwB9YqWm0c0EDaGSNydbmZgzg"
     },
     {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "DATABASE",
-        "Release date": "05-18-2022",
-        "Title": "Nexim Database Structure_for Verification DB",
+        "Release date": "08-23-2023",
+        "Title": "NeximDatabaseStructure_V2.5.0_forVerificationDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/Edy2ccSMPgtFtt7oRPHnv8cBbml7ltfGCtNrTOCiPalLig"
     },
     {
@@ -10621,15 +10621,15 @@
     {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
-        "Release date": "04-18-2022",
-        "Title": "Fuji Software Upgrade Report (Nexim V2.5.0)",
+        "Release date": "07-09-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EQpc_k0XHVBEj36RzglbpksBQ4A0RlyM-6tvvOGu7YdKyg"
     },
     {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
-        "Release date": "04-18-2022",
-        "Title": "Fuji Software Upgrade Report (Nexim V2.5.0)",
+        "Release date": "07-09-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EYDHF0PaGNNFlPNMKlJxZYYBT3puWj4Xm0LOimvww9zhtg"
     },
     {
@@ -10991,35 +10991,35 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/ESCclx5jkQVDiMMFB8DSsLQBi6ieU_rJI08VX1DUoO9rDw"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EaoUcW1pbu1IhldMgetYFz8BqGj90lO29wJStXwriKmH3g"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/Eb3UUMhXKUBDmXgyOvdaQXUBeJdX8Lxb_oEE26nHJWtqAA"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EbikXNQ39TRDuYMSsxz5PhMBySB1RxqsjzqymTF5569zYA"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EQORf84XgipFuLQNPFwgfoYBwkQoA0U0z_Y6Q0R2clH8hg"
@@ -13231,8 +13231,8 @@
     },
     {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "Nexim",
-        "Release date": "11-24-2020",
+        "TYPE": "DATABASE",
+        "Release date": "08-23-2023",
         "Title": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EeCnQeBt_JJOis-bCWy6UucBXSkRB6q7W2DY6arxZqwzTQ"
     },
@@ -19552,28 +19552,28 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EcfPtnNauotGoPlLBQfvgUMBmDeqUCzixb1SIiZsWX1w_A"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EYfUMK5QYPhIrEEiFP3Kz8ABIWIlIbqUHMRWjATLHvrXAQ"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/ETkM9c7OlolNn2xyISyWcV4B0GBxqTl11h0bV6w38Fjx7A"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EcEN_7WvoO1IosfXvucR3ngBFuN_KjPj7bdvgtDgcLFZFg"
@@ -19587,7 +19587,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EXjQkM3RVdlJvUXRn7mqrBABJSDYHPoRlhfLgoYuTZ2_mg"
@@ -27119,28 +27119,28 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
-        "Release date": "04-25-2007",
-        "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
+        "Release date": "03-11-2020",
+        "Title": "Do not perform port scans on Fuji systems (equipment and computers) while producing.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EbF8nRUboxhJlLef3hrSHU8BWayyStAyWbh4dx4XSsYALw"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
-        "Release date": "04-25-2007",
-        "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
+        "Release date": "03-11-2020",
+        "Title": "Do not perform port scans on Fuji systems (equipment and computers) while producing.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EaRv20UMES1FvosqHmDks_sBvzVZWQPgpNKl8CiC7SpvjQ"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-25-2007",
         "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EVKCrFeR6HVCsKW16pKpiQMBldm_sq8rxZ63OB-fwhHqCQ"
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-25-2007",
         "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EXy7gimlS6JLu5bs4Jw3H6AB48I8Ly1DWUlL057XmuhtEQ"
@@ -27154,9 +27154,9 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
-        "Release date": "04-25-2007",
-        "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
+        "Release date": "03-11-2020",
+        "Title": "Do not perform port scans on Fuji systems (equipment and computers) while producing.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/EQKGDJ58iGdGqhmqHi94QKMBXU16dVRKwWXO8XZkErzAUw"
     },
     {
