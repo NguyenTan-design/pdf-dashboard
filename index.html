@@ -753,6 +753,12 @@ CLEAR
 <script>
 
 /* =========================
+  CONFIG
+========================= */
+
+const ROWS_PER_PAGE = 50;
+
+/* =========================
   QUICK FILTER DATA
 ========================= */
 
@@ -833,22 +839,12 @@ error
 ========================= */
 
 let allData = [];
-
-/* CATEGORY RESULT */
-
-let categoryData = [];
-
-/* TYPE RESULT */
-
-let typeData = [];
-
-/* FINAL RESULT */
-
-let currentData = [];
+let filteredData = [];
 
 let selectedCategory = '';
-
 let selectedType = '';
+
+let currentPage = 1;
 
 /* =========================
   CACHE DOM
@@ -859,6 +855,30 @@ document.getElementById('pdfBody');
 
 const searchTitle =
 document.getElementById('searchTitle');
+
+/* =========================
+  CREATE PAGINATION
+========================= */
+
+const pagination =
+document.createElement('div');
+
+pagination.id = 'pagination';
+
+pagination.style.cssText = `
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+
+padding:15px;
+
+flex-wrap:wrap;
+
+`;
+
+document.body.appendChild(pagination);
 
 /* =========================
   LOAD JSON
@@ -872,13 +892,9 @@ fetch('data.json')
 
 allData = data;
 
-categoryData = data;
+filteredData = data;
 
-typeData = data;
-
-currentData = data;
-
-renderTable(allData);
+renderTable();
 
 })
 
@@ -890,51 +906,6 @@ error
 );
 
 });
-
-function applyFilters(){
-
-let filtered = allData;
-
-/* CATEGORY FILTER */
-
-if(selectedCategory !== ''){
-
-filtered =
-filtered.filter(item =>
-
-String(item["Category"] || '')
-.toLowerCase()
-.includes(
-selectedCategory.toLowerCase()
-)
-
-);
-
-}
-
-/* TYPE FILTER */
-
-if(selectedType !== ''){
-
-const targetTypes =
-quickFilters[selectedType] || [];
-
-filtered =
-filtered.filter(item =>
-
-targetTypes.includes(
-String(item["TYPE"] || '').trim()
-)
-
-);
-
-}
-
-currentData = filtered;
-
-renderTable(currentData);
-
-}
 
 /* =========================
   ESCAPE HTML
@@ -953,14 +924,92 @@ return String(text)
 }
 
 /* =========================
+  APPLY FILTERS
+========================= */
+
+function applyFilters(){
+
+const keyword =
+searchTitle.value
+.trim()
+.toLowerCase();
+
+filteredData = allData.filter(item => {
+
+    /* CATEGORY */
+
+    const matchCategory =
+
+        selectedCategory === '' ||
+
+        String(item["Category"] || '')
+        .toLowerCase()
+        .includes(
+            selectedCategory.toLowerCase()
+        );
+
+    /* TYPE */
+
+    let matchType = true;
+
+    if(selectedType !== ''){
+
+        const targetTypes =
+            quickFilters[selectedType] || [];
+
+        matchType =
+            targetTypes.includes(
+                String(item["TYPE"] || '').trim()
+            );
+
+    }
+
+    /* SEARCH */
+
+    const matchKeyword =
+
+        keyword === '' ||
+
+        String(item["Title"] || '')
+        .toLowerCase()
+        .includes(keyword);
+
+    return (
+
+        matchCategory &&
+        matchType &&
+        matchKeyword
+
+    );
+
+});
+
+currentPage = 1;
+
+renderTable();
+
+}
+
+/* =========================
   RENDER TABLE
 ========================= */
 
-function renderTable(data){
+function renderTable(){
 
-/* CLEAR OLD ROWS */
+/* CLEAR OLD */
 
 pdfBody.innerHTML = '';
+
+/* PAGE DATA */
+
+const start =
+(currentPage - 1) * ROWS_PER_PAGE;
+
+const end =
+start + ROWS_PER_PAGE;
+
+const pageData =
+filteredData.slice(start, end);
 
 /* MEMORY FRAGMENT */
 
@@ -969,111 +1018,163 @@ document.createDocumentFragment();
 
 /* BUILD ROWS */
 
-for(let i = 0; i < data.length; i++){
+for(let i = 0; i < pageData.length; i++){
 
-const item = data[i];
+    const item = pageData[i];
 
-const title =
-escapeHTML(item["Title"] || '');
+    const title =
+    escapeHTML(item["Title"] || '');
 
-const category =
-escapeHTML(item["Category"] || '');
+    const category =
+    escapeHTML(item["Category"] || '');
 
-const type =
-escapeHTML(item["TYPE"] || '');
+    const type =
+    escapeHTML(item["TYPE"] || '');
 
-const releaseDate =
-escapeHTML(item["Release date"] || '');
+    const releaseDate =
+    escapeHTML(item["Release date"] || '');
 
-const link =
-item["LINK"] || '#';
+    const link =
+    item["LINK"] || '#';
 
-const row =
-document.createElement('tr');
+    const row =
+    document.createElement('tr');
 
-row.innerHTML = `
+    row.innerHTML = `
 
-           <td title="${title}">
-               ${title}
-           </td>
+        <td title="${title}">
+            ${title}
+        </td>
 
-           <td title="${category}">
-               ${category}
-           </td>
+        <td title="${category}">
+            ${category}
+        </td>
 
-           <td title="${type}">
-               ${type}
-           </td>
+        <td title="${type}">
+            ${type}
+        </td>
 
-           <td>
-               ${releaseDate}
-           </td>
+        <td>
+            ${releaseDate}
+        </td>
 
-           <td>
+        <td>
 
-               <a
-                   class="action-btn"
-                   href="${link}"
-                   target="_blank"
-                   rel="noopener noreferrer"
-               >
+            <a
+                class="action-btn"
+                href="${link}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
 
-                   Open
+                Open
 
-               </a>
+            </a>
 
-           </td>
+        </td>
 
-       `;
+    `;
 
-fragment.appendChild(row);
+    fragment.appendChild(row);
 
 }
 
-/* APPEND 1 LẦN */
+/* APPEND */
 
 pdfBody.appendChild(fragment);
 
+/* PAGINATION */
+
+renderPagination();
+
 }
 
 /* =========================
-  FILTER
+  PAGINATION
 ========================= */
 
-function filterData(){
+function renderPagination(){
 
-const keyword =
-searchTitle.value
-.trim()
-.toLowerCase();
+pagination.innerHTML = '';
 
-/* EMPTY SEARCH */
+const totalPages =
+Math.ceil(
+filteredData.length / ROWS_PER_PAGE
+);
 
-if(keyword === ''){
+/* NO PAGINATION */
 
-renderTable(allData);
+if(totalPages <= 1){
 
-return;
+    return;
 
 }
 
-/* FILTER DATA */
+/* PREV BUTTON */
 
-const filtered =
-currentData.filter(item =>
+const prevBtn =
+document.createElement('button');
 
-String(item["Title"] || '')
-.toLowerCase()
-.includes(keyword)
+prevBtn.textContent = 'Prev';
 
-);
+prevBtn.disabled =
+currentPage === 1;
 
-renderTable(filtered);
+prevBtn.className =
+'action-btn';
+
+prevBtn.onclick = () => {
+
+    currentPage--;
+
+    renderTable();
+
+};
+
+pagination.appendChild(prevBtn);
+
+/* PAGE INFO */
+
+const pageInfo =
+document.createElement('span');
+
+pageInfo.innerHTML = `
+
+<strong>
+Page ${currentPage} / ${totalPages}
+</strong>
+
+`;
+
+pagination.appendChild(pageInfo);
+
+/* NEXT BUTTON */
+
+const nextBtn =
+document.createElement('button');
+
+nextBtn.textContent = 'Next';
+
+nextBtn.disabled =
+currentPage === totalPages;
+
+nextBtn.className =
+'action-btn';
+
+nextBtn.onclick = () => {
+
+    currentPage++;
+
+    renderTable();
+
+};
+
+pagination.appendChild(nextBtn);
 
 }
 
 /* =========================
-  DEBOUNCE SEARCH
+  SEARCH
 ========================= */
 
 let debounceTimer;
@@ -1084,7 +1185,7 @@ clearTimeout(debounceTimer);
 
 debounceTimer = setTimeout(() => {
 
-filterData();
+    applyFilters();
 
 }, 300);
 
@@ -1093,6 +1194,7 @@ filterData();
 /* =========================
   CATEGORY FILTER
 ========================= */
+
 function setCategoryFilter(value){
 
 selectedCategory = value;
@@ -1100,45 +1202,9 @@ selectedCategory = value;
 applyFilters();
 
 }
-/* OLD
-function setCategoryFilter(value){
-
-   categoryData =
-       typeData.filter(item =>
-
-           String(item["Category"] || '')
-           .toLowerCase()
-           .includes(value.toLowerCase())
-
-       );
-
-   currentData = categoryData;
-
-   renderTable(currentData);
-
-}
-*/
-
-/* old
-function setCategoryFilter(value){
-
-   const filtered =
-       allData.filter(item =>
-
-           String(item["Category"] || '')
-           .toLowerCase()
-           .includes(value.toLowerCase())
-
-       );
-
-   renderTable(filtered);
-
-}
-   */
-
 
 /* =========================
-  COMMON QUICK FILTER
+  QUICK FILTER
 ========================= */
 
 function applyQuickFilter(filterName){
@@ -1148,47 +1214,6 @@ selectedType = filterName;
 applyFilters();
 
 }
-/* OLD
-function applyQuickFilter(filterName){
-
-   const targetTypes =
-       quickFilters[filterName] || [];
-
-   typeData =
-       categoryData.filter(item =>
-
-           targetTypes.includes(
-               String(item["TYPE"] || '').trim()
-           )
-
-       );
-
-   currentData = typeData;
-
-   renderTable(currentData);
-
-}
-*/
-
-/*
-function applyQuickFilter(filterName){
-
-   const targetTypes =
-       quickFilters[filterName] || [];
-
-   const filtered =
-       allData.filter(item =>
-
-           targetTypes.includes(
-               String(item["TYPE"] || '').trim()
-           )
-
-       );
-
-   renderTable(filtered);
-
-}
-*/
 
 /* =========================
   CLEAR FILTER
@@ -1199,37 +1224,15 @@ function clearFilter(){
 searchTitle.value = '';
 
 selectedCategory = '';
-
 selectedType = '';
 
-currentData = allData;
+filteredData = allData;
 
-renderTable(allData);
+currentPage = 1;
 
-}
-/* OLD
-function clearFilter(){
-
-   searchTitle.value = '';
-
-   categoryData = allData;
-
-   typeData = allData;
-
-   currentData = allData;
-
-   renderTable(allData);
+renderTable();
 
 }
-*/
-/* old
-function clearFilter(){
 
-   searchTitle.value = '';
-
-   renderTable(allData);
-
-}
-*/
 </script>
 </body>
