@@ -1,5 +1,40 @@
 [
     {
+        "Category": "E-1.Parts List",
+        "TYPE": "NXTR",
+        "Release date": "05-20-2026",
+        "Title": "NXTR INTERNAL UNIT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDj_pOuW-DaS4DMmMQeFyBmAbILaQgL3M92e0KwUoC1WcM"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NEXIM",
+        "Release date": "05-20-2026",
+        "Title": "The Nexim Installer version that supports Oracle19c has been extended.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCr1ckb0X9KTYPTsY2Al9KVATliIkENgCV1e03K0m-4yHs"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NEXIM",
+        "Release date": "05-19-2026",
+        "Title": "The position of some references sometimes deviates when a job is being edited.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCQG7Ki3KKGSZ8HJrFdu_67AQqAQsnSEyoyQu1uAHkaTVY"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NEXIM",
+        "Release date": "05-19-2026",
+        "Title": "The position of some references sometimes deviates when a job is being edited.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCQMTSQyi6iRqCii6Y-RTVQAXl5H8P5mTjRTrEt5fgSxrc"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NEXIM",
+        "Release date": "05-19-2026",
+        "Title": "The position of some references sometimes deviates when a job is being edited.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBNt6PaE5TWSb0Mn2k9DP6wAaIsY8DhOvDSCsFGzLAT0Fw"
+    },
+    {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "nexim",
         "Release date": "05-15-2026",
@@ -18,21 +53,7 @@
         "TYPE": "NXTR",
         "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
-        "Release date": "05-12-2026",
-        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQC7CIKbRuWHQJKuIAqE4mcUAd9yJLpwG8Bp1PMDawC9cuE"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
-        "Release date": "05-12-2026",
-        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCQG7Ki3KKGSZ8HJrFdu_67AQqAQsnSEyoyQu1uAHkaTVY"
     },
     {
         "Category": "F-2.Specifications",
@@ -82,6 +103,97 @@
         "Release date": "05-12-2026",
         "Title": "Fuji Software Upgrade History (GPX-CL V2.50)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCDHYUwDr_HSIBNtA3Znpa0Ad_A1h0GkWfgH7ABbZ4MhK0"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "UNIT",
+        "Release date": "05-02-2026",
+        "Title": "AFMU_1.1E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFZXSAYp9iRYfvdN0NrrXcAQOlJK3oERGST6Q0J7ONN6A"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "UNIT",
+        "Release date": "05-02-2026",
+        "Title": "AHC_3.0_E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDklyLdwAHqSb9Y6pss0UkvAaa5ubUGlC7qR_CyLG8mc9M"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "AIMEX III",
+        "Release date": "05-02-2026",
+        "Title": "AIMEX3_Linear_2.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCz5XeWCOn0QpkYPlqHTU-nAXwhrNK9EGxSKPKY_PywVJ8"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "05-02-2026",
+        "Title": "AIMEXR Engineer_1.3E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCufXrUJeJbQqXxUlBdOtJpASX5C-sZPHvvGg5yCNbVW_8"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "UNIT",
+        "Release date": "05-02-2026",
+        "Title": "Auto tool station repair_1.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQATxiV_bHs2QL5X_0qx9_yDAYalu0nmbqLCzMHvhgUtBMM"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "05-02-2026",
+        "Title": "NXTR Engineer_4.2E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAWfrlJe2CpT7sQ6TLLRMlpAZP9mXxfJdnfs4YMENScDyk"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "05-02-2026",
+        "Title": "NXTR X-axis liner scale_1.1E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdVCmeHIyRTIS5UOJph7VQAWhQO5l9VqvUpfV_RJKzI-E"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "05-02-2026",
+        "Title": "NXTR Zs axis origin_1.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDuAJEW6SzOS5JXQMiV0_CYAfSCNpsq-zsS3Oya5IAXnvU"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTIII",
+        "Release date": "05-02-2026",
+        "Title": "NXTseries_Matrix_2.4E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDSPhf6BCVuQoaM_mbeWmhdATo0_NdlB583RYWHShcP5Yo"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "05-02-2026",
+        "Title": "RH01 Repair_1.1E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCCB6GeMMXVRb8w6NQ0x4r4AQUXZmgttODMNqBdlDLUXfI"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "UNIT",
+        "Release date": "05-02-2026",
+        "Title": "SNC_4.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCAjoSx62F5RquDXRioK9OgAQSk-WmYqfC3CrjjFZfuMA4"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "AIMEX III",
+        "Release date": "05-02-2026",
+        "Title": "TU_LTW_LTW2_2.1E(for Win10)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAewP33LI7YQJCYBx8XOSnmAcvDHbPqYOXZXxN2ocLJceQ"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "05-02-2026",
+        "Title": "V12_7.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAncWRsFvvJTp63Pgzvg3yaAaD3b4oS2sDHbDnLCBA0920"
     },
     {
         "Category": "A-1.Tech Reports",
@@ -670,6 +782,13 @@
         "Release date": "02-11-2026",
         "Title": "Information on the ending of support for wireless handy terminals (Kit Handy)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAp4Bqjuk1QTL6zWvkjQbm_AZ5uxS6aAnZhm0wUdgCVknw"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "02-04-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U"
     },
     {
         "Category": "A-2.Rep News",
@@ -1477,6 +1596,27 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDYZla3TaOpTKsWuOUjGsTzAR9_Qo_oazNJJtOGWUpMYWo"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "01-04-2026",
+        "Title": "RH02",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwIp_9y8U7Trik-ANAnwT4AZoWIDOsIR7Lv7RuHcHINaQ"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "01-04-2026",
+        "Title": "RH20",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBpX-ebPN35Qp1KeXDT479BAa5UNGYmaYwJd0rOdQQG6zQ"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "01-04-2026",
+        "Title": "RH28",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgz6GPSu0sRrdXgKZ2nFIMAdMx92aftNQ83uiv8AwOacg"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "12-24-2025",
@@ -1785,6 +1925,13 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDUpYVy3_56QpK5jddCwGlnAdbe9qFlagPr7kxccNWWnvY"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "12-10-2025",
+        "Title": "MES GPX DOCUMENT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCbksIODaHbSqgLRW7Mu-HsAU1KcLVST7rtYmFgIdxBATc"
+    },
+    {
         "Category": "A-1.Tech Reports",
         "TYPE": "Nexim;FUJI Smart Factory",
         "Release date": "12-03-2025",
@@ -1860,13 +2007,6 @@
         "Release date": "12-03-2025",
         "Title": "Support for Windows 11 23H2 will end on November 11, 2025.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAn_eZgJ7RrRb7FYhPxSfjMAU5dI8uVU3WLRmKY627gTsM"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "Nexim",
-        "Release date": "11-26-2025",
-        "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCn7izXmVIyQLPrF1XeG7A3AWVen8w_CYSGuObjSF0HViA"
     },
     {
         "Category": "C-3.Software Notice",
@@ -2128,20 +2268,6 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAT7o8akaX3Tp7cfAERPsNPAV47fupWJ3rRXj46CWBgOvA"
     },
     {
-        "Category": "C-2.Version History",
-        "TYPE": "AIMEXR",
-        "Release date": "10-27-2025",
-        "Title": "Version History (AIMEXR V1.50)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC09xpx8ShuSocrDzoxpHWiAdyrekC5CrVE4EmO7kOj9Ck"
-    },
-    {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "AIMEXR",
-        "Release date": "10-27-2025",
-        "Title": "Fuji Software Upgrade Report (AIMEXR V1.50)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB67-LQL36qTazACXH3ckDLAX1PCcyvEg76IA4hOkG25Kk"
-    },
-    {
         "Category": "E-7.Field Engineer's Documents",
         "TYPE": "AIMEXR",
         "Release date": "10-22-2025",
@@ -2247,6 +2373,48 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD1yNAZZmjwSoYt0b5biUvKASQru9naZKIM_F0GYTNBCso"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR Conveyor_2.2E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDul8L-zQU8TJ5esr4HlAJMAZoW6DpkfGatrzJQchFp1KQ"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR Engineer_4.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCvHtftuVJ2TokYTn9bKHSYAVM4VPeh5xDJ5HjhM3ilM1Q"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR X-axis linear scale_1.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAv-tirzRVTLWWn5jn_b4FATRmFhw6mX-4BIMVhHVZ0Zs"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR Y-axis linear scale_1.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAb5qumsvKURrVRIU0z2TN6AcJ0-E6XYcBoy3qCDnFK9U8"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR Zs axis origin_1.0E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCyTWF4dTvOQZ12HX2SANIaAaHTG4hD6L8Wq8uX_ErJMkA"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "10-21-2025",
+        "Title": "NXTR_Tray Unit-RM_E1.0_E",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBuE4pqPxJ-T45kXz9og7YvAY0BHPnS6EUt8EHxkgdaRZM"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR",
         "Release date": "10-15-2025",
@@ -2329,6 +2497,20 @@
         "Release date": "10-08-2025",
         "Title": "9233 errors (Placement number mismatch) sometimes occur when a job is transmitted without performing optimization.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCD5M57CdmORL0h31KbbVkyAaGO5wkfkBxjrPu5taC1lGo"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "10-03-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC09xpx8ShuSocrDzoxpHWiAdyrekC5CrVE4EmO7kOj9Ck"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "Nexim",
+        "Release date": "10-03-2025",
+        "Title": "Fuji Software Upgrade history (Nexim V3.1.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB67-LQL36qTazACXH3ckDLAX1PCcyvEg76IA4hOkG25Kk"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -2443,6 +2625,20 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBrFgzB3UYFTZUdrc5I-n2iAXp-GJ2Qjd4tmnYPdhABUeM"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "09-24-2025",
+        "Title": "FUJI-Kaizen",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQC_WA-XjoxASZcxlKAm_kQ7AYnqZtwE4BySXJb_oa9o0XE"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "09-22-2025",
+        "Title": "NXTR Y-axis linear scale",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhC_3fDRtlQ5T8OYurXMdbAdPmS15U-pMue3Oc20G_SjE"
+    },
+    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Unit",
         "Release date": "09-18-2025",
@@ -2476,6 +2672,13 @@
         "Release date": "09-17-2025",
         "Title": "Attach a sponge in the gap of the parts camera to prevent parts from dropping inside the parts camera and causing it to malfunction. This report provides information on materials and the assembling procedure.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBailAgwyqtT7yWcYvQOhRDAfvv4i79BD8WQzZ-ndqxrM0"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "09-10-2025",
+        "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCn7izXmVIyQLPrF1XeG7A3AWVen8w_CYSGuObjSF0HViA"
     },
     {
         "Category": "D-1.Manuals",
@@ -2581,13 +2784,6 @@
         "Release date": "09-03-2025",
         "Title": "67290303 errors (Writing to the material database failed) sometimes occur when the system layout is updated.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBOu6T4jfX1Q764yv5FYr24AZw0GxKVR74eY8w3wvPCA4E"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
-        "Release date": "09-03-2025",
-        "Title": "Errors sometimes occur when vision processing tests are performed in on-machine editing, even when the vision processing results during production were normal.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAJsxuM4qoCQ5nAaQMw8NWJAdtXLY_D3qGwuJgj2yVWoIw"
     },
     {
         "Category": "C-3.Software Notice",
@@ -2968,13 +3164,6 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTckJ_uYGjRJUlCUASQtDIAbCEVWK-MixM-OMa4Z_T958"
     },
     {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "07-09-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCuuFjK5hZRSocd-6F2mt_uAcmjl_2A4fW3Osj8XYHcF3E"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "Feeder",
         "Release date": "07-09-2025",
@@ -3043,13 +3232,6 @@
         "Release date": "07-09-2025",
         "Title": "Clicking [Perform Test] in the test step sometimes results in Shape Editor being forcibly closed.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQBM4gihnohuRZOgyuc0RwkdAWAxpdTJZ3B_dsxISBX0c6Q"
-    },
-    {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "07-09-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAKXP5NFx1QRI9-kc4JW6ZLAWYOKTBZCMe_gsk_H-Kc79A"
     },
     {
         "Category": "D-1.Manuals",
@@ -3360,6 +3542,13 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD5RS-2dK_JRqbMP32sZx84AfuE0mX2l6GzBOs0pTvmdaA"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "06-25-2025",
+        "Title": "GPX TRAINING TEXT CHINESE VER",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAp5F-twx_hSbQ3_Zi0_UGlAcZhDm1VSeyw2bKNedEcv_Y"
+    },
+    {
         "Category": "E-7.Field Engineer's Documents",
         "TYPE": "AIMEX III",
         "Release date": "06-18-2025",
@@ -3491,6 +3680,34 @@
         "Release date": "06-04-2025",
         "Title": "Service Pack 12 for correcting problems that have occurred after the release of LCU V2.00 is released.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCRGdjmj8iQRqtjFUmPLozzAT-SxZN54omLQe73gpVOt5c"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "06-01-2025",
+        "Title": "TURN ON - OFF KPO FUNCTION (FOR NXT3)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:x:/g/personal/tan_fuji-smt_com_sg/IQCLxBTT4FbJTZFHAgbPFEy1AXXBMVUoRgqQMYsTUuHAtVU"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "05-28-2025",
+        "Title": "KUN SHAN GPX KPO MATERIAL",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAc3ZxDZKE-S4KxhvogNdcqAfn8RKfr9M3w_uVPrdf_MVs"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "05-28-2025",
+        "Title": "TURN ON - OFF KPO FUNCTION IN GPX.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:x:/g/personal/tan_fuji-smt_com_sg/IQB_fvNrmuOzSqQvKOJcXortAUk0aYbg6y651wtKVTfb-Tw"
+    },
+    {
+        "Category": "NOTE",
+        "TYPE": "NXTR",
+        "Release date": "05-26-2025",
+        "Title": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10(Patch vá lỗi k check được visition 18 khi on-machine edit)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAJsxuM4qoCQ5nAaQMw8NWJAdtXLY_D3qGwuJgj2yVWoIw"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -4291,6 +4508,13 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAdx7sowOSXQo6TE49Fi3wQASvR6kLMzwfzKZW8VuWXg8Y"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "12-19-2024",
+        "Title": "Auto Solder Supply Function modification",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-fYkg9RDLQY9sfXWcknKDAeH7hN15lriy9oGLF3uxTI4"
+    },
+    {
         "Category": "D-1.Manuals",
         "TYPE": "Feeder",
         "Release date": "12-18-2024",
@@ -4520,6 +4744,13 @@
         "Release date": "12-04-2024",
         "Title": "The IPS camera position cannot be adjusted for H08MQ heads.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDxzTpPEADmQJaxGt0nwBEMAa8yFON-CRwf25Drmn0GB0A"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "12-04-2024",
+        "Title": "GPX C2 CS2 Training Text for Service Engineer",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBEVYqa0GFLT4_So5vFrrZlARX_v50NjKYNPgnwNV-MfoU"
     },
     {
         "Category": "E-1.Parts List",
@@ -6034,6 +6265,20 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCPDAg66eNGRKZb1oAiu7gEAb8DQomcgBp_yK3jG7l4-nY"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "06-06-2024",
+        "Title": "NXT2 TRAINING TEXT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuw03Ved0jS7PFAugw8zOtAazqQlQzTwBKJ8IReh3U1Mg"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "06-06-2024",
+        "Title": "SNC TRAINING TEXT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB1uBjc9GaiQbOD-G1lBwCPAeY-qX9CreSNoGGvlc1yC34"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "GPX-CII;GPX-CSII;GPX-CL",
         "Release date": "06-05-2024",
@@ -6046,6 +6291,13 @@
         "Release date": "06-05-2024",
         "Title": "553B errors (Nozzles required for production are not in the nozzle changer) sometimes occur when part data was saved using on-machine editing.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBvVm_pmEGpQ5lyLFeU0GLMAV6zFGMD4M1WDHqIzsDrJT0"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "05-30-2024",
+        "Title": "NXTIII_Conveyor TRAINING TEXT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZMptbjnxpRo02cNuhSN2SAUHocmUS-w63mJ_4wvQr5Tk"
     },
     {
         "Category": "E-4.Electrical Schematics",
@@ -8011,27 +8263,6 @@
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "DATABASE",
         "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgp0HgbfySTorPmwlsulLnATzmyOYLoQSQpLRXKld4O4s"
-    },
-    {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.5.0_forTraceabilityDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC07HnZgapCQ4b8kg-o2o7cARBMNsURdQwxY9UoaJ7lssc"
-    },
-    {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.5.0_forVerificationDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDctnHEjD4LRbbe6ETx57_HAVQHl84ogsbnPGXEwWeTxEU"
-    },
-    {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
         "Title": "NeximDatabaseStructure_V2.7.0_forVerificationDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAKIi_Pe91HSZxPRKQFYaf0AaV8HDxvKdwgv8--lqpIlwE"
     },
@@ -8120,6 +8351,27 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDSgAPp2N6URrsnluTtFI_mAaOsffDWuRdxu1sMWw_bmLo"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "07-25-2023",
+        "Title": "H02 ver2.0[1]",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDwOy2QnDNMT6KLAfWp17g0AaWhJkJHIJLA6gAXkSGlY-M"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "07-25-2023",
+        "Title": "NXT XS axis ball screw replacement procedure[1]",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDA8UnEaOdDQrya8iljDMTqAYMxlSo_OCUwLfONnpSpUvo"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "07-25-2023",
+        "Title": "NXT III Ball Acrew Replacement[1]",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDf-3htZnqYRLPriGGKDM-3AUkl9k_46WNom3FAz3h68zI"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "NXTR",
         "Release date": "07-21-2023",
@@ -8146,6 +8398,13 @@
         "Release date": "07-19-2023",
         "Title": "When adjusting the IPS brightness on an Auto Head Cleaner-R, the software version must be V1.30 or later and it is necessary to add a vision processing board and a harness.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCMz5XOLiavQ5_pSOwP4pVoAa24vhSVHaPbJmuUBQOrXys"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "07-18-2023",
+        "Title": "TRAY LT2 TRAINING TEXT",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDEehZB_gkpQZkOtEGhM99OAQzpaPyhXH6quxuc3RdrMpY"
     },
     {
         "Category": "C-3.Software Notice",
@@ -9044,6 +9303,13 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWbuIPok1xQ7OQ3ucvjK4DAe3XkncU9rRt2uoYAyVTMjU"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "12-15-2022",
+        "Title": "TRAINING TEXT GPX-CS2",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWQcs359RrS6cleJ9k32ePAQDkMdijOPRG9sYrk8KmLEY"
+    },
+    {
         "Category": "F-2.Specifications",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR",
         "Release date": "12-14-2022",
@@ -9688,6 +9954,13 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC0lbOMFRnxSIl_KGYaW8Y1ATyoIuULOfSFFTcL8axVpnQ"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Fuji Flexa",
+        "Release date": "07-22-2022",
+        "Title": "Fuji Software Upgrade Report(Fuji Flexa V6.29.0)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCuuFjK5hZRSocd-6F2mt_uAcmjl_2A4fW3Osj8XYHcF3E"
+    },
+    {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "Nexim",
         "Release date": "07-22-2022",
@@ -10003,6 +10276,20 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwkcbqrV_tQL2BQFRYO4OHAc1JiYszLAn079K5br1WqIc"
     },
     {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "DATABASE",
+        "Release date": "05-18-2022",
+        "Title": "Nexim Database Structure_for Traceability DB",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC07HnZgapCQ4b8kg-o2o7cARBMNsURdQwxY9UoaJ7lssc"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "DATABASE",
+        "Release date": "05-18-2022",
+        "Title": "Nexim Database Structure_for Verification DB",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDctnHEjD4LRbbe6ETx57_HAVQHl84ogsbnPGXEwWeTxEU"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX;NXT II;NXT IIc;NXT;NXTP;XPF;XP;AIM;Unit;GPX-HD",
         "Release date": "05-18-2022",
@@ -10113,6 +10400,13 @@
         "Release date": "04-20-2022",
         "Title": "Linear axis adjustment software (AIMEX) V3.10 has been released.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBPSfLFPdb8QqqOGjVp09MxActlDm0Yc691SSyiVgWwdW8"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "04-18-2022",
+        "Title": "Fuji Software Upgrade Report (Nexim V2.5.0)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAKXP5NFx1QRI9-kc4JW6ZLAWYOKTBZCMe_gsk_H-Kc79A"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -12414,6 +12708,13 @@
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "Nexim",
         "Release date": "11-24-2020",
+        "Title": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgp0HgbfySTorPmwlsulLnATzmyOYLoQSQpLRXKld4O4s"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "Nexim",
+        "Release date": "11-24-2020",
         "Title": "NeximDatabaseStructure_V2.2.0_forVerificationDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCprVHlRhdTQIWhPlukR17SAZ0NTP90xZT2Ciudg9iGeRo"
     },
@@ -13405,13 +13706,6 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhz18bEMDrT6NEsKxUhc7uAShSadcr4sbSEaKIU5xJgCI"
     },
     {
-        "Category": "A-1.Tech Reports",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
-        "Release date": "03-11-2020",
-        "Title": "Do not perform port scans on Fuji systems (equipment and computers) while producing.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxfJ0VG6MYSZS3n94a0h1PAYxL4TXHFczurT_8ymFbdis"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX;AIMEX III;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;XPF",
         "Release date": "03-11-2020",
@@ -13608,11 +13902,67 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA6JvdwkPYVRKTQGQ0byNBEAUcAocToLUxL0F3eZC3gLZs"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "01-24-2020",
+        "Title": "GPX C SENSOR PARAMETTER.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAYamVyHjNrQKFyFg88M7OdAWBomrYsWgcT_0_ZGlIcTJs"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "01-23-2020",
+        "Title": "TRAINING TEXT GPX-C资料（英文版）.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCjzVJ_tc7_QJiN-62eTTkiAYuuASlMdSfj54JiEwre96o"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "Unit",
         "Release date": "01-22-2020",
         "Title": "The head adjustment jig software V5.89 for agents has been released. This is not a claim issue.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCfahscspF0RYgP7Okekv6hAWkMH6Dy0f2Xn8sfb8Tlc-M"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-22-2020",
+        "Title": "NXTIII-TRAINING TEXT.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCb-O1hbr33TLkQ6tUjMWqFAawFCcKnB-9rnXDSvPIaZ2c"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-21-2020",
+        "Title": "IPS Adjustment.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTUc26P8ldToHojV-GS7TnAa9zNJtvX-uiKHju5GcxSKY"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-20-2020",
+        "Title": "Panel conveyor troubleshooting.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBryMA1R_LoQLF1rSgXCDIoARwqrLKczQgAf1bpTr2rS3I"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-19-2020",
+        "Title": "S1803-4.0ETroubleshootingforerrorcodesonthetrayunit-LT.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDRKVNxf3uSSYP_7LgTgNPuAQLI1LEcfjywef98U4rcbz0"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-18-2020",
+        "Title": "S1402-1.0ENXT-3TroubleshootingwhenSafetyRelayisOFF.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBvQ3mPl9OlRKHovwo4_Bh6AdJODCOUOQIlfsKZYVLje1A"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-17-2020",
+        "Title": "S1710-2.0EBlownfusetroubleshootingApplicablemachines2M-3base.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBQlgIR9lQBSaetXySRba5tAYUCqrziKqJGyc-gk0RsPJM"
     },
     {
         "Category": "A-1.Tech Reports",
@@ -13643,6 +13993,55 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCsLtZzvSDwTIsdRpQcS8-nAYP56exhwDmDrJlL_6B8Wro"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-15-2020",
+        "Title": "S1911-1.0EIPSTroubleshooting(foragents).pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA_Ju4FM7iNR63DFTCZc_MyAewZxHT6-U796lkYcHWnUy0"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "AIMEX III",
+        "Release date": "01-14-2020",
+        "Title": "AIMEX3(c)_3.1EAIMEX33cTrainingTextforServiceEngineers.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDPw3Smwgk1Qq9WJmDGFcXLAamsg1lGSC2gOKXMfgnIs4c"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-13-2020",
+        "Title": "NXT3_1.0ENXTIIITrainingTextforServiceEngineers.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDIvKo3VaHJQLGUVgW09Wl1AU9KuXtC6bE6FWJvtTCFQDo"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-12-2020",
+        "Title": "V12_7.0EV12HeadRepairTrainingTextforServiceEngineers.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDjB_KR0jdMQagQ9nvJqvSgASHBR-wHF9oNV7WPyzsEHY0"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-11-2020",
+        "Title": "H08M_5.0EH08M(Q)HeadRepairTrainingTextforServiceEngineers.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCiz03ldBEjQ6WoN-UKotzgAX44AsOrfgH1Qd9nChI6vMg"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "01-10-2020",
+        "Title": "NXTR TRAINING TEXT.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDyaRyT457DTKDKyywqjkSIAZf4BGpeY1ceYStEnyABp1A"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-09-2020",
+        "Title": "S1710-4.0EBlownfusetroubleshootingApplicablemachinesM3-3module.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCFml793HWpTbGIDf6MPBe_AYX3MRLzAiA07qaqspp4Dtk"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "Unit",
         "Release date": "01-08-2020",
@@ -13650,11 +14049,67 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDCUL5CRnNtTJDtbfJjmjpiAWhm6xcmX0HhCjX_8fQfS3I"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-08-2020",
+        "Title": "S1710-4.0EBlownfusetroubleshootingApplicablemachinesM6module.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTBh8FIvm8RqKONQvjlm1nAZqKwR74z1tR6cu3nUWD6RU"
+    },
+    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
         "Release date": "01-07-2020",
         "Title": "Fuji Software Upgrade Report(AIMEX, AIMEX-2, AIMEX-2S, AIMEX-3, AIMEX-3c V5.22)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA478tLbVC5TJIlK57pSTJWAR35K5dPf6D31gqCDNZrWPA"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-07-2020",
+        "Title": "NXTIII-IIIcY-axisLinearShaftandLinearMotorReplacement.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCCwb2R4QueToJI8u26dmj9ARPh2DakkVED1aVlR6V-rwk"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-06-2020",
+        "Title": "H08, H01 ver2.0.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDXDSbGKrc8RYV_K_TYSsjCAYit8lL6AZpPkykovfszcKY"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-05-2020",
+        "Title": "H12HSQ ver2.0.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBi0AQ-_0S9TKE6Ymid2-I-AQPp9IK9NMoXk0VqaUlyIAE"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-04-2020",
+        "Title": "H24_ver8.0.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAMup5pqPs5RaPam-g2rwcOAZbdC1sme_IGhSNuGxhQjZs"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-03-2020",
+        "Title": "H01, H04, H08, H12S ver6.0.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFM6Ig6CWRTqTOg2NrN_A_AQ3R2KGJLg3Cl-qs2RFAngw"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-02-2020",
+        "Title": "IPS adjustment on the modules.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA6FEHlGWNTTrVlLGPfRT06AY7bSlK-lAGv95VKrarwDh8"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXT III",
+        "Release date": "01-01-2020",
+        "Title": "IPS Adjustment for Various Head Types on the Modules_C.pdf",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD8IfY_d1PqRbBt0u16KFrVAVmT2kugMJFWt5bklW975K0"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -24973,6 +25428,13 @@
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-25-2007",
         "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxfJ0VG6MYSZS3n94a0h1PAYxL4TXHFczurT_8ymFbdis"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
+        "Release date": "04-25-2007",
+        "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBSgqxXkeh1QrClteqSqYkDAeQZ842zhTnTDtY_FStgXvQ"
     },
     {
@@ -27174,438 +27636,11 @@
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCJk6sYNkN4QIpWb7DTMIgVATiu7lBSymWzGAx70XaURJU"
     },
     {
-        "Category": "TRAINING TEXT",
-        "TYPE": "UNIT",
-        "Release date": "05-02-2026",
-        "Title": "AFMU_1.1E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFZXSAYp9iRYfvdN0NrrXcAQOlJK3oERGST6Q0J7ONN6A"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "UNIT",
-        "Release date": "05-02-2026",
-        "Title": "AHC_3.0_E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDklyLdwAHqSb9Y6pss0UkvAaa5ubUGlC7qR_CyLG8mc9M"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "AIMEX III",
-        "Release date": "01-14-2020",
-        "Title": "AIMEX3(c)_3.1EAIMEX33cTrainingTextforServiceEngineers.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDPw3Smwgk1Qq9WJmDGFcXLAamsg1lGSC2gOKXMfgnIs4c"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "AIMEX III",
-        "Release date": "05-02-2026",
-        "Title": "AIMEX3_Linear_2.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCz5XeWCOn0QpkYPlqHTU-nAXwhrNK9EGxSKPKY_PywVJ8"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "05-02-2026",
-        "Title": "AIMEXR Engineer_1.3E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCufXrUJeJbQqXxUlBdOtJpASX5C-sZPHvvGg5yCNbVW_8"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "UNIT",
-        "Release date": "05-02-2026",
-        "Title": "Auto tool station repair_1.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQATxiV_bHs2QL5X_0qx9_yDAYalu0nmbqLCzMHvhgUtBMM"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "01-24-2020",
-        "Title": "GPX C SENSOR PARAMETTER.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAYamVyHjNrQKFyFg88M7OdAWBomrYsWgcT_0_ZGlIcTJs"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "12-04-2024",
-        "Title": "GPX C2 CS2 Training Text for Service Engineer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBEVYqa0GFLT4_So5vFrrZlARX_v50NjKYNPgnwNV-MfoU"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "12-15-2022",
-        "Title": "TRAINING TEXT GPX-CS2",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWQcs359RrS6cleJ9k32ePAQDkMdijOPRG9sYrk8KmLEY"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-03-2020",
-        "Title": "H01, H04, H08, H12S ver6.0.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFM6Ig6CWRTqTOg2NrN_A_AQ3R2KGJLg3Cl-qs2RFAngw"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "07-25-2023",
-        "Title": "H02 ver2.0[1]",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDwOy2QnDNMT6KLAfWp17g0AaWhJkJHIJLA6gAXkSGlY-M"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-06-2020",
-        "Title": "H08, H01 ver2.0.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDXDSbGKrc8RYV_K_TYSsjCAYit8lL6AZpPkykovfszcKY"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-11-2020",
-        "Title": "H08M_5.0EH08M(Q)HeadRepairTrainingTextforServiceEngineers.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCiz03ldBEjQ6WoN-UKotzgAX44AsOrfgH1Qd9nChI6vMg"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-05-2020",
-        "Title": "H12HSQ ver2.0.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBi0AQ-_0S9TKE6Ymid2-I-AQPp9IK9NMoXk0VqaUlyIAE"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-04-2020",
-        "Title": "H24_ver8.0.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAMup5pqPs5RaPam-g2rwcOAZbdC1sme_IGhSNuGxhQjZs"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-01-2020",
-        "Title": "IPS Adjustment for Various Head Types on the Modules_C.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD8IfY_d1PqRbBt0u16KFrVAVmT2kugMJFWt5bklW975K0"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-02-2020",
-        "Title": "IPS adjustment on the modules.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA6FEHlGWNTTrVlLGPfRT06AY7bSlK-lAGv95VKrarwDh8"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-21-2020",
-        "Title": "IPS Adjustment.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTUc26P8ldToHojV-GS7TnAa9zNJtvX-uiKHju5GcxSKY"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "06-25-2025",
-        "Title": "GPX TRAINING TEXT CHINESE VER",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAp5F-twx_hSbQ3_Zi0_UGlAcZhDm1VSeyw2bKNedEcv_Y"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "05-28-2025",
-        "Title": "KUN SHAN GPX KPO MATERIAL",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAc3ZxDZKE-S4KxhvogNdcqAfn8RKfr9M3w_uVPrdf_MVs"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
-        "Title": "FUJI-Kaizen",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQC_WA-XjoxASZcxlKAm_kQ7AYnqZtwE4BySXJb_oa9o0XE"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "12-10-2025",
-        "Title": "MES GPX DOCUMENT",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCbksIODaHbSqgLRW7Mu-HsAU1KcLVST7rtYmFgIdxBATc"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "07-25-2023",
-        "Title": "NXT XS axis ball screw replacement procedure[1]",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDA8UnEaOdDQrya8iljDMTqAYMxlSo_OCUwLfONnpSpUvo"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "07-25-2023",
-        "Title": "NXT III Ball Acrew Replacement[1]",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDf-3htZnqYRLPriGGKDM-3AUkl9k_46WNom3FAz3h68zI"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "06-06-2024",
-        "Title": "NXT2 TRAINING TEXT",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuw03Ved0jS7PFAugw8zOtAazqQlQzTwBKJ8IReh3U1Mg"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-13-2020",
-        "Title": "NXT3_1.0ENXTIIITrainingTextforServiceEngineers.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDIvKo3VaHJQLGUVgW09Wl1AU9KuXtC6bE6FWJvtTCFQDo"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "05-30-2024",
-        "Title": "NXTIII_Conveyor TRAINING TEXT",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZMptbjnxpRo02cNuhSN2SAUHocmUS-w63mJ_4wvQr5Tk"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-07-2020",
-        "Title": "NXTIII-IIIcY-axisLinearShaftandLinearMotorReplacement.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCCwb2R4QueToJI8u26dmj9ARPh2DakkVED1aVlR6V-rwk"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-22-2020",
-        "Title": "NXTIII-TRAINING TEXT.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCb-O1hbr33TLkQ6tUjMWqFAawFCcKnB-9rnXDSvPIaZ2c"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR Conveyor_2.2E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDul8L-zQU8TJ5esr4HlAJMAZoW6DpkfGatrzJQchFp1KQ"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR Engineer_4.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCvHtftuVJ2TokYTn9bKHSYAVM4VPeh5xDJ5HjhM3ilM1Q"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "05-02-2026",
-        "Title": "NXTR Engineer_4.2E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAWfrlJe2CpT7sQ6TLLRMlpAZP9mXxfJdnfs4YMENScDyk"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "01-10-2020",
-        "Title": "NXTR TRAINING TEXT.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDyaRyT457DTKDKyywqjkSIAZf4BGpeY1ceYStEnyABp1A"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR X-axis linear scale_1.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAv-tirzRVTLWWn5jn_b4FATRmFhw6mX-4BIMVhHVZ0Zs"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "05-02-2026",
-        "Title": "NXTR X-axis liner scale_1.1E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdVCmeHIyRTIS5UOJph7VQAWhQO5l9VqvUpfV_RJKzI-E"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "09-22-2025",
-        "Title": "NXTR Y-axis linear scale",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhC_3fDRtlQ5T8OYurXMdbAdPmS15U-pMue3Oc20G_SjE"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR Y-axis linear scale_1.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAb5qumsvKURrVRIU0z2TN6AcJ0-E6XYcBoy3qCDnFK9U8"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "05-02-2026",
-        "Title": "NXTR Zs axis origin_1.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDuAJEW6SzOS5JXQMiV0_CYAfSCNpsq-zsS3Oya5IAXnvU"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR Zs axis origin_1.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCyTWF4dTvOQZ12HX2SANIaAaHTG4hD6L8Wq8uX_ErJMkA"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "10-21-2025",
-        "Title": "NXTR_Tray Unit-RM_E1.0_E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBuE4pqPxJ-T45kXz9og7YvAY0BHPnS6EUt8EHxkgdaRZM"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTIII",
-        "Release date": "05-02-2026",
-        "Title": "NXTseries_Matrix_2.4E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDSPhf6BCVuQoaM_mbeWmhdATo0_NdlB583RYWHShcP5Yo"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-20-2020",
-        "Title": "Panel conveyor troubleshooting.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBryMA1R_LoQLF1rSgXCDIoARwqrLKczQgAf1bpTr2rS3I"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "12-19-2024",
-        "Title": "Auto Solder Supply Function modification",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-fYkg9RDLQY9sfXWcknKDAeH7hN15lriy9oGLF3uxTI4"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "05-02-2026",
-        "Title": "RH01 Repair_1.1E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCCB6GeMMXVRb8w6NQ0x4r4AQUXZmgttODMNqBdlDLUXfI"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "01-04-2026",
-        "Title": "RH02",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwIp_9y8U7Trik-ANAnwT4AZoWIDOsIR7Lv7RuHcHINaQ"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "01-04-2026",
-        "Title": "RH20",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBpX-ebPN35Qp1KeXDT479BAa5UNGYmaYwJd0rOdQQG6zQ"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXTR",
-        "Release date": "01-04-2026",
-        "Title": "RH28",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgz6GPSu0sRrdXgKZ2nFIMAdMx92aftNQ83uiv8AwOacg"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-18-2020",
-        "Title": "S1402-1.0ENXT-3TroubleshootingwhenSafetyRelayisOFF.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBvQ3mPl9OlRKHovwo4_Bh6AdJODCOUOQIlfsKZYVLje1A"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-17-2020",
-        "Title": "S1710-2.0EBlownfusetroubleshootingApplicablemachines2M-3base.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBQlgIR9lQBSaetXySRba5tAYUCqrziKqJGyc-gk0RsPJM"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-09-2020",
-        "Title": "S1710-4.0EBlownfusetroubleshootingApplicablemachinesM3-3module.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCFml793HWpTbGIDf6MPBe_AYX3MRLzAiA07qaqspp4Dtk"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-08-2020",
-        "Title": "S1710-4.0EBlownfusetroubleshootingApplicablemachinesM6module.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTBh8FIvm8RqKONQvjlm1nAZqKwR74z1tR6cu3nUWD6RU"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-19-2020",
-        "Title": "S1803-4.0ETroubleshootingforerrorcodesonthetrayunit-LT.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDRKVNxf3uSSYP_7LgTgNPuAQLI1LEcfjywef98U4rcbz0"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-15-2020",
-        "Title": "S1911-1.0EIPSTroubleshooting(foragents).pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA_Ju4FM7iNR63DFTCZc_MyAewZxHT6-U796lkYcHWnUy0"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "06-01-2025",
-        "Title": "TURN ON - OFF KPO FUNCTION (FOR NXT3)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:x:/g/personal/tan_fuji-smt_com_sg/IQCLxBTT4FbJTZFHAgbPFEy1AXXBMVUoRgqQMYsTUuHAtVU"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "06-06-2024",
-        "Title": "SNC TRAINING TEXT",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB1uBjc9GaiQbOD-G1lBwCPAeY-qX9CreSNoGGvlc1yC34"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "UNIT",
-        "Release date": "05-02-2026",
-        "Title": "SNC_4.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCAjoSx62F5RquDXRioK9OgAQSk-WmYqfC3CrjjFZfuMA4"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "01-23-2020",
-        "Title": "TRAINING TEXT GPX-C资料（英文版）.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCjzVJ_tc7_QJiN-62eTTkiAYuuASlMdSfj54JiEwre96o"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "07-18-2023",
-        "Title": "TRAY LT2 TRAINING TEXT",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDEehZB_gkpQZkOtEGhM99OAQzpaPyhXH6quxuc3RdrMpY"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "AIMEX III",
-        "Release date": "05-02-2026",
-        "Title": "TU_LTW_LTW2_2.1E(for Win10)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAewP33LI7YQJCYBx8XOSnmAcvDHbPqYOXZXxN2ocLJceQ"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "GPX",
-        "Release date": "05-28-2025",
-        "Title": "TURN ON - OFF KPO FUNCTION IN GPX.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:x:/g/personal/tan_fuji-smt_com_sg/IQB_fvNrmuOzSqQvKOJcXortAUk0aYbg6y651wtKVTfb-Tw"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "05-02-2026",
-        "Title": "V12_7.0E",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAncWRsFvvJTp63Pgzvg3yaAaD3b4oS2sDHbDnLCBA0920"
-    },
-    {
-        "Category": "TRAINING TEXT",
-        "TYPE": "NXT III",
-        "Release date": "01-12-2020",
-        "Title": "V12_7.0EV12HeadRepairTrainingTextforServiceEngineers.pdf",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDjB_KR0jdMQagQ9nvJqvSgASHBR-wHF9oNV7WPyzsEHY0"
+        "Category": null,
+        "TYPE": null,
+        "Release date": null,
+        "Title": null,
+        "LINK": null
     },
     {
         "Category": null,
