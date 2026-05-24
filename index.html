@@ -195,6 +195,8 @@ table-layout:fixed;
 
 background:white;
 
+min-width:1200px;
+
 }
 
 /* STICKY HEADER */
@@ -264,7 +266,7 @@ background:#eef6ff;
 th:nth-child(1),
 td:nth-child(1){
 
-width:58%;
+width:30%;
 
 }
 
@@ -280,16 +282,39 @@ font-weight:500;
 
 }
 
-/* CATEGORY */
+/* DOCUMENT NO */
 
 th:nth-child(2),
 td:nth-child(2){
 
-width:12%;
+width:30%;
 
 }
 
 td:nth-child(2){
+
+color:red;
+
+white-space:normal;
+
+word-break:break-word;
+
+line-height:1.5;
+
+font-weight:bold;
+
+}
+
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:10%;
+
+}
+
+td:nth-child(3){
 
 white-space:normal;
 
@@ -301,8 +326,8 @@ line-height:1.5;
 
 /* TYPE */
 
-th:nth-child(3),
-td:nth-child(3){
+th:nth-child(4),
+td:nth-child(4){
 
 width:10%;
 
@@ -316,8 +341,8 @@ text-overflow:ellipsis;
 
 /* DATE */
 
-th:nth-child(4),
-td:nth-child(4){
+th:nth-child(5),
+td:nth-child(5){
 
 width:10%;
 
@@ -327,8 +352,8 @@ white-space:nowrap;
 
 /* ACTION */
 
-th:nth-child(5),
-td:nth-child(5){
+th:nth-child(6),
+td:nth-child(6){
 
 width:10%;
 
@@ -420,6 +445,8 @@ width:100%;
 
 table-layout:fixed;
 
+min-width:1000px;
+
 }
 
 th,
@@ -436,7 +463,7 @@ font-size:9px;
 th:nth-child(1),
 td:nth-child(1){
 
-width:48%;
+width:30%;
 
 font-size:9px;
 
@@ -444,12 +471,31 @@ line-height:1.4;
 
 }
 
-/* CATEGORY */
+/* DOCUMENT NO */
 
 th:nth-child(2),
 td:nth-child(2){
 
-width:18%;
+width:30%;
+
+font-size:8px;
+
+line-height:1.3;
+
+white-space:normal;
+
+word-break:break-word;
+
+color:red;
+
+}
+
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:10%;
 
 font-size:8px;
 
@@ -459,8 +505,8 @@ line-height:1.3;
 
 /* TYPE */
 
-th:nth-child(3),
-td:nth-child(3){
+th:nth-child(4),
+td:nth-child(4){
 
 width:10%;
 
@@ -476,10 +522,10 @@ text-overflow:ellipsis;
 
 /* DATE */
 
-th:nth-child(4),
-td:nth-child(4){
+th:nth-child(5),
+td:nth-child(5){
 
-width:12%;
+width:10%;
 
 font-size:8px;
 
@@ -487,10 +533,10 @@ font-size:8px;
 
 /* ACTION */
 
-th:nth-child(5),
-td:nth-child(5){
+th:nth-child(6),
+td:nth-child(6){
 
-width:12%;
+width:10%;
 
 text-align:center;
 
@@ -535,19 +581,7 @@ type="text"
 id="searchTitle"
 placeholder="Search Title..."
 >
-<!--
-       <input
-           type="text"
-           id="searchCategory"
-           placeholder="Search Category..."
-       >
 
-       <input
-           type="text"
-           id="searchType"
-           placeholder="Search Type..."
-       >
--->
 </div>
 
 <!-- FILTER BUTTONS -->
@@ -708,7 +742,6 @@ onclick="applyQuickFilter('NXT II')"
 NXTII
 </button>        
 
-
 <button
 class="clear-btn"
 onclick="clearFilter()"
@@ -731,6 +764,8 @@ CLEAR
 <tr>
 
 <th>TITLE</th>
+
+<th>DOCUMENT NO</th>
 
 <th>CATEGORY</th>
 
@@ -944,8 +979,6 @@ searchTitle.value
 
 filteredData = allData.filter(item => {
 
-    /* CATEGORY */
-
     const matchCategory =
 
         selectedCategory === '' ||
@@ -955,8 +988,6 @@ filteredData = allData.filter(item => {
         .includes(
             selectedCategory.toLowerCase()
         );
-
-    /* TYPE */
 
     let matchType = true;
 
@@ -971,8 +1002,6 @@ filteredData = allData.filter(item => {
             );
 
     }
-
-    /* SEARCH */
 
     const matchKeyword =
 
@@ -1004,11 +1033,7 @@ renderTable();
 
 function renderTable(){
 
-/* CLEAR OLD */
-
 pdfBody.innerHTML = '';
-
-/* PAGE DATA */
 
 const start =
 (currentPage - 1) * ROWS_PER_PAGE;
@@ -1019,12 +1044,8 @@ start + ROWS_PER_PAGE;
 const pageData =
 filteredData.slice(start, end);
 
-/* MEMORY FRAGMENT */
-
 const fragment =
 document.createDocumentFragment();
-
-/* BUILD ROWS */
 
 for(let i = 0; i < pageData.length; i++){
 
@@ -1032,6 +1053,9 @@ for(let i = 0; i < pageData.length; i++){
 
     const title =
     escapeHTML(item["Title"] || '');
+
+    const documentNo =
+    escapeHTML(item["Document No"] || '');
 
     const category =
     escapeHTML(item["Category"] || '');
@@ -1052,6 +1076,10 @@ for(let i = 0; i < pageData.length; i++){
 
         <td title="${title}">
             ${title}
+        </td>
+
+        <td title="${documentNo}">
+            ${documentNo}
         </td>
 
         <td title="${category}">
@@ -1087,11 +1115,7 @@ for(let i = 0; i < pageData.length; i++){
 
 }
 
-/* APPEND */
-
 pdfBody.appendChild(fragment);
-
-/* PAGINATION */
 
 renderPagination();
 
@@ -1110,15 +1134,11 @@ Math.ceil(
 filteredData.length / ROWS_PER_PAGE
 );
 
-/* NO PAGINATION */
-
 if(totalPages <= 1){
 
     return;
 
 }
-
-/* PREV BUTTON */
 
 const prevBtn =
 document.createElement('button');
@@ -1141,8 +1161,6 @@ prevBtn.onclick = () => {
 
 pagination.appendChild(prevBtn);
 
-/* PAGE INFO */
-
 const pageInfo =
 document.createElement('span');
 
@@ -1155,8 +1173,6 @@ Page ${currentPage} / ${totalPages}
 `;
 
 pagination.appendChild(pageInfo);
-
-/* NEXT BUTTON */
 
 const nextBtn =
 document.createElement('button');
@@ -1244,3 +1260,4 @@ renderTable();
 
 </script>
 </body>
+</html>
