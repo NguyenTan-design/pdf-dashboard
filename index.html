@@ -623,3 +623,572 @@ height:calc(100vh - 300px);
 </style>
 
 </head>
+
+<body>
+
+<div class="top-toolbar">
+
+<h1>Document Management</h1>
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchTitle"
+placeholder="Search Title..."
+>
+
+</div>
+
+<!-- FILTER BUTTONS -->
+
+<div class="quick-filter">
+
+<button onclick="setCategoryFilter('C-1.Upgrade Reports')">
+Upgrade Reports
+</button>
+
+<button onclick="setCategoryFilter('C-2.Version History')">
+Version History
+</button>
+
+<button onclick="setCategoryFilter('F-2.Specifications')">
+Specifications
+</button>
+
+<button onclick="setCategoryFilter('A-1.Tech Reports')">
+Tech Reports
+</button>
+
+<button onclick="setCategoryFilter('C-3.Software Notice')">
+Software Notice
+</button>
+
+<button onclick="setCategoryFilter('TRAINING TEXT')">
+Training
+</button>
+
+<button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
+FE Documents
+</button>
+
+<button onclick="setCategoryFilter('A-2.Rep News')">
+Rep News
+</button>
+
+<button onclick="setCategoryFilter('D-1.Manuals')">
+Manuals
+</button>
+
+<button onclick="setCategoryFilter('E-6.Troubleshooting')">
+Troubleshooting
+</button>
+
+<button onclick="setCategoryFilter('E-4.Electrical Schematics')">
+Electrical
+</button>
+
+<button onclick="setCategoryFilter('E-1.Parts List')">
+Parts List
+</button>
+
+<button onclick="setCategoryFilter('D-2.Operation Manuals')">
+Operation
+</button>
+
+<button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
+FSF / GEM
+</button>
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('AIMEXIII')"
+>
+AIMEXIII
+</button>
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXTR')"
+>
+NXTR
+</button>
+
+<button
+class="clear-btn"
+onclick="clearFilter()"
+>
+CLEAR
+</button>
+
+</div>
+
+</div>
+
+<!-- TABLE -->
+
+<div class="table-wrapper">
+
+<table id="pdfTable">
+
+<thead>
+
+<tr>
+
+<th>TITLE</th>
+<th>Document No</th>
+<th>CATEGORY</th>
+<th>TYPE</th>
+<th>DATE</th>
+<th>ACTION</th>
+
+</tr>
+
+</thead>
+
+<tbody id="pdfBody"></tbody>
+
+</table>
+
+</div>
+
+<script>
+
+/* =========================
+  CONFIG
+========================= */
+
+const ROWS_PER_PAGE = 50;
+
+/* =========================
+  QUICK FILTER DATA
+========================= */
+
+let quickFilters = {};
+
+/* LOAD ALL JSON */
+
+Promise.all([
+
+fetch('AIMEXIII.json').then(r => r.json()),
+fetch('NXTR.json').then(r => r.json())
+
+])
+
+.then(([
+
+aimex3,
+nxtr
+
+]) => {
+
+quickFilters = {
+
+AIMEXIII : aimex3,
+NXTR : nxtr
+
+};
+
+})
+
+.catch(error => {
+
+console.error(
+'Quick Filter Load Error:',
+error
+);
+
+});
+
+/* =========================
+  GLOBAL DATA
+========================= */
+
+let allData = [];
+let filteredData = [];
+
+let selectedCategory = '';
+let selectedType = '';
+
+let currentPage = 1;
+
+/* =========================
+  CACHE DOM
+========================= */
+
+const pdfBody =
+document.getElementById('pdfBody');
+
+const searchTitle =
+document.getElementById('searchTitle');
+
+/* =========================
+  CREATE PAGINATION
+========================= */
+
+const pagination =
+document.createElement('div');
+
+pagination.id = 'pagination';
+
+pagination.style.cssText = `
+
+display:flex;
+justify-content:flex-end;
+align-items:center;
+gap:10px;
+
+padding:10px 0;
+
+flex-wrap:wrap;
+
+`;
+
+const tableWrapper =
+document.querySelector('.table-wrapper');
+
+tableWrapper.parentNode.insertBefore(
+    pagination,
+    tableWrapper
+);
+
+/* =========================
+  LOAD JSON
+========================= */
+
+fetch('data.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+allData = data;
+
+filteredData = data;
+
+renderTable();
+
+})
+
+.catch(error => {
+
+console.error(
+'JSON Load Error:',
+error
+);
+
+});
+
+/* =========================
+  ESCAPE HTML
+========================= */
+
+function escapeHTML(text){
+
+return String(text)
+
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/>/g, '&gt;')
+.replace(/"/g, '&quot;')
+.replace(/'/g, '&#039;');
+
+}
+
+/* =========================
+  APPLY FILTERS
+========================= */
+
+function applyFilters(){
+
+const keyword =
+searchTitle.value
+.trim()
+.toLowerCase();
+
+filteredData = allData.filter(item => {
+
+    const matchCategory =
+
+        selectedCategory === '' ||
+
+        String(item["Category"] || '')
+        .toLowerCase()
+        .includes(
+            selectedCategory.toLowerCase()
+        );
+
+    let matchType = true;
+
+    if(selectedType !== ''){
+
+        const targetTypes =
+            quickFilters[selectedType] || [];
+
+        matchType =
+            targetTypes.includes(
+                String(item["TYPE"] || '').trim()
+            );
+
+    }
+
+    const matchKeyword =
+
+        keyword === '' ||
+
+        String(item["Title"] || '')
+        .toLowerCase()
+        .includes(keyword);
+
+    return (
+
+        matchCategory &&
+        matchType &&
+        matchKeyword
+
+    );
+
+});
+
+currentPage = 1;
+
+renderTable();
+
+}
+
+/* =========================
+  RENDER TABLE
+========================= */
+
+function renderTable(){
+
+pdfBody.innerHTML = '';
+
+const start =
+(currentPage - 1) * ROWS_PER_PAGE;
+
+const end =
+start + ROWS_PER_PAGE;
+
+const pageData =
+filteredData.slice(start, end);
+
+const fragment =
+document.createDocumentFragment();
+
+for(let i = 0; i < pageData.length; i++){
+
+    const item = pageData[i];
+
+    const title =
+    escapeHTML(item["Title"] || '');
+
+    const documentNo =
+    escapeHTML(item["Document No"] || '');
+
+    const category =
+    escapeHTML(item["Category"] || '');
+
+    const type =
+    escapeHTML(item["TYPE"] || '');
+
+    const releaseDate =
+    escapeHTML(item["Release date"] || '');
+
+    const link =
+    item["LINK"] || '#';
+
+    const row =
+    document.createElement('tr');
+
+    row.innerHTML = `
+
+        <td title="${title}">
+            ${title}
+        </td>
+
+        <td title="${documentNo}">
+            ${documentNo}
+        </td>
+
+        <td title="${category}">
+            ${category}
+        </td>
+
+        <td title="${type}">
+            ${type}
+        </td>
+
+        <td>
+            ${releaseDate}
+        </td>
+
+        <td>
+
+            <a
+                class="action-btn"
+                href="${link}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                Open
+
+            </a>
+
+        </td>
+
+    `;
+
+    fragment.appendChild(row);
+
+}
+
+pdfBody.appendChild(fragment);
+
+renderPagination();
+
+}
+
+/* =========================
+  PAGINATION
+========================= */
+
+function renderPagination(){
+
+pagination.innerHTML = '';
+
+const totalPages =
+Math.ceil(
+filteredData.length / ROWS_PER_PAGE
+);
+
+if(totalPages <= 1){
+
+    return;
+
+}
+
+const prevBtn =
+document.createElement('button');
+
+prevBtn.textContent = 'Prev';
+
+prevBtn.disabled =
+currentPage === 1;
+
+prevBtn.className =
+'action-btn';
+
+prevBtn.onclick = () => {
+
+    currentPage--;
+
+    renderTable();
+
+};
+
+pagination.appendChild(prevBtn);
+
+const pageInfo =
+document.createElement('span');
+
+pageInfo.innerHTML = `
+
+<strong>
+Page ${currentPage} / ${totalPages}
+</strong>
+
+`;
+
+pagination.appendChild(pageInfo);
+
+const nextBtn =
+document.createElement('button');
+
+nextBtn.textContent = 'Next';
+
+nextBtn.disabled =
+currentPage === totalPages;
+
+nextBtn.className =
+'action-btn';
+
+nextBtn.onclick = () => {
+
+    currentPage++;
+
+    renderTable();
+
+};
+
+pagination.appendChild(nextBtn);
+
+}
+
+/* =========================
+  SEARCH
+========================= */
+
+let debounceTimer;
+
+searchTitle.addEventListener('input', () => {
+
+clearTimeout(debounceTimer);
+
+debounceTimer = setTimeout(() => {
+
+    applyFilters();
+
+}, 300);
+
+});
+
+/* =========================
+  CATEGORY FILTER
+========================= */
+
+function setCategoryFilter(value){
+
+selectedCategory = value;
+
+applyFilters();
+
+}
+
+/* =========================
+  QUICK FILTER
+========================= */
+
+function applyQuickFilter(filterName){
+
+selectedType = filterName;
+
+applyFilters();
+
+}
+
+/* =========================
+  CLEAR FILTER
+========================= */
+
+function clearFilter(){
+
+searchTitle.value = '';
+
+selectedCategory = '';
+selectedType = '';
+
+filteredData = allData;
+
+currentPage = 1;
+
+renderTable();
+
+}
+
+</script>
+</body>
+</html>
