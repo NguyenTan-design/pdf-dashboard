@@ -170,7 +170,8 @@ background:#b52b38 !important;
 
 width:100%;
 
-overflow:auto;
+overflow-x:auto;
+overflow-y:auto;
 
 height:calc(100vh - 260px);
 
@@ -187,7 +188,9 @@ box-shadow:
 
 table{
 
-width:100%;
+width:max-content;
+
+min-width:100%;
 
 border-collapse:collapse;
 
@@ -243,6 +246,8 @@ font-size:14px;
 
 border:1px solid #dbe2ea;
 
+background:white;
+
 }
 
 /* ROW */
@@ -259,16 +264,36 @@ background:#eef6ff;
 
 }
 
-/* TITLE */
+/* =========================
+   TITLE FIX LEFT
+========================= */
 
 th:nth-child(1),
 td:nth-child(1){
 
 width:58%;
 
+min-width:700px;
+
+position:sticky;
+
+left:0;
+
+z-index:5;
+
+background:white;
+
 }
 
-td:nth-child(1){
+thead th:nth-child(1){
+
+background:#0078d4;
+
+z-index:1000;
+
+}
+
+tbody td:nth-child(1){
 
 white-space:normal;
 
@@ -278,18 +303,45 @@ line-height:1.6;
 
 font-weight:500;
 
+box-shadow:2px 0 5px rgba(0,0,0,0.05);
+
 }
 
-/* CATEGORY */
+/* DOCUMENT NO */
 
 th:nth-child(2),
 td:nth-child(2){
 
-width:12%;
+width:180px;
+
+min-width:180px;
+
+max-width:180px;
+
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-break:anywhere;
+
+line-height:1.5;
 
 }
 
-td:nth-child(2){
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:12%;
+
+min-width:220px;
+
+}
+
+td:nth-child(3){
 
 white-space:normal;
 
@@ -301,10 +353,12 @@ line-height:1.5;
 
 /* TYPE */
 
-th:nth-child(3),
-td:nth-child(3){
+th:nth-child(4),
+td:nth-child(4){
 
 width:10%;
+
+min-width:120px;
 
 white-space:nowrap;
 
@@ -316,10 +370,12 @@ text-overflow:ellipsis;
 
 /* DATE */
 
-th:nth-child(4),
-td:nth-child(4){
+th:nth-child(5),
+td:nth-child(5){
 
 width:10%;
+
+min-width:140px;
 
 white-space:nowrap;
 
@@ -327,12 +383,16 @@ white-space:nowrap;
 
 /* ACTION */
 
-th:nth-child(5),
-td:nth-child(5){
+th:nth-child(6),
+td:nth-child(6){
 
 width:10%;
 
+min-width:120px;
+
 white-space:nowrap;
+
+text-align:center;
 
 }
 
@@ -416,7 +476,9 @@ border-radius:6px;
 
 table{
 
-width:100%;
+width:max-content;
+
+min-width:100%;
 
 table-layout:fixed;
 
@@ -436,20 +498,65 @@ font-size:9px;
 th:nth-child(1),
 td:nth-child(1){
 
-width:48%;
+width:260px;
+
+min-width:260px;
 
 font-size:9px;
 
 line-height:1.4;
 
+position:sticky;
+
+left:0;
+
+z-index:5;
+
+background:white;
+
 }
 
-/* CATEGORY */
+thead th:nth-child(1){
+
+background:#0078d4;
+
+z-index:1000;
+
+}
+
+/* DOCUMENT NO */
 
 th:nth-child(2),
 td:nth-child(2){
 
-width:18%;
+width:140px;
+
+min-width:140px;
+
+max-width:140px;
+
+font-size:8px;
+
+line-height:1.3;
+
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-break:anywhere;
+
+}
+
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:160px;
+
+min-width:160px;
 
 font-size:8px;
 
@@ -459,10 +566,12 @@ line-height:1.3;
 
 /* TYPE */
 
-th:nth-child(3),
-td:nth-child(3){
+th:nth-child(4),
+td:nth-child(4){
 
-width:10%;
+width:90px;
+
+min-width:90px;
 
 font-size:8px;
 
@@ -476,10 +585,12 @@ text-overflow:ellipsis;
 
 /* DATE */
 
-th:nth-child(4),
-td:nth-child(4){
+th:nth-child(5),
+td:nth-child(5){
 
-width:12%;
+width:100px;
+
+min-width:100px;
 
 font-size:8px;
 
@@ -487,10 +598,12 @@ font-size:8px;
 
 /* ACTION */
 
-th:nth-child(5),
-td:nth-child(5){
+th:nth-child(6),
+td:nth-child(6){
 
-width:12%;
+width:90px;
+
+min-width:90px;
 
 text-align:center;
 
@@ -508,7 +621,9 @@ border-radius:5px;
 
 .table-wrapper{
 
-overflow:auto;
+overflow-x:auto;
+
+overflow-y:auto;
 
 height:calc(100vh - 300px);
 
@@ -535,19 +650,7 @@ type="text"
 id="searchTitle"
 placeholder="Search Title..."
 >
-<!--
-       <input
-           type="text"
-           id="searchCategory"
-           placeholder="Search Category..."
-       >
 
-       <input
-           type="text"
-           id="searchType"
-           placeholder="Search Type..."
-       >
--->
 </div>
 
 <!-- FILTER BUTTONS -->
@@ -615,99 +718,14 @@ class="black-btn"
 onclick="applyQuickFilter('AIMEXIII')"
 >
 AIMEXIII
-</button>        
+</button>
 
 <button
 class="black-btn"
 onclick="applyQuickFilter('NXTR')"
 >
 NXTR
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX')"
->
-GPX
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Flexa')"
->
-Flexa
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Fujitrax')"
->
-Fujitrax
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Feeder')"
->
-Feeder
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Nexim')"
->
-Nexim
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Unit')"
->
-Unit
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('NXTIII')"
->
-NXTIII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CS')"
->
-GPX-CS
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CSII')"
->
-GPX-CSII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CL')"
->
-GPX-CL
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CII')"
->
-GPX-CII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('NXT II')"
->
-NXTII
-</button>        
-
+</button>
 
 <button
 class="clear-btn"
@@ -731,13 +749,10 @@ CLEAR
 <tr>
 
 <th>TITLE</th>
-
+<th>Document No</th>
 <th>CATEGORY</th>
-
 <th>TYPE</th>
-
 <th>DATE</th>
-
 <th>ACTION</th>
 
 </tr>
@@ -769,57 +784,21 @@ let quickFilters = {};
 Promise.all([
 
 fetch('AIMEXIII.json').then(r => r.json()),
-fetch('NXTR.json').then(r => r.json()),
-fetch('NXTIII.json').then(r => r.json()),
-fetch('GPX.json').then(r => r.json()),
-fetch('Flexa.json').then(r => r.json()),
-fetch('Fujitrax.json').then(r => r.json()),
-fetch('Feeder.json').then(r => r.json()),
-fetch('Nexim.json').then(r => r.json()),
-fetch('Unit.json').then(r => r.json()),
-fetch('GPX-CS.json').then(r => r.json()),
-fetch('GPX-CSII.json').then(r => r.json()),
-fetch('GPX-CL.json').then(r => r.json()),
-fetch('GPX-CII.json').then(r => r.json()),
-fetch('NXT II.json').then(r => r.json())
+fetch('NXTR.json').then(r => r.json())
 
 ])
 
 .then(([
 
 aimex3,
-nxtr,
-nxt3,
-gpx,
-flexa,
-fujitrax,
-feeder,
-nexim,
-unit,
-gpxcs,
-gpxcs2,
-gpxcl,
-gpxc2,
-nxt2
+nxtr
 
 ]) => {
 
 quickFilters = {
 
 AIMEXIII : aimex3,
-NXTR : nxtr,
-NXTIII : nxt3,
-GPX : gpx,
-Flexa : flexa,
-Fujitrax : fujitrax,
-Feeder : feeder,
-Nexim : nexim,
-Unit : unit,
-"GPX-CS" : gpxcs,
-"GPX-CSII" : gpxcs2,
-"GPX-CL" : gpxcl,
-"GPX-CII" : gpxc2,
-"NXT II" : nxt2
+NXTR : nxtr
 
 };
 
@@ -877,8 +856,6 @@ padding:10px 0;
 flex-wrap:wrap;
 
 `;
-
-/* INSERT ABOVE TABLE */
 
 const tableWrapper =
 document.querySelector('.table-wrapper');
@@ -944,8 +921,6 @@ searchTitle.value
 
 filteredData = allData.filter(item => {
 
-    /* CATEGORY */
-
     const matchCategory =
 
         selectedCategory === '' ||
@@ -955,8 +930,6 @@ filteredData = allData.filter(item => {
         .includes(
             selectedCategory.toLowerCase()
         );
-
-    /* TYPE */
 
     let matchType = true;
 
@@ -971,8 +944,6 @@ filteredData = allData.filter(item => {
             );
 
     }
-
-    /* SEARCH */
 
     const matchKeyword =
 
@@ -1004,11 +975,7 @@ renderTable();
 
 function renderTable(){
 
-/* CLEAR OLD */
-
 pdfBody.innerHTML = '';
-
-/* PAGE DATA */
 
 const start =
 (currentPage - 1) * ROWS_PER_PAGE;
@@ -1019,12 +986,8 @@ start + ROWS_PER_PAGE;
 const pageData =
 filteredData.slice(start, end);
 
-/* MEMORY FRAGMENT */
-
 const fragment =
 document.createDocumentFragment();
-
-/* BUILD ROWS */
 
 for(let i = 0; i < pageData.length; i++){
 
@@ -1032,6 +995,9 @@ for(let i = 0; i < pageData.length; i++){
 
     const title =
     escapeHTML(item["Title"] || '');
+
+    const documentNo =
+    escapeHTML(item["Document No"] || '');
 
     const category =
     escapeHTML(item["Category"] || '');
@@ -1052,6 +1018,10 @@ for(let i = 0; i < pageData.length; i++){
 
         <td title="${title}">
             ${title}
+        </td>
+
+        <td title="${documentNo}">
+            ${documentNo}
         </td>
 
         <td title="${category}">
@@ -1087,11 +1057,7 @@ for(let i = 0; i < pageData.length; i++){
 
 }
 
-/* APPEND */
-
 pdfBody.appendChild(fragment);
-
-/* PAGINATION */
 
 renderPagination();
 
@@ -1110,15 +1076,11 @@ Math.ceil(
 filteredData.length / ROWS_PER_PAGE
 );
 
-/* NO PAGINATION */
-
 if(totalPages <= 1){
 
     return;
 
 }
-
-/* PREV BUTTON */
 
 const prevBtn =
 document.createElement('button');
@@ -1141,8 +1103,6 @@ prevBtn.onclick = () => {
 
 pagination.appendChild(prevBtn);
 
-/* PAGE INFO */
-
 const pageInfo =
 document.createElement('span');
 
@@ -1155,8 +1115,6 @@ Page ${currentPage} / ${totalPages}
 `;
 
 pagination.appendChild(pageInfo);
-
-/* NEXT BUTTON */
 
 const nextBtn =
 document.createElement('button');
@@ -1244,3 +1202,4 @@ renderTable();
 
 </script>
 </body>
+</html>

@@ -5,7 +5,7 @@ import json
 df = pd.read_excel(r"C:\Users\quoct\OneDrive - Fuji Machine Asia Pte Ltd\DOCUMENT CONTROL.xlsx")
 
 # Chỉ lấy các cột cần
-df = df[["Category", "TYPE", "Release date", "Title", "LINK"]]
+df = df[["Category", "TYPE", "Release date", "Title", "LINK", "Document No"]]
 
 # Format ngày
 df["Release date"] = df["Release date"].dt.strftime("%m-%d-%Y")
