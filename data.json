@@ -31616,6 +31616,30 @@
         "Document No": "权限管理系统permissions management.xlsx"
     },
     {
+        "Category": "F-2.Specifications",
+        "TYPE": "GPX_CII;GPX_CSII;",
+        "Release date": "05-29-2026",
+        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDaohiU2MD8QbxkcwcoaAVQASjFoPEihEwBkjVKdmNSpLc",
+        "Document No": "CNT-GPXCII-11E1.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "GPX",
+        "Release date": "05-29-2026",
+        "Title": "GPX-C2,CS2,CL KPO Link Operation Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCBCaOnO5bfRZGLmqa06okTAfUrV9Me8FS8E3AXpYza_D8",
+        "Document No": "GPX-C2,CS2,CL KPO Link Operation Manual_R1a.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "05-29-2026",
+        "Title": "Claim B+: A malfunction was observed in some solenoid valves (2MHEHC0069**) for RH02 and RH01 heads. If any of the errors described in this report occur, replace the valve with a countermeasure part.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCOTq8x_au3Tap1IbKvWu2iATiqNwWdF4j6k4sMe14x4S8",
+        "Document No": "R25110-2.pdf"
+    },
+    {
         "Category": null,
         "TYPE": null,
         "Release date": null,
