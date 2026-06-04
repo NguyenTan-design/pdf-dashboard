@@ -1,5 +1,109 @@
 [
     {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NEXIM",
+        "Release date": "06-03-2026",
+        "Title": "The Nexim Installer version that supports Oracle19c has been extended.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBteERk-XN2RIyiXlN_kjW-AXc4-9twm70ZHsT1kPM1K_A",
+        "Document No": "2536_PatchReport_E.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXTR;AIMEXR",
+        "Release date": "06-03-2026",
+        "Title": "3D Coplanarity Check",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAd7kCJxS1kSY5gFMtz0vlpAZm_aQVJ2zVXe_D731-DKBo",
+        "Document No": "CNT-3DCPL-15E.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "NXTR",
+        "Release date": "06-03-2026",
+        "Title": "AIMEXR Specifications with Supplemental Material",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAN1mSnN60NQ4caLzg5BRVHAQKY_nLwcz_SQBdoLmHt5pc",
+        "Document No": "CNT-AIMEXR-05E.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "AIMEX;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR",
+        "Release date": "06-03-2026",
+        "Title": "NXT Series,AIMEX/AIM Series Device Unit Specifications",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC1UNRZWOJITIxg7pKGM6AVAaWgO8_ETsb-Nox7rNCVlxM",
+        "Document No": "CNT-DVC-49E.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "GPX_CII;GPX_CSII;",
+        "Release date": "06-03-2026",
+        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCuPjGEjLIbSYixuzE9dPhGAVYPHZDytvy_6Ebm-YWd2X8",
+        "Document No": "CNT-GPXCII-11E2.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "GPX_CL;",
+        "Release date": "06-03-2026",
+        "Title": "GPX-CL Intelligent Screen Printer",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgliuvhti2SIadorfMmFJhASpWVREqcq-8USJy2pCIrxo",
+        "Document No": "CNT-GPXCL-13E1.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "UNIT",
+        "Release date": "06-03-2026",
+        "Title": "3D Coplanarity Check Unit Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC6IcsouiwrSJYQt6lQyB6-AUgOc2fR-xZb_s4oa3nnU_U",
+        "Document No": "INS-3DCPL-011E0.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "UNIT",
+        "Release date": "06-03-2026",
+        "Title": "Auto Loading Feeder Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCOJUxfZ-tuQoYuFJv8EBDYAc5oz-bmVGxWnA9Uoq97HzY",
+        "Document No": "INS-ALFDR-012E0.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "UNIT",
+        "Release date": "06-03-2026",
+        "Title": "RHDX head Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBv72-8l50vTLwEJE6oiblBATrm4P1OoUBXS3R_gi43et0",
+        "Document No": "INS-RHDX-001E0.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "Feeder",
+        "Release date": "06-03-2026",
+        "Title": "FUJI Intelligent Feeder Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC3AyYyCZENRYadliFN8FXuAe7mDFq2jVyy9j0Ve5JZqdU",
+        "Document No": "QD010-45.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "UNIT",
+        "Release date": "06-03-2026",
+        "Title": "When adjusting the IPS brightness on an Auto Head Cleaner-R, the software version must be V1.30 or later and it is necessary to add a vision processing board and a harness.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgPVg1p7r4QrLFiVWchR3dAeTYSgqZR3n_0ofKZIw9rt4",
+        "Document No": "R23059-1.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "FUJI Smart Factory",
+        "Release date": "06-03-2026",
+        "Title": "Fuji Software Upgrade Report (FSF V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB2eoFwpPPkRZiEZip07gksAQJGmQCHzrXyndu7unGgJB0",
+        "Document No": "TV2026-0593.pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "FUJI Smart Factory",
+        "Release date": "06-03-2026",
+        "Title": "Fuji Software Upgrade History (FSF V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC5bCuTnOm5TqOZfnz8HZLJAVYekw5L7KocAkELd2HI6vw",
+        "Document No": "TV2026-0593_History.pdf"
+    },
+    {
         "Category": "F-2.Specifications",
         "TYPE": "GPX_CII;GPX_CSII;",
         "Release date": "05-29-2026",
