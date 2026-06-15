@@ -9,6 +9,102 @@
     },
     {
         "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;NXT_III;NXT_IIIc;NXT_II;NXT_IIc;NXT;AIMEX_III;AIMEX_IIIc;AIMEX_II;AIMEX_IIS;AIMEX;",
+        "Release date": "06-11-2026",
+        "Title": "Important points when creating trays and tape supporting mechanical chucks are provided. (Units supported by NXTR and AIMEXR have been added to Tech Report 15009-2)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAike3NQ2VATpFh6WuGEt_gATlxWKJTdGGJsx8eyhsyUpQ",
+        "Document No": "T15009-3.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;NXT_III;NXT_IIIc;NXT_II;NXT_IIc;NXT;AIMEX_III;AIMEX_IIIc;AIMEX_II;AIMEX_IIS;AIMEX;",
+        "Release date": "06-11-2026",
+        "Title": "Important points when creating trays and tape supporting mechanical chucks are provided. (Units supported by NXTR and AIMEXR have been added to Tech Report 15009-2)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB4afnC4gNyRLf6pslpp7F7AXdtdpcYmf2EvuZ6bW-wI1U",
+        "Document No": "T15009-3_A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "This report provides information about the manual which enables subsidiaries to create custom nozzles and mechanical chucks.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDMnL9t9nhdRLpgHy4LTRmnASws3Wmvh4h_hbiiT8FITXo",
+        "Document No": "R21026-3.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "This report provides information about the manual which enables subsidiaries to create custom nozzles and mechanical chucks.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDzKWtwEP0LSI7bGOe2ac_WAScjlr6yeyrlYU4RFklqtfc",
+        "Document No": "R21026-3_A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "This report provides information about the manual which enables subsidiaries to create custom nozzles and mechanical chucks.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXFrprXd8NTKqPgircwerDASG-j8gpHwYLDyvH1rYxFmc",
+        "Document No": "R21026-3_A2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "The description format for lead and bump sizes of parts in the specifications has been simplified, and the detailed specifications previously described are communicated in this Rep News.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAvseYLWnTLSIthnL8IFqfMAeb-7O_J0eP08xhL851xqUE",
+        "Document No": "R25015-1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "It has been confirmed that RH28 and RH20 heads are subject to errors due to a delay in response when positive pressure is applied, and the solenoid valves therefore have been changed as a countermeasure.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDYLrVXDRQTRJ5C2Zkhg5QyAZHFcd9mx-SuO2a8b6CKFTE",
+        "Document No": "R25027-2 A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "It has been confirmed that RH28 and RH20 heads are subject to errors due to a delay in response when positive pressure is applied, and the solenoid valves therefore have been changed as a countermeasure.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAgsc9oHnFzR5GtBRl41XhiAYKTNMtHZYA5L_zqDZqt1RE",
+        "Document No": "R25027-2 A2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "It has been confirmed that RH28 and RH20 heads are subject to errors due to a delay in response when positive pressure is applied, and the solenoid valves therefore have been changed as a countermeasure.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBj_YV5ujKAQo3QiFXHm84uAZl5JIq0OP8Wco2uo8W5B6E",
+        "Document No": "R25027-2 A3.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "It has been confirmed that RH28 and RH20 heads are subject to errors due to a delay in response when positive pressure is applied, and the solenoid valves therefore have been changed as a countermeasure.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA2JllhyxYjTo5TsQf1v0HuAcObx-ydqRP0w44o8n65E2Y",
+        "Document No": "R25027-2 A4.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;",
+        "Release date": "06-10-2026",
+        "Title": "It has been confirmed that RH28 and RH20 heads are subject to errors due to a delay in response when positive pressure is applied, and the solenoid valves therefore have been changed as a countermeasure.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBKwENL_0IoRYymKGSSFkjlAXPybOje1Q91v0quZhvHe9o",
+        "Document No": "R25027-2.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-10-2026",
+        "Title": "Backup pin dropped errors sometimes occur if the machine is stopped when picker nozzles are just picked up.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBL3i8uu9ByQq29B-9GTQEhAY4u2jRm_3TYYbj9JVOr30I",
+        "Document No": "SN2026-0703.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
         "TYPE": "NEXIM",
         "Release date": "06-03-2026",
         "Title": "The Nexim Installer version that supports Oracle19c has been extended.",
