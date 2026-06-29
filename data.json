@@ -1,5 +1,309 @@
 [
     {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB2M1w1g9YaQKEpBh9sTFshAdeakOnC2G159545bEPsaYQ",
+        "Document No": "R26023 A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCYPCyzGCazR7DwFQBEFTlrAfMq3MQmGQtWLnWzhmQG0ZQ",
+        "Document No": "R26023 A2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAsVeWKkphKSYlAG8My01mLAd3a466F1AeXCCLf8tRImvY",
+        "Document No": "R26023 A4.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Feeders are sometimes unnecessarily divided when optimization is performed for a job in which AVL is used.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQChSQKlegfhRJMsHdb_J882Acsqe5_2-kvzOVZRNLTy8Ys",
+        "Document No": "SN2026-0736.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDJRi5Le48RR4kKHnJh08QBAVkl8AsDB84Qt0TRHjRe2fc",
+        "Document No": "SN2026-0054(C).pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBK0sELEQGuTZ3XJesaBsNAAaGU05f7g0URQ3UtrGjBSqk",
+        "Document No": "R26023 A3.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Feeders are sometimes unnecessarily divided when optimization is performed for a job in which AVL is used.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQD-eR4eZfiOQK5TMtCPvfvjAVxCunCWfm9jKliXQ9LiLY8",
+        "Document No": "5506_V3.1.100_Plan_Patch (1).zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Feeders are sometimes unnecessarily divided when optimization is performed for a job in which AVL is used.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQD1KQfU7QSBT4I3M6hUdzG3ATJgvMwR6FSvyypL22xsTmk",
+        "Document No": "5513_V3.2.100_Plan_Patch (1).zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAQdnv9WsNNTaIKOeRLsz0WATz2d59GaKSbDNbNu-_Oo6E",
+        "Document No": "5489_V3.2.0_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "Placement deviations sometimes occur in V2.30 or later.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAfTu7VEcj5T6MJPAmlguLcAYOULreY6fsTPezGBGvut1I",
+        "Document No": "SN2026-0765(A).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAIPUcFeflFRLLBUOyjyofwAegEm7bTG7jCmS8PjxbHWp8",
+        "Document No": "5459_V2.9.100_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC1knVsapQtSqE1XvX2xhNuAY_V9lTq-lI37dKp1Ev_Uto",
+        "Document No": "Restrictions_E(Nexim 3.2.100).pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade History (Nexim V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCLnS_rraOqSpLQaP5t01inAbs3zwlAVT2qdE72KFOMHys",
+        "Document No": "TV2026-0544_History.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCpRI9okTzYS4gwcv9cQ62kAWthr2AvW8s4utvx3RTFE0c",
+        "Document No": "5514_V3.1.100_Plan_Patch.zip"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "NXTR Machine Specifications A model / S model with Supplemental Material",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA13NgalAQqSrOTc0-kfAKDAadMhPF6sbSAwRDTkWqO8cU",
+        "Document No": "CNT-NXTRA-11E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDqovPN7kiVSbJZeW6MIxtaATGvEl7svcZjBUMng5g_Iko",
+        "Document No": "ImportantInformation_E(Nexim 3.2.100).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "RH08 heads sometimes interfere with placed parts.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBzjImh8UJvRJ6lgL0P5dq8AYCYW1CE2a1zNSp2kob13GE",
+        "Document No": "SN2026-0764.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "Claim A: This report provides the information on the machine settings required when using RH28 and RH20 heads without an IPS unit installed, as well as the modification procedures after installing an IPS unit.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDb7NIeyDEGRqwYgdGTN4I-AVEzeY_eGp9AnCYNKbjzAgE",
+        "Document No": "R26022_A2.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "NXTR Machine Specifications S model with Supplemental Material",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWuFZHIGFSSIv4iBci68DVAY_Pw1ye57MibMyJQrb0_Rw",
+        "Document No": "CNT-NXTRS-20E.pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade History (NXTR V2.35)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCzkSGG_7YWRKrijmIUlRbJAc7LmPbL89IoHZxCODfqYGY",
+        "Document No": "TV2026-0443_History.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQBqDT-Q-WD0Tp9NldifvYjvARrEU61cu1IP37J6WHNW8ec",
+        "Document No": "5461_V3.0.0_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAK-3JiuUP0R6N3lqkU846-AVaFmQy7OJLAEt1s4F6AxX0",
+        "Document No": "5473_V3.1.0_Plan_Patch.zip"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD2VS8jcIS7QaO5l1W1fRayAdpeQEpTtLifC1ELLcl_GJI",
+        "Document No": "R26023 A5.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "Pressure Accuracy Measurement Operation Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZRk7Qs8XHR4Khm2Mt8oWwAR9oYdL4mbbusUGNIFNzwz8",
+        "Document No": "Pressure Accuracy Measurement Operation Manual.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "LCU Setup Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBMfmvRDLhUQrrCov88lgQ4AWGgrE7VfaodCyVrWJUGr50",
+        "Document No": "SET-LCUPC-001E0.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAMMfSr8FHUQrjkpIT9n4xnATbG8AaVEoBSafGhYngfS6M",
+        "Document No": "SN2026-0738.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "Claim A: This report provides the information on the machine settings required when using RH28 and RH20 heads without an IPS unit installed, as well as the modification procedures after installing an IPS unit.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCsCP-0-iYIQaJQpsT5oojJAUMXfqUy_59J6OvalxM6IsE",
+        "Document No": "R26022_A4.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "Claim A: This report provides the information on the machine settings required when using RH28 and RH20 heads without an IPS unit installed, as well as the modification procedures after installing an IPS unit.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB7od7IYEKsQakaqPqhv0HUAcmYgavbcT9uJpfYUzG8ZXg",
+        "Document No": "R26022.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "NXTR System Reference (S model)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBPJs8k7397QJLpr_zwd1MiAQc-_qs7CdeJro2-C4R3M6A",
+        "Document No": "SYS-NXTRS-018E0.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDJcSp7T1t3RZUvtuWOoP2jAZpF7LY8PormRKEmxPYxweg",
+        "Document No": "5506_V3.1.100_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade Report (NXTR V2.35)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQARGuKJ5A7wQYMyvl0C_HZFAamRiq4-87FOJ1v3RSE4cQ8",
+        "Document No": "TV2026-0443.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDzSxVRXohvQoVovyBXx6ANARhnGO_5EkCrGI7R0wjifl4",
+        "Document No": "5513_V3.2.100_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.2.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAtgg_coL_NSr6T1g5GtfLXATbo5rBKK9AbqCfs2168Sks",
+        "Document No": "TV2026-0544.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "Claim A: This report provides the information on the machine settings required when using RH28 and RH20 heads without an IPS unit installed, as well as the modification procedures after installing an IPS unit.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBw8b0f3ntlTbj933t1eMktATreDJrYf3VtpbVEw9wfG8E",
+        "Document No": "R26022_A3.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "06-29-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBBYI1hivP0Ro5N4pBrieNsAdUgzntd48XGyRHFaxUD3bc",
+        "Document No": "R26023.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "06-29-2026",
+        "Title": "Claim A: This report provides the information on the machine settings required when using RH28 and RH20 heads without an IPS unit installed, as well as the modification procedures after installing an IPS unit.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB6qMxE0vj8QZlE7S4p-HWhAb9t5pgMyeToll6P8r1Ylq8",
+        "Document No": "R26022_A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "Nexim;NXTR_PM;GPX_CII;GPX_CSII;GPX_CL;GPX_CW;",
+        "Release date": "06-29-2026",
+        "Title": "To standardize terminology across the industry, the term \"solder paste cup\" will be changed to \"solder paste pot\".",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBitoOeq1slSp0Y8DZxMGglAX2XpX81VLCDU-sNaj4hKNs",
+        "Document No": "R26019.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR_S;NXTR_A;",
+        "Release date": "06-29-2026",
+        "Title": "Upgrading the 3D coplanarity check unit cannot be performed in V2.35.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuf8Q2nyYhS51y-3cniFsZAe_mR_Sxk34elc7dmwlUTV8",
+        "Document No": "SN2026-0766.pdf"
+    },
+    {
         "Category": "TRAINING TEXT",
         "TYPE": "GPX",
         "Release date": "06-11-2026",
