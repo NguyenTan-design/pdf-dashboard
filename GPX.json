@@ -63,5 +63,6 @@
     "NXT;GPX;Fuji Flexa;Fujitrax;AIM;Unit",
     "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
     "NXT;GPX;AIM",
-    "GPX;Fujitrax;Feeder"
+    "GPX;Fujitrax;Feeder",
+    "GPX_CII;GPX_CSII;GPX_CL;"
 ]
