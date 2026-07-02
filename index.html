@@ -636,6 +636,12 @@ id="searchTitle"
 placeholder="Search Title..."
 >
 
+<input
+type="text"
+id="searchDocNo"
+placeholder="Search Document No..."
+>
+
 </div>
 
 <!-- FILTER BUTTONS -->
@@ -945,6 +951,9 @@ document.getElementById('pdfBody');
 const searchTitle =
 document.getElementById('searchTitle');
 
+const searchDocNo =
+document.getElementById('searchDocNo');
+
 /* =========================
   CREATE PAGINATION
 ========================= */
@@ -1029,6 +1038,11 @@ searchTitle.value
 .trim()
 .toLowerCase();
 
+const documentKeyword =
+searchDocNo.value
+.trim()
+.toLowerCase();
+
 filteredData = allData.filter(item => {
 
     const matchCategory =
@@ -1063,11 +1077,20 @@ filteredData = allData.filter(item => {
         .toLowerCase()
         .includes(keyword);
 
+    const matchDocument =
+
+        documentKeyword === '' ||
+
+        String(item["Document No"] || '')
+        .toLowerCase()
+        .includes(documentKeyword);
+
     return (
 
         matchCategory &&
         matchType &&
-        matchKeyword
+        matchKeyword &&
+        matchDocument
 
     );
 
@@ -1267,6 +1290,19 @@ debounceTimer = setTimeout(() => {
 
 });
 
+
+searchDocNo.addEventListener('input', () => {
+
+clearTimeout(debounceTimer);
+
+debounceTimer = setTimeout(() => {
+
+    applyFilters();
+
+}, 300);
+
+});
+
 /* =========================
   CATEGORY FILTER
 ========================= */
@@ -1298,6 +1334,7 @@ applyFilters();
 function clearFilter(){
 
 searchTitle.value = '';
+searchDocNo.value = '';
 
 selectedCategory = '';
 selectedType = '';
