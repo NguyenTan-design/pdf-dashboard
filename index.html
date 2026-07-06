@@ -151,6 +151,21 @@ background:#000 !important;
 
 }
 
+/* KNOWLEDGE BUTTON */
+
+.quick-filter button.knowledge-btn{
+
+background:#7b1fa2 !important;
+color:#fff;
+
+}
+
+.quick-filter button.knowledge-btn:hover{
+
+background:#5e1480 !important;
+
+}
+
 /* CLEAR BUTTON */
 
 .clear-btn{
@@ -803,6 +818,13 @@ NXTII
 </button>        
 
 <button
+class="knowledge-btn"
+onclick="applyQuickFilter('KNOWLEDGE')"
+>
+KNOWLEDGE
+</button>
+
+<button
 class="clear-btn"
 onclick="clearFilter()"
 >
@@ -876,7 +898,8 @@ fetch('GPX-CS.json').then(r => r.json()),
 fetch('GPX-CSII.json').then(r => r.json()),
 fetch('GPX-CL.json').then(r => r.json()),
 fetch('GPX-CII.json').then(r => r.json()),
-fetch('NXT II.json').then(r => r.json())
+fetch('NXT II.json').then(r => r.json()),
+fetch('KNOWLEDGE.json').then(r => r.json())
 
 ])
 
@@ -895,7 +918,8 @@ gpxcs,
 gpxcs2,
 gpxcl,
 gpxc2,
-nxt2
+nxt2,
+knowledge
 
 ]) => {
 
@@ -914,7 +938,8 @@ Unit : unit,
 "GPX-CSII" : gpxcs2,
 "GPX-CL" : gpxcl,
 "GPX-CII" : gpxc2,
-"NXT II" : nxt2
+"NXT II" : nxt2,
+KNOWLEDGE : knowledge
 
 };
 

@@ -299,4 +299,26 @@ with open(
         indent=4,
         ensure_ascii=False
     )
+
+# ===== KNOWLEDGE =====
+
+nxt3 = (
+    df["KNOWLEDGE"]
+    .dropna()
+    .tolist()
+)
+
+with open(
+    "KNOWLEDGE.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        nxt3,
+        f,
+        indent=4,
+        ensure_ascii=False
+    )
+
 print("DONE")
