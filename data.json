@@ -512,6 +512,14 @@
         "Document No": "TV2026-0593_History.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "06-01-2026",
+        "Title": "Monthly_Knowledge_Report_June_2026_Agent",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDl-l96ZY4vSrmih6NRnodUAWzECST9TKe2Z2t80qJd-z4",
+        "Document No": "Monthly_Knowledge_Report_June_2026_Agent.pdf"
+    },
+    {
         "Category": "F-2.Specifications",
         "TYPE": "GPX_CII;GPX_CSII;",
         "Release date": "05-29-2026",
@@ -737,7 +745,7 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
+        "TYPE": "NEXIM",
         "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQC7CIKbRuWHQJKuIAqE4mcUAd9yJLpwG8Bp1PMDawC9cuE",
@@ -753,7 +761,7 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
+        "TYPE": "NEXIM",
         "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAIYspV97-hRr77vicpIcrnAbEDSdBH6rDAISP2XkiSdC8",
@@ -801,7 +809,7 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
+        "TYPE": "NEXIM",
         "Release date": "05-12-2026",
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U",
@@ -912,6 +920,14 @@
         "Document No": "V12_7.0E.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "05-01-2026",
+        "Title": "Monthly_Knowledge_Report_May_2026_Agent",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBc9lW7LdL2Q4SQjxh7luKNAVhCsXm_TzvBv4dZjtUESR8",
+        "Document No": "Monthly_Knowledge_Report_May_2026_Agent.pdf"
+    },
+    {
         "Category": "A-1.Tech Reports",
         "TYPE": "NXTR",
         "Release date": "04-29-2026",
@@ -985,7 +1001,7 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
+        "TYPE": "NEXIM",
         "Release date": "04-15-2026",
         "Title": "The machine sometimes hangs up when used with SQL Server in Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAJqz_J8Y-JT4bjdYwlZP0NAREOD12GRrawQIPmisYq0jg",
@@ -1272,6 +1288,14 @@
         "Document No": "SN2026-0399.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "04-01-2026",
+        "Title": "Monthly_Knowledge_Report_April_2026_Agent",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA2Bxw-GFiFT4ESZHABjonpASqg8gL8AeNZFgHhwrdMGM0",
+        "Document No": "Monthly_Knowledge_Report_April_2026_Agent.pdf"
+    },
+    {
         "Category": "A-1.Tech Reports",
         "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXT-H",
         "Release date": "03-25-2026",
@@ -1480,6 +1504,14 @@
         "Document No": "TV2026-0152_History.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "03-01-2026",
+        "Title": "Monthly_Knowledge_Report_March_2026_Agents",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDuARl-VIDjQIGrRQYFt5wlAdHYTrJjh-zgqmA3ePTtSSs",
+        "Document No": "Monthly_Knowledge_Report_March_2026_Agents.pdf"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "NXTR",
         "Release date": "02-25-2026",
@@ -1489,7 +1521,7 @@
     },
     {
         "Category": "C-3.Software Notice",
-        "TYPE": "NXTR;NXTR PM;AIMEXR",
+        "TYPE": "Nexim",
         "Release date": "02-25-2026",
         "Title": "The machine sometimes hangs up when used with SQL Server in Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAfo2EdHoCTb48h3MUCoZlAQB8EnWDrRO9zvGtYZFiH3U",
@@ -1686,6 +1718,14 @@
         "Title": "Recovery methods for when 3A22 errors (Encoder data alarm) occur",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAqHd2_qkMTpJWu-fTMxu8Ac-5wqD7-oKZsgfathhGe9I",
         "Document No": "T26005_A3.pdf"
+    },
+    {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "02-01-2026",
+        "Title": "Monthly_Knowledge_Report_Feb_2026_Agents",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuZEk_rg26RJSqmJfQxOiQAbOMS6aigUQNkFqRowx-iZU",
+        "Document No": "Monthly_Knowledge_Report_Feb_2026_Agents.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -2528,6 +2568,14 @@
         "Document No": "RH28.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "01-01-2026",
+        "Title": "Monthly_Knowledge_Report_January_2026_Agents",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBvSjdvCzNnT5Zhf7bKThtXAStbQELtY1QI8hT3uTB0ZAs",
+        "Document No": "Monthly_Knowledge_Report_January_2026_Agents.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "12-24-2025",
@@ -2984,6 +3032,14 @@
         "Document No": "T25018-1.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "12-01-2025",
+        "Title": "Monthly_Knowledge_Report_December2025",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCcqeF7iQ9KS4Nd8S_gqE_0AYEXP01Ug17HemtsN93ITw8",
+        "Document No": "Monthly_Knowledge_Report_December2025.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "11-26-2025",
@@ -3206,6 +3262,14 @@
         "Title": "This is a report for countermeasure for when 8CDE errors occur when using H02F heads.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCGLWnCVGRpRqqr9uxmDukSARtEQTFMrkoMKTDtDw0dltk",
         "Document No": "R25083.pdf"
+    },
+    {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "11-01-2025",
+        "Title": "Monthly_Knowledge_Report_November_2025_Agent",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBd8m94_iICQZRhgsvwexVWAfWL9yYw40ocscf6RT6KSaA",
+        "Document No": "Monthly_Knowledge_Report_November_2025_Agent.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -3608,6 +3672,14 @@
         "Document No": "SN2025-1125.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "10-01-2025",
+        "Title": "Monthly_Knowledge_Report_October_2025",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDeGEoInJrETbdgblW5vXT4AY56EVDhNSEnSMYQdCnNBFk",
+        "Document No": "Monthly_Knowledge_Report_October_2025.pdf"
+    },
+    {
         "Category": "F-2.Specifications",
         "TYPE": "NXTR",
         "Release date": "09-24-2025",
@@ -3920,6 +3992,14 @@
         "Document No": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10.zip"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "09-01-2025",
+        "Title": "Monthly_Knowledge_Report_September_2025",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBlxK652KH1TpsfwVRfrH70AcwjZmXzSvWD1yBAvoi42s4",
+        "Document No": "Monthly_Knowledge_Report_September_2025.pdf"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "NXTR;AIMEXR",
         "Release date": "08-27-2025",
@@ -4062,6 +4142,14 @@
         "Title": "GPX-CW System Reference",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAlL9GAY_ijTY5qJHyapZByAbc3NouhIw4Ip69yyL0w-38",
         "Document No": "SYS-GPXCW-001E0.pdf"
+    },
+    {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "08-01-2025",
+        "Title": "Monthly_Knowledge_Report_August_2025",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC0U7THYyvLQY2KyV__bbB0AU6izs6mk98CUC7wNW8q3cs",
+        "Document No": "Monthly_Knowledge_Report_August_2025.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -4720,6 +4808,14 @@
         "Document No": "Restrictions_E.pdf"
     },
     {
+        "Category": "MINI PDF",
+        "TYPE": "NXTR",
+        "Release date": "07-01-2025",
+        "Title": "Monthly_Knowledge_Report_July_2025_E_agency",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBGlztBwxexS7GzmBPLxhlKAbQC1GMWyIlyZzQcX24dv3o",
+        "Document No": "Monthly_Knowledge_Report_July_2025_E_agency.pdf"
+    },
+    {
         "Category": "E-1.Parts List",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXT-H;NXT-Hw;AIM",
         "Release date": "06-25-2025",
@@ -5342,6 +5438,14 @@
         "Title": "The shape of the wiring cover for RH28 heads has been changed as a countermeasure for foreign objects coming into the R-axis gear.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBDXQc-Dfc6RJwXAu5pgZZZAemuKHYh6qW7iBmhuvvQzPo",
         "Document No": "R25016.pdf"
+    },
+    {
+        "Category": "E-1.Parts List",
+        "TYPE": "NXTR",
+        "Release date": "03-04-2025",
+        "Title": "NXTR MFU",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAI8G8dgZfPRbLTCtqK9LbEARoUicyJQ3ryrtnLnLIVeGI",
+        "Document No": "PTS-NXTRMFU-05.pdf"
     },
     {
         "Category": "C-3.Software Notice",
