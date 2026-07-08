@@ -1,5 +1,93 @@
 [
     {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 5 for correcting problems that have occurred after the release of LCU V2.35 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQALQhY1ZXhcSJ-DB3MDx4DNAaaloAedYhW7i60hTGOr2Gs",
+        "Document No": "0891_LCUPatch_V2.35_SP5.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "AIMEXR",
+        "Release date": "07-08-2026",
+        "Title": "1B23 errors sometimes occur when performing multiframe vision processing with RHDX heads.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA7dHdeFLLTQ6mGMvrYeDlhAaLZL31eaGdEhOIyFf6izTA",
+        "Document No": "SN2026-0808.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 22 for correcting problems that have occurred after the release of LCU V2.30 or V2.31 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDyi4k5lGfAQLGrXqjnoT0uAZu2GGoU5bi3DY985xdo7bM",
+        "Document No": "SN2026-0417(A).pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXTP;AIMEXR;Fuji Flexa;Fujitrax;Nexim",
+        "Release date": "07-08-2026",
+        "Title": "Fuji software and antivirus software.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAl4Tv11pQxRowWavp7qAKIAWIne6TaFRxsofjv1Y3pTg4",
+        "Document No": "T16011-13.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 5 for correcting problems that have occurred after the release of LCU V2.35 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDFeR9k0u-7QbIfb1mCua-iAc4420_QPp2wHFNgpq67pyM",
+        "Document No": "SN2026-0804.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 22 for correcting problems that have occurred after the release of LCU V2.30 or V2.31 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCVNnaUQ1N-R41Mf5nbiXIFAc2IDsbzVGuxHKVTFA2XOkg",
+        "Document No": "0874_LCUPatch_V2.30orV2.31_SP22.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 31 for correcting problems that have occurred after the release of LCU V2.10 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBz4qqanjweRJKLwnA3aTWnAXYotlMYF2015n1PhgzlbtA",
+        "Document No": "SN2025-1222(C).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 44 for correcting problems that have occurred after the release of LCU V2.20 is released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXdZejj4gURJsqz1YkcxkgAZxykqr4bRSE91EXcfVTdTc",
+        "Document No": "SN2025-1223(C).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 44 for correcting problems that have occurred after the release of LCU V2.20 is released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQBSm37CQCUVQ7BO2Q5RdniCAclWD7LNIsQDio9PnhNfxZk",
+        "Document No": "0888_LCUPatch_V2.20_SP44.zip"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXTP;AIMEXR;Fuji Flexa;Fujitrax;Nexim",
+        "Release date": "07-08-2026",
+        "Title": "Fuji software and antivirus software.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAqpQTlZf-oTprR3fzYSQJXAc-KosQZEHZO-GeKfgYV-5A",
+        "Document No": "Portlist.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 31 for correcting problems that have occurred after the release of LCU V2.10 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQByN-B7k24mQ6567D9AXthsAbT9AWqY9EPrJ_DIiXCvR38",
+        "Document No": "0887_LCUPatch_V2.10_SP31.zip"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "GPX_C;GPX_CS;GPX_CL;",
         "Release date": "06-29-2026",
