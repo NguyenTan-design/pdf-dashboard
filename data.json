@@ -9656,14 +9656,6 @@
         "Document No": "SECSGEM Event Compatibility table V2.8.0 or Later.pdf"
     },
     {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "Nexim",
-        "Release date": "12-07-2023",
-        "Title": "FUJI SECS/GEM Reference Manual(For Nexim)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD1nk0NHzxmRZE4QPf2GTHnAScvoXzn852rU9Psw3HYZaI",
-        "Document No": "SECSGEM_Overview_V1.90R0_Ne.pdf"
-    },
-    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
         "Release date": "12-07-2023",
@@ -10822,6 +10814,14 @@
         "Title": "The models of the LCR meters used in LCR1 units have been changed. This report provides information about the drawing numbers because rear covers for NXT series have also been changed.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDT41hVk_pLS7qcJrCC6EgjAW9zSSrC3DKQ7oFedn2GS4U",
         "Document No": "T23004.pdf"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "Nexim",
+        "Release date": "06-12-2023",
+        "Title": "FUJI SECS/GEM Reference Manual(For Nexim)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDcgLjwMkjGTYTvxQMl_nHiAbw98w_e9JejJ4iUfDzRP30",
+        "Document No": "SECSGEM-V1.90R0_Ne.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
