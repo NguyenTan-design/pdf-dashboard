@@ -88,6 +88,38 @@
         "Document No": "0887_LCUPatch_V2.10_SP31.zip"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 31 for correcting problems that have occurred after the release of LCU V2.10 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQColvoH_YyRTY0pKWIALnO7AYOXZt8shTvpEv8GV-ZrLo4",
+        "Document No": "LCU0887_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 44 for correcting problems that have occurred after the release of LCU V2.20 is released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDjuMGOBiAzSpQ7VQa4fAeiAdIVArtqQTK6cxn79AVvSfg",
+        "Document No": "LCU_0888_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 5 for correcting problems that have occurred after the release of LCU V2.35 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXcnm_l74ySZZhffF4XYJqAQvcyBVBhU-WsKPyFmSRUFk",
+        "Document No": "LCU_0891_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-08-2026",
+        "Title": "Service Pack 22 for correcting problems that have occurred after the release of LCU V2.30 or V2.31 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBo5thsE49ySpx6mO7HhuC4AYfFQ0bx8moQmCvOtGcr1jo",
+        "Document No": "LCU_0874_PatchReport_E.pdf"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "GPX_C;GPX_CS;GPX_CL;",
         "Release date": "06-29-2026",
@@ -390,6 +422,62 @@
         "Title": "Upgrading the 3D coplanarity check unit cannot be performed in V2.35.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuf8Q2nyYhS51y-3cniFsZAe_mR_Sxk34elc7dmwlUTV8",
         "Document No": "SN2026-0766.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQATVfCGQGxrRKnGGPzjrT5oAZRJohcnZGFrJ6YmVYKtucI",
+        "Document No": "5514_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZiBZdSw6FT45DS7ulVVkgAUAqM9A4l4BJoLzG2qTRH90",
+        "Document No": "5459_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAx9p_6FE_dTqomWlrNgJ-PAaaDOjARi5NGdRjKXwOPTO0",
+        "Document No": "5506_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD7yxBG2OwDSZH9XCPPQQHIAQn3Pu0OHhSv08hbgJ1zyhE",
+        "Document No": "5513_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCX5XEsJE93QawTk2CuUyD6AQ15PFZPUkOaSC19hZNzjj0",
+        "Document No": "5489_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCIIjM5V8yUTIXB0ANOG1qRAcngT8Jbqf6seCHYVxOl4Sk",
+        "Document No": "5461_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "06-29-2026",
+        "Title": "Patches to address critical issues that occur in Job Editor in versions V2.9.100 to V3.2.100 have been released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCKuVlwArNeTKeE-mECt9lLAWHtL9OceHMqDQ_HkoSPPqk",
+        "Document No": "5473_PatchReport_E.pdf"
     },
     {
         "Category": "TRAINING TEXT",
@@ -816,6 +904,22 @@
         "Document No": "SN2026-0595.pdf"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NEXIM",
+        "Release date": "05-19-2026",
+        "Title": "The position of some references sometimes deviates when a job is being edited.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAJMB6qjTfXRoriney-AdGZAZePHs4aClwMfdCqd3sZnAU",
+        "Document No": "5335_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NEXIM",
+        "Release date": "05-19-2026",
+        "Title": "The position of some references sometimes deviates when a job is being edited.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQChLj9crTX0QJAa6lB0smyCAVt6oeKeU4fONuhljDxj4HI",
+        "Document No": "5238_PatchReport_E.pdf"
+    },
+    {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "nexim",
         "Release date": "05-15-2026",
@@ -902,6 +1006,30 @@
         "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U",
         "Document No": "4994_V3.0.0_Plan_Patch.zip"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NEXIM",
+        "Release date": "05-12-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC_Z-7pjYOkSbMMNeldvGxdATKe3jdouSN_uHe8F-EX0Ws",
+        "Document No": "4994_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "05-12-2026",
+        "Title": "Service Pack 35 for correcting problems that have occurred after the release of LCU V2.20 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBRG_ZPPU8PSqZzkuTO1qLRATJMUGosLrxqoiPV7JESG4E",
+        "Document No": "LCU_0808_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NEXIM",
+        "Release date": "05-12-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCHm9nlTIZGQJ0B2nN7ojmGAXF8-pHEE0BTllqkLMiNpaY",
+        "Document No": "5329_PatchReport_E.pdf"
     },
     {
         "Category": "TRAINING TEXT",
@@ -1208,6 +1336,46 @@
         "Document No": "SN2026-0418.pdf"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "04-07-2026",
+        "Title": "Service Pack 21 for correcting problems that have occurred after the release of LCU V2.00 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB_fbpAcEiHQaD_LaE5-V3LAVs_Igr2FDq-WyDfaSekJQs",
+        "Document No": "LCU_0662_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "04-07-2026",
+        "Title": "Service Pack 26 for correcting problems that have occurred after the release of LCU V2.10 is released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDHAjMA4U8CQrZsMgCLqkC_AeA_yEmKU3sRg7ayrk5UkZg",
+        "Document No": "LCU0796_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "04-07-2026",
+        "Title": "Service Pack 14 for correcting problems that have occurred after the release of LCU V2.30 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAfEvwkzm71RJdAUZ5b0GAiARhwqH92NZ6TfZPCEvg7UR8",
+        "Document No": "LCU_0794_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "04-07-2026",
+        "Title": "Service Pack 11 for correcting problems that have occurred after the release of LCU V2.31 is released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC94xQ-pJc7TKJ_fkM5tC2zAYyKJGz7npRxg-CHsXerNwY",
+        "Document No": "LCU_0771_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "04-07-2026",
+        "Title": "Service Pack 33 for correcting problems that have occurred after the release of LCU V2.20 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAXuFctVgbRQavBhVG3LKHOATi1u6Dd_2ck4JTVvDrj9Ck",
+        "Document No": "LCU_0791_PatchReport_E.pdf"
+    },
+    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "AIMEX_IIIc",
         "Release date": "04-02-2026",
@@ -1384,6 +1552,14 @@
         "Document No": "Monthly_Knowledge_Report_April_2026_Agent.pdf"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NEXIM",
+        "Release date": "04-01-2026",
+        "Title": "Service Pack 3 for improvements and correcting problems that have occurred after the release of Nexim V2.9.100 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBAZtsFMG5oR5UuVGHSiGuUAXPlXOP9Yw0vo7wVeU8K4Rg",
+        "Document No": "5183_PatchReport_E.pdf"
+    },
+    {
         "Category": "A-1.Tech Reports",
         "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXT-H",
         "Release date": "03-25-2026",
@@ -1456,6 +1632,14 @@
         "Document No": "SN2026-0319.pdf"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "03-18-2026",
+        "Title": "A patch for correcting Optimizer problems that have occurred after the release of Nexim V3.2.0 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCA3RPsaFI8TbRegvfBKzwEAcHFh7JFM3vId_wQckeIlNI",
+        "Document No": "5193_PatchReport_E.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "03-11-2026",
@@ -1502,6 +1686,22 @@
         "Title": "This report provides how to use the placement pressure control and pickup height adjustment commands with multipurpose mechanical chucks.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC-1uch-ZNkSZzboSQfqrtlAYFiucu5bpllPStuGAOGgKo",
         "Document No": "T26006.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "03-11-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDKSgFd5I8ySK1XV-9gQMkjAZnEgcpnclTzHcC3iBFunBs",
+        "Document No": "5013_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "03-11-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBHnpaxATDqRr0V_FUmUXUhAfyFvmlMj2mHDbXtQ3e1iWk",
+        "Document No": "4987_PatchReport_E.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -1662,6 +1862,22 @@
         "Title": "Panel conveyance operation errors occur when automatic backup pin allocation is used while the control related energy saving mode is on.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDoIpGn-uFQQLr1yImLZpiVAXJ0i4MBhcWYIeNN7viZmc4",
         "Document No": "SN2026-0194.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "02-18-2026",
+        "Title": "A patch for correcting Optimizer problems that have occurred after the release of Nexim V3.1.100 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCDm4BdndB7Tr1IGHu0NCIYAWZaMgDoN8YD6GtlfmuXfY8",
+        "Document No": "5070_PatchReport_E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "02-18-2026",
+        "Title": "A patch for correcting Optimizer problems that have occurred after the release of Nexim V3.2.0 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdBr6yFcSaQ53ZVfdgidbSAdy6WLOFz-SlWEicjcY1frQ",
+        "Document No": "5020_PatchReport_E.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -13217,7 +13433,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAgnJceY5EFQ4jDBQfA0rC0AeGM_sDpS5pcp_VOfXYbzjE",
@@ -13225,7 +13441,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "12-22-2021",
         "Title": "Impact of the Apache Log4j vulnerability (CVE-2021-44228) on Fuji products and countermeasures.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCqFHFtaW7tSIZXTIHrWBc_AY0LVbI1sQwxvv1G5h2Zflg",
@@ -21857,7 +22073,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDHz7ZzWrqLRqD5SwUH74FDAaM9UwvuMOirDstYGtOaDYk",
@@ -21873,7 +22089,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;GP;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-27-2016",
         "Title": "How to divide files for the purpose of sending trace files, log files, and other such objects for emails to the Fuji call center.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCH1DCuUGD4SKxBIhT9ys_AAYrG3I5Fj_y--XCrz83qvrs",
@@ -29961,7 +30177,7 @@
     },
     {
         "Category": "A-1.Tech Reports",
-        "TYPE": null,
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
         "Release date": "04-25-2007",
         "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBSgqxXkeh1QrClteqSqYkDAeQZ842zhTnTDtY_FStgXvQ",
@@ -32478,222 +32694,6 @@
         "Title": "Replacing MTU7 with MTU71",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCJk6sYNkN4QIpWb7DTMIgVATiu7lBSymWzGAx70XaURJU",
         "Document No": "S9807-1.0E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCDm4BdndB7Tr1IGHu0NCIYAWZaMgDoN8YD6GtlfmuXfY8",
-        "Document No": "5070_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQATVfCGQGxrRKnGGPzjrT5oAZRJohcnZGFrJ6YmVYKtucI",
-        "Document No": "5514_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQColvoH_YyRTY0pKWIALnO7AYOXZt8shTvpEv8GV-ZrLo4",
-        "Document No": "LCU0887_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB_fbpAcEiHQaD_LaE5-V3LAVs_Igr2FDq-WyDfaSekJQs",
-        "Document No": "LCU_0662_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDHAjMA4U8CQrZsMgCLqkC_AeA_yEmKU3sRg7ayrk5UkZg",
-        "Document No": "LCU0796_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC_Z-7pjYOkSbMMNeldvGxdATKe3jdouSN_uHe8F-EX0Ws",
-        "Document No": "4994_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZiBZdSw6FT45DS7ulVVkgAUAqM9A4l4BJoLzG2qTRH90",
-        "Document No": "5459_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAfEvwkzm71RJdAUZ5b0GAiARhwqH92NZ6TfZPCEvg7UR8",
-        "Document No": "LCU_0794_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBAZtsFMG5oR5UuVGHSiGuUAXPlXOP9Yw0vo7wVeU8K4Rg",
-        "Document No": "5183_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDjuMGOBiAzSpQ7VQa4fAeiAdIVArtqQTK6cxn79AVvSfg",
-        "Document No": "LCU_0888_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdBr6yFcSaQ53ZVfdgidbSAdy6WLOFz-SlWEicjcY1frQ",
-        "Document No": "5020_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDKSgFd5I8ySK1XV-9gQMkjAZnEgcpnclTzHcC3iBFunBs",
-        "Document No": "5013_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAx9p_6FE_dTqomWlrNgJ-PAaaDOjARi5NGdRjKXwOPTO0",
-        "Document No": "5506_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD7yxBG2OwDSZH9XCPPQQHIAQn3Pu0OHhSv08hbgJ1zyhE",
-        "Document No": "5513_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXcnm_l74ySZZhffF4XYJqAQvcyBVBhU-WsKPyFmSRUFk",
-        "Document No": "LCU_0891_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC94xQ-pJc7TKJ_fkM5tC2zAYyKJGz7npRxg-CHsXerNwY",
-        "Document No": "LCU_0771_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCA3RPsaFI8TbRegvfBKzwEAcHFh7JFM3vId_wQckeIlNI",
-        "Document No": "5193_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAXuFctVgbRQavBhVG3LKHOATi1u6Dd_2ck4JTVvDrj9Ck",
-        "Document No": "LCU_0791_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBRG_ZPPU8PSqZzkuTO1qLRATJMUGosLrxqoiPV7JESG4E",
-        "Document No": "LCU_0808_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCX5XEsJE93QawTk2CuUyD6AQ15PFZPUkOaSC19hZNzjj0",
-        "Document No": "5489_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBo5thsE49ySpx6mO7HhuC4AYfFQ0bx8moQmCvOtGcr1jo",
-        "Document No": "LCU_0874_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAJMB6qjTfXRoriney-AdGZAZePHs4aClwMfdCqd3sZnAU",
-        "Document No": "5335_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCIIjM5V8yUTIXB0ANOG1qRAcngT8Jbqf6seCHYVxOl4Sk",
-        "Document No": "5461_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCHm9nlTIZGQJ0B2nN7ojmGAXF8-pHEE0BTllqkLMiNpaY",
-        "Document No": "5329_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQChLj9crTX0QJAa6lB0smyCAVt6oeKeU4fONuhljDxj4HI",
-        "Document No": "5238_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCKuVlwArNeTKeE-mECt9lLAWHtL9OceHMqDQ_HkoSPPqk",
-        "Document No": "5473_PatchReport_E.pdf"
-    },
-    {
-        "Category": null,
-        "TYPE": null,
-        "Release date": null,
-        "Title": null,
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBHnpaxATDqRr0V_FUmUXUhAfyFvmlMj2mHDbXtQ3e1iWk",
-        "Document No": "4987_PatchReport_E.pdf"
     },
     {
         "Category": null,
