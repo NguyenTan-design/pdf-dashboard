@@ -1,5 +1,109 @@
 [
     {
+        "Category": "C-2.Version History",
+        "TYPE": "NXTR",
+        "Release date": "07-22-2026",
+        "Title": "Fuji Software Upgrade History (NXTR V2.35.2)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB3N_CVNpKsSLW0Qy2DWK0FARXpBN-ORo85yczsxup9lk4",
+        "Document No": "TV2026-0769_History.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-22-2026",
+        "Title": "Fuji Software Upgrade Report (NXTR V2.35.2)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBqPUUDZql4TrQYoQ_vy3KUATgPAYqvXTA2vOZsLgRNs34",
+        "Document No": "TV2026-0769.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;NXT_III;NXT_IIIc;AIMEX_III;AIMEX_IIIc;",
+        "Release date": "07-21-2026",
+        "Title": "The shape of the resin rails on tray drawers has been changed.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBEsoiRVIBiQ70q0XS3UBiIAZlcm6eE1qflO4jHEdA3a5g",
+        "Document No": "R26033.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "Nexim",
+        "Release date": "07-19-2026",
+        "Title": "Integrated Production System NEXIM Specifications",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwxLmb7hgbSIGW9h3iw-t0Ad8YTipSLbZzY1VOuReKp4Y",
+        "Document No": "CNT-NEXIM-23E.pdf"
+    },
+    {
+        "Category": "E-6.Troubleshooting",
+        "TYPE": "AIMEXR",
+        "Release date": "07-17-2026",
+        "Title": "AIMEXR Encoder Communication Error Troubleshooting",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCeFuogyCC2S5pVT2Swa9prAQCiTUT-lTOsANZULQdB6ls",
+        "Document No": "S2607-3.0E.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "Unit",
+        "Release date": "07-15-2026",
+        "Title": "When adjusting the IPS brightness on an Auto Head Cleaner-R, the software version must be V1.30 or later and it is necessary to add a vision processing board and a harness.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAewD3odvv8QYkvqNPtfH8jATGGiumMwcOFUkK0Z4XztOY",
+        "Document No": "R23059-2.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "07-15-2026",
+        "Title": "A patch for correcting Optimizer problems that have occurred after the release of Nexim V3.2.100 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDHQCbzm0P7Q4YwvGPGctPqAa36o9DEvamlKrpxPaQouQA",
+        "Document No": "5559_V3.2.100_DataUpdate_Optimizer_Patch.zip"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "GPX_CII;GPX_CSII;",
+        "Release date": "07-15-2026",
+        "Title": "GPX-CII, GPX-CSII SECSGEM Communication Software Operation Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCmjcXRBICdTYpj26cCH9AXAR9bQl0e_q4m9IJFYyLzr8Q",
+        "Document No": "GPX-CII, GPX-CSII SECSGEM Communication Software Operation Manual_R2a.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "07-15-2026",
+        "Title": "A patch for correcting Optimizer problems that have occurred after the release of Nexim V3.2.100 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDk45PwFmxZToW4-Y1GBaK7AUl7vKjhQxBKi3kMmuwVAEM",
+        "Document No": "SN2026-0865.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "GPX_CII;GPX_CSII;GPX_CL;",
+        "Release date": "07-10-2026",
+        "Title": "Automatic Backup Pin Allocation Operation Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBzz-pW55yLRpcpUnCEl3nHAebLN4ajkMD6XuoZc5Tg8GU",
+        "Document No": "Automatic Backup Pin Allocation Operation Manual_R5a.pdf"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "Nexim",
+        "Release date": "07-10-2026",
+        "Title": "NeximHostSystemInterfaceSpecificationV2.8.0 or later",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBevb-bOS-oTqSj2WuKOkGWAZfNuv73zr-rt2Dsd5se3mo",
+        "Document No": "NeximHostSystemInterfaceSpecificationV2.8.0 or later_rev.2.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-09-2026",
+        "Title": "Commercially available computers can now be used for LCUs.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB9CrfhNhIdS6QTVhcpMlQlAZ-2GdEaOz9a-o4Kf0Ejt7Y",
+        "Document No": "T22005-5 A1.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "07-09-2026",
+        "Title": "Commercially available computers can now be used for LCUs.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB8SI2fVpbhRaop3muLXxYiAdfbHipqfH-oZDi68NNrGiQ",
+        "Document No": "T22005-5.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "NXTR",
         "Release date": "07-08-2026",
