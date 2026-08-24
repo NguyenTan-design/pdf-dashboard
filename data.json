@@ -896,14 +896,6 @@
         "Document No": "Monthly_Knowledge_Report_June_2026_Agent.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX_CII;GPX_CSII;",
-        "Release date": "05-29-2026",
-        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDaohiU2MD8QbxkcwcoaAVQASjFoPEihEwBkjVKdmNSpLc",
-        "Document No": "CNT-GPXCII-11E1.pdf"
-    },
-    {
         "Category": "D-2.Operation Manuals",
         "TYPE": "GPX",
         "Release date": "05-29-2026",
@@ -2161,22 +2153,6 @@
     },
     {
         "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "02-04-2026",
-        "Title": "NXTR Machine Specifications A model / S model with Supplemental Material",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxxxcl_DzGSKxdk0aGljQ0AYwHR8HYKyB7S52CJJA7DG0",
-        "Document No": "CNT-NXTRA-10Ea.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "02-04-2026",
-        "Title": "NXTR Machine Specifications S model with Supplemental Material",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC1Bo-uBP07TaZpHkks0FW7Aeqtl37Umwx63lBl3AehWOo",
-        "Document No": "CNT-NXTRS-19Ea.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
         "TYPE": "Unit",
         "Release date": "02-04-2026",
         "Title": "General Specifications for Fuji SMT Equipment",
@@ -2368,30 +2344,6 @@
         "Document No": "CNT-M2MCOM-03E.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "01-19-2026",
-        "Title": "NXTR Machine Specifications A model / S model with Supplemental Material",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAXmEYQG1PHTbOuBf2wSZR6Aar2L8lGjbEP1t13Wo515vs",
-        "Document No": "CNT-NXTRA-10E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR PM",
-        "Release date": "01-19-2026",
-        "Title": "NXTR PM with Supplemental Material",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAFNAGHALLFSbshoHN3nat3AcFifZdkYkZR7LxzhmDpugo",
-        "Document No": "CNT-NXTRPM-10E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "01-19-2026",
-        "Title": "NXTR Machine Specifications S model with Supplemental Material",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCG6xqTUPBfToVImTddaPjMAdFdBmrtoJE-mpmiUtGQr7M",
-        "Document No": "CNT-NXTRS-19E.pdf"
-    },
-    {
         "Category": "D-1.Manuals",
         "TYPE": "NXTR",
         "Release date": "01-19-2026",
@@ -2462,14 +2414,6 @@
         "Title": "IPQC Feedforward Instruction Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBt8teqdNe4R5Y7ru_7fwhuAft8xs4fHs2SZN5RVhGr9tU",
         "Document No": "INS-IPQCFF-003E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "01-19-2026",
-        "Title": "Nozzle Supply Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDGHv8qQkebRoQHA9gP2M01ASeTgJIaU07yhBFJyQZBXaI",
-        "Document No": "INS-NSU-002E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -4187,38 +4131,6 @@
         "Category": "D-1.Manuals",
         "TYPE": "NXTR",
         "Release date": "09-24-2025",
-        "Title": "NXTR Advanced Operation Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBZ9XaDRjFkQauRrn8nSZhxAYLyfrsiRZYX6ZvoWYMGK_Q",
-        "Document No": "FNC-NXTR-016E2.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
-        "Title": "RHGL Head Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDb37S69SpkTqUGL6cvyee5AZ2uuZ4oSpvvjDqZIPWMWfU",
-        "Document No": "INS-RHGL-001E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
-        "Title": "NXTR Mechanical Reference (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAtDvh_dOdJTaFZDgdQdbrzAYvGDSKbK7zR8ZdbGwjN9i4",
-        "Document No": "MEC-NXTRS-020E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
-        "Title": "NXTR Programming Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB9TPn9mcxARJUoqAJi9kacAfH2VbvM1Krbzw9wH3ZSrDY",
-        "Document No": "PRG-NXTR-012E1.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
         "Title": "NXTR System Reference (A model & S model)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBCNhL9Y_d0QbMsNz6LzB81ASZsFFgh8AUxUsdZLvQwMKc",
         "Document No": "SYS-NXTR-016E1.pdf"
@@ -4230,14 +4142,6 @@
         "Title": "Fuji Software Upgrade Report (NXTR V2.21)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA3bROQLSqcSZPxcZQ33xDAARSCoQX6wW6Vju49JbVPH7s",
         "Document No": "TV2025-0843.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
-        "Title": "NXTR System Reference (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWY_bNx2cCQYm2h3e0g9KaAbFnmtejHcG9YkbxytYc2fE",
-        "Document No": "SYS-NXTRS-016E1.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -4768,14 +4672,6 @@
         "Document No": "QD067-38.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "Unit",
-        "Release date": "07-09-2025",
-        "Title": "Offline Changeover and Maintenance Units",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCZXw7dxUllQ5ZAKjr_NTA0AeCtImT4WQGEn4l39guH398",
-        "Document No": "CNT-ATU-07E.pdf"
-    },
-    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "NXTR;Unit",
         "Release date": "07-09-2025",
@@ -4790,22 +4686,6 @@
         "Title": "Fuji Software Upgrade Report (GPX-C, GPX-CS V4.40)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA7LfPM3EorQLLOeLayaVXMAWVfXhLIpTjaUOnaKKr8WKA",
         "Document No": "TV2024-1155.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB9AV0XswjUTYwF_gbHA6M9AQoUVDp8sktzf9vXJcyM2AQ",
-        "Document No": "CNT-NXTRA-08E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Machine Specifications S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA_ZRk61QiMQby6QAnJJRI_AW0fvJTVjpVC_SWGZGm_77s",
-        "Document No": "CNT-NXTRS-17E.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -4832,14 +4712,6 @@
         "Document No": "R25065.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;AIMEXR;FUJI Smart Factory",
-        "Release date": "07-09-2025",
-        "Title": "FSF Mobile Conductor Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQALGcPgRyilTZvmSZwNfK5eAX32DlYQ4aLYUd4hKswLnIQ",
-        "Document No": "INS-FMBC-002E0.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX III;NXT III;NXTR;Nexim",
         "Release date": "07-09-2025",
@@ -4862,14 +4734,6 @@
         "Title": "How to switch to a language other than Japanese, English or Chinese on supported machines.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAQf3ChrTIARpdlzLiCVRccAa_7d4Izq8687_okZZP9WXE",
         "Document No": "R25058_A2.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXT III;NXT IIIc;NXTR",
-        "Release date": "07-09-2025",
-        "Title": "Rotary-type Dip Flux Unit (High Speed) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDQW9OvFPghTaYyOJT8tBcfAVTPkc6zEY5L8waerL6ChJc",
-        "Document No": "INS-HSDFU-009E0.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -4921,22 +4785,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "07-09-2025",
-        "Title": "Rotary-Type Dip Flux Unit (DFU-R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBGwjlcM-xzS4OzRJMZcTPLAemPnsDeOqRIVymSpcUHUn0",
-        "Document No": "QD101-17.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "07-09-2025",
-        "Title": "Rotary-Type Dip Flux Unit Plus (DFU+R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA9sWYpD_X4RI4bqI93f-udAU_oygG7TkeXI6mgiBOVzU4",
-        "Document No": "QD184-18.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEX III;AIMEX IIIc",
         "Release date": "07-09-2025",
         "Title": "AIMEX III/AIMEX IIIc System Reference",
@@ -4953,35 +4801,11 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Advanced Operation Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDN0TlSXFVYTpC_YE2e50pPARe__sYaEH6lYuecr3awfw0",
-        "Document No": "FNC-NXTR-016E1.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEXR",
         "Release date": "07-09-2025",
         "Title": "AIMEXR SEMI Machine Instruction Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAQFxe_vdYwRLwZWThUqeYRAXIWQYyurh-SJCoz7TPWrdk",
         "Document No": "INS-AIMEXRSEMI-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "Nozzle Supply Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAt3nOfFfqvRob4ikyMNhgvAT_6TupdZf_6J4WFRL7CxCM",
-        "Document No": "INS-NSU-001E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Automatic System Operation Manual (A model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCTE0d6bYw2Q6lnsgVz78wOAXtD0LwTkfLBq_FHwdSsfbk",
-        "Document No": "INS-NXTRA-006E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -5001,83 +4825,11 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Mechanical Reference (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDDEr8UG06hSLrp2h_kgR3QAUyl4u9mHiRgEDt3kNz-jDI",
-        "Document No": "MEC-NXTR-019E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "07-09-2025",
-        "Title": "NXTR PM Mechanical Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBENCGR2vPRSadrqckglidrAUt4qV8R37e8VSEfWc2MjjE",
-        "Document No": "MEC-NXTRP-011E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Mechanical Reference (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBKilRf3bjOQ7-2sVc5noemAcCQX_FpSh__Bpv48dm-Qjo",
-        "Document No": "MEC-NXTRS-019E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Programming Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCyQHtBmv02QbBulbd_tSv6AeaZYF_Z-UH19OIyT41-yOg",
-        "Document No": "PRG-NXTR-012E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "07-09-2025",
-        "Title": "NXTR PM Programming Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwO3W_oVEVTK4DpLnPJ8neAQDFipmIGwBpNMbVsxmbq9I",
-        "Document No": "PRG-NXTRP-008E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEXR",
         "Release date": "07-09-2025",
         "Title": "AIMEXR Setup Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdPwgXSkbaR6NmtecVnNlIAZhusrwqA96hkN0XZoSYrHw",
         "Document No": "SET-AIMEXR-005E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Setup manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAvf6WL1ZNKSIKwe3_Bmup2AS75d5hf3r8jEDxj_kYImsI",
-        "Document No": "SET-NXTR-015E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR Setup manual (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC_9IZZvwK7TKHpXxjsd9a1AQekGWhyxvc46fyougj2QZw",
-        "Document No": "SET-NXTRS-015E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR System Reference (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDvFjx-t6UCQ7kXUidJ7j6sAQM-HF6dI27Ehntvd79TQ6Q",
-        "Document No": "SYS-NXTR-016E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "07-09-2025",
-        "Title": "NXTR PM System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAy3ALVYLLqQqUFun-NGU2dAWLnEWBbQknCkn-wURVu7tU",
-        "Document No": "SYS-NXTRP-012E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -5094,14 +4846,6 @@
         "Title": "Fuji Software Upgrade Report (Cassette-type feeder inspection jig V1.30)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBWUgUtw8-2T7taBB5P8z3EAdJcZBf0qPqAi4Svq_xkviU",
         "Document No": "TV2024-1277.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-09-2025",
-        "Title": "NXTR System Reference (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB6dqw0_ZFAQrTElQLExoMNAfLNeA8tuqy-WhDRLSTbkBY",
-        "Document No": "SYS-NXTRS-016E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -5392,14 +5136,6 @@
         "Document No": "K1HRBA010018.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III",
-        "Release date": "06-11-2025",
-        "Title": "AIMEX III Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCPo3iSXULmR7j_5WiMhE5GAbTUc9oOBMJfH-a61fN4eTo",
-        "Document No": "CNT-AIMEXIII-26E.pdf"
-    },
-    {
         "Category": "C-3.Software Notice",
         "TYPE": "NXTR;NXTR PM;AIMEXR",
         "Release date": "06-04-2025",
@@ -5512,14 +5248,6 @@
         "Document No": "SN2025-0552.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CL",
-        "Release date": "05-07-2025",
-        "Title": "GPX-CL Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAW_ErAzf_DR5BZ2orDuEQfAa-f2LWQWdrN0RqsrZzx-9E",
-        "Document No": "CNT-GPXCL-12E1.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "GPX_CII;GPX_CSII;GPX_CL;",
         "Release date": "05-03-2025",
@@ -5545,27 +5273,11 @@
     },
     {
         "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "04-30-2025",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCOGQLiIB-BSaUMBNGmURRRAay3lJOL6OF_0qOmtIHe7HY",
-        "Document No": "CNT-NXTRA-07Eb.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
         "TYPE": "NXTR PM",
         "Release date": "04-30-2025",
         "Title": "NXTR PM",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDXvpCZbjJXRI-EFLWCxMnjAcOPDlQ3hHrUluLo8WjCSJw",
         "Document No": "CNT-NXTRPM-09E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "04-30-2025",
-        "Title": "NXTR Machine Specifications S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB2F7c3Pf3rRL5Yy4v8OwVoAeIClaUkp1ITabXg8y6kOxQ",
-        "Document No": "CNT-NXTRS-16Eb.pdf"
     },
     {
         "Category": "A-1.Tech Reports",
@@ -5622,14 +5334,6 @@
         "Title": "Fuji Software Upgrade Report (NXTR V2.12)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCc8mEfsxDLSIrAebw_WE_yAWoy-oZpqq1c6soUMcY_6O8",
         "Document No": "TV2025-0208.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CII;GPX-CSII",
-        "Release date": "04-09-2025",
-        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDXyW-L-gFAQpxLEhnYP5M4AeYE51YESznRhfGkvyherjA",
-        "Document No": "CNT-GPXCII-09E.pdf"
     },
     {
         "Category": "A-1.Tech Reports",
@@ -6008,14 +5712,6 @@
         "Document No": "TV2024-1204.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "01-15-2025",
-        "Title": "FSF FUJI Smart Factory",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCcw10LbQT-RK6M5aEL16rdAXsodm_DFKt6cL9sgRdhmYE",
-        "Document No": "CNT-FSF-06E.pdf"
-    },
-    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc",
         "Release date": "01-15-2025",
@@ -6040,60 +5736,12 @@
         "Document No": "TV-GPXCL-v2.30.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "01-15-2025",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDmG1vCPXMFSY_SZ_x6ShDrAU4kuqdreDM0qMA6Gb8th00",
-        "Document No": "CNT-NXTRA-07E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR PM",
-        "Release date": "01-15-2025",
-        "Title": "NXTR PM",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCDhMKs3QejQLPG0BvPIkH9AcZdPkJTSA-ahwJbGrqJK7Q",
-        "Document No": "CNT-NXTRPM-08E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "01-15-2025",
-        "Title": "NXTR Machine Specifications S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-QH1pQJ0rQb2op78S2UnvAeJ5e5RnzUQ-5wn2o0sYAKc",
-        "Document No": "CNT-NXTRS-16E.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXTR",
-        "Release date": "01-15-2025",
-        "Title": "3D Coplanarity Check Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDNarqgLiS6TKL0CeRKIuVMAUJGWz82SICsWA_KENcv3Vc",
-        "Document No": "INS-3DCPL-008E0.pdf"
-    },
-    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
         "Release date": "01-15-2025",
         "Title": "Fuji Software Upgrade Report (Nexim V3.0.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhhI4FiylkRI8wNySlptofAUKiKVPywqaBcOn99Or7W5Q",
         "Document No": "ImportantInformation_E(Nexim 3.0).pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;AIMEXR;FUJI Smart Factory",
-        "Release date": "01-15-2025",
-        "Title": "FSF Mobile Conductor Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDGlEpKqhtwRaKwr1EJyHVbASsn4NnVE0BWEqjWtHlDk8c",
-        "Document No": "INS-FMBC-001E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;AIMEXR;FUJI Smart Factory",
-        "Release date": "01-15-2025",
-        "Title": "IPQC Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDaPJSu9CASQro_2trmcvGLAQ1m03VW0LJ75EApfCiKuYE",
-        "Document No": "INS-IPQC-010E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -6158,38 +5806,6 @@
         "Title": "Fuji Software Upgrade Report (Nexim V3.0.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCmpTk7K81zSpfYshPlHVYzAWE2XJH2nXtVBgw0TTg1qmU",
         "Document No": "TV2024-1141(A).pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "01-15-2025",
-        "Title": "NXTR PM Mechanical Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAjgFE7_kmySbqAANbq19EaAR1X4rRJSbkTakuPxK9VwUw",
-        "Document No": "MEC-NXTRP-010E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "01-15-2025",
-        "Title": "NXTR PM Programming Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA5_vvhuW_FQ7B2aQ2r4tJTAVajvAZOlLgCxK9iRNRAun4",
-        "Document No": "PRG-NXTRP-007E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "01-15-2025",
-        "Title": "NXTR PM Setup Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC7r54EAwbbTbCisTFolI7-AftWhz_6vqQzIE7FGSzhOZc",
-        "Document No": "SET-NXTRP-009E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "01-15-2025",
-        "Title": "NXTR PM System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBh0Jjq89SZQpXLmIUOCciqAf7zHuvTN9O13TwUCmmgYQo",
-        "Document No": "SYS-NXTRP-011E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -6470,14 +6086,6 @@
         "Title": "Electrical Schematic (NXTR Heads)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDpyY6kdDsPTbb2Je8aVvYLAWpJLfj2Ji6zpgStnCPQD04",
         "Document No": "2AHEHA002400.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III",
-        "Release date": "12-04-2024",
-        "Title": "AIMEX III Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCnPCRP1ooxSbGBvPay6A2cASWy9lwtgwQX4pc_bbYdeTg",
-        "Document No": "CNT-AIMEXIII-25E.pdf"
     },
     {
         "Category": "E-4.Electrical Schematics",
@@ -7113,14 +6721,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXTR",
-        "Release date": "08-28-2024",
-        "Title": "3D Coplanarity Check Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA17LBR929bQbmlWxHfTp7EAUIexE545iolaDppBowAqeI",
-        "Document No": "INS-3DCPL-007E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEXR",
         "Release date": "08-28-2024",
         "Title": "AIMEXR Advanced Operation Manual",
@@ -7184,14 +6784,6 @@
         "Document No": "SN2024-0802.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III",
-        "Release date": "08-21-2024",
-        "Title": "AIMEX III Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAx0-Ldo5-RZ_Vkvusel0DAf-WyI1G-AfAkihG4Z6rOqA",
-        "Document No": "CNT-AIMEXIII-24E.pdf"
-    },
-    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "NXT III",
         "Release date": "08-21-2024",
@@ -7206,14 +6798,6 @@
         "Title": "Electrical Schematic (NXT-3c)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBuYwL_ZnQ9Tbsrpu0WZQovActnPz-7ihrWScyULsDkFGs",
         "Document No": "2RGZBB007132.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CII;GPX-CSII",
-        "Release date": "08-21-2024",
-        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDBrMvieeRpR61VVEDJK_1TATy8znuwBCH_9YEFsK5OP68",
-        "Document No": "CNT-GPXCII-07E1.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -7344,14 +6928,6 @@
         "Document No": "SN2024-0821.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc",
-        "Release date": "08-09-2024",
-        "Title": "LCR Check Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDOTFzI-_wbSKGTMjvmCFTwATDeEGUqL2GX6f1i5MsymfA",
-        "Document No": "CNT-LCR-10E.pdf"
-    },
-    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
         "Release date": "08-08-2024",
@@ -7414,22 +6990,6 @@
         "Title": "Fuji Software Upgrade Report (AHC-R1 V4.80)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDbXEWyyBymQZ1PU6PP_El1AQGqQaE-OPqUgRvwexrJFVg",
         "Document No": "TV2024-0733.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEXR",
-        "Release date": "08-07-2024",
-        "Title": "AIMEXR Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFLKIl5xZZQYyE-wSlxeSHAYt7y5GdNf1jGrbgwODmKzE",
-        "Document No": "CNT-AIMEXR-03E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CII;GPX-CSII",
-        "Release date": "08-07-2024",
-        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAttVJnaAlmSqeTldOTHy9DAdxRpmCbHHXCq1D6KZakYx0",
-        "Document No": "CNT-GPXCII-07E.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -7536,14 +7096,6 @@
         "Document No": "R23030-1.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "07-24-2024",
-        "Title": "NXTR Mechanical Reference (S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA6Zh2dZE67Q6KV56WNC_YDAdN6m9EO4SRB8VuT-7R2-Ks",
-        "Document No": "MEC-NXTRS-017E0.pdf"
-    },
-    {
         "Category": "A-1.Tech Reports",
         "TYPE": "NXTR",
         "Release date": "07-24-2024",
@@ -7640,22 +7192,6 @@
         "Document No": "NeximDatabaseStructure_V2.9.0_forVerificationDB_EN.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "07-10-2024",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAAwJIUd8DdSLLMd8gnbTknAZjTww4S_ATjGaOl5AmVkJM",
-        "Document No": "CNT-NXTRA-06E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "07-10-2024",
-        "Title": "NXTR Machine Specifications S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCUSWzA1tsTT6ynT0JA9A4CAXTFyi-PxwgvauY9bYGXXqs",
-        "Document No": "CNT-NXTRS-15E.pdf"
-    },
-    {
         "Category": "A-1.Tech Reports",
         "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXTP;AIMEXR;Fuji Flexa;Fujitrax;Nexim",
         "Release date": "07-10-2024",
@@ -7694,14 +7230,6 @@
         "Title": "Electrical Schematic (NXT/AIMEX series HEADS)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCSlKt7Qdb3S5yd2g8wCoR2AaOldY2IYfoLa2GPhANheAU",
         "Document No": "2AGKHA034303.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III",
-        "Release date": "07-03-2024",
-        "Title": "AIMEX III Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCXJgkYNLG9TbxpRuiSQTtEAX5R3Vpv0A1ISLuskXPV7gs",
-        "Document No": "CNT-AIMEXIII-23E.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -7752,14 +7280,6 @@
         "Document No": "2RHLBA009909.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "07-03-2024",
-        "Title": "FSF FUJI Smart Factory",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwKD5pDmMsRplaDDHgWazBATXYQdJT8E1kTGJL1ayjff4",
-        "Document No": "CNT-FSF-05E.pdf"
-    },
-    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "07-03-2024",
@@ -7774,14 +7294,6 @@
         "Title": "Slots used in the job become \"Not Used\" when changing to different jobs while pushing the GROUP button.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAaXOPK78XeSoDhjXI_hm_UAZD3eTLivhLYx2Cf-jMHP68",
         "Document No": "SN2024-0640.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR PM",
-        "Release date": "06-26-2024",
-        "Title": "NXTR PM",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA3sm_cobdRT6TI09AF-bisAUew7orzxR1ScH6Uyckm_AE",
-        "Document No": "CNT-NXTRPM-07E.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -7920,14 +7432,6 @@
         "Document No": "AIMEX V12 Head Operation Manual_R7a.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXT III;NXT IIIc;NXTR",
-        "Release date": "06-19-2024",
-        "Title": "Rotary-type Dip Flux Unit (High Speed) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD_xsy5H5adQrlg8RyP6EuxAXNa7ETbPfi1CGSjoIfC_FM",
-        "Document No": "INS-HSDFU-008E0.pdf"
-    },
-    {
         "Category": "D-2.Operation Manuals",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
         "Release date": "06-19-2024",
@@ -7942,14 +7446,6 @@
         "Title": "Wide Range Nozzle Operation Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBh1Up9zYdZQZqYuZe_UPfDAXvKzflEXBAzsi7aLJJZH5Y",
         "Document No": "AIMEX Wide Range Nozzle Operation Manual R5a.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;AIMEXR;FUJI Smart Factory",
-        "Release date": "06-19-2024",
-        "Title": "IPQC Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCCayTER3FlSYlK-qSqLEGPAbsqlx0HQTRwRoio-G_t0js",
-        "Document No": "INS-IPQC-009E0.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -7992,28 +7488,12 @@
         "Document No": "SYS-AIMEX3C-019E0.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR Advanced Operation Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD6UfiHkT5wTbTISHBQh9s0ATZXcfmb0fhVtpnVx0NylQA",
-        "Document No": "FNC-NXTR-014E0.pdf"
-    },
-    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
         "Release date": "06-19-2024",
         "Title": "Fuji Software Upgrade Report (Nexim V2.9.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCNa8G23olRR4LK_wT30spGAbdCrQfCizXnqpuhPV7jxXU",
         "Document No": "TV2024-0258 (1).pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR Automatic System Operation Manual (A model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCT4Is-ZzsISoCgq8rDp1KXAT0r7o1CSrEKUKGV7N7hzfg",
-        "Document No": "INS-NXTRA-004E0.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -8024,84 +7504,12 @@
         "Document No": "Machine Adjustment Tool Operation Manual_R3a.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR;Unit",
-        "Release date": "06-19-2024",
-        "Title": "Offline Changeover Power Unit Instruction manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAIszVaxcG6Rac6W8uTBdbPAbGPQ2_H_b0ejkaVFIl0e2s",
-        "Document No": "INS-OCPU-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR Cassette-type Feeder Instruction Manual (NXTR-A)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB1U0g12LAjQbYul6Inb3W4AZ5dIY49TPl5tfGMtfmyBH8",
-        "Document No": "INS-RFDR-008E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "Cassette-type feeder inspection jig Instruction Manual (NXTR-A)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDJyokJ7vxXTq0XVn64057AATJHpcBVTcJxzVe0yyYR2Q0",
-        "Document No": "INS-RFDRJIG-005E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR Mechanical Reference (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBgU_q0gLGxRphiyJiCd7xqAYe6-5SVt4EfBGcyJSnrTqw",
-        "Document No": "MEC-NXTR-016E0.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEXR",
         "Release date": "06-19-2024",
         "Title": "The interlock interface for the previous and next stage machines is no longer standard for AIMEXR machines and is now a Z specification. This document explains the support when previous and next stage machines are connected and used.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDKwEewDiIfSI68ibemEuDLARG3_Gjf1qHg1HOA_Jqzyb0",
         "Document No": "R24031.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "06-19-2024",
-        "Title": "NXTR PM Mechanical Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAkhcKS5h0SR5QumB3573MwAcqaXJLsjUfxfplKMR0BExw",
-        "Document No": "MEC-NXTRP-008E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR Setup manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCwI8eMhHWJRIVlqe_Fvil2ARjxzcNxhpMCBwcW22gtOYE",
-        "Document No": "SET-NXTR-012E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "06-19-2024",
-        "Title": "NXTR PM Setup Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCRx5YLF1AcSKbvRaH_PRlcAV5kqnGIWr5rPLL06FEeQes",
-        "Document No": "SET-NXTRP-008E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "06-19-2024",
-        "Title": "NXTR System Reference (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBhD9OQLU6tSKYHQVCW85B5AecWGi04Kg2QMx5NVZkt3L0",
-        "Document No": "SYS-NXTR-014E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "06-19-2024",
-        "Title": "NXTR PM System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDcGAflJqhuRry26ZUdZFEEAXlkccrm1lx1Q7nCDSWoR4U",
-        "Document No": "SYS-NXTRP-010E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -8400,14 +7808,6 @@
         "Document No": "PTS-GPXCII-03.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III",
-        "Release date": "05-22-2024",
-        "Title": "AIMEX III Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBccrIWgj-vRbnWL5tQdWmrAXT0EM4f-CKTktOKUGC_aEU",
-        "Document No": "CNT-AIMEXIII-22E.pdf"
-    },
-    {
         "Category": "E-1.Parts List",
         "TYPE": "GPX-CL",
         "Release date": "05-22-2024",
@@ -8478,14 +7878,6 @@
         "Title": "This report provides the countermeasure against errors that may occur when the Intelligent Part Sensor function is turned on for parts using MELF nozzles.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCFWj0cEafmT6-jIic5Ab8NAanZLKBpF8vavw9D4VeEEnk",
         "Document No": "R24026.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "Unit",
-        "Release date": "05-01-2024",
-        "Title": "Offline Changeover and Maintenance Units",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBy8xgY3puVQazM32iwe3N3Aes4fKECFC78YSgabIf86IY",
-        "Document No": "CNT-ATU-06E.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -8601,14 +7993,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "04-17-2024",
-        "Title": "NXTR Cassette-type Feeder Instruction Manual (NXTR-A)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAUj3m-TNVFS7J829geyrEeASp32oRPmNKc0cw0kqHwYWk",
-        "Document No": "INS-RFDR-007E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEXR",
         "Release date": "04-17-2024",
         "Title": "AIMEXR Mechanical Reference",
@@ -8654,30 +8038,6 @@
         "Title": "When data is restored by the Auto Backup Tool, data in part management and job management is displayed in gray and cannot be edited.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDJMCrS3-ShQYSxI7XART_QAb5r7NvGvHxt6R6nTCXok4E",
         "Document No": "SN2024-0311.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEXR",
-        "Release date": "04-11-2024",
-        "Title": "AIMEXR Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAFqqYZXVPST6DpeMuicxYFAc0wpM_gQ-3OFXytfkjyBZE",
-        "Document No": "CNT-AIMEXR-02E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "04-11-2024",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBdOfdOithnSpzKKniwuVAMAfelnpi9AYncTmRgCMNSbkE",
-        "Document No": "CNT-NXTRA-05E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "04-11-2024",
-        "Title": "NXTR Machine Specifications S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCvoWEwcm6uQrb1Vh2RXmc-ATe-HeOnwKWJHTuSbt-EDKo",
-        "Document No": "CNT-NXTRS-14E.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -9448,14 +8808,6 @@
         "Document No": "SN2024-0046.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CL",
-        "Release date": "01-24-2024",
-        "Title": "GPX-CL Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDS-IKJ3EjET4kEQtfpVo-YAcl88iRl2ul08kKSGwavm9Q",
-        "Document No": "CNT-GPXCL-09E.pdf"
-    },
-    {
         "Category": "E-6.Troubleshooting",
         "TYPE": "NXTR",
         "Release date": "01-24-2024",
@@ -9744,22 +9096,6 @@
         "Document No": "Troubleshooting panel conveyance at NXT-3 conveyors_E_rev00.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "GPX-CII;GPX-CSII",
-        "Release date": "12-13-2023",
-        "Title": "GPX-CII/GPX-CSII Intelligent Screen Printer",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAsSngCzI4fR7FwmIkA3QAeAYfboWAqWu1Sms8WSSqAVzk",
-        "Document No": "CNT-GPXCII-06E.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;AIMEXR",
-        "Release date": "12-13-2023",
-        "Title": "IPQC Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBKLacy9DejQ7fJX_ti7aThAWL2dLeDlJAs8ixkVPqYMaU",
-        "Document No": "INS-IPQC-008E0.pdf"
-    },
-    {
         "Category": "D-1.Manuals",
         "TYPE": "NXT II",
         "Release date": "12-13-2023",
@@ -9878,14 +9214,6 @@
         "Title": "Fuji Software Upgrade Report (FSF V2.2.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCJDYm0icMmRpMuoQU7y7JiASS5iySFnl3Up1TL4zexC1s",
         "Document No": "TV2023-0886.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX IIIc",
-        "Release date": "12-06-2023",
-        "Title": "AIMEX IIIc Fuji Flexible Placement Platform",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDqfm2HL-9LTKSPHBfRo_TCAUvYCegV9t8XIqMoWGUOusY",
-        "Document No": "CNT-AIMEXIIIc-22E.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -10153,14 +9481,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "11-29-2023",
-        "Title": "Rotary-Type Dip Flux Unit Plus (DFU+R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA4v6OvhSThS57pOcsjOmULAWfmHuhrag2ITAbIM09QkvA",
-        "Document No": "QD184-17.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "GPX-CII;GPX-CSII;GPX-CL",
         "Release date": "11-22-2023",
         "Title": "GPX-CII/GPX-CSII/GPX-CL Setup Manual",
@@ -10238,14 +9558,6 @@
         "Title": "Panels cannot be conveyed correctly when the panel IDs were read by an FLP.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAq3eQHIpVyT5x6bWwzkBl5AQbxD525iBxKwetH3cLtO5w",
         "Document No": "3036_V2.7.0_CS_AutoJob_Patch.zip"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR;Unit",
-        "Release date": "11-01-2023",
-        "Title": "Offline Changeover Power Unit Instruction manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDLw9RnxHtRRpdt-WLjR3ImAb1lO0t9Q1_w38yMtJaUsRg",
-        "Document No": "INS-OCPU-001E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -10422,14 +9734,6 @@
         "Title": "Hangups may occur when on-machine editing is simultaneously performed on two modules.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBTuqBOkxGrSIp3PRM8JxQeAY3AKQG2m8xr7Yi9JEqFE7M",
         "Document No": "SN2023-0787.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "09-20-2023",
-        "Title": "NXTR Programming Manual (A model & S model)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBni-hAMxPVSLiGhS6ObrSxATfOrEu2bkTFakpKW0HzmsM",
-        "Document No": "PRG-NXTR-008E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -10918,30 +10222,6 @@
         "Title": "There are cases in which jobs cannot be opened in MEdit when M6 type modules are set on a 4M base for NXT machines.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQB2xLwFYb9URIjop5I9BPM8AcuLOtVaIyZ57Q-j_AVAlkg",
         "Document No": "2860_V2.7.0_MEdit_Patch.zip"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXT III;NXT IIIc;NXTR",
-        "Release date": "06-14-2023",
-        "Title": "Rotary-type Dip Flux Unit (High Speed) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCJivSPHiE7Q6q-eTgosMp-AWUpauDCmz_d3alpKGxPniQ",
-        "Document No": "INS-HSDFU-007E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "06-14-2023",
-        "Title": "Rotary-Type Dip Flux Unit (DFU-R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDBTLrdv6oRS5gQJy2u7EUWASPQOcxfb3G57lmVUcCQKq4",
-        "Document No": "QD101-16.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "06-14-2023",
-        "Title": "Rotary-Type Dip Flux Unit Plus (DFU+R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCfAesIo9ZJTIxoq4qDEMxPAejrsDoDkR0Ewywkaom_d3I",
-        "Document No": "QD184-16.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -11779,14 +11059,6 @@
         "Category": "F-2.Specifications",
         "TYPE": "FUJI Smart Factory",
         "Release date": "11-23-2022",
-        "Title": "FSF FUJI Smart Factory",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCj7Kcl0lPzS4WrbsB8FbycASHi1MTa5ZB2CuVvXZbQHko",
-        "Document No": "CNT-FSF-03E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "11-23-2022",
         "Title": "Remote Board Skip Function",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC-7pI2_0S1RqSVLrA6-vgqAYdpEzlmGzGb3Qq5vLPD3HA",
         "Document No": "CNT-RBSF-02E.pdf"
@@ -11942,14 +11214,6 @@
         "Title": "Users who use remote operation need to change settings additionally. Change the settings when upgrading the machine version.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCMkq7pce_SRqt69SrL2sGHAQpmJieJg-tn8R-DMCwBNtQ",
         "Document No": "T22015.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR",
-        "Release date": "11-02-2022",
-        "Title": "IPQC Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCAEVN7dFlaSp1NRqU3xHlJAXUKzqZh0NFcen0RKioTEP0",
-        "Document No": "INS-IPQC-007E0.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -12688,14 +11952,6 @@
         "Document No": "QD160-03.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "06-15-2022",
-        "Title": "FSF FUJI Smart Factory",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAQEfyMfUMERZAZEznBfVDOATC8nkZawzgpNMBQu-I2hLk",
-        "Document No": "CNT-FSF-02E.pdf"
-    },
-    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "NXTR",
         "Release date": "06-08-2022",
@@ -13294,14 +12550,6 @@
         "Title": "When using Profiler on an XPF machine, Profiler Central Server may stop.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDmyYLd7eZjSKSsYfYaM1-gAWh2Ob_ZyTrJGWdNZ6rNE3A",
         "Document No": "2165_V2.4.0_XPF_Profiler_Patch.exe"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "12-22-2021",
-        "Title": "Remote Board Skip Function",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD4uApxMbiORIKDfmtznnqzAZr2T0jiT10ROZonMxKE2Fs",
-        "Document No": "CNT-RBSF-01E.pdf"
     },
     {
         "Category": "F-2.Specifications",
@@ -13968,14 +13216,6 @@
         "Document No": "S2110-2.0E.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR",
-        "Release date": "10-27-2021",
-        "Title": "NXT III/IIIc Machine Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC9u_LSLfHqSZZ61sSMDEBgAU6O_XgPqToXlpUpp3vUGrI",
-        "Document No": "CNT-NXTIII_IIIc-17E.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX III;AIMEX IIIc",
         "Release date": "10-27-2021",
@@ -14078,14 +13318,6 @@
         "Title": "There are cases in which the last empty stick is not rejected when using a stacked stick feeder.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDS64EqNb3gSIhFs6TUr1G0Aau5nvUsZeTqNl0yFk_b9dE",
         "Document No": "SN2021-0685.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;AIM",
-        "Release date": "09-29-2021",
-        "Title": "Rotary-Type Dip Flux Unit Plus (DFU+R) Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBvczMpsHnLQ5UGC9n5KM9cAYg6GBxXGBilOf2JDBUBMes",
-        "Document No": "QD184-15.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -14462,14 +13694,6 @@
         "Title": "This report provides information about the modules that can be loaded on 4M bases only for M6 type modules (name: 4M-2B6 base, 4M-3B6 base).",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCXzAVtZ1wASZN1PV_6ACXzAR3njSL3fgU9E9h9ilSfWAQ",
         "Document No": "R21044.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "FUJI Smart Factory",
-        "Release date": "06-30-2021",
-        "Title": "FSF FUJI Smart Factory",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAb3DGc9tW0SZXY9Cjo3RrMAXQyie2UAibDsoO8hr1m-V0",
-        "Document No": "CNT-FSF-01E.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -14936,14 +14160,6 @@
         "Document No": "S2102-1.0E.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "sFAB-D",
-        "Release date": "04-07-2021",
-        "Title": "sFAB-D Modular Type Multi-purpose Automated Fabrication Machine PCB Assembly Applications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCr02FxzjzlRJdzsss3CUW_AXZbkgkALBm3kz2wKlsqE7w",
-        "Document No": "PI-sFAB-017E.pdf"
-    },
-    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "04-07-2021",
@@ -14982,14 +14198,6 @@
         "Title": "The camera board and camera used for the Auto Feeder Maintenance Unit are to be changed to ones with a USB 3.0 interface.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDbJ_cTqWUQRJDQUT9KmScUAZvhR-_TvmRvnX5MFjvWTCo",
         "Document No": "T21021.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "Unit",
-        "Release date": "03-16-2021",
-        "Title": "Offline Changeover and Maintenance Units",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDBlG5vGIcBT77EWVqmkbYlAcyUYF3x_BJNrwnAqK7aGUU",
-        "Document No": "CNT-ATU-05E.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -15288,30 +14496,6 @@
         "Document No": "R21003.pdf"
     },
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "sTower II",
-        "Release date": "01-13-2021",
-        "Title": "sTowerII Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCI8c4EQS2GQ4R7v7YCDbRUAcw_sqRGOypcbav1Ou2CSGM",
-        "Document No": "CNT-AHCR-02E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "Unit",
-        "Release date": "01-13-2021",
-        "Title": "Auto Head Cleaner-R",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAYaI9I8wkOTq-0TG_fGlxTATAwsxdfRV7_iYY0XqwfQDc",
-        "Document No": "CNT-STW2-02E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "sFAB-SH",
-        "Release date": "01-13-2021",
-        "Title": "sFAB-SH Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB6Inn1hoNYSrScG64-B7HhAa5mU1kmdGvzImuHYKui7gw",
-        "Document No": "PIS-sFAB-00E.pdf"
-    },
-    {
         "Category": "A-1.Tech Reports",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;Unit",
         "Release date": "01-13-2021",
@@ -15518,14 +14702,6 @@
         "Title": "NeximHostSystemInterfaceSpecificationV2.2.0_E",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDDkNtVI5qSQbvCaubmkfSJAcZADscWUNtSWvbYQczoE-E",
         "Document No": "NeximHostSystemInterfaceSpecificationV2.2.0.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "sFAB-a",
-        "Release date": "11-18-2020",
-        "Title": "sFAB-α",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBeew1-UujdRaJkbehaNKeJAS3cYFO0OgI_6hc3dqxv3Zs",
-        "Document No": "SP-sFABA-04E.pdf"
     },
     {
         "Category": "A-2.Rep News",
@@ -21974,14 +21150,6 @@
         "Title": "High-Speed Multi-Purpose Mounter Specifications",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-VpFpuYpdTIzqq22Q4R-pAc8ySdOxN3Lq6eq2YHvAXkg",
         "Document No": "CNT-XPF-26E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "XPF",
-        "Release date": "04-20-2016",
-        "Title": "High-Speed Multi-Purpose Mounter Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAAf5XgN8iPS7DOvYkf8bDaATNVfVNBpMPXKZugvvUXplk",
-        "Document No": "CNT-XPFW-14E.pdf"
     },
     {
         "Category": "A-1.Tech Reports",
