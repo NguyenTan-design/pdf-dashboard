@@ -18,6 +18,46 @@
     {
         "Category": "A-1.Tech Reports",
         "TYPE": "NXTR",
+        "Release date": "08-21-2026",
+        "Title": "Transportable weight of nozzles.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA_JGdWBwxQT4xIKLAtWzFqAQMOsPU-PKDHWuXfmCfGPkA",
+        "Document No": "T21034-2_A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "08-21-2026",
+        "Title": "If the NXTR conveyor firmware is updated to V1.47A or later, it is not possible to downgrade to a version earlier than V1.47A.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBJFRTXNU6iQ7mHMumMA1A1AaM0VZWkQqN2kzQ602eTcZI",
+        "Document No": "R26035.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "NXTIII",
+        "Release date": "08-19-2026",
+        "Title": "Single Vibratory Stick Feeder Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCt_TFAJobFRp51aaEGeP5KAeRy-BuRy7LYjm6uWWq0T6M",
+        "Document No": "INS-SVIBFDR-2.0E.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "08-19-2026",
+        "Title": "There are cases in which even if parts are supplied to the first module, the part status cannot be changed to \"set OK\" and part supply is not completed.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCsMM89T8PcTLWyCu41Q2e4ARgAgfYA_cudgp06swd7BM4",
+        "Document No": "SN2026-1021.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "GPX_CII;GPX_CSII;GPX_CL;",
+        "Release date": "08-19-2026",
+        "Title": "GPX-CII/GPX-CSII/GPX-CL System Reference",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBrUSZ-IOnlQ7cPqKSIsefUAacLQEAqF3_cxiku18syjMQ",
+        "Document No": "SYS-GPXC2-004E0.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
         "Release date": "08-17-2026",
         "Title": "Transportable weight of nozzles.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA3NtKOM29IQLsFCZfH_qYfASdZRrnI_8nsFpkWwPv5kCk",
@@ -38,6 +78,14 @@
         "Title": "A desired language can now be displayed on the machine.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBnTHMr5Bs4Q40GKMayiAQIAZTHr9XKaKE0TD37rjTcqfs",
         "Document No": "R22076-1.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "08-17-2026",
+        "Title": "Transportable weight of nozzles.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBwXsWLTjk6TYnD9wEKt9tdAQsBEOrbmAd6JyZWU-c5TdU",
+        "Document No": "T21034-2.pdf"
     },
     {
         "Category": "TRAINING TEXT",
