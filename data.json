@@ -1,5 +1,125 @@
 [
     {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "08-27-2026",
+        "Title": "There are cases in which production information cannot be acquired from a line consisting solely of NXTR, NXTR PM, and AIMEXR machines",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBYmJWOFvVqR6UEyIqWchpCAeY0GRDaX8iGqmrEWIkZo4g",
+        "Document No": "SN2026-1063.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "08-27-2026",
+        "Title": "Vision processing boards have been revised. The procedures for revised board replacement and recovery are given",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCTpGFHus51RJ6KjUb_R3lUAeQFdW2mTz7wFSF9aLg-iTE",
+        "Document No": "R26032_A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX",
+        "Release date": "08-27-2026",
+        "Title": "To assist with aligning the connectors when connecting the AIMEXR MFU-65R to the offline changeover power unit, a positioning pin has been added to the MFU-65R to serve as a guide.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBu005vu679S4uN0z8UGkkCAV30dDM1ZKl8hfrBrOiDQWM",
+        "Document No": "R26044.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "08-27-2026",
+        "Title": "Vision processing boards have been revised. The procedures for revised board replacement and recovery are given",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD6Whcba7boRJ31LWGdHcwsAUoXKGuIWS4neeY-BL02Teo",
+        "Document No": "R26032.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "08-27-2026",
+        "Title": "There are cases in which production information cannot be acquired from a line consisting solely of NXTR, NXTR PM, and AIMEXR machines",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQD7FCAFx52wS57MMjbVReA1AVdYaW2fcOrM87RKe92nE_8",
+        "Document No": "5742_V2.8.0-V3.2.100_ServiceMng_Pronavi_Patch.zip"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "08-27-2026",
+        "Title": "Vision processing boards have been revised. The procedures for revised board replacement and recovery are given",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBM-inHJWGYQ4HDOOiSJposAWraBVYCtXYvVlwDytfw_0o",
+        "Document No": "R26032_A2.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "Feeder",
+        "Release date": "08-27-2026",
+        "Title": "Intelligent Feeder Inspection Jig with Vision Processing Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDHcQzMINEmRpfbPyCfXZWDAYmgwRtfttAP5swRpbF0U-k",
+        "Document No": "QD067-40.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "08-26-2026",
+        "Title": "Patches for correcting Optimizer problems that have occurred after the release of Nexim V3.2.0 and V3.2.100 are released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQATIp3E5knSRZV5y5YbRlDgAb3xIWTqwbVRJeA6GdK1Owc",
+        "Document No": "5716_V3.2.100_DataUpdate_Optimizer_Patch.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "08-26-2026",
+        "Title": "Patches for correcting Optimizer problems that have occurred after the release of Nexim V3.2.0 and V3.2.100 are released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCzS0nz5J6nT6eYmQwAw5C7Aa8MOMyoUPPfzDuHL5FA2oc",
+        "Document No": "5717_V3.2.0_DataUpdate_Optimizer_Patch.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "08-26-2026",
+        "Title": "Patches for correcting Optimizer problems that have occurred after the release of Nexim V3.2.0 and V3.2.100 are released",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxBFu3sYBCT5_SxUTnV6RKAToXZTFjYMkxKkvPzocNELo",
+        "Document No": "SN2026-1062.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Unit",
+        "Release date": "08-25-2026",
+        "Title": "Fuji Software Upgrade Report (Auto Head Cleaner-R V1.71)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCWpozZ8OcPQqChQYQjAB8xAT3ypKp-YOLSNNNToLxd2r0",
+        "Document No": "TV2026-0864.pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "Unit",
+        "Release date": "08-25-2026",
+        "Title": "Fuji Software Upgrade Report History (Auto Head Cleaner-R V1.71)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBdZy4P0hD1RIoKvv_m5U9IATrLBwdo3p6iSBpA-JjjJlQ",
+        "Document No": "TV2026-0864_History.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "08-25-2026",
+        "Title": "Upgrading to V2.35 is recommended.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBbSnR1-W3cQ75X0bh0d0xfAWWmmYgBjp8KcDBNi157ptE",
+        "Document No": "R26039.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "NXTR",
+        "Release date": "08-25-2026",
+        "Title": "RHDX head Instruction Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA9PmxlrdzqQJmCmu27U-Y4AeLnCCbmMD1EstID8-KPf0w",
+        "Document No": "INS-RHDX-002E0.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR_S;NXTR_A;AIMEXR;NXT_III;NXT_IIIc;NXT_II;NXT_IIc;NXT;AIMEX_III;AIMEX_IIIc;AIMEX_II;AIMEX_IIS;AIMEX;",
+        "Release date": "08-24-2026",
+        "Title": "In August 2026, the computer used for coplanarity checks will be revised. A test version will be required when certain custom versions are being used.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDOhKeacU7YRaZHKXokxZxHAUceWqwd2Ve_U7ItrdhHd9I",
+        "Document No": "T26019.pdf"
+    },
+    {
         "Category": "TRAINING TEXT",
         "TYPE": "NXTR",
         "Release date": "08-22-2026",
@@ -2585,14 +2705,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "01-19-2026",
-        "Title": "FUJI Intelligent Feeder Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA5xe0phdrjRLc6VGRBdigRAbTznpeFSyGPmrKA0lrUp-0",
-        "Document No": "QD010-43.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT II;NXT IIc;NXT;NXTR;AIM",
         "Release date": "01-19-2026",
         "Title": "Rotary-Type Dip Flux Unit (DFU-R) Instruction Manual",
@@ -4704,22 +4816,6 @@
         "Document No": "INS-AFMU-013E0.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "07-09-2025",
-        "Title": "Auto Loading Feeder Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQClFaRzXiARRoJOKl7fSZgFAWaNdDR0a2k3neIbSb5HyKk",
-        "Document No": "INS-ALFDR-010E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "07-09-2025",
-        "Title": "Intelligent Feeder Inspection Jig with Vision Processing Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDguDqJO5T0T4ABgIDoUNoFAebf4SxUbW7cmLA-Br4l_9c",
-        "Document No": "QD067-38.pdf"
-    },
-    {
         "Category": "E-4.Electrical Schematics",
         "TYPE": "NXTR;Unit",
         "Release date": "07-09-2025",
@@ -5992,14 +6088,6 @@
         "Document No": "Retrofit Manual for GPX-CS Movable Auto Solder Supply Function (Cup Type).pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "12-18-2024",
-        "Title": "Auto Feeder Maintenance Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCdVqwDbbHuQL97JFW-y41eAd32jKKQW4d4xtWzfzT1iyQ",
-        "Document No": "INS-AFMU-012E1.pdf"
-    },
-    {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "Nexim",
         "Release date": "12-18-2024",
@@ -6014,14 +6102,6 @@
         "Title": "Smart Nozzle Cleaner (SNC-01)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAcOmOIeqwRTKbKidZYd5QAAXurCM8md_FbmgV2HLJSMEQ",
         "Document No": "2RGKBM006523.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "12-18-2024",
-        "Title": "Intelligent Feeder Inspection Jig with Vision Processing Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQATggLyoiU2SoT83cX4p6VcAfWEcZDzj2B147VD3LWX8WY",
-        "Document No": "QD067-37.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -7280,14 +7360,6 @@
         "Document No": "2AGKHA034303.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "07-03-2024",
-        "Title": "FUJI Intelligent Feeder Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAClPGSOdeuQopWq_s8YbtZAX0LgBnHsX6DXIsZH0NDUFE",
-        "Document No": "QD010-41.pdf"
-    },
-    {
         "Category": "E-1.Parts List",
         "TYPE": "AIMEX;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT",
         "Release date": "07-03-2024",
@@ -7382,14 +7454,6 @@
         "Title": "Fuji Software Upgrade Report (FSF V2.3.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhF17MQgb3QZSHWSQqRP-lAVGH3NhSG3tz5ZxCdoZHSJs",
         "Document No": "TV2024-0480.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "06-19-2024",
-        "Title": "Auto Loading Feeder Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD7c6JL7W5nRaAAbqP6LKgDATZn8oZX-eLYj0uqBkiElvs",
-        "Document No": "INS-ALFDR-009E0.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -9638,14 +9702,6 @@
         "Title": "Claim B: The rigidity of IPS units for DX heads has been increased.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDAM5JndXcTTZN3gb4akswNAfYzZV9vdzVIufKH1kQO_eE",
         "Document No": "R22082-3.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "10-25-2023",
-        "Title": "Intelligent Feeder Inspection Jig with Vision Processing Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAjxUBx80z2RZd9Q2CCjX2rAS6PRUG0fhnagZo3FZZXoAI",
-        "Document No": "QD067-35(1).pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
