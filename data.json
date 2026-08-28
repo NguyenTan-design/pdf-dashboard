@@ -17,7 +17,7 @@
     },
     {
         "Category": "A-2.Rep News",
-        "TYPE": "GPX",
+        "TYPE": "NXTR",
         "Release date": "08-27-2026",
         "Title": "To assist with aligning the connectors when connecting the AIMEXR MFU-65R to the offline changeover power unit, a positioning pin has been added to the MFU-65R to serve as a guide.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBu005vu679S4uN0z8UGkkCAV30dDM1ZKl8hfrBrOiDQWM",
@@ -1001,7 +1001,7 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "UNIT",
+        "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXTR",
         "Release date": "06-03-2026",
         "Title": "3D Coplanarity Check Unit Instruction Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC6IcsouiwrSJYQt6lQyB6-AUgOc2fR-xZb_s4oa3nnU_U",
@@ -1190,14 +1190,6 @@
         "Title": "A new model (MPC02) of the high resolution parts camera (high resolution camera) is supported.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA0-zhVyCsnQIFfQvEtXdqBAf3TZPdpJjIZlZ5amjk0v_w",
         "Document No": "R26013 A1.pdf"
-    },
-    {
-        "Category": "A-2.Rep News",
-        "TYPE": "NXTR",
-        "Release date": "05-29-2026",
-        "Title": "A new model (MPC02) of the high resolution parts camera (high resolution camera) is supported.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXFI55JHXcQbUdZyIxeXp5AeKjR4kaRBSfYp_ysggMeNU",
-        "Document No": "R26013(05.29.2026).pdf"
     },
     {
         "Category": "TRAINING TEXT",
@@ -2673,14 +2665,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
-        "Release date": "01-19-2026",
-        "Title": "AIMEX Series Programming Manual for Nexim",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBBL82rBdWkQZrPLmR2Sr0AAVZWsQEkO9PPFaQOrwLNMpQ",
-        "Document No": "PRG-AIMEXSN-017E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "NXTR",
         "Release date": "01-19-2026",
         "Title": "NXTR Programming Manual (A model & S model)",
@@ -3576,14 +3560,6 @@
         "Document No": "GPX-C2,GPX-CS2 Specifying Side Clamp Pressure in Recipes Operation Manual_R1a.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "12-03-2025",
-        "Title": "Auto Loading Feeder Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA9lphvxfKDSLliT4EImLe8AQNOXW9PiMWYIxfRLAsFpZw",
-        "Document No": "INS-ALFDR-011E0.pdf"
-    },
-    {
         "Category": "E-6.Troubleshooting",
         "TYPE": "Unit",
         "Release date": "12-03-2025",
@@ -3686,14 +3662,6 @@
         "Title": "This report contains details regarding the nozzle for performing APAM with RH01 heads on AIMEXR machines.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCRcmcya4OvR4DP2yQ-c7FSAVzEk-2wsiuvO-2h-holC1E",
         "Document No": "R25102.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "11-26-2025",
-        "Title": "Auto Head Cleaner Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCJx-jjHHpwRL6l1MrwYaNIAeZ2yY6Y18sm1QAxgqCZZN8",
-        "Document No": "INS-HDCLN-017E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -3809,7 +3777,7 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "Unit",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;XPF;XP;CP",
         "Release date": "11-19-2025",
         "Title": "Auto Nozzle Cleaner II Instruction Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAaCBlaRJ_mRI_WSUW3ex1pAfBplMEGBfKODugCGGeoHDU",
@@ -4832,14 +4800,6 @@
         "Document No": "TV2024-1155.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc;NXT III;NXT IIIc;NXTR",
-        "Release date": "07-09-2025",
-        "Title": "3D Coplanarity Check Unit Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTckJ_uYGjRJUlCUASQtDIAbCEVWK-MixM-OMa4Z_T958",
-        "Document No": "INS-3DCPL-009E0.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "Feeder",
         "Release date": "07-09-2025",
@@ -4905,14 +4865,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
-        "Release date": "07-09-2025",
-        "Title": "AIMEX Series Programming Manual for Nexim",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB6bCL887mkS7rwRIobQqOdAXaC8P-Y5ugfsUxZ_ek0C_Q",
-        "Document No": "PRG-AIMEXSN-016E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "NXT III;NXT IIIc;NXT II;NXT IIc;NXT",
         "Release date": "07-09-2025",
         "Title": "NXT Series Programming Manual for Fuji Flexa",
@@ -4926,14 +4878,6 @@
         "Title": "NXT Series Programming Manual for Nexim",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA882HiwJEfTZEbUPegkDRQAZTLmiJprmv6Et_xh5fk0xY",
         "Document No": "PRG-NXTSN-019E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc",
-        "Release date": "07-09-2025",
-        "Title": "AIMEX III/AIMEX IIIc System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBpqzK-dA5LQ7pTHjfA2NTtAaoNNyzkfmXFkGIF8rEh_Rs",
-        "Document No": "SYS-AIMEX3C-021E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -5022,14 +4966,6 @@
         "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAA_lE9BJrTQ7S9UjBJvyH3AbO7mG58QdpwubG15f4GqNQ",
         "Document No": "TV2025-0561.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "07-09-2025",
-        "Title": "Auto Head Cleaner Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDTcJLd6D1kQ7v5CFggsgQaAY7Hn3Lba7iKpbnkjhYhf6w",
-        "Document No": "INS-HDCLN-016E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -5142,14 +5078,6 @@
         "Title": "Compatibility information for CPU boards and servo boards.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDUN13IOhLQQr9juRw0CDauAQKvY3fHEfgHBpg0z90xtg0",
         "Document No": "R25031.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III",
-        "Release date": "06-25-2025",
-        "Title": "AIMEX III Mechanical Reference (X No.201～)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD5RS-2dK_JRqbMP32sZx84AfuE0mX2l6GzBOs0pTvmdaA",
-        "Document No": "MEC-AIMEX3-L-017E1.pdf"
     },
     {
         "Category": "TRAINING TEXT",
@@ -5920,28 +5848,12 @@
         "Document No": "MEC-NXT3-031E0.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
-        "Release date": "01-15-2025",
-        "Title": "AIMEX Series Programming Manual for Nexim",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDpR8_w8wZIRoxYFsiXss23AUQO51sUi1pPzf6O8UooxT0",
-        "Document No": "PRG-AIMEXSN-015E0.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX III;AIMEX IIIc;AIMEX IIS;NXT III;NXT IIIc",
         "Release date": "01-15-2025",
         "Title": "Claim B: The rigidity of IPS units for DX heads has been increased.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBk51HqtVOUQp5H0wT4XLKjAWsGviXm6AeNhyQi3gy-yrM",
         "Document No": "R22082-4.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc",
-        "Release date": "01-15-2025",
-        "Title": "AIMEX III/AIMEX IIIc System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDH4UJGuQPBT5zhVnYprwK4AS2kdzPLnMdUJuwsYu5rjJM",
-        "Document No": "SYS-AIMEX3C-020E0.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -6294,14 +6206,6 @@
         "Title": "Improving the operation panel response by changing to the new panel computer. This is not a claim issue.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCHVDB0Ap5IRaj9MBDATAhZAcuFf_-5PKiKawwMR0LkydE",
         "Document No": "R17021-4_A2.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEXR",
-        "Release date": "12-04-2024",
-        "Title": "AIMEXR Setup Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCY6jA6OkOxSbyJF7B3FJENAT-kIzhwdDwgNntuygz3loU",
-        "Document No": "SET-AIMEXR-003E1.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -6929,22 +6833,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "AIMEX IIIc",
-        "Release date": "08-21-2024",
-        "Title": "AIMEX IIIc Mechanical Reference (X No.162～)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD8YRzFT5dwTYq8GXTetuOVAW23PjSa_kc8sN1OF9ANsQY",
-        "Document No": "MEC-AIMEX3C-L-017E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III",
-        "Release date": "08-21-2024",
-        "Title": "AIMEX III Mechanical Reference (X No.201～)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD4JHUOeqdmR7wLuGvDYXaOASchaV8R7DFsUqweFc_JhAc",
-        "Document No": "MEC-AIMEX3-L-016E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "NXT IIIc",
         "Release date": "08-21-2024",
         "Title": "NXT IIIc Mechanical Reference",
@@ -6982,22 +6870,6 @@
         "Title": "Compatibility information between servo board 2EHEBC0007**, 2EHEBC0318**, 2EHEBC0384**, 2EHEBC0459**, and 2EHEBC0463**.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCVtDBUWYoHTKfdBG2So4mQAfYNeM_tUeqbK795TcYTo6I",
         "Document No": "R22052-4_A1.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "08-21-2024",
-        "Title": "Auto Head Cleaner-R Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAQexhOHnGOSIonGg7sYoK-AfmcVHPRSFl_4H_KizLB164",
-        "Document No": "INS-AHCR-007E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "08-21-2024",
-        "Title": "Auto Head Cleaner Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA2oqMPxdWeRK7ZeWVquXvSAZU0obTGodd6V0FLXU6UGug",
-        "Document No": "INS-HDCLN-015E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -7584,22 +7456,6 @@
         "Document No": "PRG-AIMEXS-028E0.pdf"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS",
-        "Release date": "06-19-2024",
-        "Title": "AIMEX Series Programming Manual for Nexim",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAFB-YPQGk9T7ZC4zvl_-kOAU37Z5b4lKS6qFMIDWBEQSM",
-        "Document No": "PRG-AIMEXSN-014E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX III;AIMEX IIIc",
-        "Release date": "06-19-2024",
-        "Title": "AIMEX III/AIMEX IIIc System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxb2U-HZVKTaic5gwPCyGqARsEbKKkdZ2aiI1nfGkcZE8",
-        "Document No": "SYS-AIMEX3C-019E0.pdf"
-    },
-    {
         "Category": "C-1.Upgrade Reports",
         "TYPE": "Nexim",
         "Release date": "06-19-2024",
@@ -7662,22 +7518,6 @@
         "Title": "Fuji Software Upgrade Report (Offline changeover power unit V2.20)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAt90tjkB7pT47AntvpZ3oXAc7Z22hfSjnVq20s5nTQjuc",
         "Document No": "TV2024-0036.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "06-19-2024",
-        "Title": "Advanced feeder stand Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-zwMreg_HTqiq2D5eRYeNARRkQYDUSwUvxpeIRP_AdHY",
-        "Document No": "INS-AFS-004E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "06-19-2024",
-        "Title": "Auto Head Cleaner Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCjl7HkKcRsTrNEpqSAkP6IAW3JrarWs_3v6w2-4Vp7ifc",
-        "Document No": "INS-HDCLN-014E0.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -8096,22 +7936,6 @@
         "Document No": "3285_V2.8.0_AutoBackupTool_Patch.zip"
     },
     {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEXR",
-        "Release date": "04-17-2024",
-        "Title": "AIMEXR Advanced Operation Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAbLZF42O6AR7Q_awjcNSdfAYhrB128N0RkEtVrPqMI9RE",
-        "Document No": "FNC-AIMEXR-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEXR",
-        "Release date": "04-17-2024",
-        "Title": "AIMEXR Mechanical Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAQQJyJ0IZ9R4LX08bW9VuWAdGW8A4sYU1vLO2s9NH5NgU",
-        "Document No": "MEC-AIMEXR-002E0.pdf"
-    },
-    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXTR;NXTR PM;sFAB-D;sFAB-SH;Nexim;FUJI Smart Factory;GPX-CII;GPX-CSII",
         "Release date": "04-17-2024",
@@ -8126,22 +7950,6 @@
         "Title": "The connectors for conveyor motors have been discontinued. When ordering the alternative for the width changing motor, order a harness as a set.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBYFWPoVK8MQ6TtZVx9pu7LAb85MReBbboG48-n4JBMc_k",
         "Document No": "R24018.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEXR",
-        "Release date": "04-17-2024",
-        "Title": "AIMEXR Quick Reference [Preventive Maintenance]",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBAtDn7Ei7HT5h8bklnqR6BAXNgYn9gi7xHBbb5R5xsu7w",
-        "Document No": "REF-AIMEXRMN-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEXR",
-        "Release date": "04-17-2024",
-        "Title": "AIMEXR System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBgJ-ue0l-2QZBsTGkuVWz9AQO7kcL1sT1B0BzpEfjX-KE",
-        "Document No": "SYS-AIMEXR-002E0.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -8825,14 +8633,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "GPX-CII;GPX-CSII;GPX-CL",
-        "Release date": "02-07-2024",
-        "Title": "GPX-CII/GPX-CSII/GPX-CL System Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDeZUZjfmlKSYnB6z6srvFUAda9drlbxyuBDLdPl2vX38U",
-        "Document No": "SYS-GPXC2-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "NXT III;NXT IIIc;NXT II;NXT IIc;NXT;AIM",
         "Release date": "02-07-2024",
         "Title": "GL Head Instruction Manual",
@@ -8878,14 +8678,6 @@
         "Title": "Electrical Schematic (GPX-CII Automatic Backup Pin)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAcfEZR3942RbRO0SIi5hDzATni85Nb77CkECk2AXbSOyo",
         "Document No": "K1HRBA121200.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "GPX-CII;GPX-CSII;GPX-CL",
-        "Release date": "01-31-2024",
-        "Title": "GPX-CII/GPX-CSII/GPX-CL Mechanical Reference",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD-HGjbhgKrSb9WxIUe9F0EAWGfXXGeokJOHf44-H-qg_8",
-        "Document No": "MEC-GPXC2-004E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -9102,14 +8894,6 @@
         "Title": "NXTR Quick Reference [Basic Operation]",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDcoaBWpwaWT4KcaEjvUPXgAb564Qc1ly0SvC0jE30cXcI",
         "Document No": "REF-NXTROP-002E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "12-27-2023",
-        "Title": "Auto Head Cleaner-R Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAmNJJbqtOeQYDJJhk1UQC1AV9iCfMxTRaxmDLU65G5ka4",
-        "Document No": "INS-AHCR-006E1.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -9446,14 +9230,6 @@
         "Title": "NXT On-Machine PAM Measurement Procedure",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCNq4wda6GdTpmE5__tAqNlAe16hJ1r3eN6uhKN5Q6OtQ8",
         "Document No": "NXT_On-Machine_PAM_Measurement_Procedure_R27a.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "12-06-2023",
-        "Title": "Advanced feeder stand Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAleRkyFSlqRqBXOL8TsgixAdfrUrE2yEq2cBFx9CuXZvI",
-        "Document No": "INS-AFS-003E0.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -10598,14 +10374,6 @@
         "Title": "Panel Height Detection Function Type 2 Operation Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDOy6Bz_2BSSJv7GsW6hbHRATm2lNyCQrjnmRGI74meLqA",
         "Document No": "Panel Height Detection Function Type 2 Operation Manual_R10a.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "05-10-2023",
-        "Title": "Auto Head Cleaner Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAN-BwCsQ4jRZJZJSTrCbTmAfZ2fWCC8JfqquCBPQrm8bI",
-        "Document No": "INS-HDCLN-013E1.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -14006,14 +13774,6 @@
         "Title": "Fuji Software Upgrade Report (Nexim V2.3.0)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQA1wm2N05u8RL0Qdo6vwCP6AfFxaIrkoqh1x9dpnVuSXN8",
         "Document No": "TV2021-0176.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Unit",
-        "Release date": "06-02-2021",
-        "Title": "Auto Head Cleaner-R Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDeBY10w0DsSJIlLaek_u0WAc_HCr9b9TAlG9ci-lsC54A",
-        "Document No": "INS-AHCR-003E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
@@ -19070,14 +18830,6 @@
         "Title": "NPI Support Instruction Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCFUPVcCsQJR6d3Nd_RbxV7Ae6D8_s8PQu33Ggr_pynnQo",
         "Document No": "INS-NPI-005E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;XPF;XP;CP",
-        "Release date": "04-01-2018",
-        "Title": "Auto Nozzle Cleaner II Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBnjxJZh_sMRoxzr_DRh0TtATIO5VSxLjUgQRG36vXiuv4",
-        "Document No": "INS-NZLCL2-001E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
