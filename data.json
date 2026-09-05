@@ -1,6 +1,38 @@
 [
     {
         "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "09-05-2026",
+        "Title": "5805_DualLineJobTransfer_Patch",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQACU-Ykgn-gS6C0qA2lJmAAAfoXnj2pL_tTu6GO0eYnC2M",
+        "Document No": "5805_DualLineJobTransfer(V1.0.0)_Patch.zip"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-05-2026",
+        "Title": "NXTR Long Line Job Transmission OpereationManual_Rev02",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCfWkMUjIUhSpkjIrzewxhFAT882oRqoGDNiQzdTnXe3lA",
+        "Document No": "NXTR Long Line Job Transmission OpereationManual_Rev02.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "09-05-2026",
+        "Title": "InsertOrderCopyTool",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCI0is4apxPRK9-ECU2QKpuAcJifoOdG3RiLifdipvR5w4",
+        "Document No": "5806_InsertOrderCopyTool_Patch.zip"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-05-2026",
+        "Title": "Nozzle impact load measurement manual(1)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAilsULJjEBToOMu9tEUMxMAcWJ_ayNdA23kpx2l1MityM",
+        "Document No": "Nozzle impact load measurement manual(1).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "08-27-2026",
         "Title": "There are cases in which production information cannot be acquired from a line consisting solely of NXTR, NXTR PM, and AIMEXR machines",
