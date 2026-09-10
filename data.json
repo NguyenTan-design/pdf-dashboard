@@ -1,5 +1,53 @@
 [
     {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "09-10-2026",
+        "Title": "Compatibility information for CPU boards, servo boards, and vision processing boards.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBLD8zXhHAmQb6tAlkbMtJmAdQitT9tTHXtuJ1o5ClcJfE",
+        "Document No": "R25031-2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "09-10-2026",
+        "Title": "Compatibility information for CPU boards, servo boards, and vision processing boards.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBJ1PBlEB3YTIroaDaRxk1OATMPyHmOav2AXjsJ2uJmyTk",
+        "Document No": "R25031-2_A2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "09-10-2026",
+        "Title": "Compatibility information for CPU boards, servo boards, and vision processing boards.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBhqUt6Z95BQZLGLOoK8TI2AXYkkqe8ECUj6Crx2vVYdU0",
+        "Document No": "R25031-2_A1.pdf"
+    },
+    {
+        "Category": "D-1.Manuals",
+        "TYPE": "Nexim",
+        "Release date": "09-10-2026",
+        "Title": "Nexim Setup Manual",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBxqfnWvP5cRo0G-os_LuzpAc0vTa-2FSH2O68rgCLDRyg",
+        "Document No": "SET-NEXIM-024E0.pdf"
+    },
+    {
+        "Category": "F-2.Specifications",
+        "TYPE": "Nexim",
+        "Release date": "09-08-2026",
+        "Title": "Integrated Production System NEXIM Specifications",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD2SuT4kgIEQpt4U55xO8P3AQM_hffzoV3V9kSmo30lkUI",
+        "Document No": "CNT-NEXIM-24E.pdf"
+    },
+    {
+        "Category": "TRAINING TEXT",
+        "TYPE": "NXTR",
+        "Release date": "09-08-2026",
+        "Title": "RH02 Head Repair Training Text for Service Engineers",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC8zSTl2743TZSoZcP_feZJARADLCdAZKslhsOsvuv6s_g",
+        "Document No": "RH02 Head Repair Training Text_2.0E.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "NXTR",
         "Release date": "09-05-2026",
@@ -32,12 +80,132 @@
         "Document No": "Nozzle impact load measurement manual(1).pdf"
     },
     {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-04-2026",
+        "Title": "Recovery methods for when 3A22 errors (Encoder data alarm) occur",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCpX95GHPrRRrPkD2ri7xl9ARoQ-I68_w8DOEmV_y1NY1g",
+        "Document No": "T26005-1_A2.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-04-2026",
+        "Title": "Recovery methods for when 3A22 errors (Encoder data alarm) occur",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBptKv7RAVoTIA-heNE8oOHAQzDAuKtRm8F1IQqQ8nWaos",
+        "Document No": "T26005-1.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-04-2026",
+        "Title": "Recovery methods for when 3A22 errors (Encoder data alarm) occur",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDr7W1GA6hbTYGb2hckZj4YAUaPgp7wfFvDCAE8BpvX0GE",
+        "Document No": "T26005-1_A1.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-04-2026",
+        "Title": "Recovery methods for when 3A22 errors (Encoder data alarm) occur",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQANyYzgbd8ORaEaqT1xDghIARbfqpaoZPSV7LMPVe4KMrg",
+        "Document No": "T26005-1_A3.pdf"
+    },
+    {
         "Category": "TRAINING TEXT",
         "TYPE": "GPX",
         "Release date": "09-03-2026",
         "Title": "Cố định IP của camera",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQALvEMuDfdLToadawYcbyegAe3ZtuAgisLpatV4rilR1H0",
         "Document No": "相机网口固定IP设定.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "09-01-2026",
+        "Title": "The shape data history is lost after the job database is updated in the PostgreSQL environment.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCMRqag1qCJQoUI07ahfKH6AaAs7UkER61nwzgp1PBKb-E",
+        "Document No": "SN2026-1089.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "NXTR",
+        "Release date": "09-01-2026",
+        "Title": "This report explains the characteristics of high dielectric constant capacitors and the measurement condition settings for the LCR check unit 2",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQClkZ5OvGZdQY1uljh8_6yKARwDBcAltJwCoZNkY86I27k",
+        "Document No": "R26045.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC46a3lWl5hS50V8914UxS-AUmfX9ljsV77wqNqPAEL_NM",
+        "Document No": "R26023-1 A2.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "Unit",
+        "Release date": "08-28-2026",
+        "Title": "The drawing number of the communication relay board for the Auto Head Cleaner-R has been changed due to discontinuation (ConfigROM discontinuation). Accordingly, the following table shows the compatibility between Auto Head Cleaner-R units and software versions.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBFuFIfkoEOQLzhwt551P3HAdH9D1v98J4fs0_FMZKbUk8",
+        "Document No": "R26048.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "08-28-2026",
+        "Title": "There are certain combinations of RH20 heads and tray adapters for the tray feeder-L that cannot be used.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDMKFqj0C1_SppscN2mRfHnAQIqea7TbWd8PrI0b5wx0dU",
+        "Document No": "SN2026-1069.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAhTxD5jvEuTILQykXD2dlTAV9d-OE0jFZs4Z79gCGS9ug",
+        "Document No": "R26023-1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAmiZvcsZw1SY5fTCKWPV2VAYd0bU23GGt8pq333TLBEJs",
+        "Document No": "R26023-1 A3.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBibx4PJY8rRoE_DEVoiCNQARAKQE9dQ9jOvhwyEOoA4_s",
+        "Document No": "R26023-1 A1.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDsXYrn4j93T7ceMd-1Kc47AWdHETV-5btqEPD2yBu2aBc",
+        "Document No": "R26023-1 A5.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAvqr0XiQrFR4k4shD-jLlyAWpYjSa5MMEgNnVn_Jws_Bg",
+        "Document No": "R26023-1 A6.pdf"
+    },
+    {
+        "Category": "A-2.Rep News",
+        "TYPE": "GPX_C;GPX_CS;GPX_CL;",
+        "Release date": "08-28-2026",
+        "Title": "This report provides information on the parts required when changing to a CPU unit with Windows 11.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB4MInVlF7cQKm7u59Wg9ZdAWq01-JAb3zbSsP2i7wFmEg",
+        "Document No": "R26023-1 A4.pdf"
     },
     {
         "Category": "C-3.Software Notice",
@@ -334,14 +502,6 @@
         "Title": "The shape of the resin rails on tray drawers has been changed.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBEsoiRVIBiQ70q0XS3UBiIAZlcm6eE1qflO4jHEdA3a5g",
         "Document No": "R26033.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "Nexim",
-        "Release date": "07-19-2026",
-        "Title": "Integrated Production System NEXIM Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAwxLmb7hgbSIGW9h3iw-t0Ad8YTipSLbZzY1VOuReKp4Y",
-        "Document No": "CNT-NEXIM-23E.pdf"
     },
     {
         "Category": "E-6.Troubleshooting",
@@ -2755,14 +2915,6 @@
         "Category": "D-1.Manuals",
         "TYPE": "Nexim",
         "Release date": "01-19-2026",
-        "Title": "Nexim Setup Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB4WttAZ1RXTJqbgaTF3RVYAf1K69LpBekHgR0CkQk1-PM",
-        "Document No": "SET-NEXIM-023E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Nexim",
-        "Release date": "01-19-2026",
         "Title": "Nexim Camera Stand Setup Manual",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDjIoLQaNNjQbC8v69EN0NSAS2bUJ2klci72psHJOguE4Q",
         "Document No": "SET-NMCAM-008E0.pdf"
@@ -4259,14 +4411,6 @@
         "Category": "F-2.Specifications",
         "TYPE": "NXTR",
         "Release date": "09-24-2025",
-        "Title": "NXTR Machine Specifications A model / S model",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAl5ix-aL6pSIDKHUlNOk7xAZvAz7-PzpZ2belids9HHio",
-        "Document No": "CNT-NXTRA-09E.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "NXTR",
-        "Release date": "09-24-2025",
         "Title": "NXTR Machine Specifications S model",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDz-UfZYTJpR4S8kTYXWy6RARP8DYxG5lBvoO_Hto27vuI",
         "Document No": "CNT-NXTRS-18E.pdf"
@@ -4358,14 +4502,6 @@
         "Title": "Attach a sponge in the gap of the parts camera to prevent parts from dropping inside the parts camera and causing it to malfunction. This report provides information on materials and the assembling procedure.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBailAgwyqtT7yWcYvQOhRDAfvv4i79BD8WQzZ-ndqxrM0",
         "Document No": "R25078_A1.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "Feeder",
-        "Release date": "09-10-2025",
-        "Title": "Intelligent Feeder Inspection Jig with Vision Processing Instruction Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBlrv8CKRfGSqRajBKkf8F9AQRqkbfbgaCk9bFkULr34zI",
-        "Document No": "QD067-38a.pdf"
     },
     {
         "Category": "A-2.Rep News",
