@@ -32,6 +32,14 @@
         "Document No": "Nozzle impact load measurement manual(1).pdf"
     },
     {
+        "Category": "TRAINING TEXT",
+        "TYPE": "GPX",
+        "Release date": "09-03-2026",
+        "Title": "Cố định IP của camera",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQALvEMuDfdLToadawYcbyegAe3ZtuAgisLpatV4rilR1H0",
+        "Document No": "相机网口固定IP设定.pdf"
+    },
+    {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
         "Release date": "08-27-2026",
@@ -2705,14 +2713,6 @@
     },
     {
         "Category": "D-1.Manuals",
-        "TYPE": "NXTR PM",
-        "Release date": "01-19-2026",
-        "Title": "NXTR PM Programming Manual",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAMyoTiJlgTSLuM04J1tG3xAVBEoxCGAus5XJQbTUQ6_Cs",
-        "Document No": "PRG-NXTRP-009E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
         "TYPE": "NXT III;NXT IIIc;NXT II;NXT IIc",
         "Release date": "01-19-2026",
         "Title": "NXT Series Programming Manual for Nexim",
@@ -2814,14 +2814,6 @@
         "Title": "NXT III, NXT IIIc System Reference",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCLfCeP5XP8Tbc_6ZBKXbpUAbupKCBui5A-mGxFtS4lXPk",
         "Document No": "SYS-NXT3c-028E0.pdf"
-    },
-    {
-        "Category": "D-1.Manuals",
-        "TYPE": "NXTR",
-        "Release date": "01-19-2026",
-        "Title": "NXTR PM System Reference ",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBMQjcOOsoeQJ_SLSHQg65yATl1jonESwLzkf-Qk3VtYMA",
-        "Document No": "SYS-NXTRP-013E0.pdf"
     },
     {
         "Category": "D-1.Manuals",
