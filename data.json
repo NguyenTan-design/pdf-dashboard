@@ -1,5 +1,13 @@
 [
     {
+        "Category": "MINI PDF",
+        "TYPE": "KNOWLEDGE",
+        "Release date": "09-14-2026",
+        "Title": "Monthly_Knowledge_Report_August_2026_Agent",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBTImGhkJ3zRqarkgpGR6vMAU-U4f7V-8uJX5pVG6ZSRMg",
+        "Document No": "Monthly_Knowledge_Report_August_2026_Agent.pdf"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "NXTR",
         "Release date": "09-10-2026",
@@ -1592,14 +1600,6 @@
         "Document No": "5329_PatchReport_E.pdf"
     },
     {
-        "Category": "C-3.Software Notice",
-        "TYPE": "NEXIM",
-        "Release date": "05-12-2026",
-        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U",
-        "Document No": "4994_V3.0.0_Plan_Patch.zip"
-    },
-    {
         "Category": "TRAINING TEXT",
         "TYPE": "UNIT",
         "Release date": "05-02-2026",
@@ -2486,6 +2486,14 @@
         "Title": "Information on the ending of support for wireless handy terminals (Kit Handy)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAp4Bqjuk1QTL6zWvkjQbm_AZ5uxS6aAnZhm0wUdgCVknw",
         "Document No": "T26002.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "02-04-2026",
+        "Title": "An error may occur when jobs exported in V2.9.100 are attempted to be imported into a higher version of Nexim.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQDrW9rwH9TFQo-N5oNoi7gkATCvlbvwUnDsgn1Hamzq05U",
+        "Document No": "4994_V3.0.0_Plan_Patch.zip"
     },
     {
         "Category": "A-2.Rep News",
@@ -3890,14 +3898,6 @@
     {
         "Category": "C-3.Software Notice",
         "TYPE": "Nexim",
-        "Release date": "11-26-2025",
-        "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCn7izXmVIyQLPrF1XeG7A3AWVen8w_CYSGuObjSF0HViA",
-        "Document No": "4331_V3.0.0_Plan_Patch.zip"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "Nexim",
         "Release date": "11-19-2025",
         "Title": "There were cases in which power cannot be supplied to feeders if Smart Setup Station or offline changeover power unit is used.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCPTKx4klImSJMIj2dph9F1AcjyLVcuq9AvoIT36CrWRzA",
@@ -4078,22 +4078,6 @@
         "Title": "The machine top cover may be deformed if the surface temperature exceeds 90 degrees C. When the machine is exposed to direct sunlight, use cardboard for the machine top cover to block direct sunlight.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAT7o8akaX3Tp7cfAERPsNPAV47fupWJ3rRXj46CWBgOvA",
         "Document No": "R25095.pdf"
-    },
-    {
-        "Category": "C-2.Version History",
-        "TYPE": "AIMEXR",
-        "Release date": "10-27-2025",
-        "Title": "Version History (AIMEXR V1.50)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC09xpx8ShuSocrDzoxpHWiAdyrekC5CrVE4EmO7kOj9Ck",
-        "Document No": "TV2025-0829.pdf"
-    },
-    {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "AIMEXR",
-        "Release date": "10-27-2025",
-        "Title": "Fuji Software Upgrade Report (AIMEXR V1.50)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB67-LQL36qTazACXH3ckDLAX1PCcyvEg76IA4hOkG25Kk",
-        "Document No": "TV2025-0472.pdf"
     },
     {
         "Category": "E-7.Field Engineer's Documents",
@@ -4364,6 +4348,22 @@
         "TYPE": "Nexim",
         "Release date": "10-03-2025",
         "Title": "Fuji Software Upgrade Report (Nexim V3.1.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC09xpx8ShuSocrDzoxpHWiAdyrekC5CrVE4EmO7kOj9Ck",
+        "Document No": "TV2025-0829.pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "Nexim",
+        "Release date": "10-03-2025",
+        "Title": "Fuji Software Upgrade history (Nexim V3.1.100)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB67-LQL36qTazACXH3ckDLAX1PCcyvEg76IA4hOkG25Kk",
+        "Document No": "TV2025-0472.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "10-03-2025",
+        "Title": "Fuji Software Upgrade Report (Nexim V3.1.100)",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCPJdtgocf-RpiQ2XlB_zlfAQ0TEJ_AkNMKOxodRXs4P2k",
         "Document No": "ImportantInformation_E(Nexim 3.1.100).pdf"
     },
@@ -4502,6 +4502,94 @@
         "Title": "Attach a sponge in the gap of the parts camera to prevent parts from dropping inside the parts camera and causing it to malfunction. This report provides information on materials and the assembling procedure.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBailAgwyqtT7yWcYvQOhRDAfvv4i79BD8WQzZ-ndqxrM0",
         "Document No": "R25078_A1.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Continuing production while skipping holders",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDpKPD0jJRbS5Xsfk8ad1kCAbC2Fdged4GaSeS0Qm1_9VE",
+        "Document No": "NXTR_Continuing production while skipping holders.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Checking the contact of parts on panels",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBVV3uRGineQpNuV-87NtovAdf3KyK_Dt2KWAns6XTQO8Q",
+        "Document No": "NXTR_Checking the contact of parts on panels.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Placing parts based on the panel height",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAXcogtib8xSLAqnUP-kqyXAabe9U3qdZFDlGmgXXPbKU0",
+        "Document No": "NXTR_Placing parts based on the panel height.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Replacing error-prone nozzles with spare",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAA3NpjoUKUQqCzW8lOdaSpAVcnpcY27g7cQOCSYGVahsc",
+        "Document No": "NXTR_Replacing error-prone nozzles with spare.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR-LCR setting",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAAjGg2MsVFQqET6xoRTw-BASJTnlvgmfL0fIroHDsD8bQ",
+        "Document No": "NXTR-LCR setting.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Placing parts at a specified pressure",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDeghHxwXutTK6-PAwWlwzeAZtpE0w0SuN56OxScsSdutE",
+        "Document No": "NXTR_Placing parts at a specified pressure.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTRA_Acquiring traceability of parts using 2D codes on packages",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCsNh1NtMxoTr-gG9qsCuUUAfBYwRbKXod6AM7UjMQVGdg",
+        "Document No": "NXTRA_Acquiring traceability of parts using 2D codes on packages.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Preventing excessive loads on parts caused by errors in operation of nozzle tips",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCGmRgWcFjfQ4fBeBBOmfg2AWKMLaMWcjOUOnmVnxz8ihQ",
+        "Document No": "NXTR_Preventing excessive loads on parts caused by errors in operation of nozzle tips.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Checking whether the parts are correctly inserted",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDH2rkKi6QYQJTG8RVMO5nTAUVjrCcjEx3NN7FkmsAbXc8",
+        "Document No": "NXTR_Checking whether the parts are correctly inserted.pdf"
+    },
+    {
+        "Category": "D-2.Operation Manuals",
+        "TYPE": "NXTR",
+        "Release date": "09-16-2025",
+        "Title": "NXTR_Acquiring traceability of parts using 2D codes on the top and bottom part",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQD3cEwhw67ITZXcpPd_8gbwASNPPaQq0qqiYydC9q0-Kfc",
+        "Document No": "NXTR_Acquiring traceability of parts using 2D codes on the top and bottom part.pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "Nexim",
+        "Release date": "09-10-2025",
+        "Title": "8A842041 errors sometimes occur when a machine is restarted after the system layout was updated.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQCn7izXmVIyQLPrF1XeG7A3AWVen8w_CYSGuObjSF0HViA",
+        "Document No": "4331_V3.0.0_Plan_Patch.zip"
     },
     {
         "Category": "A-2.Rep News",
@@ -4838,14 +4926,6 @@
         "Title": "Restrictions when using Windows 11 24H2 on LCU computers",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBXkLZYRsQQQ47AEUjIaGI6AWVvoI0F0rTREOXubZTZupI",
         "Document No": "SN2025-1004.pdf"
-    },
-    {
-        "Category": "C-3.Software Notice",
-        "TYPE": "NXTR",
-        "Release date": "09-03-2025",
-        "Title": "Errors sometimes occur when vision processing tests are performed in on-machine editing, even when the vision processing results during production were normal.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAJsxuM4qoCQ5nAaQMw8NWJAdtXLY_D3qGwuJgj2yVWoIw",
-        "Document No": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10.zip"
     },
     {
         "Category": "MINI PDF",
@@ -5368,22 +5448,6 @@
         "Document No": "T24021-1_A3.pdf"
     },
     {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "07-09-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCuuFjK5hZRSocd-6F2mt_uAcmjl_2A4fW3Osj8XYHcF3E",
-        "Document No": "ImportantInformation_E.pdf"
-    },
-    {
-        "Category": "C-1.Upgrade Reports",
-        "TYPE": "Nexim",
-        "Release date": "07-09-2025",
-        "Title": "Fuji Software Upgrade Report (Nexim V3.1.0)",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAKXP5NFx1QRI9-kc4JW6ZLAWYOKTBZCMe_gsk_H-Kc79A",
-        "Document No": "Restrictions_E.pdf"
-    },
-    {
         "Category": "MINI PDF",
         "TYPE": "NXTR",
         "Release date": "07-01-2025",
@@ -5590,6 +5654,14 @@
         "Title": "TURN ON - OFF KPO FUNCTION IN GPX.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:x:/g/personal/tan_fuji-smt_com_sg/IQB_fvNrmuOzSqQvKOJcXortAUk0aYbg6y651wtKVTfb-Tw",
         "Document No": "TURN ON - OFF KPO FUNCTION IN GPX.xlsx"
+    },
+    {
+        "Category": "NOTE",
+        "TYPE": "NXTR",
+        "Release date": "05-26-2025",
+        "Title": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10(Patch vá lỗi k check được visition 18 khi on-machine edit)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAJsxuM4qoCQ5nAaQMw8NWJAdtXLY_D3qGwuJgj2yVWoIw",
+        "Document No": "0439_LCUPatch_NXTR_OnMcEdit_VisionTest_forV2.10.zip"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -10040,30 +10112,6 @@
         "Document No": "NeximDatabaseStructure_V2.7.0_forVerificationDB_EN.pdf"
     },
     {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.5.0_forTraceabilityDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC07HnZgapCQ4b8kg-o2o7cARBMNsURdQwxY9UoaJ7lssc",
-        "Document No": "NeximDatabaseStructure_V2.5.0_forTraceabilityDB_EN.pdf"
-    },
-    {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.5.0_forVerificationDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDctnHEjD4LRbbe6ETx57_HAVQHl84ogsbnPGXEwWeTxEU",
-        "Document No": "NeximDatabaseStructure_V2.5.0_forVerificationDB_EN.pdf"
-    },
-    {
-        "Category": "A-5.FSF, SECS/GEM Technical Materials",
-        "TYPE": "DATABASE",
-        "Release date": "08-23-2023",
-        "Title": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgp0HgbfySTorPmwlsulLnATzmyOYLoQSQpLRXKld4O4s",
-        "Document No": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN.pdf"
-    },
-    {
         "Category": "E-7.Field Engineer's Documents",
         "TYPE": "AIMEX III;AIMEX IIIc",
         "Release date": "08-02-2023",
@@ -11920,6 +11968,14 @@
         "Document No": "R22036_A1.pdf"
     },
     {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Fuji Flexa",
+        "Release date": "07-22-2022",
+        "Title": "Fuji Software Upgrade Report(Fuji Flexa V6.29.0)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCuuFjK5hZRSocd-6F2mt_uAcmjl_2A4fW3Osj8XYHcF3E",
+        "Document No": "ImportantInformation_E.pdf"
+    },
+    {
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "Nexim",
         "Release date": "07-22-2022",
@@ -12256,6 +12312,22 @@
         "Document No": "TV2022-0122.pdf"
     },
     {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "DATABASE",
+        "Release date": "05-18-2022",
+        "Title": "Nexim Database Structure_for Traceability DB",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQC07HnZgapCQ4b8kg-o2o7cARBMNsURdQwxY9UoaJ7lssc",
+        "Document No": "NeximDatabaseStructure_V2.5.0_forTraceabilityDB_EN.pdf"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "DATABASE",
+        "Release date": "05-18-2022",
+        "Title": "Nexim Database Structure_for Verification DB",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDctnHEjD4LRbbe6ETx57_HAVQHl84ogsbnPGXEwWeTxEU",
+        "Document No": "NeximDatabaseStructure_V2.5.0_forVerificationDB_EN.pdf"
+    },
+    {
         "Category": "A-2.Rep News",
         "TYPE": "AIMEX;NXT II;NXT IIc;NXT;NXTP;XPF;XP;AIM;Unit;GPX-HD",
         "Release date": "05-18-2022",
@@ -12382,6 +12454,14 @@
         "Title": "Linear axis adjustment software (AIMEX) V3.10 has been released.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBPSfLFPdb8QqqOGjVp09MxActlDm0Yc691SSyiVgWwdW8",
         "Document No": "R22027.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "Nexim",
+        "Release date": "04-18-2022",
+        "Title": "Fuji Software Upgrade Report (Nexim V2.5.0)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAKXP5NFx1QRI9-kc4JW6ZLAWYOKTBZCMe_gsk_H-Kc79A",
+        "Document No": "Restrictions_E.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
@@ -14899,6 +14979,14 @@
         "Category": "A-5.FSF, SECS/GEM Technical Materials",
         "TYPE": "Nexim",
         "Release date": "11-24-2020",
+        "Title": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDgp0HgbfySTorPmwlsulLnATzmyOYLoQSQpLRXKld4O4s",
+        "Document No": "NeximDatabaseStructure_V2.2.0_forTraceabilityDB_EN.pdf"
+    },
+    {
+        "Category": "A-5.FSF, SECS/GEM Technical Materials",
+        "TYPE": "Nexim",
+        "Release date": "11-24-2020",
         "Title": "NeximDatabaseStructure_V2.2.0_forVerificationDB_EN",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCprVHlRhdTQIWhPlukR17SAZ0NTP90xZT2Ciudg9iGeRo",
         "Document No": "NeximDatabaseStructure_V2.2.0_forVerificationDB_EN.pdf"
@@ -16054,14 +16142,6 @@
         "Title": "The recommended interval for cleaning station type brush units.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDJT74vD8GHRKTWbUYlDZtQAZozzZtrOowwy2rrCB0PkXc",
         "Document No": "T20007.pdf"
-    },
-    {
-        "Category": "A-1.Tech Reports",
-        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Nexim;sTower II;XP;AIM;GPX-CII;GPX-CSII;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
-        "Release date": "03-11-2020",
-        "Title": "Do not perform port scans on Fuji systems (equipment and computers) while producing.",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxfJ0VG6MYSZS3n94a0h1PAYxL4TXHFczurT_8ymFbdis",
-        "Document No": "T20008.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
@@ -29406,6 +29486,14 @@
         "Title": "The Fuji Intelligent Feeder Manual has been revised.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBthKfYV_bmTJMSy-oWLwCmAe-aeSE4QkJT3n-SPuBE6Gs",
         "Document No": "R07094.pdf"
+    },
+    {
+        "Category": "A-1.Tech Reports",
+        "TYPE": "AIMEX;AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc;NXT;NXTR;NXTR PM;NXT-H;NXT-Hw;GPX;NXTP;sFAB-D;sFAB-SH;sFAB-a;XPF;Fuji Flexa;Fujitrax;Feeder;Nexim;FUJI Smart Factory;sTower II;XP;AIM;CP;F4G;FIP;Fuji Cam;GL;MCS;NP;QP;GPX-CII;GPX-CSII;Unit;GPX-HD;GPX-C;GPX-CS;GPX-CL;sFAB50",
+        "Release date": "04-25-2007",
+        "Title": "The Fuji technical information website can now be viewed in simplified Chinese.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCxfJ0VG6MYSZS3n94a0h1PAYxL4TXHFczurT_8ymFbdis",
+        "Document No": "T20008.pdf"
     },
     {
         "Category": "A-1.Tech Reports",
