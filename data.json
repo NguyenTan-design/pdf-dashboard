@@ -1,5 +1,37 @@
 [
     {
+        "Category": "F-2.Specifications",
+        "TYPE": "Nexim",
+        "Release date": "09-22-2026",
+        "Title": "LCR Check Specifications",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDqTKmAnwU4SLITmr9t8hUyAfig2ZTMrKnefJ7l5bwNo4o",
+        "Document No": "CNT-LCR-13E.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-22-2026",
+        "Title": "NXTR_V2.DMc_VerUpRep_EN",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCMpHqlHMy5QoBzCAmIEseJAXLePxvfHd3YD9-h0yfD5tk",
+        "Document No": "NXTR_V2.DMc_VerUpRep_EN.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-22-2026",
+        "Title": "NXTR_V2.DMe_VerUpRep_EN",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQB3bmd_wD9tRazw7IlcPWBWAT9BSHYbUH17H-jaoUp2cqs",
+        "Document No": "NXTR_V2.DMb_VerUpRep_EN.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-22-2026",
+        "Title": "NXTR_V2.DMb_VerUpRep_EN",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAHH95ignD0Rr-gD81G4KDdAfoUDVBf2OckH_xyX_osw9M",
+        "Document No": "NXTR_V2.DMe_VerUpRep_EN.pdf"
+    },
+    {
         "Category": "MINI PDF",
         "TYPE": "KNOWLEDGE",
         "Release date": "09-14-2026",
@@ -3222,14 +3254,6 @@
         "Title": "To improve productivity of the Z-axis motors used in RH20 heads, the electromotive force (EMF) value (individual motor output difference) support has been changed from selecting appropriate products by manufacturers to machine application compensation.",
         "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAuJH4nVeuNQ49fI9W3Q6WGAee5x9tQ94zZAFl4ikVzOrc",
         "Document No": "R25111.pdf"
-    },
-    {
-        "Category": "F-2.Specifications",
-        "TYPE": "AIMEX III;AIMEX IIIc;AIMEX II;AIMEX IIS;NXT III;NXT IIIc;NXT II;NXT IIc",
-        "Release date": "01-07-2026",
-        "Title": "LCR Check Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQAlTanst1DtS6HahI8MyO_vAaQCR4DT2i-kA9KqdLW_Yk8",
-        "Document No": "CNT-LCR-12E.pdf"
     },
     {
         "Category": "D-2.Operation Manuals",
