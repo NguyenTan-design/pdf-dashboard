@@ -1,11 +1,51 @@
 [
     {
-        "Category": "F-2.Specifications",
-        "TYPE": "Nexim",
-        "Release date": "09-22-2026",
-        "Title": "LCR Check Specifications",
-        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDqTKmAnwU4SLITmr9t8hUyAfig2ZTMrKnefJ7l5bwNo4o",
-        "Document No": "CNT-LCR-13E.pdf"
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "10-02-2026",
+        "Title": "Service Pack 11 for correcting problems that have occurred after the release of LCU V2.35 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:u:/g/personal/tan_fuji-smt_com_sg/IQAQnIvwBsDNQ4_JdejrUNjjAdX3AeFfbX2pPXC0v7r_Row",
+        "Document No": "0995_LCUPatch_V2.35_SP11.zip"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "10-02-2026",
+        "Title": "Service Pack 11 for correcting problems that have occurred after the release of LCU V2.35 is released.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQBNeRmv3LKQTIT1KSZmoRQrAYhCGH7HgqrmfRJ1nw9NRzs",
+        "Document No": "SN2026-0804(A).pdf"
+    },
+    {
+        "Category": "C-3.Software Notice",
+        "TYPE": "NXTR",
+        "Release date": "10-02-2026",
+        "Title": "2D18 errors or 1907 (sub error code: D02E) errors occur when the START button was pushed.",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQDlqm0sDdEqTa7ifm_pBF0ZAfPIv4sNXNcFFAhv3aqym9I",
+        "Document No": "SN2026-1215.pdf"
+    },
+    {
+        "Category": "C-2.Version History",
+        "TYPE": "NXTR",
+        "Release date": "09-30-2026",
+        "Title": "Fuji Software Upgrade History (NXTR V2.36)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCkULTlArdzSbXv4Pb0LTuWAfFI47GsVNYpxJQLtz7ukhg",
+        "Document No": "TV2026-1086_History.pdf"
+    },
+    {
+        "Category": "C-1.Upgrade Reports",
+        "TYPE": "NXTR",
+        "Release date": "09-30-2026",
+        "Title": "Fuji Software Upgrade Report (NXTR V2.36)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCRp71djgBORZS7qOeTxLRPAeDfksRQrqHGulmeQj0qaVE",
+        "Document No": "TV2026-1086.pdf"
+    },
+    {
+        "Category": "E-6.Troubleshooting",
+        "TYPE": "NXTR",
+        "Release date": "09-24-2026",
+        "Title": "LCU troubleshooting (Analysis)",
+        "LINK": "https://fujimachineasia-my.sharepoint.com/:b:/g/personal/tan_fuji-smt_com_sg/IQCc3IzRkdbaRLCCYNy7Y3g2Aese2zUnOVn6Ma_2HLr7oRA",
+        "Document No": "S2609-1.0E.pdf"
     },
     {
         "Category": "C-1.Upgrade Reports",
