@@ -131,8 +131,15 @@ th:nth-child(9),td:nth-child(9){width:8%;white-space:nowrap;text-align:center;}
 
 th:nth-child(10),td:nth-child(10){width:6%;white-space:nowrap;text-align:center;}
 
-/* Ẩn LINK1/2/3 cho user */
-.hide-for-user{display:none !important;}
+/* LOGIC HIỂN THỊ LINK1/2/3:
+   - MẶC ĐỊNH: hiện (dành cho MASTER)
+   - Khi table có class .user-view → ẨN hoàn toàn LINK1/2/3 */
+
+table.user-view .col-link1,
+table.user-view .col-link2,
+table.user-view .col-link3{
+  display:none !important;
+}
 
 table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:8%;}
 table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:10%;}
@@ -616,9 +623,9 @@ table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:12%;}
 <th>TYPE</th>
 <th>DATE</th>
 <th>NOTE</th>
-<th class="col-link1 hide-for-user">LINK1</th>
-<th class="col-link2 hide-for-user">LINK2</th>
-<th class="col-link3 hide-for-user">LINK3</th>
+<th class="col-link1">LINK1</th>
+<th class="col-link2">LINK2</th>
+<th class="col-link3">LINK3</th>
 <th>ACTION</th>
 </tr>
 </thead>
@@ -698,6 +705,10 @@ let noteFilterActive = false;
 
 let currentPage = 1;
 let linkStore = {};
+
+/* ✅ Lưu tạm trạng thái NOTE đang chờ server xác nhận.
+   Khi render, ưu tiên giá trị ở đây để tránh race condition. */
+let pendingNotes = {};
 
 /* =========================
   CACHE DOM
@@ -858,7 +869,9 @@ document.getElementById('mainApp').style.display = 'block';
 userInfoEl.innerHTML =
 '👤 <strong>' + currentUser.username + '</strong> (' + currentUser.role + ')';
 
-/* Ẩn LINK1/2/3 với user */
+/* Điều khiển hiển thị LINK1/2/3 dựa trên ROLE
+   - MASTER: KHÔNG thêm class user-view → LINK1/2/3 HIỆN
+   - user  : THÊM class user-view → LINK1/2/3 ẨN hoàn toàn */
 if(currentUser.role === 'MASTER'){
   pdfTable.classList.remove('user-view');
 }else{
@@ -962,10 +975,17 @@ const matchDocument =
 documentKeyword === '' ||
 String(item["Document No"] || '').toLowerCase().includes(documentKeyword);
 
+/* ✅ NOTE filter: ưu tiên pendingNotes nếu có (trạng thái mới nhất user vừa chọn) */
 let matchNote = true;
 if(noteFilterActive){
-const stored = linkStore[docKey] || {};
-matchNote = stored.note === true;
+  let noteState;
+  if(Object.prototype.hasOwnProperty.call(pendingNotes, docKey)){
+    noteState = pendingNotes[docKey];
+  }else{
+    const stored = linkStore[docKey] || {};
+    noteState = stored.note === true;
+  }
+  matchNote = noteState === true;
 }
 
 return matchCategory && matchType && matchKeyword && matchDocument && matchNote;
@@ -1007,7 +1027,15 @@ const docKey = String(item["Document No"] || '').trim();
 
 const stored = linkStore[docKey] || {};
 
-const noteChecked = stored.note ? 'checked' : '';
+/* ✅ Ưu tiên pendingNotes nếu có (tránh race condition khi vừa tích) */
+let noteState;
+if(Object.prototype.hasOwnProperty.call(pendingNotes, docKey)){
+  noteState = pendingNotes[docKey];
+}else{
+  noteState = stored.note === true;
+}
+
+const noteChecked = noteState ? 'checked' : '';
 const link1 = stored.link1 || '';
 const link2 = stored.link2 || '';
 const link3 = stored.link3 || '';
@@ -1042,9 +1070,9 @@ row.innerHTML = `
 <td title="${type}">${type}</td>
 <td>${releaseDate}</td>
 <td>${noteHtml}</td>
-<td class="col-link1 hide-for-user">${link1Html}</td>
-<td class="col-link2 hide-for-user">${link2Html}</td>
-<td class="col-link3 hide-for-user">${link3Html}</td>
+<td class="col-link1">${link1Html}</td>
+<td class="col-link2">${link2Html}</td>
+<td class="col-link3">${link3Html}</td>
 <td>
 <a class="action-btn" href="${escapeAttr(link)}"
    target="_blank" rel="noopener noreferrer">Open</a>
@@ -1288,6 +1316,7 @@ renderTable();
 
 /* =========================
   SAVE LINK STORE
+  - Trả về Promise để caller catch được lỗi
 ========================= */
 
 async function saveLinkStore(docKey){
@@ -1295,7 +1324,7 @@ async function saveLinkStore(docKey){
 if(!currentUser) return;
 
 try{
-await fetch(API_BASE + '/links', {
+const res = await fetch(API_BASE + '/links', {
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 body: JSON.stringify({
@@ -1305,8 +1334,14 @@ docKey: docKey,
 data: linkStore[docKey] || {}
 })
 });
+
+if(!res.ok){
+throw new Error('Server trả về ' + res.status);
+}
+
 }catch(err){
 console.warn('Save link failed:', err);
+throw err;
 }
 
 }
@@ -1356,19 +1391,33 @@ function openLinked(el){
 
 /* =========================
   NOTE TOGGLE
+  - Cập nhật local NGAY, ghi pendingNotes
+  - Gửi server async, xóa pending khi xong
 ========================= */
 
 async function toggleNote(docKey, checked){
 
 if(!currentUser || currentUser.role !== 'MASTER') return;
 
+/* Bước 1: Cập nhật local NGAY LẬP TỨC */
 if(!linkStore[docKey]) linkStore[docKey] = {};
 linkStore[docKey].note = checked;
 
-await saveLinkStore(docKey);
+/* Bước 2: Đánh dấu pending để renderTable biết trạng thái mới nhất */
+pendingNotes[docKey] = checked;
+
+/* Bước 3: Gửi lên server (không await để UI mượt) */
+saveLinkStore(docKey).then(() => {
+  /* Khi server xác nhận xong, xóa pending — từ giờ đọc từ linkStore */
+  delete pendingNotes[docKey];
+}).catch(err => {
+  console.warn('Save note failed:', err);
+  /* Nếu lỗi, vẫn giữ pending để user thấy trạng thái họ vừa chọn */
+});
 
 logAction('TOGGLE_NOTE', docKey + ' note=' + checked);
 
+/* Bước 4: Nếu đang bật NOTE filter → re-render */
 if(noteFilterActive){
   applyFilters();
 }
@@ -1388,11 +1437,7 @@ function toggleNoteFilter(){
 }
 
 /* =========================
-  ✅ DELETE — verify password ở BACKEND
-  1. Overlay lớp 1: nhập mật khẩu
-  2. Gửi mật khẩu lên /delete → server verify
-  3. Nếu server OK → mở overlay lớp 2 cảnh báo
-  4. Xác nhận → gọi /delete lần 2 (kèm password) → xóa
+  DELETE — verify password ở BACKEND
 ========================= */
 
 function deleteDocument(docKey){
@@ -1428,8 +1473,6 @@ function deleteDocument(docKey){
 
 }
 
-/* ✅ Gửi mật khẩu lên BACKEND để verify */
-
 async function verifyDeletePassword(docKey){
 
   const input = document.getElementById('deletePasswordInput');
@@ -1455,7 +1498,7 @@ async function verifyDeletePassword(docKey){
         role: currentUser.role,
         docKey: docKey,
         password: pwd,
-        verifyOnly: true   /* ✅ chỉ verify, chưa xóa thật */
+        verifyOnly: true
       })
     });
 
@@ -1468,7 +1511,6 @@ async function verifyDeletePassword(docKey){
       return;
     }
 
-    /* ✅ Mật khẩu đúng → qua lớp 2 */
     closeConfirm(1);
     proceedConfirm2(docKey, pwd);
 
@@ -1523,7 +1565,6 @@ async function doDeleteDocument(docKey, verifiedPwd){
         role: currentUser.role,
         docKey: docKey,
         password: verifiedPwd
-        /* verifyOnly mặc định false → server thực hiện xóa */
       })
     });
 
@@ -1534,7 +1575,6 @@ async function doDeleteDocument(docKey, verifiedPwd){
       return;
     }
 
-    /* ✅ Xóa thành công → cập nhật UI */
     allData = allData.filter(x =>
       String(x["Document No"] || '').trim() !== docKey
     );
