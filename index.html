@@ -214,6 +214,71 @@ from{width:0;}
 to{width:100%;}
 }
 
+/* TITLE CELL (rút gọn + bấm để xem đầy đủ) */
+.title-text{
+display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
+overflow:hidden;cursor:pointer;
+}
+
+/* SELECT RECORD (chạm giữ 1.5s) */
+tbody tr.selected,
+tbody tr.selected:hover,
+tbody tr.selected:nth-child(even){background:#c9ced4 !important;}
+
+body.pressing-row tbody tr{
+-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+}
+
+#selectionBar{
+position:fixed;left:50%;bottom:16px;transform:translateX(-50%);
+z-index:99990;display:none;align-items:center;gap:10px;
+background:#1f2937;color:#fff;font-size:13px;
+padding:8px 10px 8px 14px;border-radius:999px;
+box-shadow:0 4px 14px rgba(0,0,0,0.3);
+}
+#selectionBar.show{display:flex;}
+#selectionBar button{
+border:none;border-radius:999px;background:#6b7280;color:#fff;
+padding:5px 12px;font-size:12px;font-weight:bold;cursor:pointer;
+}
+#selectionBar button:hover{background:#4b5563;}
+
+/* TITLE POPUP */
+.title-popup-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,0.4);display:flex;
+justify-content:center;align-items:center;z-index:9999999;
+}
+.title-popup-box{
+background:#fff;border-radius:10px;padding:14px 16px;
+width:88%;max-width:420px;max-height:70vh;overflow:auto;
+box-shadow:0 8px 24px rgba(0,0,0,0.3);
+}
+.title-popup-head{
+display:flex;justify-content:space-between;align-items:center;
+margin-bottom:8px;font-size:12px;font-weight:bold;color:#0078d4;
+}
+.title-popup-close{
+border:none;background:none;cursor:pointer;font-size:16px;
+color:#666;padding:0 4px;
+}
+.title-popup-text{
+font-size:14px;line-height:1.5;color:#222;
+white-space:pre-wrap;word-break:break-word;
+}
+.title-popup-docno{
+margin-top:10px;font-size:12px;font-weight:bold;color:red;word-break:break-all;
+}
+
+/* CONFIRM LIST (xóa nhiều record) */
+.confirm-list{
+max-height:140px;overflow:auto;text-align:left;
+border:1px solid #dbe2ea;border-radius:8px;
+padding:6px 10px;margin-bottom:14px;
+font-size:12px;font-weight:bold;color:#dc3545;word-break:break-all;
+}
+.confirm-note{font-size:12px;color:#666;margin:-6px 0 14px;}
+
 /* LINK BUTTON */
 .link-btn{
 background:#ffc107;border:none;cursor:pointer;font-size:14px;
@@ -893,6 +958,7 @@ sessionStorage.removeItem('dm_token');
 currentUser = null;
 userToken = null;
 document.body.classList.remove('role-master');
+clearSelection();
 document.getElementById('mainApp').style.display = 'none';
 document.getElementById('loginOverlay').style.display = 'flex';
 document.getElementById('loginUser').value = '';
@@ -958,7 +1024,7 @@ renderTable();
 
 async function loadData(){
 try{
-const res = await fetch('data.json');
+const res = await fetch('data.json', { cache: 'no-cache' });
 allData = await res.json();
 }catch(error){
 console.error('JSON Load Error:', error);
@@ -1107,6 +1173,8 @@ const link2 = stored.link2 || '';
 const link3 = stored.link3 || '';
 
 const row = document.createElement('tr');
+row.dataset.dockey = docKey;
+if(selectedKeys.has(docKey)) row.classList.add('selected');
 
 let docNoHtml = documentNo;
 if(isMaster){
@@ -1129,7 +1197,7 @@ const link2Html = renderLinkCell(docKey, 2, link2, isMaster);
 const link3Html = renderLinkCell(docKey, 3, link3, isMaster);
 
 row.innerHTML = `
-<td title="${title}">${title}</td>
+<td class="title-cell" title="${title}"><div class="title-text">${title}</div></td>
 <td title="${documentNo}">${docNoHtml}</td>
 <td title="${category}">${category}</td>
 <td title="${type}">${type}</td>
@@ -1539,9 +1607,197 @@ function toggleNoteFilter(){
   DELETE — verify password ở BACKEND
 ========================= */
 
-/* ---------- 🗑️: CONFIRM → PASSWORD → DELETE (logic từ bản cũ) ---------- */
+/* =========================
+  SELECT RECORD (MASTER)
+  - Chạm giữ 1 dòng > 1.5s → select (nền xám)
+  - Chạm nhanh vào dòng đã select → bỏ select
+========================= */
 
-let deleteTargetKey = null;
+const SELECT_HOLD_MS = 1500;
+const SELECT_MOVE_TOLERANCE = 10;
+
+let selectedKeys = new Set();
+let selPressTimer = null;
+let selPressRow = null;
+let selPressStart = null;
+let suppressNextClick = false;
+
+const selectionBar = document.createElement('div');
+selectionBar.id = 'selectionBar';
+selectionBar.innerHTML =
+  '<span id="selectionCount"></span>' +
+  '<button type="button" onclick="clearSelection()">Bỏ chọn tất cả</button>';
+document.body.appendChild(selectionBar);
+
+function updateSelectionBar(){
+  const n = selectedKeys.size;
+  if(n > 0){
+    document.getElementById('selectionCount').textContent = '☑ Đã chọn ' + n + ' record';
+    selectionBar.classList.add('show');
+  }else{
+    selectionBar.classList.remove('show');
+  }
+}
+
+function clearSelection(){
+  selectedKeys.clear();
+  if(pdfBody){
+    pdfBody.querySelectorAll('tr.selected').forEach(tr => tr.classList.remove('selected'));
+  }
+  updateSelectionBar();
+}
+
+function isInteractiveTarget(t){
+  return !!(t && t.closest &&
+    t.closest('button, a, input, select, textarea, label, .linked-open-btn'));
+}
+
+function cancelSelPress(){
+  if(selPressTimer){
+    clearTimeout(selPressTimer);
+    selPressTimer = null;
+  }
+  selPressRow = null;
+  selPressStart = null;
+  document.body.classList.remove('pressing-row');
+}
+
+pdfBody.addEventListener('pointerdown', (e) => {
+
+  suppressNextClick = false;
+
+  if(!currentUser || currentUser.role !== 'MASTER') return;
+  if(e.pointerType === 'mouse' && e.button !== 0) return;
+  if(isInteractiveTarget(e.target)) return;
+
+  const tr = e.target.closest('tr');
+  if(!tr || !tr.dataset.dockey) return;
+
+  /* Dòng đã select: không cần giữ nữa (chạm nhanh để bỏ select) */
+  if(tr.classList.contains('selected')) return;
+
+  cancelSelPress();
+
+  selPressRow = tr;
+  selPressStart = { x: e.clientX, y: e.clientY };
+  document.body.classList.add('pressing-row');
+
+  selPressTimer = setTimeout(() => {
+    const row = selPressRow;
+    cancelSelPress();
+    if(!row) return;
+
+    selectedKeys.add(row.dataset.dockey);
+    row.classList.add('selected');
+    updateSelectionBar();
+
+    /* Tránh click ngay sau khi nhả tay làm bỏ select / mở popup */
+    suppressNextClick = true;
+
+    if(navigator.vibrate){
+      try{ navigator.vibrate(30); }catch(err){}
+    }
+  }, SELECT_HOLD_MS);
+});
+
+pdfBody.addEventListener('pointermove', (e) => {
+  if(!selPressRow || !selPressStart) return;
+  const dx = e.clientX - selPressStart.x;
+  const dy = e.clientY - selPressStart.y;
+  if(Math.hypot(dx, dy) > SELECT_MOVE_TOLERANCE) cancelSelPress();
+});
+
+['pointerup', 'pointercancel', 'pointerleave'].forEach(evt => {
+  pdfBody.addEventListener(evt, cancelSelPress);
+});
+
+/* Chặn menu chuột phải / menu giữ lâu của trình duyệt trên mobile (MASTER) */
+pdfBody.addEventListener('contextmenu', (e) => {
+  if(currentUser && currentUser.role === 'MASTER' && !isInteractiveTarget(e.target)){
+    e.preventDefault();
+  }
+});
+
+pdfBody.addEventListener('click', (e) => {
+
+  if(suppressNextClick){
+    suppressNextClick = false;
+    return;
+  }
+
+  if(isInteractiveTarget(e.target)) return;
+
+  const tr = e.target.closest('tr');
+  if(!tr) return;
+
+  /* Chạm nhanh vào dòng đang select → bỏ select */
+  if(tr.classList.contains('selected')){
+    selectedKeys.delete(tr.dataset.dockey);
+    tr.classList.remove('selected');
+    updateSelectionBar();
+    return;
+  }
+
+  /* Chạm vào ô TITLE → popup nội dung đầy đủ */
+  const titleCell = e.target.closest('td.title-cell');
+  if(titleCell){
+    const textEl = titleCell.querySelector('.title-text');
+    openTitlePopup(
+      textEl ? textEl.textContent : titleCell.textContent,
+      tr.dataset.dockey || ''
+    );
+  }
+});
+
+/* =========================
+  TITLE POPUP
+========================= */
+
+function closeTitlePopup(){
+  const el = document.getElementById('titlePopup');
+  if(el) el.remove();
+  document.removeEventListener('keydown', onTitlePopupKey);
+}
+
+function onTitlePopupKey(e){
+  if(e.key === 'Escape') closeTitlePopup();
+}
+
+function openTitlePopup(fullTitle, docNo){
+
+  closeTitlePopup();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'title-popup-overlay';
+  overlay.id = 'titlePopup';
+
+  const box = document.createElement('div');
+  box.className = 'title-popup-box';
+  box.innerHTML =
+    '<div class="title-popup-head"><span>TITLE</span>' +
+    '<button type="button" class="title-popup-close" title="Đóng">✕</button></div>' +
+    '<div class="title-popup-text">' + escapeHTML(fullTitle) + '</div>' +
+    (docNo ? '<div class="title-popup-docno">' + escapeHTML(docNo) + '</div>' : '');
+
+  overlay.appendChild(box);
+
+  overlay.addEventListener('click', (e) => {
+    if(e.target === overlay) closeTitlePopup();
+  });
+  box.querySelector('.title-popup-close').addEventListener('click', closeTitlePopup);
+
+  document.body.appendChild(overlay);
+  document.addEventListener('keydown', onTitlePopupKey);
+}
+
+/* =========================
+  🗑️ DELETE (1 hoặc NHIỀU record)
+  - Nếu record bấm 🗑️ đang được select → xóa TẤT CẢ record đang select
+  - Ngược lại → chỉ xóa record đó
+  - Server: commit xóa khỏi data.json + xóa NOTE/LINK trong KV
+========================= */
+
+let deleteTargetKeys = [];
 let deleteBusy = false;
 
 function handleDeleteButtonClick(event, docKey){
@@ -1550,8 +1806,15 @@ function handleDeleteButtonClick(event, docKey){
 
   if(!currentUser || currentUser.role !== 'MASTER') return;
 
-  deleteTargetKey = docKey;
+  if(selectedKeys.has(docKey)){
+    deleteTargetKeys = Array.from(selectedKeys);
+  }else{
+    deleteTargetKeys = [docKey];
+  }
+
   closeConfirm(1);
+
+  const n = deleteTargetKeys.length;
 
   const overlay = document.createElement('div');
   overlay.className = 'confirm-overlay';
@@ -1559,9 +1822,24 @@ function handleDeleteButtonClick(event, docKey){
 
   const box = document.createElement('div');
   box.className = 'confirm-box';
+
+  let content;
+  if(n === 1){
+    content =
+      '<p>Are you sure to delete ?<br>' +
+      '<span class="confirm-doc">' + escapeHTML(deleteTargetKeys[0]) + '</span></p>';
+  }else{
+    content =
+      '<p>Are you sure to delete <b>' + n + ' records</b> ?</p>' +
+      '<div class="confirm-list">' +
+      deleteTargetKeys.map(k => '<div>' + escapeHTML(k) + '</div>').join('') +
+      '</div>';
+  }
+
   box.innerHTML =
-    '<p>Are you sure to delete ?<br>' +
-    '<span class="confirm-doc">' + escapeHTML(docKey) + '</span></p>' +
+    content +
+    '<div class="confirm-note">Record sẽ bị xóa khỏi data.json (commit lên GitHub) ' +
+    'cùng dữ liệu NOTE / LINK đã lưu.</div>' +
     '<div class="confirm-actions">' +
     '<button class="btn-delete" onclick="proceedToDeletePassword()">OK</button>' +
     '<button class="btn-cancel" onclick="closeDeleteConfirm()">Cancel</button>' +
@@ -1572,13 +1850,15 @@ function handleDeleteButtonClick(event, docKey){
 }
 
 function closeDeleteConfirm(){
-  deleteTargetKey = null;
+  deleteTargetKeys = [];
   closeConfirm(1);
 }
 
 function proceedToDeletePassword(){
   closeConfirm(1);
   closeConfirm(2);
+
+  const n = deleteTargetKeys.length;
 
   const overlay = document.createElement('div');
   overlay.className = 'confirm-overlay';
@@ -1588,8 +1868,11 @@ function proceedToDeletePassword(){
   const box = document.createElement('div');
   box.className = 'confirm-box';
   box.innerHTML =
-    '<p>Nhập password để xác nhận xóa record:<br>' +
-    '<span class="confirm-doc">' + escapeHTML(deleteTargetKey || '') + '</span></p>' +
+    '<p>Nhập password để xác nhận xóa ' +
+    (n === 1
+      ? 'record:<br><span class="confirm-doc">' + escapeHTML(deleteTargetKeys[0] || '') + '</span>'
+      : '<b>' + n + ' records</b>:') +
+    '</p>' +
     '<input type="password" id="deletePasswordInput" placeholder="Password" ' +
     'autocomplete="off" onkeydown="if(event.key===\'Enter\') confirmDeletePassword()">' +
     '<div class="pwd-error" id="pwdError"></div>' +
@@ -1608,8 +1891,8 @@ function proceedToDeletePassword(){
 }
 
 function cancelDeletePassword(){
-  deleteTargetKey = null;
-  deleteBusy = false;
+  if(deleteBusy) return;
+  deleteTargetKeys = [];
   closeConfirm(2);
 }
 
@@ -1624,9 +1907,9 @@ async function confirmDeletePassword(){
 
   const input = document.getElementById('deletePasswordInput');
   const errEl = document.getElementById('pwdError');
-  const docKey = deleteTargetKey;
+  const docKeys = deleteTargetKeys.slice();
 
-  if(!input || !docKey) return;
+  if(!input || docKeys.length === 0) return;
 
   const pwd = input.value;
   if(!pwd){
@@ -1636,7 +1919,10 @@ async function confirmDeletePassword(){
 
   deleteBusy = true;
   input.disabled = true;
-  if(errEl) errEl.textContent = '';
+  if(errEl){
+    errEl.style.color = '#666';
+    errEl.textContent = '⏳ Đang xóa & commit data.json...';
+  }
 
   try{
     const res = await fetch(API_BASE + '/delete', {
@@ -1645,7 +1931,7 @@ async function confirmDeletePassword(){
       body: JSON.stringify({
         username: currentUser.username,
         role: currentUser.role,
-        docKey: docKey,
+        docKeys: docKeys,
         password: pwd
       })
     });
@@ -1658,41 +1944,65 @@ async function confirmDeletePassword(){
       input.disabled = false;
       input.value = '';
       input.focus();
-      if(errEl) errEl.textContent = 'Sai password, vui lòng thử lại.';
+      if(errEl){
+        errEl.style.color = '';
+        errEl.textContent = 'Sai password, vui lòng thử lại.';
+      }
       deleteBusy = false;
       return;
     }
 
     if(!res.ok || !data.success){
       closeConfirm(2);
-      deleteTargetKey = null;
+      deleteTargetKeys = [];
       deleteBusy = false;
       alert('❌ Xóa thất bại: ' + (data.message || 'Lỗi không xác định.'));
       return;
     }
 
     closeConfirm(2);
-    deleteTargetKey = null;
+    deleteTargetKeys = [];
     deleteBusy = false;
 
-    allData = allData.filter(x =>
-      String(x["Document No"] || '').trim() !== docKey
-    );
-    delete linkStore[docKey];
-    delete pendingNotes[docKey];
+    /* Cập nhật giao diện */
+    const removed = new Set(docKeys);
 
-    logAction('DELETE_DOC', docKey);
+    allData = allData.filter(x =>
+      !removed.has(String(x["Document No"] || '').trim())
+    );
+
+    docKeys.forEach(k => {
+      delete linkStore[k];
+      delete pendingNotes[k];
+      selectedKeys.delete(k);
+    });
+    updateSelectionBar();
 
     const page = currentPage;
     applyFilters();
-    currentPage = page;
+    const totalPages = Math.max(1, Math.ceil(filteredData.length / ROWS_PER_PAGE));
+    currentPage = Math.min(page, totalPages);
     renderTable();
+
+    /* Cảnh báo nếu có record không tìm thấy trong data.json / KV lỗi */
+    const warns = [];
+    if(data.notFound && data.notFound.length){
+      warns.push('Không tìm thấy trong data.json (chưa bị xóa khỏi file): ' +
+        data.notFound.join(', '));
+    }
+    if(data.kvError){
+      warns.push('Đã xóa khỏi data.json nhưng lỗi khi xóa NOTE/LINK trong KV: ' + data.kvError);
+    }
+    if(warns.length) alert('⚠️ ' + warns.join('\n'));
 
   }catch(err){
     console.error(err);
     input.disabled = false;
     deleteBusy = false;
-    if(errEl) errEl.textContent = 'Lỗi kết nối server khi xóa.';
+    if(errEl){
+      errEl.style.color = '';
+      errEl.textContent = 'Lỗi kết nối server khi xóa.';
+    }
   }
 }
 
@@ -1959,44 +2269,118 @@ function closeWizard(){
   wizardState = null;
 }
 
+let wizardSaving = false;
+
 async function wizardSave(){
+
+  if(wizardSaving) return;
 
   collectWizardStep();
 
   const item = wizardState.item;
+  const oldKey = wizardState.docKey;
   const v = wizardState.values;
+  const newKey = String(v.documentNo || '').trim();
 
-  item["Title"] = v.title;
-  item["Document No"] = v.documentNo;
-  item["Category"] = v.category;
-  item["TYPE"] = v.type;
-  item["Release date"] = v.date;
+  if(!newKey){
+    alert('❌ Document No không được để trống.');
+    return;
+  }
 
-  logAction('EDIT_DOC',
-    wizardState.docKey + ' → Title:' + v.title +
-    ', DocNo:' + v.documentNo +
-    ', Category:' + v.category +
-    ', TYPE:' + v.type +
-    ', Date:' + v.date
-  );
+  /* Document No mới không được trùng record khác (kiểm tra nhanh ở client) */
+  if(newKey !== oldKey){
+    const dup = allData.some(x =>
+      x !== item && String(x["Document No"] || '').trim() === newKey
+    );
+    if(dup){
+      alert('❌ Document No "' + newKey + '" đã tồn tại.');
+      return;
+    }
+  }
 
-  fetch(API_BASE + '/edit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      username: currentUser.username,
-      role: currentUser.role,
-      docKey: wizardState.docKey,
-      newTitle: v.title,
-      newDocNo: v.documentNo,
-      newCategory: v.category,
-      newType: v.type,
-      newDate: v.date
-    })
-  }).catch(err => console.warn(err));
+  wizardSaving = true;
 
-  closeWizard();
-  applyFilters();
+  const saveBtn = document.querySelector('.wizard-actions .btn-save');
+  const saveBtnText = saveBtn ? saveBtn.textContent : '';
+  if(saveBtn){
+    saveBtn.disabled = true;
+    saveBtn.textContent = '⏳ Đang commit...';
+  }
+
+  try{
+    const res = await fetch(API_BASE + '/edit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: currentUser.username,
+        role: currentUser.role,
+        docKey: oldKey,
+        newTitle: v.title,
+        newDocNo: newKey,
+        newCategory: v.category,
+        newType: v.type,
+        newDate: v.date
+      })
+    });
+
+    let data = {};
+    try{ data = await res.json(); }catch(e){}
+
+    if(!res.ok || !data.success){
+      alert('❌ Lưu thất bại: ' + (data.message || 'Lỗi không xác định.'));
+      if(saveBtn){
+        saveBtn.disabled = false;
+        saveBtn.textContent = saveBtnText;
+      }
+      wizardSaving = false;
+      return;
+    }
+
+    /* Server đã commit xong → cập nhật giao diện */
+    item["Title"] = v.title;
+    item["Document No"] = newKey;
+    item["Category"] = v.category;
+    item["TYPE"] = v.type;
+    item["Release date"] = v.date;
+
+    /* Document No đổi → chuyển NOTE/LINK/selection sang key mới (server đã đổi trong KV) */
+    if(newKey !== oldKey){
+      if(Object.prototype.hasOwnProperty.call(linkStore, oldKey)){
+        linkStore[newKey] = linkStore[oldKey];
+        delete linkStore[oldKey];
+      }
+      if(Object.prototype.hasOwnProperty.call(pendingNotes, oldKey)){
+        pendingNotes[newKey] = pendingNotes[oldKey];
+        delete pendingNotes[oldKey];
+      }
+      if(selectedKeys.has(oldKey)){
+        selectedKeys.delete(oldKey);
+        selectedKeys.add(newKey);
+      }
+    }
+
+    wizardSaving = false;
+    closeWizard();
+
+    const page = currentPage;
+    applyFilters();
+    const totalPages = Math.max(1, Math.ceil(filteredData.length / ROWS_PER_PAGE));
+    currentPage = Math.min(page, totalPages);
+    renderTable();
+
+    if(data.kvError){
+      alert('⚠️ Đã lưu vào data.json nhưng lỗi khi chuyển NOTE/LINK trong KV: ' + data.kvError);
+    }
+
+  }catch(err){
+    console.error(err);
+    alert('❌ Lỗi kết nối server khi lưu.');
+    if(saveBtn){
+      saveBtn.disabled = false;
+      saveBtn.textContent = saveBtnText;
+    }
+    wizardSaving = false;
+  }
 
 }
 
