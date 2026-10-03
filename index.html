@@ -5,629 +5,290 @@
 
 <meta charset="UTF-8">
 
-<link
-    rel="icon"
-    type="image/png"
-    href="favicon.png"
->
+<link rel="icon" type="image/png" href="favicon.png">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Document Management</title>
 
 <style>
 
 /* GLOBAL */
-
-*{
-box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
-margin:0;
-padding:12px;
-background:#f4f6f9;
-font-family:Arial, sans-serif;
-color:#333;
-overflow:hidden;
+margin:0;padding:12px;background:#f4f6f9;
+font-family:Arial, sans-serif;color:#333;overflow:hidden;
 }
 
-/* TITLE */
-
-h1{
-margin:0 0 16px;
-text-align:center;
-font-size:34px;
-color:#111;
-}
+h1{margin:0 0 16px;text-align:center;font-size:34px;color:#111;}
 
 /* TOOLBAR */
-
-.top-toolbar{
-
-position:sticky;
-top:0;
-
-z-index:9999;
-
-background:#f4f6f9;
-
-padding-bottom:12px;
-
-}
+.top-toolbar{position:sticky;top:0;z-index:9999;background:#f4f6f9;padding-bottom:12px;}
 
 /* SEARCH */
-
-.search-box{
-
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-
-margin-bottom:12px;
-
-}
+.search-box{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
 
 .search-box input{
-
-flex:1;
-min-width:220px;
-
-padding:12px;
-
-border-radius:10px;
-border:1px solid #d0d7de;
-
-font-size:14px;
-
-background:white;
-
-transition:0.2s;
-
+flex:1;min-width:220px;padding:12px;border-radius:10px;
+border:1px solid #d0d7de;font-size:14px;background:white;transition:0.2s;
 }
 
 .search-box input:focus{
-
-outline:none;
-
-border-color:#0078d4;
-
+outline:none;border-color:#0078d4;
 box-shadow:0 0 0 3px rgba(0,120,212,0.15);
-
 }
 
 /* BUTTONS */
-
-.quick-filter{
-
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-
-}
+.quick-filter{display:flex;flex-wrap:wrap;gap:8px;}
 
 .quick-filter button{
-
-background:#28a745;
-color:white;
-
-border:none;
-
-padding:8px 12px;
-
-border-radius:8px;
-
-cursor:pointer;
-
-font-size:13px;
-font-weight:bold;
-
-transition:0.2s;
-
+background:#28a745;color:white;border:none;padding:8px 12px;
+border-radius:8px;cursor:pointer;font-size:13px;font-weight:bold;transition:0.2s;
 }
 
-.quick-filter button:hover{
+.quick-filter button:hover{transform:translateY(-1px);background:#1f7a33;}
 
-transform:translateY(-1px);
+.quick-filter button.black-btn{background:#111 !important;}
+.quick-filter button.black-btn:hover{background:#000 !important;}
 
-background:#1f7a33;
+.quick-filter button.knowledge-btn{background:#7b1fa2 !important;color:#fff;}
+.quick-filter button.knowledge-btn:hover{background:#5e1480 !important;}
 
-}
+.clear-btn{background:#dc3545 !important;}
+.clear-btn:hover{background:#b52b38 !important;}
 
-/* BLACK BUTTON */
+.logout-btn{background:#555 !important;}
+.logout-btn:hover{background:#333 !important;}
 
-.quick-filter button.black-btn{
-
-background:#111 !important;
-
-}
-
-.quick-filter button.black-btn:hover{
-
-background:#000 !important;
-
-}
-
-/* KNOWLEDGE BUTTON */
-
-.quick-filter button.knowledge-btn{
-
-background:#7b1fa2 !important;
-color:#fff;
-
-}
-
-.quick-filter button.knowledge-btn:hover{
-
-background:#5e1480 !important;
-
-}
-
-/* CLEAR BUTTON */
-
-.clear-btn{
-
-background:#dc3545 !important;
-
-}
-
-.clear-btn:hover{
-
-background:#b52b38 !important;
-
-}
+.note-filter-btn{background:#ff9800 !important;}
+.note-filter-btn:hover{background:#e68900 !important;}
+.note-filter-btn.active{background:#d97706 !important;box-shadow:0 0 0 3px rgba(255,152,0,0.4);}
 
 /* TABLE WRAPPER */
-
 .table-wrapper{
-
-width:100%;
-
-overflow:auto;
-
-height:calc(100vh - 260px);
-
-border-radius:12px;
-
-background:white;
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.08);
-
+width:100%;overflow:auto;height:calc(100vh - 260px);
+border-radius:12px;background:white;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* TABLE */
+table{width:100%;border-collapse:collapse;table-layout:fixed;background:white;}
 
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-table-layout:fixed;
-
-background:white;
-
-}
-
-/* STICKY HEADER */
-
-thead th{
-
-position:sticky;
-
-top:0;
-
-z-index:999;
-
-background:#0078d4;
-
-}
-
-/* HEADER */
+thead th{position:sticky;top:0;z-index:999;background:#0078d4;}
 
 th{
-
-color:white;
-
-text-align:left;
-
-padding:12px;
-
-font-size:14px;
-
-border:1px solid #dbe2ea;
-
-resize:horizontal;
-
-overflow:auto;
-
+color:white;text-align:left;padding:12px;font-size:14px;
+border:1px solid #dbe2ea;resize:horizontal;overflow:auto;
 }
 
-/* CELLS */
+td{padding:12px;vertical-align:top;font-size:14px;border:1px solid #dbe2ea;}
 
-td{
+tbody tr:nth-child(even){background:#fafbfc;}
+tbody tr:hover{background:#eef6ff;}
 
-padding:12px;
+/* COLUMN WIDTHS */
+th:nth-child(1),td:nth-child(1){width:22%;}
+td:nth-child(1){white-space:normal;word-break:break-word;line-height:1.6;font-weight:500;}
 
-vertical-align:top;
-
-font-size:14px;
-
-border:1px solid #dbe2ea;
-
-}
-
-/* ROW */
-
-tbody tr:nth-child(even){
-
-background:#fafbfc;
-
-}
-
-tbody tr:hover{
-
-background:#eef6ff;
-
-}
-
-/* TITLE */
-
-th:nth-child(1),
-td:nth-child(1){
-
-width:30%;
-
-}
-
-td:nth-child(1){
-
-white-space:normal;
-
-word-break:break-word;
-
-line-height:1.6;
-
-font-weight:500;
-
-}
-
-/* DOCUMENT NO */
-
-th:nth-child(2),
+th:nth-child(2),td:nth-child(2){width:18%;}
 td:nth-child(2){
-
-width:30%;
-
+white-space:normal;word-break:break-word;overflow-wrap:anywhere;
+line-height:1.5;font-weight:bold;color:red;
 }
 
-td:nth-child(2){
+th:nth-child(3),td:nth-child(3){width:9%;}
+td:nth-child(3){white-space:normal;word-break:break-word;line-height:1.5;}
 
-white-space:normal;
+th:nth-child(4),td:nth-child(4){width:8%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 
-word-break:break-word;
+th:nth-child(5),td:nth-child(5){width:8%;white-space:nowrap;}
 
-overflow-wrap:anywhere;
+th:nth-child(6),td:nth-child(6){width:5%;text-align:center;white-space:nowrap;}
 
-line-height:1.5;
+th:nth-child(7),td:nth-child(7),
+th:nth-child(8),td:nth-child(8),
+th:nth-child(9),td:nth-child(9){width:8%;white-space:nowrap;text-align:center;}
 
-font-weight:bold;
-
-color:red;
-
-}
-
-/* CATEGORY */
-
-th:nth-child(3),
-td:nth-child(3){
-
-width:10%;
-
-}
-
-td:nth-child(3){
-
-white-space:normal;
-
-word-break:break-word;
-
-line-height:1.5;
-
-}
-
-/* TYPE */
-
-th:nth-child(4),
-td:nth-child(4){
-
-width:10%;
-
-white-space:nowrap;
-
-overflow:hidden;
-
-text-overflow:ellipsis;
-
-}
-
-/* DATE */
-
-th:nth-child(5),
-td:nth-child(5){
-
-width:10%;
-
-white-space:nowrap;
-
-}
-
-/* ACTION */
-
-th:nth-child(6),
-td:nth-child(6){
-
-width:10%;
-
-white-space:nowrap;
-
-text-align:center;
-
-}
+th:nth-child(10),td:nth-child(10){width:6%;white-space:nowrap;text-align:center;}
 
 /* OPEN BUTTON */
-
 .action-btn{
-
-display:inline-block;
-
-background:#0078d4;
-
-color:white;
-
-text-decoration:none;
-
-padding:8px 12px;
-
-border-radius:8px;
-
-font-weight:bold;
-
-transition:0.2s;
-
+display:inline-block;background:#0078d4;color:white;text-decoration:none;
+padding:8px 12px;border-radius:8px;font-weight:bold;transition:0.2s;
 }
 
-.action-btn:hover{
+.action-btn:hover{background:#005ea2;transform:translateY(-1px);}
 
-background:#005ea2;
-
-transform:translateY(-1px);
-
+/* MASTER BUTTONS */
+.master-btn{
+background:none;border:none;cursor:pointer;font-size:16px;
+padding:2px 4px;border-radius:4px;transition:0.2s;
 }
+
+.master-btn:hover{background:#eee;}
+
+/* LINK BUTTON */
+.link-btn{
+background:#ffc107;border:none;cursor:pointer;font-size:14px;
+padding:4px 8px;border-radius:6px;transition:0.2s;
+}
+
+.link-btn:hover{background:#e0a800;}
+
+/* LINKED OPEN BUTTON */
+.linked-open-btn{
+display:inline-block;background:#17a2b8;color:white;text-decoration:none;
+padding:4px 8px;border-radius:6px;font-weight:bold;font-size:11px;
+cursor:pointer;transition:0.2s;user-select:none;
+}
+
+.linked-open-btn:hover{background:#117a8b;}
+
+/* CHECKBOX */
+.note-checkbox{width:18px;height:18px;cursor:pointer;}
+.note-checkbox:disabled{cursor:not-allowed;opacity:0.6;}
+
+/* MODAL */
+.modal-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,0.5);display:flex;justify-content:center;
+align-items:center;z-index:99999;
+}
+
+.modal-box{
+background:white;border-radius:12px;padding:20px;
+max-width:90%;max-height:80%;overflow:auto;min-width:400px;
+box-shadow:0 8px 24px rgba(0,0,0,0.3);
+}
+
+.modal-box h3{margin-top:0;}
+
+.modal-box .modal-item{
+padding:10px;border-bottom:1px solid #eee;cursor:pointer;transition:0.15s;
+}
+
+.modal-box .modal-item:hover{background:#eef6ff;}
+
+.modal-box .modal-item.selected{background:#d4edda;font-weight:bold;}
+
+.modal-actions{margin-top:12px;text-align:right;}
+
+.modal-actions button{
+padding:8px 16px;margin-left:8px;border:none;
+border-radius:6px;cursor:pointer;font-weight:bold;
+}
+
+.modal-actions .cancel-btn{background:#dc3545;color:white;}
+.modal-actions .save-btn{background:#28a745;color:white;}
+
+/* LOGIN OVERLAY */
+.login-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:linear-gradient(135deg,#0078d4,#004578);
+display:flex;justify-content:center;align-items:center;z-index:999999;
+}
+
+.login-box{
+background:white;border-radius:16px;padding:32px;
+width:360px;max-width:90%;box-shadow:0 12px 32px rgba(0,0,0,0.4);
+}
+
+.login-box h2{margin:0 0 24px;text-align:center;color:#0078d4;}
+
+.login-box input{
+width:100%;padding:12px;margin-bottom:14px;border-radius:8px;
+border:1px solid #d0d7de;font-size:14px;
+}
+
+.login-box input:focus{
+outline:none;border-color:#0078d4;
+box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+}
+
+.login-box button{
+width:100%;padding:12px;border:none;border-radius:8px;
+background:#0078d4;color:white;font-size:16px;font-weight:bold;
+cursor:pointer;transition:0.2s;
+}
+
+.login-box button:hover{background:#005ea2;}
+
+.login-error{
+color:#dc3545;font-size:13px;text-align:center;
+margin-bottom:10px;min-height:18px;
+}
+
+/* USER INFO */
+.user-info{
+text-align:right;font-size:13px;color:#555;
+margin-bottom:8px;padding:4px 8px;
+}
+
+.user-info strong{color:#0078d4;}
 
 /* MOBILE */
-
 @media(max-width:768px){
 
-body{
-padding:4px;
-margin:0;
-overflow:hidden;
-}
+body{padding:4px;margin:0;overflow:hidden;}
+h1{font-size:20px;margin-bottom:8px;}
+.top-toolbar{padding-bottom:6px;}
 
-h1{
-font-size:20px;
-margin-bottom:8px;
-}
+.search-box{flex-direction:column;gap:6px;}
+.search-box input{width:100%;padding:8px;font-size:11px;}
 
-.top-toolbar{
-padding-bottom:6px;
-}
-
-.search-box{
-flex-direction:column;
-gap:6px;
-}
-
-.search-box input{
-
-width:100%;
-
-padding:8px;
-
-font-size:11px;
-
-}
-
-.quick-filter{
-
-display:flex;
-flex-wrap:wrap;
-gap:4px;
-
-}
-
-.quick-filter button{
-
-padding:4px 6px;
-
-font-size:9px;
-
-border-radius:5px;
-
-}
-
-/* TABLE WRAPPER */
+.quick-filter{display:flex;flex-wrap:wrap;gap:4px;}
+.quick-filter button{padding:4px 6px;font-size:9px;border-radius:5px;}
 
 .table-wrapper{
-
-width:100%;
-
-overflow-x:hidden;
-overflow-y:auto;
-
-height:calc(100vh - 280px);
-
-border-radius:8px;
-
+width:100%;overflow-x:hidden;overflow-y:auto;
+height:calc(100vh - 280px);border-radius:8px;
 }
 
-/* TABLE */
+table{width:100%;min-width:100%;table-layout:fixed;}
 
-table{
+th,td{padding:4px;font-size:8px;vertical-align:top;}
 
-width:100%;
-
-min-width:100%;
-
-table-layout:fixed;
-
+th:nth-child(1),td:nth-child(1){
+width:26%;white-space:normal;word-break:break-word;
+line-height:1.3;font-size:7px;
 }
 
-/* CELL */
-
-th,
-td{
-
-padding:4px;
-
-font-size:8px;
-
-vertical-align:top;
-
+th:nth-child(2),td:nth-child(2){
+width:14%;white-space:normal;word-break:break-word;
+overflow-wrap:anywhere;line-height:1.3;font-size:6px;
+color:red;font-weight:bold;
 }
 
-/* TITLE */
-
-th:nth-child(1),
-td:nth-child(1){
-
-width:40%;
-
-white-space:normal;
-
-word-break:break-word;
-
-line-height:1.3;
-
-font-size:7px;
-
+th:nth-child(3),td:nth-child(3){
+width:10%;white-space:normal;word-break:break-word;
+line-height:1.2;font-size:7px;
 }
 
-/* DOCUMENT NO */
-
-th:nth-child(2),
-td:nth-child(2){
-
-width:16%;
-
-white-space:normal;
-
-word-break:break-word;
-
-overflow-wrap:anywhere;
-
-line-height:1.3;
-
-font-size:5px;
-
-color:red;
-
-font-weight:bold;
-
+th:nth-child(4),td:nth-child(4){
+width:8%;white-space:nowrap;overflow:hidden;
+text-overflow:ellipsis;font-size:7px;
 }
 
-/* CATEGORY */
+th:nth-child(5),td:nth-child(5){width:8%;white-space:nowrap;font-size:7px;}
 
-th:nth-child(3),
-td:nth-child(3){
+th:nth-child(6),td:nth-child(6){width:5%;text-align:center;}
 
-width:14%;
-
-white-space:normal;
-
-word-break:break-word;
-
-line-height:1.2;
-
-font-size:7px;
-
+th:nth-child(7),td:nth-child(7),
+th:nth-child(8),td:nth-child(8),
+th:nth-child(9),td:nth-child(9){
+width:8%;text-align:center;font-size:6px;
 }
 
-/* TYPE */
-
-th:nth-child(4),
-td:nth-child(4){
-
-width:10%;
-
-white-space:nowrap;
-
-overflow:hidden;
-
-text-overflow:ellipsis;
-
-font-size:7px;
-
+th:nth-child(10),td:nth-child(10){
+width:6%;text-align:center;white-space:nowrap;
 }
 
-/* DATE */
+.action-btn{padding:3px 4px;font-size:7px;border-radius:4px;}
+.linked-open-btn{padding:2px 3px;font-size:6px;}
 
-th:nth-child(5),
-td:nth-child(5){
-
-width:10%;
-
-white-space:nowrap;
-
-font-size:7px;
-
-}
-
-/* ACTION */
-
-th:nth-child(6),
-td:nth-child(6){
-
-width:10%;
-
-text-align:center;
-
-white-space:nowrap;
-
-}
-
-/* BUTTON */
-
-.action-btn{
-
-padding:3px 4px;
-
-font-size:7px;
-
-border-radius:4px;
-
-}
-
-/* PAGINATION */
-
-#pagination{
-
-gap:6px !important;
-
-padding:6px 0 !important;
-
-}
-
-#pagination span{
-
-font-size:10px;
-
-}
+#pagination{gap:6px !important;padding:6px 0 !important;}
+#pagination span{font-size:10px;}
 
 }
 
@@ -637,233 +298,94 @@ font-size:10px;
 
 <body>
 
+<!-- LOGIN OVERLAY -->
+<div class="login-overlay" id="loginOverlay">
+<div class="login-box">
+<h2>🔐 Đăng nhập</h2>
+<div class="login-error" id="loginError"></div>
+<input type="text" id="loginUser" placeholder="Tên đăng nhập" autocomplete="username">
+<input type="password" id="loginPass" placeholder="Mật khẩu" autocomplete="current-password">
+<button onclick="doLogin()">Đăng nhập</button>
+</div>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" style="display:none;">
+
 <div class="top-toolbar">
+
+<div class="user-info" id="userInfo"></div>
 
 <h1>Document Management</h1>
 
-<!-- SEARCH -->
-
 <div class="search-box">
-
-<input
-type="text"
-id="searchTitle"
-placeholder="Search Title..."
->
-
-<input
-type="text"
-id="searchDocNo"
-placeholder="Search Document No..."
->
-
+<input type="text" id="searchTitle" placeholder="Search Title...">
+<input type="text" id="searchDocNo" placeholder="Search Document No...">
 </div>
-
-<!-- FILTER BUTTONS -->
 
 <div class="quick-filter">
 
-<button onclick="setCategoryFilter('C-1.Upgrade Reports')">
-Upgrade Reports
-</button>
+<button onclick="setCategoryFilter('C-1.Upgrade Reports')">Upgrade Reports</button>
+<button onclick="setCategoryFilter('C-2.Version History')">Version History</button>
+<button onclick="setCategoryFilter('F-2.Specifications')">Specifications</button>
+<button onclick="setCategoryFilter('A-1.Tech Reports')">Tech Reports</button>
+<button onclick="setCategoryFilter('C-3.Software Notice')">Software Notice</button>
+<button onclick="setCategoryFilter('TRAINING TEXT')">Training</button>
+<button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">FE Documents</button>
+<button onclick="setCategoryFilter('A-2.Rep News')">Rep News</button>
+<button onclick="setCategoryFilter('D-1.Manuals')">Manuals</button>
+<button onclick="setCategoryFilter('E-6.Troubleshooting')">Troubleshooting</button>
+<button onclick="setCategoryFilter('E-4.Electrical Schematics')">Electrical</button>
+<button onclick="setCategoryFilter('E-1.Parts List')">Parts List</button>
+<button onclick="setCategoryFilter('D-2.Operation Manuals')">Operation</button>
+<button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">FSF / GEM</button>
 
-<button onclick="setCategoryFilter('C-2.Version History')">
-Version History
-</button>
+<button class="black-btn" onclick="applyQuickFilter('AIMEXIII')">AIMEXIII</button>
+<button class="black-btn" onclick="applyQuickFilter('NXTR')">NXTR</button>
+<button class="black-btn" onclick="applyQuickFilter('GPX')">GPX</button>
+<button class="black-btn" onclick="applyQuickFilter('Flexa')">Flexa</button>
+<button class="black-btn" onclick="applyQuickFilter('Fujitrax')">Fujitrax</button>
+<button class="black-btn" onclick="applyQuickFilter('Feeder')">Feeder</button>
+<button class="black-btn" onclick="applyQuickFilter('Nexim')">Nexim</button>
+<button class="black-btn" onclick="applyQuickFilter('Unit')">Unit</button>
+<button class="black-btn" onclick="applyQuickFilter('NXTIII')">NXTIII</button>
+<button class="black-btn" onclick="applyQuickFilter('GPX-CS')">GPX-CS</button>
+<button class="black-btn" onclick="applyQuickFilter('GPX-CSII')">GPX-CSII</button>
+<button class="black-btn" onclick="applyQuickFilter('GPX-CL')">GPX-CL</button>
+<button class="black-btn" onclick="applyQuickFilter('GPX-CII')">GPX-CII</button>
+<button class="black-btn" onclick="applyQuickFilter('NXT II')">NXTII</button>
 
-<button onclick="setCategoryFilter('F-2.Specifications')">
-Specifications
-</button>
+<button class="knowledge-btn" onclick="applyQuickFilter('KNOWLEDGE')">KNOWLEDGE</button>
 
-<button onclick="setCategoryFilter('A-1.Tech Reports')">
-Tech Reports
-</button>
+<button class="note-filter-btn" id="noteFilterBtn" onclick="toggleNoteFilter()">📌 NOTE</button>
 
-<button onclick="setCategoryFilter('C-3.Software Notice')">
-Software Notice
-</button>
-
-<button onclick="setCategoryFilter('TRAINING TEXT')">
-Training
-</button>
-
-<button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
-FE Documents
-</button>
-
-<button onclick="setCategoryFilter('A-2.Rep News')">
-Rep News
-</button>
-
-<button onclick="setCategoryFilter('D-1.Manuals')">
-Manuals
-</button>
-
-<button onclick="setCategoryFilter('E-6.Troubleshooting')">
-Troubleshooting
-</button>
-
-<button onclick="setCategoryFilter('E-4.Electrical Schematics')">
-Electrical
-</button>
-
-<button onclick="setCategoryFilter('E-1.Parts List')">
-Parts List
-</button>
-
-<button onclick="setCategoryFilter('D-2.Operation Manuals')">
-Operation
-</button>
-
-<button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
-FSF / GEM
-</button>
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('AIMEXIII')"
->
-AIMEXIII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('NXTR')"
->
-NXTR
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX')"
->
-GPX
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Flexa')"
->
-Flexa
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Fujitrax')"
->
-Fujitrax
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Feeder')"
->
-Feeder
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Nexim')"
->
-Nexim
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('Unit')"
->
-Unit
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('NXTIII')"
->
-NXTIII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CS')"
->
-GPX-CS
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CSII')"
->
-GPX-CSII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CL')"
->
-GPX-CL
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('GPX-CII')"
->
-GPX-CII
-</button>        
-
-<button
-class="black-btn"
-onclick="applyQuickFilter('NXT II')"
->
-NXTII
-</button>        
-
-<button
-class="knowledge-btn"
-onclick="applyQuickFilter('KNOWLEDGE')"
->
-KNOWLEDGE
-</button>
-
-<button
-class="clear-btn"
-onclick="clearFilter()"
->
-CLEAR
-</button>
+<button class="clear-btn" onclick="clearFilter()">CLEAR</button>
+<button class="logout-btn" onclick="doLogout()">LOGOUT</button>
 
 </div>
 
 </div>
 
 <!-- TABLE -->
-
 <div class="table-wrapper">
-
 <table id="pdfTable">
-
 <thead>
-
 <tr>
-
 <th>TITLE</th>
-
 <th>DOCUMENT NO</th>
-
 <th>CATEGORY</th>
-
 <th>TYPE</th>
-
 <th>DATE</th>
-
+<th>NOTE</th>
+<th>LINK1</th>
+<th>LINK2</th>
+<th>LINK3</th>
 <th>ACTION</th>
-
 </tr>
-
 </thead>
-
 <tbody id="pdfBody"></tbody>
-
 </table>
+</div>
 
 </div>
 
@@ -874,6 +396,14 @@ CLEAR
 ========================= */
 
 const ROWS_PER_PAGE = 50;
+const API_BASE = 'https://pdf-dashboard.quoctan91.workers.dev';
+
+/* =========================
+  AUTH STATE
+========================= */
+
+let currentUser = null;
+let userToken = null;
 
 /* =========================
   QUICK FILTER DATA
@@ -881,10 +411,7 @@ const ROWS_PER_PAGE = 50;
 
 let quickFilters = {};
 
-/* LOAD ALL JSON */
-
 Promise.all([
-
 fetch('AIMEXIII.json').then(r => r.json()),
 fetch('NXTR.json').then(r => r.json()),
 fetch('NXTIII.json').then(r => r.json()),
@@ -900,59 +427,17 @@ fetch('GPX-CL.json').then(r => r.json()),
 fetch('GPX-CII.json').then(r => r.json()),
 fetch('NXT II.json').then(r => r.json()),
 fetch('KNOWLEDGE.json').then(r => r.json())
-
 ])
-
-.then(([
-
-aimex3,
-nxtr,
-nxt3,
-gpx,
-flexa,
-fujitrax,
-feeder,
-nexim,
-unit,
-gpxcs,
-gpxcs2,
-gpxcl,
-gpxc2,
-nxt2,
-knowledge
-
-]) => {
-
+.then(([aimex3,nxtr,nxt3,gpx,flexa,fujitrax,feeder,nexim,unit,gpxcs,gpxcs2,gpxcl,gpxc2,nxt2,knowledge]) => {
 quickFilters = {
-
-AIMEXIII : aimex3,
-NXTR : nxtr,
-NXTIII : nxt3,
-GPX : gpx,
-Flexa : flexa,
-Fujitrax : fujitrax,
-Feeder : feeder,
-Nexim : nexim,
-Unit : unit,
-"GPX-CS" : gpxcs,
-"GPX-CSII" : gpxcs2,
-"GPX-CL" : gpxcl,
-"GPX-CII" : gpxc2,
-"NXT II" : nxt2,
-KNOWLEDGE : knowledge
-
+AIMEXIII:aimex3, NXTR:nxtr, NXTIII:nxt3, GPX:gpx,
+Flexa:flexa, Fujitrax:fujitrax, Feeder:feeder, Nexim:nexim,
+Unit:unit, "GPX-CS":gpxcs, "GPX-CSII":gpxcs2,
+"GPX-CL":gpxcl, "GPX-CII":gpxc2, "NXT II":nxt2,
+KNOWLEDGE:knowledge
 };
-
 })
-
-.catch(error => {
-
-console.error(
-'Quick Filter Load Error:',
-error
-);
-
-});
+.catch(error => console.error('Quick Filter Load Error:', error));
 
 /* =========================
   GLOBAL DATA
@@ -963,93 +448,193 @@ let filteredData = [];
 
 let selectedCategory = '';
 let selectedType = '';
+let noteFilterActive = false;
 
 let currentPage = 1;
+
+/* LinkStore của user hiện tại (merge từ server) */
+let linkStore = {};
 
 /* =========================
   CACHE DOM
 ========================= */
 
-const pdfBody =
-document.getElementById('pdfBody');
-
-const searchTitle =
-document.getElementById('searchTitle');
-
-const searchDocNo =
-document.getElementById('searchDocNo');
+const pdfBody = document.getElementById('pdfBody');
+const searchTitle = document.getElementById('searchTitle');
+const searchDocNo = document.getElementById('searchDocNo');
+const userInfoEl = document.getElementById('userInfo');
+const noteFilterBtn = document.getElementById('noteFilterBtn');
 
 /* =========================
   CREATE PAGINATION
 ========================= */
 
-const pagination =
-document.createElement('div');
-
+const pagination = document.createElement('div');
 pagination.id = 'pagination';
-
 pagination.style.cssText = `
-
-display:flex;
-justify-content:flex-end;
-align-items:center;
-gap:10px;
-
-padding:10px 0;
-
-flex-wrap:wrap;
-
+display:flex;justify-content:flex-end;align-items:center;
+gap:10px;padding:10px 0;flex-wrap:wrap;
 `;
 
-const tableWrapper =
-document.querySelector('.table-wrapper');
-
-tableWrapper.parentNode.insertBefore(
-    pagination,
-    tableWrapper
-);
-
 /* =========================
-  LOAD JSON
+  LOGIN
 ========================= */
 
-fetch('data.json')
+async function doLogin(){
 
-.then(response => response.json())
+const username = document.getElementById('loginUser').value.trim();
+const password = document.getElementById('loginPass').value;
+const errorEl = document.getElementById('loginError');
+errorEl.textContent = '';
 
-.then(data => {
+if(!username || !password){
+errorEl.textContent = 'Vui lòng nhập đầy đủ thông tin.';
+return;
+}
 
-allData = data;
-
-filteredData = data;
-
-renderTable();
-
-})
-
-.catch(error => {
-
-console.error(
-'JSON Load Error:',
-error
-);
-
+try{
+const res = await fetch(API_BASE + '/login', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ username, password })
 });
 
+const data = await res.json();
+
+if(!res.ok || !data.success){
+errorEl.textContent = data.message || 'Đăng nhập thất bại.';
+return;
+}
+
+currentUser = { username: data.username, role: data.role };
+userToken = data.token;
+
+sessionStorage.setItem('dm_user', JSON.stringify(currentUser));
+sessionStorage.setItem('dm_token', userToken);
+
+logAction('LOGIN', 'User đăng nhập');
+
+startApp();
+
+}catch(err){
+console.error(err);
+errorEl.textContent = 'Lỗi kết nối server.';
+}
+
+}
+
+function doLogout(){
+logAction('LOGOUT', 'User đăng xuất');
+sessionStorage.removeItem('dm_user');
+sessionStorage.removeItem('dm_token');
+currentUser = null;
+userToken = null;
+document.getElementById('mainApp').style.display = 'none';
+document.getElementById('loginOverlay').style.display = 'flex';
+document.getElementById('loginUser').value = '';
+document.getElementById('loginPass').value = '';
+}
+
 /* =========================
-  ESCAPE HTML
+  LOG ACTION
+========================= */
+
+async function logAction(action, detail){
+try{
+await fetch(API_BASE + '/log', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+username: currentUser ? currentUser.username : 'anonymous',
+role: currentUser ? currentUser.role : 'guest',
+action: action,
+detail: detail || '',
+timestamp: new Date().toISOString()
+})
+});
+}catch(err){
+console.warn('Log failed:', err);
+}
+}
+
+/* =========================
+  START APP
+========================= */
+
+async function startApp(){
+
+document.getElementById('loginOverlay').style.display = 'none';
+document.getElementById('mainApp').style.display = 'block';
+
+userInfoEl.innerHTML =
+'👤 <strong>' + currentUser.username + '</strong> (' + currentUser.role + ')';
+
+await loadData();
+await loadLinkStore();
+
+filteredData = allData;
+renderTable();
+
+}
+
+/* =========================
+  LOAD DATA
+========================= */
+
+async function loadData(){
+try{
+const res = await fetch('data.json');
+allData = await res.json();
+}catch(error){
+console.error('JSON Load Error:', error);
+}
+}
+
+/* =========================
+  LOAD LINK STORE
+  → Mỗi user có 1 file JSON riêng trên KV
+    GET /links?username=<user>
+========================= */
+
+async function loadLinkStore(){
+
+if(!currentUser) return;
+
+try{
+const res = await fetch(
+API_BASE + '/links?username=' +
+encodeURIComponent(currentUser.username)
+);
+
+if(res.ok){
+const data = await res.json();
+linkStore = data || {};
+}else{
+linkStore = {};
+}
+
+}catch(err){
+console.warn('Load links failed:', err);
+linkStore = {};
+}
+
+}
+
+/* =========================
+  ESCAPE
 ========================= */
 
 function escapeHTML(text){
-
 return String(text)
-
 .replace(/&/g, '&amp;')
 .replace(/</g, '&lt;')
 .replace(/>/g, '&gt;')
 .replace(/"/g, '&quot;')
 .replace(/'/g, '&#039;');
+}
 
+function escapeAttr(text){
+return escapeHTML(text);
 }
 
 /* =========================
@@ -1058,71 +643,45 @@ return String(text)
 
 function applyFilters(){
 
-const keyword =
-searchTitle.value
-.trim()
-.toLowerCase();
-
-const documentKeyword =
-searchDocNo.value
-.trim()
-.toLowerCase();
+const keyword = searchTitle.value.trim().toLowerCase();
+const documentKeyword = searchDocNo.value.trim().toLowerCase();
 
 filteredData = allData.filter(item => {
 
-    const matchCategory =
+const docKey = String(item["Document No"] || '').trim();
 
-        selectedCategory === '' ||
+const matchCategory =
+selectedCategory === '' ||
+String(item["Category"] || '').toLowerCase()
+.includes(selectedCategory.toLowerCase());
 
-        String(item["Category"] || '')
-        .toLowerCase()
-        .includes(
-            selectedCategory.toLowerCase()
-        );
+let matchType = true;
+if(selectedType !== ''){
+const targetTypes = quickFilters[selectedType] || [];
+matchType = targetTypes.includes(String(item["TYPE"] || '').trim());
+}
 
-    let matchType = true;
+const matchKeyword =
+keyword === '' ||
+String(item["Title"] || '').toLowerCase().includes(keyword);
 
-    if(selectedType !== ''){
+const matchDocument =
+documentKeyword === '' ||
+String(item["Document No"] || '').toLowerCase().includes(documentKeyword);
 
-        const targetTypes =
-            quickFilters[selectedType] || [];
+/* NOTE filter: chỉ giữ các record có note=true của user hiện tại */
 
-        matchType =
-            targetTypes.includes(
-                String(item["TYPE"] || '').trim()
-            );
+let matchNote = true;
+if(noteFilterActive){
+const stored = linkStore[docKey] || {};
+matchNote = stored.note === true;
+}
 
-    }
-
-    const matchKeyword =
-
-        keyword === '' ||
-
-        String(item["Title"] || '')
-        .toLowerCase()
-        .includes(keyword);
-
-    const matchDocument =
-
-        documentKeyword === '' ||
-
-        String(item["Document No"] || '')
-        .toLowerCase()
-        .includes(documentKeyword);
-
-    return (
-
-        matchCategory &&
-        matchType &&
-        matchKeyword &&
-        matchDocument
-
-    );
+return matchCategory && matchType && matchKeyword && matchDocument && matchNote;
 
 });
 
 currentPage = 1;
-
 renderTable();
 
 }
@@ -1135,89 +694,378 @@ function renderTable(){
 
 pdfBody.innerHTML = '';
 
-const start =
-(currentPage - 1) * ROWS_PER_PAGE;
+const start = (currentPage - 1) * ROWS_PER_PAGE;
+const end = start + ROWS_PER_PAGE;
+const pageData = filteredData.slice(start, end);
+const fragment = document.createDocumentFragment();
 
-const end =
-start + ROWS_PER_PAGE;
-
-const pageData =
-filteredData.slice(start, end);
-
-const fragment =
-document.createDocumentFragment();
+const isMaster = currentUser && currentUser.role === 'MASTER';
 
 for(let i = 0; i < pageData.length; i++){
 
-    const item = pageData[i];
+const item = pageData[i];
 
-    const title =
-    escapeHTML(item["Title"] || '');
+const title = escapeHTML(item["Title"] || '');
+const documentNo = escapeHTML(item["Document No"] || '');
+const category = escapeHTML(item["Category"] || '');
+const type = escapeHTML(item["TYPE"] || '');
+const releaseDate = escapeHTML(item["Release date"] || '');
+const link = item["LINK"] || '#';
 
-    const documentNo =
-    escapeHTML(item["Document No"] || '');
+const docKey = String(item["Document No"] || '').trim();
 
-    const category =
-    escapeHTML(item["Category"] || '');
+/* Lấy dữ liệu liên kết + note của user hiện tại */
 
-    const type =
-    escapeHTML(item["TYPE"] || '');
+const stored = linkStore[docKey] || {};
 
-    const releaseDate =
-    escapeHTML(item["Release date"] || '');
+const noteChecked = stored.note ? 'checked' : '';
+const link1 = stored.link1 || '';
+const link2 = stored.link2 || '';
+const link3 = stored.link3 || '';
 
-    const link =
-    item["LINK"] || '#';
+const row = document.createElement('tr');
 
-    const row =
-    document.createElement('tr');
+/* Document No cell (MASTER có thêm ✏️🗑️) */
 
-    row.innerHTML = `
+let docNoHtml = documentNo;
+if(isMaster){
+docNoHtml +=
+'<br>' +
+'<button class="master-btn" title="Edit" onclick="editDocument(\'' +
+escapeAttr(docKey) + '\')">✏️</button>' +
+'<button class="master-btn" title="Delete" onclick="deleteDocument(\'' +
+escapeAttr(docKey) + '\')">🗑️</button>';
+}
 
-        <td title="${title}">
-            ${title}
-        </td>
+/* NOTE: user thường chỉ xem (disabled), MASTER tích được.
+   → Theo yêu cầu #3: "cột NOTE hiện ra với user" → hiển thị checkbox
+     nhưng disabled cho user thường, MASTER tích được. */
 
-        <td title="${documentNo}">
-            ${documentNo}
-        </td>
+const noteDisabledAttr = isMaster ? '' : ' disabled ';
 
-        <td title="${category}">
-            ${category}
-        </td>
+const noteHtml =
+'<input type="checkbox" class="note-checkbox" ' +
+noteChecked + noteDisabledAttr +
+'onchange="toggleNote(\'' + escapeAttr(docKey) + '\', this.checked)">';
 
-        <td title="${type}">
-            ${type}
-        </td>
+/* Link cells */
 
-        <td>
-            ${releaseDate}
-        </td>
+const link1Html = renderLinkCell(docKey, 1, link1, isMaster);
+const link2Html = renderLinkCell(docKey, 2, link2, isMaster);
+const link3Html = renderLinkCell(docKey, 3, link3, isMaster);
 
-        <td>
+row.innerHTML = `
+<td title="${title}">${title}</td>
+<td title="${documentNo}">${docNoHtml}</td>
+<td title="${category}">${category}</td>
+<td title="${type}">${type}</td>
+<td>${releaseDate}</td>
+<td>${noteHtml}</td>
+<td>${link1Html}</td>
+<td>${link2Html}</td>
+<td>${link3Html}</td>
+<td>
+<a class="action-btn" href="${escapeAttr(link)}"
+   target="_blank" rel="noopener noreferrer">Open</a>
+</td>
+`;
 
-            <a
-                class="action-btn"
-                href="${link}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                Open
-
-            </a>
-
-        </td>
-
-    `;
-
-    fragment.appendChild(row);
+fragment.appendChild(row);
 
 }
 
 pdfBody.appendChild(fragment);
-
 renderPagination();
+
+}
+
+/* =========================
+  RENDER LINK CELL
+========================= */
+
+function renderLinkCell(docKey, slot, linkValue, isMaster){
+
+if(linkValue){
+
+/* Có link → nút Open + long-press 5s để sửa (chỉ MASTER) */
+
+const longPressAttrs = isMaster
+? 'onmousedown="startLongPress(event, this)" ' +
+  'onmouseup="cancelLongPress()" ' +
+  'onmouseleave="cancelLongPress()" ' +
+  'ontouchstart="startLongPress(event, this)" ' +
+  'ontouchend="cancelLongPress()" '
+: '';
+
+return (
+'<span class="linked-open-btn" ' +
+'data-dockey="' + escapeAttr(docKey) + '" ' +
+'data-slot="' + slot + '" ' +
+'data-link="' + escapeAttr(linkValue) + '" ' +
+'onclick="openLinked(this)" ' +
+longPressAttrs +
+'>🔗 Open</span>'
+);
+
+}
+
+if(isMaster){
+return (
+'<button class="link-btn" ' +
+'onclick="openLinkPicker(\'' + escapeAttr(docKey) + '\',' + slot + ')">' +
+'🔗</button>'
+);
+}
+
+return '<span style="color:#aaa;">—</span>';
+
+}
+
+/* =========================
+  LINK PICKER
+========================= */
+
+let pickerTarget = null;
+
+function openLinkPicker(docKey, slot){
+
+pickerTarget = { docKey, slot };
+
+const modal = document.createElement('div');
+modal.className = 'modal-overlay';
+modal.id = 'linkPickerModal';
+
+const box = document.createElement('div');
+box.className = 'modal-box';
+box.innerHTML = '<h3>Chọn liên kết cho LINK' + slot + '</h3>';
+
+const list = document.createElement('div');
+list.style.maxHeight = '400px';
+list.style.overflow = 'auto';
+
+allData.forEach(item => {
+
+const link = item["LINK"] || '';
+if(!link) return;
+
+const docNo = String(item["Document No"] || '').trim();
+const title = String(item["Title"] || '').trim();
+
+const div = document.createElement('div');
+div.className = 'modal-item';
+div.innerHTML =
+'<strong>' + escapeHTML(docNo) + '</strong><br>' +
+'<small>' + escapeHTML(title) + '</small>';
+
+div.onclick = () => {
+applyLink(pickerTarget.docKey, pickerTarget.slot, link);
+closeModal();
+};
+
+list.appendChild(div);
+
+});
+
+box.appendChild(list);
+
+const actions = document.createElement('div');
+actions.className = 'modal-actions';
+
+const cancelBtn = document.createElement('button');
+cancelBtn.className = 'cancel-btn';
+cancelBtn.textContent = 'Hủy';
+cancelBtn.onclick = closeModal;
+actions.appendChild(cancelBtn);
+
+box.appendChild(actions);
+modal.appendChild(box);
+
+modal.onclick = (e) => {
+if(e.target === modal) closeModal();
+};
+
+document.body.appendChild(modal);
+
+}
+
+function closeModal(){
+const m = document.getElementById('linkPickerModal');
+if(m) m.remove();
+pickerTarget = null;
+}
+
+/* =========================
+  APPLY LINK
+========================= */
+
+async function applyLink(docKey, slot, linkValue){
+
+if(!linkStore[docKey]) linkStore[docKey] = {};
+linkStore[docKey]['link' + slot] = linkValue;
+
+await saveLinkStore(docKey);
+
+logAction('SET_LINK', docKey + ' LINK' + slot + ' = ' + linkValue);
+
+renderTable();
+
+}
+
+/* =========================
+  SAVE LINK STORE (theo user)
+========================= */
+
+async function saveLinkStore(docKey){
+
+if(!currentUser) return;
+
+try{
+await fetch(API_BASE + '/links', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+username: currentUser.username,
+role: currentUser.role,
+docKey: docKey,
+data: linkStore[docKey] || {}
+})
+});
+}catch(err){
+console.warn('Save link failed:', err);
+}
+
+}
+
+/* =========================
+  OPEN LINKED / LONG PRESS
+========================= */
+
+let longPressTimer = null;
+let longPressTriggered = false;
+
+function startLongPress(e, el){
+longPressTriggered = false;
+longPressTimer = setTimeout(() => {
+longPressTriggered = true;
+const docKey = el.getAttribute('data-dockey');
+const slot = parseInt(el.getAttribute('data-slot'), 10);
+openLinkPicker(docKey, slot);
+}, 5000);
+}
+
+function cancelLongPress(){
+if(longPressTimer){
+clearTimeout(longPressTimer);
+longPressTimer = null;
+}
+}
+
+function openLinked(el){
+if(longPressTriggered){
+longPressTriggered = false;
+return;
+}
+const link = el.getAttribute('data-link');
+if(link && link !== '#'){
+window.open(link, '_blank', 'noopener,noreferrer');
+}
+}
+
+/* =========================
+  NOTE TOGGLE
+========================= */
+
+async function toggleNote(docKey, checked){
+
+if(!currentUser || currentUser.role !== 'MASTER') return;
+
+if(!linkStore[docKey]) linkStore[docKey] = {};
+linkStore[docKey].note = checked;
+
+await saveLinkStore(docKey);
+
+logAction('TOGGLE_NOTE', docKey + ' note=' + checked);
+
+/* Nếu NOTE filter đang bật → render lại */
+
+if(noteFilterActive){
+applyFilters();
+}
+
+}
+
+/* =========================
+  NOTE FILTER TOGGLE
+========================= */
+
+function toggleNoteFilter(){
+noteFilterActive = !noteFilterActive;
+
+if(noteFilterActive){
+noteFilterBtn.classList.add('active');
+}else{
+noteFilterBtn.classList.remove('active');
+}
+
+applyFilters();
+
+}
+
+/* =========================
+  EDIT / DELETE (MASTER)
+========================= */
+
+function editDocument(docKey){
+
+const newTitle = prompt('Nhập Title mới cho Document No: ' + docKey);
+if(newTitle === null) return;
+
+const item = allData.find(x =>
+String(x["Document No"] || '').trim() === docKey
+);
+
+if(item){
+item["Title"] = newTitle;
+
+logAction('EDIT_DOC', docKey + ' → ' + newTitle);
+
+fetch(API_BASE + '/edit', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+username: currentUser.username,
+role: currentUser.role,
+docKey: docKey,
+newTitle: newTitle
+})
+}).catch(err => console.warn(err));
+
+applyFilters();
+}
+
+}
+
+async function deleteDocument(docKey){
+
+if(!confirm('Bạn chắc chắn muốn xóa document: ' + docKey + '?')) return;
+
+allData = allData.filter(x =>
+String(x["Document No"] || '').trim() !== docKey
+);
+
+logAction('DELETE_DOC', docKey);
+
+fetch(API_BASE + '/delete', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+username: currentUser.username,
+role: currentUser.role,
+docKey: docKey
+})
+}).catch(err => console.warn(err));
+
+applyFilters();
 
 }
 
@@ -1229,70 +1077,25 @@ function renderPagination(){
 
 pagination.innerHTML = '';
 
-const totalPages =
-Math.ceil(
-filteredData.length / ROWS_PER_PAGE
-);
+const totalPages = Math.ceil(filteredData.length / ROWS_PER_PAGE);
+if(totalPages <= 1) return;
 
-if(totalPages <= 1){
-
-    return;
-
-}
-
-const prevBtn =
-document.createElement('button');
-
+const prevBtn = document.createElement('button');
 prevBtn.textContent = 'Prev';
-
-prevBtn.disabled =
-currentPage === 1;
-
-prevBtn.className =
-'action-btn';
-
-prevBtn.onclick = () => {
-
-    currentPage--;
-
-    renderTable();
-
-};
-
+prevBtn.disabled = currentPage === 1;
+prevBtn.className = 'action-btn';
+prevBtn.onclick = () => { currentPage--; renderTable(); };
 pagination.appendChild(prevBtn);
 
-const pageInfo =
-document.createElement('span');
-
-pageInfo.innerHTML = `
-
-<strong>
-Page ${currentPage} / ${totalPages}
-</strong>
-
-`;
-
+const pageInfo = document.createElement('span');
+pageInfo.innerHTML = `<strong>Page ${currentPage} / ${totalPages}</strong>`;
 pagination.appendChild(pageInfo);
 
-const nextBtn =
-document.createElement('button');
-
+const nextBtn = document.createElement('button');
 nextBtn.textContent = 'Next';
-
-nextBtn.disabled =
-currentPage === totalPages;
-
-nextBtn.className =
-'action-btn';
-
-nextBtn.onclick = () => {
-
-    currentPage++;
-
-    renderTable();
-
-};
-
+nextBtn.disabled = currentPage === totalPages;
+nextBtn.className = 'action-btn';
+nextBtn.onclick = () => { currentPage++; renderTable(); };
 pagination.appendChild(nextBtn);
 
 }
@@ -1302,76 +1105,66 @@ pagination.appendChild(nextBtn);
 ========================= */
 
 let debounceTimer;
-
 searchTitle.addEventListener('input', () => {
-
 clearTimeout(debounceTimer);
-
-debounceTimer = setTimeout(() => {
-
-    applyFilters();
-
-}, 300);
-
+debounceTimer = setTimeout(applyFilters, 300);
 });
-
-
 searchDocNo.addEventListener('input', () => {
-
 clearTimeout(debounceTimer);
-
-debounceTimer = setTimeout(() => {
-
-    applyFilters();
-
-}, 300);
-
+debounceTimer = setTimeout(applyFilters, 300);
 });
 
 /* =========================
-  CATEGORY FILTER
+  CATEGORY / QUICK FILTER
 ========================= */
 
 function setCategoryFilter(value){
-
 selectedCategory = value;
-
 applyFilters();
-
 }
-
-/* =========================
-  QUICK FILTER
-========================= */
 
 function applyQuickFilter(filterName){
-
 selectedType = filterName;
-
 applyFilters();
+}
 
+function clearFilter(){
+searchTitle.value = '';
+searchDocNo.value = '';
+selectedCategory = '';
+selectedType = '';
+noteFilterActive = false;
+noteFilterBtn.classList.remove('active');
+filteredData = allData;
+currentPage = 1;
+renderTable();
 }
 
 /* =========================
-  CLEAR FILTER
+  INIT
 ========================= */
 
-function clearFilter(){
+window.addEventListener('DOMContentLoaded', () => {
 
-searchTitle.value = '';
-searchDocNo.value = '';
-
-selectedCategory = '';
-selectedType = '';
-
-filteredData = allData;
-
-currentPage = 1;
-
-renderTable();
-
+const tableWrapper = document.querySelector('.table-wrapper');
+if(tableWrapper){
+tableWrapper.parentNode.insertBefore(pagination, tableWrapper);
 }
 
+const savedUser = sessionStorage.getItem('dm_user');
+const savedToken = sessionStorage.getItem('dm_token');
+
+if(savedUser && savedToken){
+try{
+currentUser = JSON.parse(savedUser);
+userToken = savedToken;
+startApp();
+}catch(e){ /* ignore */ }
+}
+
+});
+
 </script>
+
 </body>
 </html>

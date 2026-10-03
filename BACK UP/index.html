@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<link
+    rel="icon"
+    type="image/png"
+    href="favicon.png"
+>
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Document Management</title>
+
+<style>
+
+/* GLOBAL */
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+padding:12px;
+background:#f4f6f9;
+font-family:Arial, sans-serif;
+color:#333;
+overflow:hidden;
+}
+
+/* TITLE */
+
+h1{
+margin:0 0 16px;
+text-align:center;
+font-size:34px;
+color:#111;
+}
+
+/* TOOLBAR */
+
+.top-toolbar{
+
+position:sticky;
+top:0;
+
+z-index:9999;
+
+background:#f4f6f9;
+
+padding-bottom:12px;
+
+}
+
+/* SEARCH */
+
+.search-box{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+
+margin-bottom:12px;
+
+}
+
+.search-box input{
+
+flex:1;
+min-width:220px;
+
+padding:12px;
+
+border-radius:10px;
+border:1px solid #d0d7de;
+
+font-size:14px;
+
+background:white;
+
+transition:0.2s;
+
+}
+
+.search-box input:focus{
+
+outline:none;
+
+border-color:#0078d4;
+
+box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+
+}
+
+/* BUTTONS */
+
+.quick-filter{
+
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+
+}
+
+.quick-filter button{
+
+background:#28a745;
+color:white;
+
+border:none;
+
+padding:8px 12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:13px;
+font-weight:bold;
+
+transition:0.2s;
+
+}
+
+.quick-filter button:hover{
+
+transform:translateY(-1px);
+
+background:#1f7a33;
+
+}
+
+/* BLACK BUTTON */
+
+.quick-filter button.black-btn{
+
+background:#111 !important;
+
+}
+
+.quick-filter button.black-btn:hover{
+
+background:#000 !important;
+
+}
+
+/* KNOWLEDGE BUTTON */
+
+.quick-filter button.knowledge-btn{
+
+background:#7b1fa2 !important;
+color:#fff;
+
+}
+
+.quick-filter button.knowledge-btn:hover{
+
+background:#5e1480 !important;
+
+}
+
+/* CLEAR BUTTON */
+
+.clear-btn{
+
+background:#dc3545 !important;
+
+}
+
+.clear-btn:hover{
+
+background:#b52b38 !important;
+
+}
+
+/* TABLE WRAPPER */
+
+.table-wrapper{
+
+width:100%;
+
+overflow:auto;
+
+height:calc(100vh - 260px);
+
+border-radius:12px;
+
+background:white;
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+/* TABLE */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+table-layout:fixed;
+
+background:white;
+
+}
+
+/* STICKY HEADER */
+
+thead th{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#0078d4;
+
+}
+
+/* HEADER */
+
+th{
+
+color:white;
+
+text-align:left;
+
+padding:12px;
+
+font-size:14px;
+
+border:1px solid #dbe2ea;
+
+resize:horizontal;
+
+overflow:auto;
+
+}
+
+/* CELLS */
+
+td{
+
+padding:12px;
+
+vertical-align:top;
+
+font-size:14px;
+
+border:1px solid #dbe2ea;
+
+}
+
+/* ROW */
+
+tbody tr:nth-child(even){
+
+background:#fafbfc;
+
+}
+
+tbody tr:hover{
+
+background:#eef6ff;
+
+}
+
+/* TITLE */
+
+th:nth-child(1),
+td:nth-child(1){
+
+width:30%;
+
+}
+
+td:nth-child(1){
+
+white-space:normal;
+
+word-break:break-word;
+
+line-height:1.6;
+
+font-weight:500;
+
+}
+
+/* DOCUMENT NO */
+
+th:nth-child(2),
+td:nth-child(2){
+
+width:30%;
+
+}
+
+td:nth-child(2){
+
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-height:1.5;
+
+font-weight:bold;
+
+color:red;
+
+}
+
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:10%;
+
+}
+
+td:nth-child(3){
+
+white-space:normal;
+
+word-break:break-word;
+
+line-height:1.5;
+
+}
+
+/* TYPE */
+
+th:nth-child(4),
+td:nth-child(4){
+
+width:10%;
+
+white-space:nowrap;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+}
+
+/* DATE */
+
+th:nth-child(5),
+td:nth-child(5){
+
+width:10%;
+
+white-space:nowrap;
+
+}
+
+/* ACTION */
+
+th:nth-child(6),
+td:nth-child(6){
+
+width:10%;
+
+white-space:nowrap;
+
+text-align:center;
+
+}
+
+/* OPEN BUTTON */
+
+.action-btn{
+
+display:inline-block;
+
+background:#0078d4;
+
+color:white;
+
+text-decoration:none;
+
+padding:8px 12px;
+
+border-radius:8px;
+
+font-weight:bold;
+
+transition:0.2s;
+
+}
+
+.action-btn:hover{
+
+background:#005ea2;
+
+transform:translateY(-1px);
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+body{
+padding:4px;
+margin:0;
+overflow:hidden;
+}
+
+h1{
+font-size:20px;
+margin-bottom:8px;
+}
+
+.top-toolbar{
+padding-bottom:6px;
+}
+
+.search-box{
+flex-direction:column;
+gap:6px;
+}
+
+.search-box input{
+
+width:100%;
+
+padding:8px;
+
+font-size:11px;
+
+}
+
+.quick-filter{
+
+display:flex;
+flex-wrap:wrap;
+gap:4px;
+
+}
+
+.quick-filter button{
+
+padding:4px 6px;
+
+font-size:9px;
+
+border-radius:5px;
+
+}
+
+/* TABLE WRAPPER */
+
+.table-wrapper{
+
+width:100%;
+
+overflow-x:hidden;
+overflow-y:auto;
+
+height:calc(100vh - 280px);
+
+border-radius:8px;
+
+}
+
+/* TABLE */
+
+table{
+
+width:100%;
+
+min-width:100%;
+
+table-layout:fixed;
+
+}
+
+/* CELL */
+
+th,
+td{
+
+padding:4px;
+
+font-size:8px;
+
+vertical-align:top;
+
+}
+
+/* TITLE */
+
+th:nth-child(1),
+td:nth-child(1){
+
+width:40%;
+
+white-space:normal;
+
+word-break:break-word;
+
+line-height:1.3;
+
+font-size:7px;
+
+}
+
+/* DOCUMENT NO */
+
+th:nth-child(2),
+td:nth-child(2){
+
+width:16%;
+
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-height:1.3;
+
+font-size:5px;
+
+color:red;
+
+font-weight:bold;
+
+}
+
+/* CATEGORY */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:14%;
+
+white-space:normal;
+
+word-break:break-word;
+
+line-height:1.2;
+
+font-size:7px;
+
+}
+
+/* TYPE */
+
+th:nth-child(4),
+td:nth-child(4){
+
+width:10%;
+
+white-space:nowrap;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+font-size:7px;
+
+}
+
+/* DATE */
+
+th:nth-child(5),
+td:nth-child(5){
+
+width:10%;
+
+white-space:nowrap;
+
+font-size:7px;
+
+}
+
+/* ACTION */
+
+th:nth-child(6),
+td:nth-child(6){
+
+width:10%;
+
+text-align:center;
+
+white-space:nowrap;
+
+}
+
+/* BUTTON */
+
+.action-btn{
+
+padding:3px 4px;
+
+font-size:7px;
+
+border-radius:4px;
+
+}
+
+/* PAGINATION */
+
+#pagination{
+
+gap:6px !important;
+
+padding:6px 0 !important;
+
+}
+
+#pagination span{
+
+font-size:10px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-toolbar">
+
+<h1>Document Management</h1>
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchTitle"
+placeholder="Search Title..."
+>
+
+<input
+type="text"
+id="searchDocNo"
+placeholder="Search Document No..."
+>
+
+</div>
+
+<!-- FILTER BUTTONS -->
+
+<div class="quick-filter">
+
+<button onclick="setCategoryFilter('C-1.Upgrade Reports')">
+Upgrade Reports
+</button>
+
+<button onclick="setCategoryFilter('C-2.Version History')">
+Version History
+</button>
+
+<button onclick="setCategoryFilter('F-2.Specifications')">
+Specifications
+</button>
+
+<button onclick="setCategoryFilter('A-1.Tech Reports')">
+Tech Reports
+</button>
+
+<button onclick="setCategoryFilter('C-3.Software Notice')">
+Software Notice
+</button>
+
+<button onclick="setCategoryFilter('TRAINING TEXT')">
+Training
+</button>
+
+<button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">
+FE Documents
+</button>
+
+<button onclick="setCategoryFilter('A-2.Rep News')">
+Rep News
+</button>
+
+<button onclick="setCategoryFilter('D-1.Manuals')">
+Manuals
+</button>
+
+<button onclick="setCategoryFilter('E-6.Troubleshooting')">
+Troubleshooting
+</button>
+
+<button onclick="setCategoryFilter('E-4.Electrical Schematics')">
+Electrical
+</button>
+
+<button onclick="setCategoryFilter('E-1.Parts List')">
+Parts List
+</button>
+
+<button onclick="setCategoryFilter('D-2.Operation Manuals')">
+Operation
+</button>
+
+<button onclick="setCategoryFilter('A-5.FSF, SECS/GEM Technical Materials')">
+FSF / GEM
+</button>
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('AIMEXIII')"
+>
+AIMEXIII
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXTR')"
+>
+NXTR
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX')"
+>
+GPX
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('Flexa')"
+>
+Flexa
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('Fujitrax')"
+>
+Fujitrax
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('Feeder')"
+>
+Feeder
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('Nexim')"
+>
+Nexim
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('Unit')"
+>
+Unit
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXTIII')"
+>
+NXTIII
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CS')"
+>
+GPX-CS
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CSII')"
+>
+GPX-CSII
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CL')"
+>
+GPX-CL
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('GPX-CII')"
+>
+GPX-CII
+</button>        
+
+<button
+class="black-btn"
+onclick="applyQuickFilter('NXT II')"
+>
+NXTII
+</button>        
+
+<button
+class="knowledge-btn"
+onclick="applyQuickFilter('KNOWLEDGE')"
+>
+KNOWLEDGE
+</button>
+
+<button
+class="clear-btn"
+onclick="clearFilter()"
+>
+CLEAR
+</button>
+
+</div>
+
+</div>
+
+<!-- TABLE -->
+
+<div class="table-wrapper">
+
+<table id="pdfTable">
+
+<thead>
+
+<tr>
+
+<th>TITLE</th>
+
+<th>DOCUMENT NO</th>
+
+<th>CATEGORY</th>
+
+<th>TYPE</th>
+
+<th>DATE</th>
+
+<th>ACTION</th>
+
+</tr>
+
+</thead>
+
+<tbody id="pdfBody"></tbody>
+
+</table>
+
+</div>
+
+<script>
+
+/* =========================
+  CONFIG
+========================= */
+
+const ROWS_PER_PAGE = 50;
+
+/* =========================
+  QUICK FILTER DATA
+========================= */
+
+let quickFilters = {};
+
+/* LOAD ALL JSON */
+
+Promise.all([
+
+fetch('AIMEXIII.json').then(r => r.json()),
+fetch('NXTR.json').then(r => r.json()),
+fetch('NXTIII.json').then(r => r.json()),
+fetch('GPX.json').then(r => r.json()),
+fetch('Flexa.json').then(r => r.json()),
+fetch('Fujitrax.json').then(r => r.json()),
+fetch('Feeder.json').then(r => r.json()),
+fetch('Nexim.json').then(r => r.json()),
+fetch('Unit.json').then(r => r.json()),
+fetch('GPX-CS.json').then(r => r.json()),
+fetch('GPX-CSII.json').then(r => r.json()),
+fetch('GPX-CL.json').then(r => r.json()),
+fetch('GPX-CII.json').then(r => r.json()),
+fetch('NXT II.json').then(r => r.json()),
+fetch('KNOWLEDGE.json').then(r => r.json())
+
+])
+
+.then(([
+
+aimex3,
+nxtr,
+nxt3,
+gpx,
+flexa,
+fujitrax,
+feeder,
+nexim,
+unit,
+gpxcs,
+gpxcs2,
+gpxcl,
+gpxc2,
+nxt2,
+knowledge
+
+]) => {
+
+quickFilters = {
+
+AIMEXIII : aimex3,
+NXTR : nxtr,
+NXTIII : nxt3,
+GPX : gpx,
+Flexa : flexa,
+Fujitrax : fujitrax,
+Feeder : feeder,
+Nexim : nexim,
+Unit : unit,
+"GPX-CS" : gpxcs,
+"GPX-CSII" : gpxcs2,
+"GPX-CL" : gpxcl,
+"GPX-CII" : gpxc2,
+"NXT II" : nxt2,
+KNOWLEDGE : knowledge
+
+};
+
+})
+
+.catch(error => {
+
+console.error(
+'Quick Filter Load Error:',
+error
+);
+
+});
+
+/* =========================
+  GLOBAL DATA
+========================= */
+
+let allData = [];
+let filteredData = [];
+
+let selectedCategory = '';
+let selectedType = '';
+
+let currentPage = 1;
+
+/* =========================
+  CACHE DOM
+========================= */
+
+const pdfBody =
+document.getElementById('pdfBody');
+
+const searchTitle =
+document.getElementById('searchTitle');
+
+const searchDocNo =
+document.getElementById('searchDocNo');
+
+/* =========================
+  CREATE PAGINATION
+========================= */
+
+const pagination =
+document.createElement('div');
+
+pagination.id = 'pagination';
+
+pagination.style.cssText = `
+
+display:flex;
+justify-content:flex-end;
+align-items:center;
+gap:10px;
+
+padding:10px 0;
+
+flex-wrap:wrap;
+
+`;
+
+const tableWrapper =
+document.querySelector('.table-wrapper');
+
+tableWrapper.parentNode.insertBefore(
+    pagination,
+    tableWrapper
+);
+
+/* =========================
+  LOAD JSON
+========================= */
+
+fetch('data.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+allData = data;
+
+filteredData = data;
+
+renderTable();
+
+})
+
+.catch(error => {
+
+console.error(
+'JSON Load Error:',
+error
+);
+
+});
+
+/* =========================
+  ESCAPE HTML
+========================= */
+
+function escapeHTML(text){
+
+return String(text)
+
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/>/g, '&gt;')
+.replace(/"/g, '&quot;')
+.replace(/'/g, '&#039;');
+
+}
+
+/* =========================
+  APPLY FILTERS
+========================= */
+
+function applyFilters(){
+
+const keyword =
+searchTitle.value
+.trim()
+.toLowerCase();
+
+const documentKeyword =
+searchDocNo.value
+.trim()
+.toLowerCase();
+
+filteredData = allData.filter(item => {
+
+    const matchCategory =
+
+        selectedCategory === '' ||
+
+        String(item["Category"] || '')
+        .toLowerCase()
+        .includes(
+            selectedCategory.toLowerCase()
+        );
+
+    let matchType = true;
+
+    if(selectedType !== ''){
+
+        const targetTypes =
+            quickFilters[selectedType] || [];
+
+        matchType =
+            targetTypes.includes(
+                String(item["TYPE"] || '').trim()
+            );
+
+    }
+
+    const matchKeyword =
+
+        keyword === '' ||
+
+        String(item["Title"] || '')
+        .toLowerCase()
+        .includes(keyword);
+
+    const matchDocument =
+
+        documentKeyword === '' ||
+
+        String(item["Document No"] || '')
+        .toLowerCase()
+        .includes(documentKeyword);
+
+    return (
+
+        matchCategory &&
+        matchType &&
+        matchKeyword &&
+        matchDocument
+
+    );
+
+});
+
+currentPage = 1;
+
+renderTable();
+
+}
+
+/* =========================
+  RENDER TABLE
+========================= */
+
+function renderTable(){
+
+pdfBody.innerHTML = '';
+
+const start =
+(currentPage - 1) * ROWS_PER_PAGE;
+
+const end =
+start + ROWS_PER_PAGE;
+
+const pageData =
+filteredData.slice(start, end);
+
+const fragment =
+document.createDocumentFragment();
+
+for(let i = 0; i < pageData.length; i++){
+
+    const item = pageData[i];
+
+    const title =
+    escapeHTML(item["Title"] || '');
+
+    const documentNo =
+    escapeHTML(item["Document No"] || '');
+
+    const category =
+    escapeHTML(item["Category"] || '');
+
+    const type =
+    escapeHTML(item["TYPE"] || '');
+
+    const releaseDate =
+    escapeHTML(item["Release date"] || '');
+
+    const link =
+    item["LINK"] || '#';
+
+    const row =
+    document.createElement('tr');
+
+    row.innerHTML = `
+
+        <td title="${title}">
+            ${title}
+        </td>
+
+        <td title="${documentNo}">
+            ${documentNo}
+        </td>
+
+        <td title="${category}">
+            ${category}
+        </td>
+
+        <td title="${type}">
+            ${type}
+        </td>
+
+        <td>
+            ${releaseDate}
+        </td>
+
+        <td>
+
+            <a
+                class="action-btn"
+                href="${link}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                Open
+
+            </a>
+
+        </td>
+
+    `;
+
+    fragment.appendChild(row);
+
+}
+
+pdfBody.appendChild(fragment);
+
+renderPagination();
+
+}
+
+/* =========================
+  PAGINATION
+========================= */
+
+function renderPagination(){
+
+pagination.innerHTML = '';
+
+const totalPages =
+Math.ceil(
+filteredData.length / ROWS_PER_PAGE
+);
+
+if(totalPages <= 1){
+
+    return;
+
+}
+
+const prevBtn =
+document.createElement('button');
+
+prevBtn.textContent = 'Prev';
+
+prevBtn.disabled =
+currentPage === 1;
+
+prevBtn.className =
+'action-btn';
+
+prevBtn.onclick = () => {
+
+    currentPage--;
+
+    renderTable();
+
+};
+
+pagination.appendChild(prevBtn);
+
+const pageInfo =
+document.createElement('span');
+
+pageInfo.innerHTML = `
+
+<strong>
+Page ${currentPage} / ${totalPages}
+</strong>
+
+`;
+
+pagination.appendChild(pageInfo);
+
+const nextBtn =
+document.createElement('button');
+
+nextBtn.textContent = 'Next';
+
+nextBtn.disabled =
+currentPage === totalPages;
+
+nextBtn.className =
+'action-btn';
+
+nextBtn.onclick = () => {
+
+    currentPage++;
+
+    renderTable();
+
+};
+
+pagination.appendChild(nextBtn);
+
+}
+
+/* =========================
+  SEARCH
+========================= */
+
+let debounceTimer;
+
+searchTitle.addEventListener('input', () => {
+
+clearTimeout(debounceTimer);
+
+debounceTimer = setTimeout(() => {
+
+    applyFilters();
+
+}, 300);
+
+});
+
+
+searchDocNo.addEventListener('input', () => {
+
+clearTimeout(debounceTimer);
+
+debounceTimer = setTimeout(() => {
+
+    applyFilters();
+
+}, 300);
+
+});
+
+/* =========================
+  CATEGORY FILTER
+========================= */
+
+function setCategoryFilter(value){
+
+selectedCategory = value;
+
+applyFilters();
+
+}
+
+/* =========================
+  QUICK FILTER
+========================= */
+
+function applyQuickFilter(filterName){
+
+selectedType = filterName;
+
+applyFilters();
+
+}
+
+/* =========================
+  CLEAR FILTER
+========================= */
+
+function clearFilter(){
+
+searchTitle.value = '';
+searchDocNo.value = '';
+
+selectedCategory = '';
+selectedType = '';
+
+filteredData = allData;
+
+currentPage = 1;
+
+renderTable();
+
+}
+
+</script>
+</body>
+</html>
