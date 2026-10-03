@@ -26,6 +26,19 @@ h1{margin:0 0 16px;text-align:center;font-size:34px;color:#111;}
 /* TOOLBAR */
 .top-toolbar{position:sticky;top:0;z-index:9999;background:#f4f6f9;padding-bottom:12px;}
 
+/* HEADER TOP (user info + logout) */
+.header-top{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+gap:10px;
+margin-bottom:8px;
+}
+
+.user-info{font-size:13px;color:#555;}
+
+.user-info strong{color:#0078d4;}
+
 /* SEARCH */
 .search-box{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
 
@@ -58,7 +71,12 @@ border-radius:8px;cursor:pointer;font-size:13px;font-weight:bold;transition:0.2s
 .clear-btn{background:#dc3545 !important;}
 .clear-btn:hover{background:#b52b38 !important;}
 
-.logout-btn{background:#555 !important;}
+.logout-btn{
+background:#555 !important;
+color:white;border:none;padding:6px 14px;border-radius:6px;
+cursor:pointer;font-size:12px;font-weight:bold;transition:0.2s;
+}
+
 .logout-btn:hover{background:#333 !important;}
 
 .note-filter-btn{background:#ff9800 !important;}
@@ -88,6 +106,7 @@ tbody tr:nth-child(even){background:#fafbfc;}
 tbody tr:hover{background:#eef6ff;}
 
 /* COLUMN WIDTHS */
+
 th:nth-child(1),td:nth-child(1){width:22%;}
 td:nth-child(1){white-space:normal;word-break:break-word;line-height:1.6;font-weight:500;}
 
@@ -111,6 +130,12 @@ th:nth-child(8),td:nth-child(8),
 th:nth-child(9),td:nth-child(9){width:8%;white-space:nowrap;text-align:center;}
 
 th:nth-child(10),td:nth-child(10){width:6%;white-space:nowrap;text-align:center;}
+
+/* Ẩn LINK1/2/3 cho user */
+.hide-for-user{display:none !important;}
+
+table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:8%;}
+table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:10%;}
 
 /* OPEN BUTTON */
 .action-btn{
@@ -158,29 +183,88 @@ align-items:center;z-index:99999;
 
 .modal-box{
 background:white;border-radius:12px;padding:20px;
-max-width:90%;max-height:80%;overflow:auto;min-width:400px;
+width:90%;max-width:1100px;
+max-height:85vh;overflow:auto;
 box-shadow:0 8px 24px rgba(0,0,0,0.3);
+display:flex;flex-direction:column;
+transition:all 0.2s;
 }
 
-.modal-box h3{margin-top:0;}
+.modal-box.maximized{width:98vw;height:95vh;max-width:98vw;max-height:95vh;}
 
-.modal-box .modal-item{
-padding:10px;border-bottom:1px solid #eee;cursor:pointer;transition:0.15s;
+.modal-box.minimized{
+width:340px;height:auto;max-height:60px;overflow:hidden;align-self:flex-end;
 }
 
-.modal-box .modal-item:hover{background:#eef6ff;}
+.modal-header{
+display:flex;justify-content:space-between;align-items:center;
+margin-bottom:12px;padding-bottom:8px;
+border-bottom:2px solid #0078d4;cursor:move;
+}
 
-.modal-box .modal-item.selected{background:#d4edda;font-weight:bold;}
+.modal-header h3{margin:0;font-size:16px;color:#0078d4;}
 
-.modal-actions{margin-top:12px;text-align:right;}
+.modal-controls{display:flex;gap:6px;}
+
+.modal-controls button{
+width:28px;height:28px;border:none;border-radius:4px;
+cursor:pointer;font-weight:bold;font-size:14px;transition:0.2s;
+}
+
+.btn-minimize{background:#ffc107;color:#333;}
+.btn-minimize:hover{background:#e0a800;}
+
+.btn-maximize{background:#17a2b8;color:white;}
+.btn-maximize:hover{background:#117a8b;}
+
+.btn-close-modal{background:#dc3545;color:white;}
+.btn-close-modal:hover{background:#b52b38;}
+
+.modal-search{display:flex;gap:8px;margin-bottom:10px;}
+
+.modal-search input{
+flex:1;padding:8px;border-radius:6px;
+border:1px solid #d0d7de;font-size:13px;
+}
+
+.modal-search input:focus{
+outline:none;border-color:#0078d4;
+box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+}
+
+.modal-table-wrap{
+flex:1;overflow:auto;border:1px solid #dbe2ea;border-radius:8px;
+}
+
+.modal-table-wrap table{width:100%;border-collapse:collapse;}
+
+.modal-table-wrap th{
+background:#0078d4;color:white;padding:8px;
+font-size:12px;position:sticky;top:0;
+border:1px solid #dbe2ea;
+}
+
+.modal-table-wrap td{
+padding:8px;font-size:12px;border:1px solid #dbe2ea;
+}
+
+.modal-table-wrap tr{cursor:pointer;transition:0.15s;}
+
+.modal-table-wrap tr:hover{background:#eef6ff;}
+
+.modal-table-wrap tr.selected{background:#d4edda;font-weight:bold;}
+
+.modal-actions{
+margin-top:12px;text-align:right;
+display:flex;justify-content:flex-end;gap:8px;
+}
 
 .modal-actions button{
-padding:8px 16px;margin-left:8px;border:none;
-border-radius:6px;cursor:pointer;font-weight:bold;
+padding:8px 16px;border:none;border-radius:6px;
+cursor:pointer;font-weight:bold;font-size:13px;
 }
 
 .modal-actions .cancel-btn{background:#dc3545;color:white;}
-.modal-actions .save-btn{background:#28a745;color:white;}
 
 /* LOGIN OVERLAY */
 .login-overlay{
@@ -219,13 +303,160 @@ color:#dc3545;font-size:13px;text-align:center;
 margin-bottom:10px;min-height:18px;
 }
 
-/* USER INFO */
-.user-info{
-text-align:right;font-size:13px;color:#555;
-margin-bottom:8px;padding:4px 8px;
+/* CONFIRM OVERLAY */
+.confirm-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,0.55);
+display:flex;justify-content:center;align-items:center;
+z-index:999998;
 }
 
-.user-info strong{color:#0078d4;}
+.confirm-box{
+background:white;border-radius:12px;padding:24px;
+max-width:440px;width:90%;text-align:center;
+box-shadow:0 8px 24px rgba(0,0,0,0.3);
+}
+
+.confirm-box h3{margin:0 0 12px;color:#dc3545;font-size:18px;}
+
+.confirm-box p{
+margin:0 0 16px;color:#333;font-size:14px;line-height:1.5;
+}
+
+.confirm-box .confirm-doc{
+font-weight:bold;color:#dc3545;word-break:break-all;
+}
+
+.confirm-box input[type="password"]{
+width:100%;padding:12px;border-radius:8px;
+border:1px solid #d0d7de;font-size:14px;margin-bottom:12px;
+}
+
+.confirm-box input[type="password"]:focus{
+outline:none;border-color:#dc3545;
+box-shadow:0 0 0 3px rgba(220,53,69,0.15);
+}
+
+.confirm-box .pwd-error{
+color:#dc3545;font-size:12px;
+min-height:16px;margin-bottom:8px;
+}
+
+.confirm-actions{
+display:flex;justify-content:center;gap:12px;
+}
+
+.confirm-actions button{
+padding:10px 24px;border:none;border-radius:8px;
+cursor:pointer;font-weight:bold;font-size:14px;transition:0.2s;
+}
+
+.confirm-actions .btn-cancel{background:#6c757d;color:white;}
+.confirm-actions .btn-cancel:hover{background:#555;}
+
+.confirm-actions .btn-delete{background:#dc3545;color:white;}
+.confirm-actions .btn-delete:hover{background:#b52b38;}
+
+/* EDIT WIZARD */
+.wizard-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,0.6);
+display:flex;justify-content:center;align-items:center;
+z-index:999997;
+}
+
+.wizard-box{
+background:white;border-radius:14px;padding:24px;
+max-width:520px;width:90%;max-height:85vh;overflow:auto;
+box-shadow:0 12px 32px rgba(0,0,0,0.35);
+}
+
+.wizard-box h3{
+margin:0 0 8px;color:#0078d4;font-size:18px;text-align:center;
+}
+
+.wizard-box .step-label{
+text-align:center;color:#666;font-size:13px;margin-bottom:18px;
+}
+
+.wizard-box .step-content{margin-bottom:20px;}
+
+.wizard-box .step-content label{
+display:block;margin-bottom:6px;font-weight:bold;
+color:#333;font-size:13px;
+}
+
+.wizard-box .step-content input,
+.wizard-box .step-content select{
+width:100%;padding:10px;border-radius:8px;
+border:1px solid #d0d7de;font-size:14px;
+}
+
+.wizard-box .step-content input:focus,
+.wizard-box .step-content select:focus{
+outline:none;border-color:#0078d4;
+box-shadow:0 0 0 3px rgba(0,120,212,0.15);
+}
+
+.wizard-box .step-content .old-value{
+font-size:12px;color:#999;margin-top:4px;
+}
+
+.wizard-progress{
+display:flex;justify-content:center;gap:8px;margin-bottom:18px;
+}
+
+.wizard-progress .dot{
+width:32px;height:32px;border-radius:50%;
+background:#e0e0e0;color:#666;
+display:flex;justify-content:center;align-items:center;
+font-weight:bold;font-size:13px;transition:0.2s;
+}
+
+.wizard-progress .dot.active{
+background:#0078d4;color:white;transform:scale(1.1);
+}
+
+.wizard-progress .dot.done{background:#28a745;color:white;}
+
+.wizard-actions{
+display:flex;justify-content:space-between;gap:8px;margin-top:8px;
+}
+
+.wizard-actions button{
+padding:10px 20px;border:none;border-radius:8px;
+cursor:pointer;font-weight:bold;font-size:13px;transition:0.2s;
+}
+
+.wizard-actions .btn-back{background:#6c757d;color:white;}
+.wizard-actions .btn-back:hover{background:#555;}
+
+.wizard-actions .btn-next{background:#0078d4;color:white;}
+.wizard-actions .btn-next:hover{background:#005ea2;}
+
+.wizard-actions .btn-save{background:#28a745;color:white;}
+.wizard-actions .btn-save:hover{background:#1f7a33;}
+
+.wizard-actions .btn-cancel-wizard{background:#dc3545;color:white;}
+.wizard-actions .btn-cancel-wizard:hover{background:#b52b38;}
+
+/* COUNTDOWN TOAST */
+.countdown-toast{
+position:fixed;top:80px;left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,0.85);color:white;
+padding:14px 24px;border-radius:10px;
+font-size:14px;font-weight:bold;
+z-index:9999999;
+box-shadow:0 8px 24px rgba(0,0,0,0.4);
+display:flex;align-items:center;gap:10px;
+}
+
+.countdown-toast .countdown-num{
+display:inline-block;min-width:22px;height:22px;
+background:#ffc107;color:#333;border-radius:50%;
+text-align:center;line-height:22px;font-size:13px;
+}
 
 /* MOBILE */
 @media(max-width:768px){
@@ -233,12 +464,15 @@ margin-bottom:8px;padding:4px 8px;
 body{padding:4px;margin:0;overflow:hidden;}
 h1{font-size:20px;margin-bottom:8px;}
 .top-toolbar{padding-bottom:6px;}
+.header-top{margin-bottom:4px;}
 
 .search-box{flex-direction:column;gap:6px;}
 .search-box input{width:100%;padding:8px;font-size:11px;}
 
 .quick-filter{display:flex;flex-wrap:wrap;gap:4px;}
 .quick-filter button{padding:4px 6px;font-size:9px;border-radius:5px;}
+
+.logout-btn{padding:4px 8px;font-size:10px;}
 
 .table-wrapper{
 width:100%;overflow-x:hidden;overflow-y:auto;
@@ -284,6 +518,9 @@ th:nth-child(10),td:nth-child(10){
 width:6%;text-align:center;white-space:nowrap;
 }
 
+table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:8%;}
+table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:12%;}
+
 .action-btn{padding:3px 4px;font-size:7px;border-radius:4px;}
 .linked-open-btn{padding:2px 3px;font-size:6px;}
 
@@ -314,7 +551,10 @@ width:6%;text-align:center;white-space:nowrap;
 
 <div class="top-toolbar">
 
+<div class="header-top">
 <div class="user-info" id="userInfo"></div>
+<button class="logout-btn" onclick="doLogout()">LOGOUT</button>
+</div>
 
 <h1>Document Management</h1>
 
@@ -360,7 +600,6 @@ width:6%;text-align:center;white-space:nowrap;
 <button class="note-filter-btn" id="noteFilterBtn" onclick="toggleNoteFilter()">📌 NOTE</button>
 
 <button class="clear-btn" onclick="clearFilter()">CLEAR</button>
-<button class="logout-btn" onclick="doLogout()">LOGOUT</button>
 
 </div>
 
@@ -377,9 +616,9 @@ width:6%;text-align:center;white-space:nowrap;
 <th>TYPE</th>
 <th>DATE</th>
 <th>NOTE</th>
-<th>LINK1</th>
-<th>LINK2</th>
-<th>LINK3</th>
+<th class="col-link1 hide-for-user">LINK1</th>
+<th class="col-link2 hide-for-user">LINK2</th>
+<th class="col-link3 hide-for-user">LINK3</th>
 <th>ACTION</th>
 </tr>
 </thead>
@@ -398,6 +637,10 @@ width:6%;text-align:center;white-space:nowrap;
 const ROWS_PER_PAGE = 50;
 const API_BASE = 'https://pdf-dashboard.quoctan91.workers.dev';
 
+/* ⚠️ KHÔNG còn DELETE_PASSWORD ở frontend nữa.
+   Mật khẩu xóa CHỈ tồn tại ở worker.js (backend).
+   Frontend chỉ gửi mật khẩu thô lên /delete để server verify. */
+
 /* =========================
   AUTH STATE
 ========================= */
@@ -410,6 +653,7 @@ let userToken = null;
 ========================= */
 
 let quickFilters = {};
+let categoryList = [];
 
 Promise.all([
 fetch('AIMEXIII.json').then(r => r.json()),
@@ -426,9 +670,10 @@ fetch('GPX-CSII.json').then(r => r.json()),
 fetch('GPX-CL.json').then(r => r.json()),
 fetch('GPX-CII.json').then(r => r.json()),
 fetch('NXT II.json').then(r => r.json()),
-fetch('KNOWLEDGE.json').then(r => r.json())
+fetch('KNOWLEDGE.json').then(r => r.json()),
+fetch('category.json').then(r => r.json()).catch(() => [])
 ])
-.then(([aimex3,nxtr,nxt3,gpx,flexa,fujitrax,feeder,nexim,unit,gpxcs,gpxcs2,gpxcl,gpxc2,nxt2,knowledge]) => {
+.then(([aimex3,nxtr,nxt3,gpx,flexa,fujitrax,feeder,nexim,unit,gpxcs,gpxcs2,gpxcl,gpxc2,nxt2,knowledge,cats]) => {
 quickFilters = {
 AIMEXIII:aimex3, NXTR:nxtr, NXTIII:nxt3, GPX:gpx,
 Flexa:flexa, Fujitrax:fujitrax, Feeder:feeder, Nexim:nexim,
@@ -436,6 +681,7 @@ Unit:unit, "GPX-CS":gpxcs, "GPX-CSII":gpxcs2,
 "GPX-CL":gpxcl, "GPX-CII":gpxc2, "NXT II":nxt2,
 KNOWLEDGE:knowledge
 };
+categoryList = Array.isArray(cats) ? cats : [];
 })
 .catch(error => console.error('Quick Filter Load Error:', error));
 
@@ -451,8 +697,6 @@ let selectedType = '';
 let noteFilterActive = false;
 
 let currentPage = 1;
-
-/* LinkStore của user hiện tại (merge từ server) */
 let linkStore = {};
 
 /* =========================
@@ -464,9 +708,10 @@ const searchTitle = document.getElementById('searchTitle');
 const searchDocNo = document.getElementById('searchDocNo');
 const userInfoEl = document.getElementById('userInfo');
 const noteFilterBtn = document.getElementById('noteFilterBtn');
+const pdfTable = document.getElementById('pdfTable');
 
 /* =========================
-  CREATE PAGINATION
+  PAGINATION CONTAINER
 ========================= */
 
 const pagination = document.createElement('div');
@@ -475,6 +720,50 @@ pagination.style.cssText = `
 display:flex;justify-content:flex-end;align-items:center;
 gap:10px;padding:10px 0;flex-wrap:wrap;
 `;
+
+/* =========================
+  COUNTDOWN TOAST
+========================= */
+
+let countdownToastEl = null;
+let countdownInterval = null;
+
+function showCountdownToast(message, seconds, onDone){
+  removeCountdownToast();
+
+  countdownToastEl = document.createElement('div');
+  countdownToastEl.className = 'countdown-toast';
+  countdownToastEl.innerHTML =
+    message + ' <span class="countdown-num">' + seconds + '</span>s';
+
+  document.body.appendChild(countdownToastEl);
+
+  let remaining = seconds;
+
+  countdownInterval = setInterval(() => {
+    remaining--;
+    const numEl = countdownToastEl.querySelector('.countdown-num');
+    if(numEl) numEl.textContent = remaining;
+
+    if(remaining <= 0){
+      clearInterval(countdownInterval);
+      countdownInterval = null;
+      removeCountdownToast();
+      if(typeof onDone === 'function') onDone();
+    }
+  }, 1000);
+}
+
+function removeCountdownToast(){
+  if(countdownToastEl){
+    countdownToastEl.remove();
+    countdownToastEl = null;
+  }
+  if(countdownInterval){
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+  }
+}
 
 /* =========================
   LOGIN
@@ -569,6 +858,13 @@ document.getElementById('mainApp').style.display = 'block';
 userInfoEl.innerHTML =
 '👤 <strong>' + currentUser.username + '</strong> (' + currentUser.role + ')';
 
+/* Ẩn LINK1/2/3 với user */
+if(currentUser.role === 'MASTER'){
+  pdfTable.classList.remove('user-view');
+}else{
+  pdfTable.classList.add('user-view');
+}
+
 await loadData();
 await loadLinkStore();
 
@@ -592,8 +888,6 @@ console.error('JSON Load Error:', error);
 
 /* =========================
   LOAD LINK STORE
-  → Mỗi user có 1 file JSON riêng trên KV
-    GET /links?username=<user>
 ========================= */
 
 async function loadLinkStore(){
@@ -621,8 +915,7 @@ linkStore = {};
 }
 
 /* =========================
-  ESCAPE
-========================= */
+  ESCAPE========================= */
 
 function escapeHTML(text){
 return String(text)
@@ -669,8 +962,6 @@ const matchDocument =
 documentKeyword === '' ||
 String(item["Document No"] || '').toLowerCase().includes(documentKeyword);
 
-/* NOTE filter: chỉ giữ các record có note=true của user hiện tại */
-
 let matchNote = true;
 if(noteFilterActive){
 const stored = linkStore[docKey] || {};
@@ -714,8 +1005,6 @@ const link = item["LINK"] || '#';
 
 const docKey = String(item["Document No"] || '').trim();
 
-/* Lấy dữ liệu liên kết + note của user hiện tại */
-
 const stored = linkStore[docKey] || {};
 
 const noteChecked = stored.note ? 'checked' : '';
@@ -724,8 +1013,6 @@ const link2 = stored.link2 || '';
 const link3 = stored.link3 || '';
 
 const row = document.createElement('tr');
-
-/* Document No cell (MASTER có thêm ✏️🗑️) */
 
 let docNoHtml = documentNo;
 if(isMaster){
@@ -737,18 +1024,12 @@ escapeAttr(docKey) + '\')">✏️</button>' +
 escapeAttr(docKey) + '\')">🗑️</button>';
 }
 
-/* NOTE: user thường chỉ xem (disabled), MASTER tích được.
-   → Theo yêu cầu #3: "cột NOTE hiện ra với user" → hiển thị checkbox
-     nhưng disabled cho user thường, MASTER tích được. */
-
 const noteDisabledAttr = isMaster ? '' : ' disabled ';
 
 const noteHtml =
 '<input type="checkbox" class="note-checkbox" ' +
 noteChecked + noteDisabledAttr +
 'onchange="toggleNote(\'' + escapeAttr(docKey) + '\', this.checked)">';
-
-/* Link cells */
 
 const link1Html = renderLinkCell(docKey, 1, link1, isMaster);
 const link2Html = renderLinkCell(docKey, 2, link2, isMaster);
@@ -761,9 +1042,9 @@ row.innerHTML = `
 <td title="${type}">${type}</td>
 <td>${releaseDate}</td>
 <td>${noteHtml}</td>
-<td>${link1Html}</td>
-<td>${link2Html}</td>
-<td>${link3Html}</td>
+<td class="col-link1 hide-for-user">${link1Html}</td>
+<td class="col-link2 hide-for-user">${link2Html}</td>
+<td class="col-link3 hide-for-user">${link3Html}</td>
 <td>
 <a class="action-btn" href="${escapeAttr(link)}"
    target="_blank" rel="noopener noreferrer">Open</a>
@@ -786,8 +1067,6 @@ renderPagination();
 function renderLinkCell(docKey, slot, linkValue, isMaster){
 
 if(linkValue){
-
-/* Có link → nút Open + long-press 5s để sửa (chỉ MASTER) */
 
 const longPressAttrs = isMaster
 ? 'onmousedown="startLongPress(event, this)" ' +
@@ -826,10 +1105,12 @@ return '<span style="color:#aaa;">—</span>';
 ========================= */
 
 let pickerTarget = null;
+let pickerState = { maximized: false, minimized: false };
 
 function openLinkPicker(docKey, slot){
 
 pickerTarget = { docKey, slot };
+pickerState = { maximized: false, minimized: false };
 
 const modal = document.createElement('div');
 modal.className = 'modal-overlay';
@@ -837,11 +1118,83 @@ modal.id = 'linkPickerModal';
 
 const box = document.createElement('div');
 box.className = 'modal-box';
-box.innerHTML = '<h3>Chọn liên kết cho LINK' + slot + '</h3>';
+box.id = 'linkPickerBox';
 
-const list = document.createElement('div');
-list.style.maxHeight = '400px';
-list.style.overflow = 'auto';
+const header = document.createElement('div');
+header.className = 'modal-header';
+header.innerHTML =
+'<h3>Chọn liên kết cho LINK' + slot + '</h3>' +
+'<div class="modal-controls">' +
+'<button class="btn-minimize" onclick="toggleMinimizePicker()" title="Thu nhỏ">—</button>' +
+'<button class="btn-maximize" onclick="toggleMaximizePicker()" title="Phóng to">□</button>' +
+'<button class="btn-close-modal" onclick="closeModal()" title="Đóng">✕</button>' +
+'</div>';
+
+box.appendChild(header);
+
+const searchWrap = document.createElement('div');
+searchWrap.className = 'modal-search';
+searchWrap.innerHTML =
+'<input type="text" id="pickerSearchTitle" placeholder="Search Title...">' +
+'<input type="text" id="pickerSearchDocNo" placeholder="Search Document No...">';
+box.appendChild(searchWrap);
+
+const tableWrap = document.createElement('div');
+tableWrap.className = 'modal-table-wrap';
+tableWrap.id = 'pickerTableWrap';
+
+const table = document.createElement('table');
+table.innerHTML =
+'<thead><tr>' +
+'<th>TITLE</th>' +
+'<th>DOCUMENT NO</th>' +
+'<th>CATEGORY</th>' +
+'<th>TYPE</th>' +
+'<th>DATE</th>' +
+'</tr></thead>' +
+'<tbody id="pickerBody"></tbody>';
+
+tableWrap.appendChild(table);
+box.appendChild(tableWrap);
+
+const actions = document.createElement('div');
+actions.className = 'modal-actions';
+actions.innerHTML =
+'<button class="cancel-btn" onclick="closeModal()">Hủy</button>';
+box.appendChild(actions);
+
+modal.appendChild(box);
+
+modal.onclick = (e) => {
+  if(e.target === modal) closeModal();
+};
+
+document.body.appendChild(modal);
+
+document.getElementById('pickerSearchTitle').addEventListener('input', () => {
+  renderPickerRows();
+});
+document.getElementById('pickerSearchDocNo').addEventListener('input', () => {
+  renderPickerRows();
+});
+
+renderPickerRows();
+
+}
+
+function renderPickerRows(){
+
+const tbody = document.getElementById('pickerBody');
+if(!tbody) return;
+
+const kwTitle = (document.getElementById('pickerSearchTitle')?.value || '')
+  .trim().toLowerCase();
+const kwDocNo = (document.getElementById('pickerSearchDocNo')?.value || '')
+  .trim().toLowerCase();
+
+tbody.innerHTML = '';
+
+const fragment = document.createDocumentFragment();
 
 allData.forEach(item => {
 
@@ -850,48 +1203,70 @@ if(!link) return;
 
 const docNo = String(item["Document No"] || '').trim();
 const title = String(item["Title"] || '').trim();
+const category = String(item["Category"] || '').trim();
+const type = String(item["TYPE"] || '').trim();
+const date = String(item["Release date"] || '').trim();
 
-const div = document.createElement('div');
-div.className = 'modal-item';
-div.innerHTML =
-'<strong>' + escapeHTML(docNo) + '</strong><br>' +
-'<small>' + escapeHTML(title) + '</small>';
+if(kwTitle && !title.toLowerCase().includes(kwTitle)) return;
+if(kwDocNo && !docNo.toLowerCase().includes(kwDocNo)) return;
 
-div.onclick = () => {
-applyLink(pickerTarget.docKey, pickerTarget.slot, link);
-closeModal();
+const tr = document.createElement('tr');
+
+tr.innerHTML =
+'<td>' + escapeHTML(title) + '</td>' +
+'<td>' + escapeHTML(docNo) + '</td>' +
+'<td>' + escapeHTML(category) + '</td>' +
+'<td>' + escapeHTML(type) + '</td>' +
+'<td>' + escapeHTML(date) + '</td>';
+
+tr.onclick = () => {
+  applyLink(pickerTarget.docKey, pickerTarget.slot, link);
+  closeModal();
 };
 
-list.appendChild(div);
+fragment.appendChild(tr);
 
 });
 
-box.appendChild(list);
-
-const actions = document.createElement('div');
-actions.className = 'modal-actions';
-
-const cancelBtn = document.createElement('button');
-cancelBtn.className = 'cancel-btn';
-cancelBtn.textContent = 'Hủy';
-cancelBtn.onclick = closeModal;
-actions.appendChild(cancelBtn);
-
-box.appendChild(actions);
-modal.appendChild(box);
-
-modal.onclick = (e) => {
-if(e.target === modal) closeModal();
-};
-
-document.body.appendChild(modal);
+tbody.appendChild(fragment);
 
 }
 
+function toggleMinimizePicker(){
+  const box = document.getElementById('linkPickerBox');
+  if(!box) return;
+
+  if(pickerState.minimized){
+    box.classList.remove('minimized');
+    pickerState.minimized = false;
+  }else{
+    box.classList.add('minimized');
+    box.classList.remove('maximized');
+    pickerState.minimized = true;
+    pickerState.maximized = false;
+  }
+}
+
+function toggleMaximizePicker(){
+  const box = document.getElementById('linkPickerBox');
+  if(!box) return;
+
+  if(pickerState.maximized){
+    box.classList.remove('maximized');
+    pickerState.maximized = false;
+  }else{
+    box.classList.add('maximized');
+    box.classList.remove('minimized');
+    pickerState.maximized = true;
+    pickerState.minimized = false;
+  }
+}
+
 function closeModal(){
-const m = document.getElementById('linkPickerModal');
-if(m) m.remove();
-pickerTarget = null;
+  removeCountdownToast();
+  const m = document.getElementById('linkPickerModal');
+  if(m) m.remove();
+  pickerTarget = null;
 }
 
 /* =========================
@@ -912,7 +1287,7 @@ renderTable();
 }
 
 /* =========================
-  SAVE LINK STORE (theo user)
+  SAVE LINK STORE
 ========================= */
 
 async function saveLinkStore(docKey){
@@ -937,38 +1312,46 @@ console.warn('Save link failed:', err);
 }
 
 /* =========================
-  OPEN LINKED / LONG PRESS
+  LONG PRESS (2s + countdown 3s)
 ========================= */
 
 let longPressTimer = null;
 let longPressTriggered = false;
 
 function startLongPress(e, el){
-longPressTriggered = false;
-longPressTimer = setTimeout(() => {
-longPressTriggered = true;
-const docKey = el.getAttribute('data-dockey');
-const slot = parseInt(el.getAttribute('data-slot'), 10);
-openLinkPicker(docKey, slot);
-}, 5000);
+
+  longPressTriggered = false;
+
+  longPressTimer = setTimeout(() => {
+
+    longPressTriggered = true;
+
+    const docKey = el.getAttribute('data-dockey');
+    const slot = parseInt(el.getAttribute('data-slot'), 10);
+
+    showCountdownToast('Chờ 3s để sửa lại link', 3, () => {
+      openLinkPicker(docKey, slot);
+    });
+
+  }, 2000);
 }
 
 function cancelLongPress(){
-if(longPressTimer){
-clearTimeout(longPressTimer);
-longPressTimer = null;
-}
+  if(longPressTimer){
+    clearTimeout(longPressTimer);
+    longPressTimer = null;
+  }
 }
 
 function openLinked(el){
-if(longPressTriggered){
-longPressTriggered = false;
-return;
-}
-const link = el.getAttribute('data-link');
-if(link && link !== '#'){
-window.open(link, '_blank', 'noopener,noreferrer');
-}
+  if(longPressTriggered){
+    longPressTriggered = false;
+    return;
+  }
+  const link = el.getAttribute('data-link');
+  if(link && link !== '#'){
+    window.open(link, '_blank', 'noopener,noreferrer');
+  }
 }
 
 /* =========================
@@ -986,86 +1369,427 @@ await saveLinkStore(docKey);
 
 logAction('TOGGLE_NOTE', docKey + ' note=' + checked);
 
-/* Nếu NOTE filter đang bật → render lại */
-
 if(noteFilterActive){
-applyFilters();
+  applyFilters();
 }
 
 }
-
-/* =========================
-  NOTE FILTER TOGGLE
-========================= */
 
 function toggleNoteFilter(){
-noteFilterActive = !noteFilterActive;
+  noteFilterActive = !noteFilterActive;
 
-if(noteFilterActive){
-noteFilterBtn.classList.add('active');
-}else{
-noteFilterBtn.classList.remove('active');
+  if(noteFilterActive){
+    noteFilterBtn.classList.add('active');
+  }else{
+    noteFilterBtn.classList.remove('active');
+  }
+
+  applyFilters();
 }
 
-applyFilters();
+/* =========================
+  ✅ DELETE — verify password ở BACKEND
+  1. Overlay lớp 1: nhập mật khẩu
+  2. Gửi mật khẩu lên /delete → server verify
+  3. Nếu server OK → mở overlay lớp 2 cảnh báo
+  4. Xác nhận → gọi /delete lần 2 (kèm password) → xóa
+========================= */
+
+function deleteDocument(docKey){
+
+  const overlay1 = document.createElement('div');
+  overlay1.className = 'confirm-overlay';
+  overlay1.id = 'confirmOverlay1';
+
+  const box1 = document.createElement('div');
+  box1.className = 'confirm-box';
+  box1.innerHTML =
+    '<h3>🔒 Xác nhận xóa</h3>' +
+    '<p>Nhập mật khẩu xóa để tiếp tục xóa document:<br>' +
+    '<span class="confirm-doc">' + escapeHTML(docKey) + '</span></p>' +
+    '<input type="password" id="deletePasswordInput" ' +
+    'placeholder="Nhập mật khẩu xóa..." ' +
+    'onkeydown="if(event.key===\'Enter\') verifyDeletePassword(\'' +
+    escapeAttr(docKey) + '\')">' +
+    '<div class="pwd-error" id="pwdError"></div>' +
+    '<div class="confirm-actions">' +
+    '<button class="btn-cancel" onclick="closeConfirm(1)">Hủy</button>' +
+    '<button class="btn-delete" onclick="verifyDeletePassword(\'' +
+    escapeAttr(docKey) + '\')">Tiếp tục</button>' +
+    '</div>';
+
+  overlay1.appendChild(box1);
+  document.body.appendChild(overlay1);
+
+  setTimeout(() => {
+    const inp = document.getElementById('deletePasswordInput');
+    if(inp) inp.focus();
+  }, 50);
+
+}
+
+/* ✅ Gửi mật khẩu lên BACKEND để verify */
+
+async function verifyDeletePassword(docKey){
+
+  const input = document.getElementById('deletePasswordInput');
+  const errEl = document.getElementById('pwdError');
+
+  if(!input) return;
+
+  const pwd = input.value;
+
+  if(!pwd){
+    if(errEl) errEl.textContent = '❌ Vui lòng nhập mật khẩu.';
+    return;
+  }
+
+  if(errEl) errEl.textContent = '⏳ Đang kiểm tra...';
+
+  try{
+    const res = await fetch(API_BASE + '/delete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: currentUser.username,
+        role: currentUser.role,
+        docKey: docKey,
+        password: pwd,
+        verifyOnly: true   /* ✅ chỉ verify, chưa xóa thật */
+      })
+    });
+
+    const data = await res.json();
+
+    if(!res.ok || !data.success){
+      if(errEl) errEl.textContent = '❌ ' + (data.message || 'Mật khẩu không đúng.');
+      input.value = '';
+      input.focus();
+      return;
+    }
+
+    /* ✅ Mật khẩu đúng → qua lớp 2 */
+    closeConfirm(1);
+    proceedConfirm2(docKey, pwd);
+
+  }catch(err){
+    console.error(err);
+    if(errEl) errEl.textContent = '❌ Lỗi kết nối server.';
+  }
+
+}
+
+function closeConfirm(level){
+  const el = document.getElementById('confirmOverlay' + level);
+  if(el) el.remove();
+}
+
+function proceedConfirm2(docKey, verifiedPwd){
+
+  const overlay2 = document.createElement('div');
+  overlay2.className = 'confirm-overlay';
+  overlay2.id = 'confirmOverlay2';
+  overlay2.style.zIndex = '999999';
+
+  const box2 = document.createElement('div');
+  box2.className = 'confirm-box';
+  box2.innerHTML =
+    '<h3>🚨 CẢNH BÁO LẦN CUỐI</h3>' +
+    '<p>Hành động này <b>KHÔNG THỂ HOÀN TÁC</b>.<br>' +
+    'Document <span class="confirm-doc">' + escapeHTML(docKey) +
+    '</span> sẽ bị xóa vĩnh viễn.<br><br>' +
+    'Bạn thực sự muốn xóa?</p>' +
+    '<div class="confirm-actions">' +
+    '<button class="btn-cancel" onclick="closeConfirm(2)">Hủy</button>' +
+    '<button class="btn-delete" onclick="doDeleteDocument(\'' +
+    escapeAttr(docKey) + '\', \'' + escapeAttr(verifiedPwd) + '\')">XÓA VĨNH VIỄN</button>' +
+    '</div>';
+
+  overlay2.appendChild(box2);
+  document.body.appendChild(overlay2);
+
+}
+
+async function doDeleteDocument(docKey, verifiedPwd){
+
+  closeConfirm(2);
+
+  try{
+    const res = await fetch(API_BASE + '/delete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: currentUser.username,
+        role: currentUser.role,
+        docKey: docKey,
+        password: verifiedPwd
+        /* verifyOnly mặc định false → server thực hiện xóa */
+      })
+    });
+
+    const data = await res.json();
+
+    if(!res.ok || !data.success){
+      alert('❌ Xóa thất bại: ' + (data.message || 'Lỗi không xác định.'));
+      return;
+    }
+
+    /* ✅ Xóa thành công → cập nhật UI */
+    allData = allData.filter(x =>
+      String(x["Document No"] || '').trim() !== docKey
+    );
+
+    logAction('DELETE_DOC', docKey);
+
+    applyFilters();
+
+  }catch(err){
+    console.error(err);
+    alert('❌ Lỗi kết nối server khi xóa.');
+  }
 
 }
 
 /* =========================
-  EDIT / DELETE (MASTER)
+  EDIT WIZARD 5 STEP
 ========================= */
 
 function editDocument(docKey){
 
-const newTitle = prompt('Nhập Title mới cho Document No: ' + docKey);
-if(newTitle === null) return;
-
-const item = allData.find(x =>
-String(x["Document No"] || '').trim() === docKey
-);
-
-if(item){
-item["Title"] = newTitle;
-
-logAction('EDIT_DOC', docKey + ' → ' + newTitle);
-
-fetch(API_BASE + '/edit', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify({
-username: currentUser.username,
-role: currentUser.role,
-docKey: docKey,
-newTitle: newTitle
-})
-}).catch(err => console.warn(err));
-
-applyFilters();
-}
+  showCountdownToast('Chờ 5s để sửa record', 5, () => {
+    openEditWizard(docKey);
+  });
 
 }
 
-async function deleteDocument(docKey){
+let wizardState = null;
 
-if(!confirm('Bạn chắc chắn muốn xóa document: ' + docKey + '?')) return;
+function openEditWizard(docKey){
 
-allData = allData.filter(x =>
-String(x["Document No"] || '').trim() !== docKey
-);
+  const item = allData.find(x =>
+    String(x["Document No"] || '').trim() === docKey
+  );
 
-logAction('DELETE_DOC', docKey);
+  if(!item) return;
 
-fetch(API_BASE + '/delete', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify({
-username: currentUser.username,
-role: currentUser.role,
-docKey: docKey
-})
-}).catch(err => console.warn(err));
+  wizardState = {
+    docKey: docKey,
+    item: item,
+    step: 1,
+    values: {
+      title: item["Title"] || '',
+      documentNo: item["Document No"] || '',
+      category: item["Category"] || '',
+      type: item["TYPE"] || '',
+      date: item["Release date"] || ''
+    }
+  };
 
-applyFilters();
+  renderWizard();
+
+}
+
+function renderWizard(){
+
+  const old = document.getElementById('editWizardOverlay');
+  if(old) old.remove();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'wizard-overlay';
+  overlay.id = 'editWizardOverlay';
+
+  const box = document.createElement('div');
+  box.className = 'wizard-box';
+
+  const step = wizardState.step;
+  const totalSteps = 5;
+
+  let dotsHtml = '<div class="wizard-progress">';
+  for(let i = 1; i <= totalSteps; i++){
+    let cls = 'dot';
+    if(i < step) cls += ' done';
+    else if(i === step) cls += ' active';
+    dotsHtml += '<div class="' + cls + '">' + i + '</div>';
+  }
+  dotsHtml += '</div>';
+
+  let contentHtml = '';
+
+  if(step === 1){
+    contentHtml =
+      '<div class="step-content">' +
+      '<label>STEP 1: TITLE</label>' +
+      '<input type="text" id="wizTitle" value="' +
+      escapeAttr(wizardState.values.title) + '">' +
+      '<div class="old-value">Giá trị cũ: ' +
+      escapeHTML(wizardState.item["Title"] || '') + '</div>' +
+      '</div>';
+  }else if(step === 2){
+    contentHtml =
+      '<div class="step-content">' +
+      '<label>STEP 2: DOCUMENT NO</label>' +
+      '<input type="text" id="wizDocNo" value="' +
+      escapeAttr(wizardState.values.documentNo) + '">' +
+      '<div class="old-value">Giá trị cũ: ' +
+      escapeHTML(wizardState.item["Document No"] || '') + '</div>' +
+      '</div>';
+  }else if(step === 3){
+    let opts = '<option value="">-- Chọn Category --</option>';
+    if(categoryList.length === 0){
+      opts += '<option value="' + escapeAttr(wizardState.values.category) + '">' +
+        escapeHTML(wizardState.values.category) + '</option>';
+    }else{
+      categoryList.forEach(c => {
+        const val = typeof c === 'string' ? c : (c.name || c.value || '');
+        const sel = (val === wizardState.values.category) ? ' selected' : '';
+        opts += '<option value="' + escapeAttr(val) + '"' + sel + '>' +
+          escapeHTML(val) + '</option>';
+      });
+    }
+    contentHtml =
+      '<div class="step-content">' +
+      '<label>STEP 3: CATEGORY</label>' +
+      '<select id="wizCategory">' + opts + '</select>' +
+      '<div class="old-value">Giá trị cũ: ' +
+      escapeHTML(wizardState.item["Category"] || '') + '</div>' +
+      '</div>';
+  }else if(step === 4){
+    contentHtml =
+      '<div class="step-content">' +
+      '<label>STEP 4: TYPE</label>' +
+      '<input type="text" id="wizType" value="' +
+      escapeAttr(wizardState.values.type) + '">' +
+      '<div class="old-value">Giá trị cũ: ' +
+      escapeHTML(wizardState.item["TYPE"] || '') + '</div>' +
+      '</div>';
+  }else if(step === 5){
+    contentHtml =
+      '<div class="step-content">' +
+      '<label>STEP 5: DATE</label>' +
+      '<input type="date" id="wizDate" value="' +
+      escapeAttr(wizardState.values.date) + '">' +
+      '<div class="old-value">Giá trị cũ: ' +
+      escapeHTML(wizardState.item["Release date"] || '') + '</div>' +
+      '</div>';
+  }
+
+  let actionsHtml = '<div class="wizard-actions">';
+  if(step > 1){
+    actionsHtml +=
+      '<button class="btn-back" onclick="wizardBack()">← Quay lại</button>';
+  }else{
+    actionsHtml += '<span></span>';
+  }
+
+  if(step < totalSteps){
+    actionsHtml +=
+      '<button class="btn-next" onclick="wizardNext()">Tiếp →</button>';
+  }else{
+    actionsHtml +=
+      '<button class="btn-save" onclick="wizardSave()">💾 Lưu</button>';
+  }
+
+  actionsHtml += '</div>';
+
+  box.innerHTML =
+    '<h3>✏️ Chỉnh sửa Document</h3>' +
+    '<div class="step-label">Document: <b>' +
+    escapeHTML(wizardState.docKey) + '</b></div>' +
+    dotsHtml +
+    contentHtml +
+    actionsHtml +
+    '<div style="text-align:center;margin-top:12px;">' +
+    '<button class="btn-cancel-wizard" ' +
+    'style="padding:8px 20px;border:none;border-radius:6px;' +
+    'cursor:pointer;font-weight:bold;" ' +
+    'onclick="closeWizard()">Hủy bỏ</button>' +
+    '</div>';
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+}
+
+function collectWizardStep(){
+  const step = wizardState.step;
+  if(step === 1){
+    const v = document.getElementById('wizTitle');
+    if(v) wizardState.values.title = v.value;
+  }else if(step === 2){
+    const v = document.getElementById('wizDocNo');
+    if(v) wizardState.values.documentNo = v.value;
+  }else if(step === 3){
+    const v = document.getElementById('wizCategory');
+    if(v) wizardState.values.category = v.value;
+  }else if(step === 4){
+    const v = document.getElementById('wizType');
+    if(v) wizardState.values.type = v.value;
+  }else if(step === 5){
+    const v = document.getElementById('wizDate');
+    if(v) wizardState.values.date = v.value;
+  }
+}
+
+function wizardNext(){
+  collectWizardStep();
+  if(wizardState.step < 5){
+    wizardState.step++;
+    renderWizard();
+  }
+}
+
+function wizardBack(){
+  collectWizardStep();
+  if(wizardState.step > 1){
+    wizardState.step--;
+    renderWizard();
+  }
+}
+
+function closeWizard(){
+  const el = document.getElementById('editWizardOverlay');
+  if(el) el.remove();
+  wizardState = null;
+}
+
+async function wizardSave(){
+
+  collectWizardStep();
+
+  const item = wizardState.item;
+  const v = wizardState.values;
+
+  item["Title"] = v.title;
+  item["Document No"] = v.documentNo;
+  item["Category"] = v.category;
+  item["TYPE"] = v.type;
+  item["Release date"] = v.date;
+
+  logAction('EDIT_DOC',
+    wizardState.docKey + ' → Title:' + v.title +
+    ', DocNo:' + v.documentNo +
+    ', Category:' + v.category +
+    ', TYPE:' + v.type +
+    ', Date:' + v.date
+  );
+
+  fetch(API_BASE + '/edit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      username: currentUser.username,
+      role: currentUser.role,
+      docKey: wizardState.docKey,
+      newTitle: v.title,
+      newDocNo: v.documentNo,
+      newCategory: v.category,
+      newType: v.type,
+      newDate: v.date
+    })
+  }).catch(err => console.warn(err));
+
+  closeWizard();
+  applyFilters();
 
 }
 
