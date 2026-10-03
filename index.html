@@ -1052,11 +1052,9 @@ escapeAttr(docKey) + '\')">✏️</button>' +
 escapeAttr(docKey) + '\')">🗑️</button>';
 }
 
-const noteDisabledAttr = isMaster ? '' : ' disabled ';
-
 const noteHtml =
 '<input type="checkbox" class="note-checkbox" ' +
-noteChecked + noteDisabledAttr +
+(noteState ? 'checked ' : '') +
 'onchange="toggleNote(\'' + escapeAttr(docKey) + '\', this.checked)">';
 
 const link1Html = renderLinkCell(docKey, 1, link1, isMaster);
@@ -1248,8 +1246,7 @@ tr.innerHTML =
 '<td>' + escapeHTML(date) + '</td>';
 
 tr.onclick = () => {
-  applyLink(pickerTarget.docKey, pickerTarget.slot, link);
-  closeModal();
+  confirmLinkSelection(pickerTarget.docKey, pickerTarget.slot, link, title, docNo);
 };
 
 fragment.appendChild(tr);
@@ -1257,6 +1254,41 @@ fragment.appendChild(tr);
 });
 
 tbody.appendChild(fragment);
+
+}
+
+function confirmLinkSelection(docKey, slot, link, title, docNo){
+
+  closeConfirm(3);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'confirm-overlay';
+  overlay.id = 'confirmOverlay3';
+  overlay.style.zIndex = '9999999';
+
+  const box = document.createElement('div');
+  box.className = 'confirm-box';
+  box.innerHTML =
+    '<h3 style="color:#0078d4;">🔗 Xác nhận chọn liên kết</h3>' +
+    '<p>Gán tài liệu này vào <b>LINK' + slot + '</b> của:<br>' +
+    '<span class="confirm-doc">' + escapeHTML(docKey) + '</span><br><br>' +
+    'Tài liệu được chọn:<br>' +
+    '<span class="confirm-doc">' + escapeHTML(docNo) + '</span><br>' +
+    '<span style="font-size:13px;color:#555;">' + escapeHTML(title) + '</span></p>' +
+    '<div class="confirm-actions">' +
+    '<button class="btn-cancel" id="linkConfirmCancel">Hủy</button>' +
+    '<button class="btn-delete" id="linkConfirmOk" style="background:#0078d4;">Xác nhận</button>' +
+    '</div>';
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  document.getElementById('linkConfirmCancel').onclick = () => closeConfirm(3);
+  document.getElementById('linkConfirmOk').onclick = () => {
+    closeConfirm(3);
+    applyLink(docKey, slot, link);
+    closeModal();
+  };
 
 }
 
@@ -1397,7 +1429,7 @@ function openLinked(el){
 
 async function toggleNote(docKey, checked){
 
-if(!currentUser || currentUser.role !== 'MASTER') return;
+if(!currentUser) return;
 
 /* Bước 1: Cập nhật local NGAY LẬP TỨC */
 if(!linkStore[docKey]) linkStore[docKey] = {};
