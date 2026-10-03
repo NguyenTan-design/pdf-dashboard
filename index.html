@@ -123,13 +123,14 @@ th:nth-child(4),td:nth-child(4){width:8%;white-space:nowrap;overflow:hidden;text
 
 th:nth-child(5),td:nth-child(5){width:8%;white-space:nowrap;}
 
-th:nth-child(6),td:nth-child(6){width:5%;text-align:center;white-space:nowrap;}
+/* 6 = ACTION, 7 = NOTE, 8/9/10 = LINK1/2/3 */
+th:nth-child(6),td:nth-child(6){width:6%;white-space:nowrap;text-align:center;}
 
-th:nth-child(7),td:nth-child(7),
+th:nth-child(7),td:nth-child(7){width:5%;text-align:center;white-space:nowrap;}
+
 th:nth-child(8),td:nth-child(8),
-th:nth-child(9),td:nth-child(9){width:8%;white-space:nowrap;text-align:center;}
-
-th:nth-child(10),td:nth-child(10){width:6%;white-space:nowrap;text-align:center;}
+th:nth-child(9),td:nth-child(9),
+th:nth-child(10),td:nth-child(10){width:8%;white-space:nowrap;text-align:center;}
 
 /* LOGIC HIỂN THỊ LINK1/2/3:
    - MẶC ĐỊNH: hiện (dành cho MASTER)
@@ -141,8 +142,8 @@ table.user-view .col-link3{
   display:none !important;
 }
 
-table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:8%;}
-table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:10%;}
+table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:10%;}
+table.user-view th:nth-child(7),table.user-view td:nth-child(7){width:8%;}
 
 /* OPEN BUTTON */
 .action-btn{
@@ -159,6 +160,59 @@ padding:2px 4px;border-radius:4px;transition:0.2s;
 }
 
 .master-btn:hover{background:#eee;}
+
+/* ROW ACTION BUTTONS (✏️ 🗑️) — style từ bản cũ */
+.row-actions{
+display:flex;flex-direction:row;align-items:center;
+gap:6px;margin-top:4px;
+}
+
+.row-action-btn{
+width:20px;height:20px;border:none;border-radius:5px;
+background:transparent;font-size:12px;line-height:1;
+display:flex;align-items:center;justify-content:center;
+cursor:pointer;opacity:0.35;
+transition:opacity 0.15s ease, background 0.15s ease;
+padding:0;flex-shrink:0;
+}
+
+.row-action-btn:hover,
+.row-action-btn:focus-visible{
+opacity:1;background:rgba(0,0,0,0.08);
+}
+
+.row-action-btn.delete-btn:hover,
+.row-action-btn.delete-btn:focus-visible{
+background:rgba(220,38,38,0.12);
+}
+
+/* HOLD INDICATOR (✏️ chờ 5s) */
+.hold-indicator{
+position:fixed;z-index:99998;display:none;pointer-events:none;
+background:#1f2937;color:#fff;font-size:12px;
+padding:6px 10px 8px;border-radius:8px;
+box-shadow:0 4px 14px rgba(0,0,0,0.25);min-width:150px;
+}
+
+.hold-indicator.show{display:block;}
+
+.hold-indicator .hold-bar{
+margin-top:5px;height:4px;border-radius:2px;
+background:rgba(255,255,255,0.25);overflow:hidden;
+}
+
+.hold-indicator .hold-bar > span{
+display:block;height:100%;width:0;background:#60a5fa;
+}
+
+.hold-indicator.show .hold-bar > span{
+animation:holdFill var(--hold-ms, 5000ms) linear forwards;
+}
+
+@keyframes holdFill{
+from{width:0;}
+to{width:100%;}
+}
 
 /* LINK BUTTON */
 .link-btn{
@@ -513,20 +567,24 @@ text-overflow:ellipsis;font-size:7px;
 
 th:nth-child(5),td:nth-child(5){width:8%;white-space:nowrap;font-size:7px;}
 
-th:nth-child(6),td:nth-child(6){width:5%;text-align:center;}
+th:nth-child(6),td:nth-child(6){
+width:8%;text-align:center;white-space:nowrap;
+}
 
-th:nth-child(7),td:nth-child(7),
+th:nth-child(7),td:nth-child(7){width:6%;text-align:center;}
+
 th:nth-child(8),td:nth-child(8),
-th:nth-child(9),td:nth-child(9){
-width:8%;text-align:center;font-size:6px;
-}
-
+th:nth-child(9),td:nth-child(9),
 th:nth-child(10),td:nth-child(10){
-width:6%;text-align:center;white-space:nowrap;
+width:9%;text-align:center;font-size:6px;
 }
 
-table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:8%;}
-table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:12%;}
+table.user-view th:nth-child(6),table.user-view td:nth-child(6){width:12%;}
+table.user-view th:nth-child(7),table.user-view td:nth-child(7){width:8%;}
+
+/* MASTER trên mobile: bảng tối thiểu 700px, cuộn ngang */
+body.role-master .table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+body.role-master table{min-width:700px;}
 
 .action-btn{padding:3px 4px;font-size:7px;border-radius:4px;}
 .linked-open-btn{padding:2px 3px;font-size:6px;}
@@ -622,17 +680,22 @@ table.user-view th:nth-child(10),table.user-view td:nth-child(10){width:12%;}
 <th>CATEGORY</th>
 <th>TYPE</th>
 <th>DATE</th>
+<th>ACTION</th>
 <th>NOTE</th>
 <th class="col-link1">LINK1</th>
 <th class="col-link2">LINK2</th>
 <th class="col-link3">LINK3</th>
-<th>ACTION</th>
 </tr>
 </thead>
 <tbody id="pdfBody"></tbody>
 </table>
 </div>
 
+</div>
+
+<div id="holdIndicator" class="hold-indicator">
+<div id="holdText">Đợi 5 giây để sửa record...</div>
+<div class="hold-bar"><span></span></div>
 </div>
 
 <script>
@@ -829,6 +892,7 @@ sessionStorage.removeItem('dm_user');
 sessionStorage.removeItem('dm_token');
 currentUser = null;
 userToken = null;
+document.body.classList.remove('role-master');
 document.getElementById('mainApp').style.display = 'none';
 document.getElementById('loginOverlay').style.display = 'flex';
 document.getElementById('loginUser').value = '';
@@ -874,8 +938,10 @@ userInfoEl.innerHTML =
    - user  : THÊM class user-view → LINK1/2/3 ẨN hoàn toàn */
 if(currentUser.role === 'MASTER'){
   pdfTable.classList.remove('user-view');
+  document.body.classList.add('role-master');
 }else{
   pdfTable.classList.add('user-view');
+  document.body.classList.remove('role-master');
 }
 
 await loadData();
@@ -1045,11 +1111,12 @@ const row = document.createElement('tr');
 let docNoHtml = documentNo;
 if(isMaster){
 docNoHtml +=
-'<br>' +
-'<button class="master-btn" title="Edit" onclick="editDocument(\'' +
-escapeAttr(docKey) + '\')">✏️</button>' +
-'<button class="master-btn" title="Delete" onclick="deleteDocument(\'' +
-escapeAttr(docKey) + '\')">🗑️</button>';
+'<div class="row-actions">' +
+'<button type="button" class="row-action-btn edit-btn" title="Sửa record" aria-label="Sửa record" ' +
+'onclick="handleEditButtonClick(event, \'' + escapeAttr(docKey) + '\')">✏️</button>' +
+'<button type="button" class="row-action-btn delete-btn" title="Xóa record" aria-label="Xóa record" ' +
+'onclick="handleDeleteButtonClick(event, \'' + escapeAttr(docKey) + '\')">🗑️</button>' +
+'</div>';
 }
 
 const noteHtml =
@@ -1067,14 +1134,14 @@ row.innerHTML = `
 <td title="${category}">${category}</td>
 <td title="${type}">${type}</td>
 <td>${releaseDate}</td>
-<td>${noteHtml}</td>
-<td class="col-link1">${link1Html}</td>
-<td class="col-link2">${link2Html}</td>
-<td class="col-link3">${link3Html}</td>
 <td>
 <a class="action-btn" href="${escapeAttr(link)}"
    target="_blank" rel="noopener noreferrer">Open</a>
 </td>
+<td>${noteHtml}</td>
+<td class="col-link1">${link1Html}</td>
+<td class="col-link2">${link2Html}</td>
+<td class="col-link3">${link3Html}</td>
 `;
 
 fragment.appendChild(row);
@@ -1472,85 +1539,78 @@ function toggleNoteFilter(){
   DELETE — verify password ở BACKEND
 ========================= */
 
-function deleteDocument(docKey){
+/* ---------- 🗑️: CONFIRM → PASSWORD → DELETE (logic từ bản cũ) ---------- */
 
-  const overlay1 = document.createElement('div');
-  overlay1.className = 'confirm-overlay';
-  overlay1.id = 'confirmOverlay1';
+let deleteTargetKey = null;
+let deleteBusy = false;
 
-  const box1 = document.createElement('div');
-  box1.className = 'confirm-box';
-  box1.innerHTML =
-    '<h3>🔒 Xác nhận xóa</h3>' +
-    '<p>Nhập mật khẩu xóa để tiếp tục xóa document:<br>' +
+function handleDeleteButtonClick(event, docKey){
+  event.preventDefault();
+  event.stopPropagation();
+
+  if(!currentUser || currentUser.role !== 'MASTER') return;
+
+  deleteTargetKey = docKey;
+  closeConfirm(1);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'confirm-overlay';
+  overlay.id = 'confirmOverlay1';
+
+  const box = document.createElement('div');
+  box.className = 'confirm-box';
+  box.innerHTML =
+    '<p>Are you sure to delete ?<br>' +
     '<span class="confirm-doc">' + escapeHTML(docKey) + '</span></p>' +
-    '<input type="password" id="deletePasswordInput" ' +
-    'placeholder="Nhập mật khẩu xóa..." ' +
-    'onkeydown="if(event.key===\'Enter\') verifyDeletePassword(\'' +
-    escapeAttr(docKey) + '\')">' +
-    '<div class="pwd-error" id="pwdError"></div>' +
     '<div class="confirm-actions">' +
-    '<button class="btn-cancel" onclick="closeConfirm(1)">Hủy</button>' +
-    '<button class="btn-delete" onclick="verifyDeletePassword(\'' +
-    escapeAttr(docKey) + '\')">Tiếp tục</button>' +
+    '<button class="btn-delete" onclick="proceedToDeletePassword()">OK</button>' +
+    '<button class="btn-cancel" onclick="closeDeleteConfirm()">Cancel</button>' +
     '</div>';
 
-  overlay1.appendChild(box1);
-  document.body.appendChild(overlay1);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+}
+
+function closeDeleteConfirm(){
+  deleteTargetKey = null;
+  closeConfirm(1);
+}
+
+function proceedToDeletePassword(){
+  closeConfirm(1);
+  closeConfirm(2);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'confirm-overlay';
+  overlay.id = 'confirmOverlay2';
+  overlay.style.zIndex = '999999';
+
+  const box = document.createElement('div');
+  box.className = 'confirm-box';
+  box.innerHTML =
+    '<p>Nhập password để xác nhận xóa record:<br>' +
+    '<span class="confirm-doc">' + escapeHTML(deleteTargetKey || '') + '</span></p>' +
+    '<input type="password" id="deletePasswordInput" placeholder="Password" ' +
+    'autocomplete="off" onkeydown="if(event.key===\'Enter\') confirmDeletePassword()">' +
+    '<div class="pwd-error" id="pwdError"></div>' +
+    '<div class="confirm-actions">' +
+    '<button class="btn-delete" onclick="confirmDeletePassword()">Xác nhận</button>' +
+    '<button class="btn-cancel" onclick="cancelDeletePassword()">Cancel</button>' +
+    '</div>';
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
 
   setTimeout(() => {
     const inp = document.getElementById('deletePasswordInput');
     if(inp) inp.focus();
   }, 50);
-
 }
 
-async function verifyDeletePassword(docKey){
-
-  const input = document.getElementById('deletePasswordInput');
-  const errEl = document.getElementById('pwdError');
-
-  if(!input) return;
-
-  const pwd = input.value;
-
-  if(!pwd){
-    if(errEl) errEl.textContent = '❌ Vui lòng nhập mật khẩu.';
-    return;
-  }
-
-  if(errEl) errEl.textContent = '⏳ Đang kiểm tra...';
-
-  try{
-    const res = await fetch(API_BASE + '/delete', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        username: currentUser.username,
-        role: currentUser.role,
-        docKey: docKey,
-        password: pwd,
-        verifyOnly: true
-      })
-    });
-
-    const data = await res.json();
-
-    if(!res.ok || !data.success){
-      if(errEl) errEl.textContent = '❌ ' + (data.message || 'Mật khẩu không đúng.');
-      input.value = '';
-      input.focus();
-      return;
-    }
-
-    closeConfirm(1);
-    proceedConfirm2(docKey, pwd);
-
-  }catch(err){
-    console.error(err);
-    if(errEl) errEl.textContent = '❌ Lỗi kết nối server.';
-  }
-
+function cancelDeletePassword(){
+  deleteTargetKey = null;
+  deleteBusy = false;
+  closeConfirm(2);
 }
 
 function closeConfirm(level){
@@ -1558,35 +1618,25 @@ function closeConfirm(level){
   if(el) el.remove();
 }
 
-function proceedConfirm2(docKey, verifiedPwd){
+async function confirmDeletePassword(){
 
-  const overlay2 = document.createElement('div');
-  overlay2.className = 'confirm-overlay';
-  overlay2.id = 'confirmOverlay2';
-  overlay2.style.zIndex = '999999';
+  if(deleteBusy) return;
 
-  const box2 = document.createElement('div');
-  box2.className = 'confirm-box';
-  box2.innerHTML =
-    '<h3>🚨 CẢNH BÁO LẦN CUỐI</h3>' +
-    '<p>Hành động này <b>KHÔNG THỂ HOÀN TÁC</b>.<br>' +
-    'Document <span class="confirm-doc">' + escapeHTML(docKey) +
-    '</span> sẽ bị xóa vĩnh viễn.<br><br>' +
-    'Bạn thực sự muốn xóa?</p>' +
-    '<div class="confirm-actions">' +
-    '<button class="btn-cancel" onclick="closeConfirm(2)">Hủy</button>' +
-    '<button class="btn-delete" onclick="doDeleteDocument(\'' +
-    escapeAttr(docKey) + '\', \'' + escapeAttr(verifiedPwd) + '\')">XÓA VĨNH VIỄN</button>' +
-    '</div>';
+  const input = document.getElementById('deletePasswordInput');
+  const errEl = document.getElementById('pwdError');
+  const docKey = deleteTargetKey;
 
-  overlay2.appendChild(box2);
-  document.body.appendChild(overlay2);
+  if(!input || !docKey) return;
 
-}
+  const pwd = input.value;
+  if(!pwd){
+    if(errEl) errEl.textContent = 'Vui lòng nhập password.';
+    return;
+  }
 
-async function doDeleteDocument(docKey, verifiedPwd){
-
-  closeConfirm(2);
+  deleteBusy = true;
+  input.disabled = true;
+  if(errEl) errEl.textContent = '';
 
   try{
     const res = await fetch(API_BASE + '/delete', {
@@ -1596,42 +1646,127 @@ async function doDeleteDocument(docKey, verifiedPwd){
         username: currentUser.username,
         role: currentUser.role,
         docKey: docKey,
-        password: verifiedPwd
+        password: pwd
       })
     });
 
-    const data = await res.json();
+    let data = {};
+    try{ data = await res.json(); }catch(e){}
+
+    /* Sai password → báo lỗi tại chỗ, cho nhập lại */
+    if(res.status === 401){
+      input.disabled = false;
+      input.value = '';
+      input.focus();
+      if(errEl) errEl.textContent = 'Sai password, vui lòng thử lại.';
+      deleteBusy = false;
+      return;
+    }
 
     if(!res.ok || !data.success){
+      closeConfirm(2);
+      deleteTargetKey = null;
+      deleteBusy = false;
       alert('❌ Xóa thất bại: ' + (data.message || 'Lỗi không xác định.'));
       return;
     }
 
+    closeConfirm(2);
+    deleteTargetKey = null;
+    deleteBusy = false;
+
     allData = allData.filter(x =>
       String(x["Document No"] || '').trim() !== docKey
     );
+    delete linkStore[docKey];
+    delete pendingNotes[docKey];
 
     logAction('DELETE_DOC', docKey);
 
+    const page = currentPage;
     applyFilters();
+    currentPage = page;
+    renderTable();
 
   }catch(err){
     console.error(err);
-    alert('❌ Lỗi kết nối server khi xóa.');
+    input.disabled = false;
+    deleteBusy = false;
+    if(errEl) errEl.textContent = 'Lỗi kết nối server khi xóa.';
   }
-
 }
 
 /* =========================
   EDIT WIZARD 5 STEP
 ========================= */
 
-function editDocument(docKey){
+/* ---------- ✏️: CLICK → CHỜ 5s (logic từ bản cũ) ---------- */
 
-  showCountdownToast('Chờ 5s để sửa record', 5, () => {
-    openEditWizard(docKey);
-  });
+const EDIT_HOLD_MS = 5000;
+const holdIndicatorEl = document.getElementById('holdIndicator');
+let holdTimer = null;
+let holdDocKey = null;
 
+function cancelHold(){
+  if(holdTimer){
+    clearTimeout(holdTimer);
+    holdTimer = null;
+  }
+  holdDocKey = null;
+
+  if(holdIndicatorEl) holdIndicatorEl.classList.remove('show');
+
+  document.removeEventListener('pointerdown', onOutsidePointerDown, true);
+}
+
+function onOutsidePointerDown(event){
+  if(event.target.closest('.edit-btn')) return;
+  cancelHold();
+}
+
+function placeHoldIndicator(x, y){
+  if(!holdIndicatorEl) return;
+
+  const w = 190;
+  const left = Math.max(8, Math.min(x + 14, window.innerWidth - w - 8));
+  const top = Math.max(8, Math.min(y + 18, window.innerHeight - 60));
+
+  holdIndicatorEl.style.left = left + 'px';
+  holdIndicatorEl.style.top = top + 'px';
+}
+
+function handleEditButtonClick(event, docKey){
+  event.preventDefault();
+  event.stopPropagation();
+
+  if(!currentUser || currentUser.role !== 'MASTER') return;
+
+  cancelHold();
+
+  holdDocKey = docKey;
+
+  if(holdIndicatorEl){
+    holdIndicatorEl.style.setProperty('--hold-ms', EDIT_HOLD_MS + 'ms');
+
+    document.getElementById('holdText').textContent =
+      'Đợi ' + Math.round(EDIT_HOLD_MS / 1000) + 's để sửa record...';
+
+    const rect = event.currentTarget.getBoundingClientRect();
+    placeHoldIndicator(rect.right, rect.top);
+
+    holdIndicatorEl.classList.remove('show');
+    void holdIndicatorEl.offsetWidth;
+    holdIndicatorEl.classList.add('show');
+  }
+
+  document.addEventListener('pointerdown', onOutsidePointerDown, true);
+
+  holdTimer = setTimeout(() => {
+    holdTimer = null;
+    const key = holdDocKey;
+    cancelHold();
+    if(key) openEditWizard(key);
+  }, EDIT_HOLD_MS);
 }
 
 let wizardState = null;
