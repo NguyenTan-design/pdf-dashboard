@@ -700,7 +700,7 @@ body.role-master table{min-width:700px;}
 <button onclick="setCategoryFilter('F-2.Specifications')">Specifications</button>
 <button onclick="setCategoryFilter('A-1.Tech Reports')">Tech Reports</button>
 <button onclick="setCategoryFilter('C-3.Software Notice')">Software Notice</button>
-<button onclick="setCategoryFilter('TRAINING TEXT')">Training</button>
+<button class="training-btn" onclick="setCategoryFilter('TRAINING TEXT')">Training</button>
 <button onclick="setCategoryFilter('E-7.Field Engineer\'s Documents')">FE Documents</button>
 <button onclick="setCategoryFilter('A-2.Rep News')">Rep News</button>
 <button onclick="setCategoryFilter('D-1.Manuals')">Manuals</button>
@@ -1010,11 +1010,16 @@ if(currentUser.role === 'MASTER'){
   document.body.classList.remove('role-master');
 }
 
+/* ✅ Ẩn nút lọc "Training" đối với user thường (không phải MASTER) */
+const trainingBtn = document.querySelector('.training-btn');
+if(trainingBtn){
+  trainingBtn.style.display = (currentUser.role === 'MASTER') ? '' : 'none';
+}
+
 await loadData();
 await loadLinkStore();
 
-filteredData = allData;
-renderTable();
+applyFilters();
 
 }
 
@@ -1084,7 +1089,15 @@ function applyFilters(){
 const keyword = searchTitle.value.trim().toLowerCase();
 const documentKeyword = searchDocNo.value.trim().toLowerCase();
 
+const isMaster = currentUser && currentUser.role === 'MASTER';
+
 filteredData = allData.filter(item => {
+
+/* ✅ Ẩn record TRAINING TEXT đối với user thường */
+if(!isMaster){
+  const cat = String(item["Category"] || '').trim().toLowerCase();
+  if(cat === 'training text') return false;
+}
 
 const docKey = String(item["Document No"] || '').trim();
 
@@ -2450,9 +2463,8 @@ selectedCategory = '';
 selectedType = '';
 noteFilterActive = false;
 noteFilterBtn.classList.remove('active');
-filteredData = allData;
 currentPage = 1;
-renderTable();
+applyFilters();
 }
 
 /* =========================
